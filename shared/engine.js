@@ -118,6 +118,67 @@
     (navigator.clipboard?navigator.clipboard.writeText(url):Promise.reject()).then(()=>{b.textContent="Link copied ✓";setTimeout(()=>b.textContent="Copy link to this trip",1800)},()=>prompt("Copy this link",url));
   });
   // deep link to #trip/join -> scroll to the join card
+  // ---- photos: grid/map switch, lightbox, lazy Leaflet map ----
+  const MD=(()=>{try{return JSON.parse(($("#mapdata")||{}).textContent||"null")}catch(e){return null}})();
+  const lb=$("#lightbox");let lbi=0;
+  function lbShow(i){
+    if(!MD||!MD.photos.length||!lb)return;lbi=(i+MD.photos.length)%MD.photos.length;const p=MD.photos[lbi];
+    const im=$("img",lb);im.src=p.file;im.alt=p.caption||"";
+    $(".lb-cap",lb).textContent=p.caption||"";
+    const meta=[p.album,p.placeName?(p.approx?"near ":"")+p.placeName:null,p.taken?p.taken.slice(0,10):null].filter(Boolean).join(" · ");
+    $(".lb-meta",lb).innerHTML=esc(meta)+(p.place&&p.place!=="base"?' · <a href="#top10/'+esc(p.place)+'">see the card</a>':'')+"  ("+(lbi+1)+"/"+MD.photos.length+")";
+    if(!lb.open)lb.showModal();
+    const nx=MD.photos[(lbi+1)%MD.photos.length];if(nx){const pre=new Image();pre.src=nx.file}
+  }
+  document.addEventListener("click",e=>{
+    const ph=e.target.closest(".ph[data-i]");if(ph){lbShow(+ph.dataset.i);return}
+    const nb=e.target.closest("[data-lb]");if(nb&&lb){const k=nb.dataset.lb;if(k==="close")lb.close();else lbShow(lbi+(k==="next"?1:-1));return}
+    if(lb&&lb.open&&e.target===lb)lb.close();
+  });
+  if(lb){lb.addEventListener("keydown",e=>{if(e.key==="ArrowRight")lbShow(lbi+1);else if(e.key==="ArrowLeft")lbShow(lbi-1)});
+    let tx=null;lb.addEventListener("touchstart",e=>{tx=e.touches[0].clientX},{passive:true});lb.addEventListener("touchend",e=>{if(tx===null)return;const dx=e.changedTouches[0].clientX-tx;if(Math.abs(dx)>50)lbShow(lbi+(dx<0?1:-1));tx=null});
+    lb.addEventListener("close",()=>{$("img",lb).src=""});}
+  let mapObj=null,leafletLoading=null;
+  function loadLeaflet(){
+    if(window.L)return Promise.resolve();
+    if(leafletLoading)return leafletLoading;
+    leafletLoading=new Promise((res,rej)=>{
+      const css=document.createElement("link");css.rel="stylesheet";css.href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css";document.head.appendChild(css);
+      const sc=document.createElement("script");sc.src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js";sc.onload=res;sc.onerror=rej;document.head.appendChild(sc);
+    });return leafletLoading;
+  }
+  function buildMap(){
+    if(mapObj||!MD||!window.L)return;
+    const el=$("#map");if(!el)return;
+    const all=[...MD.points,...MD.photos.filter(p=>p.lat!=null)];
+    mapObj=L.map(el,{scrollWheelZoom:false});
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:17,attribution:"© OpenStreetMap"}).addTo(mapObj);
+    const bounds=[];
+    const pin=(color,txt)=>L.divIcon({className:"pin",html:'<span style="background:'+color+'">'+txt+'</span>',iconSize:[26,26],iconAnchor:[13,13],popupAnchor:[0,-12]});
+    MD.points.forEach(p=>{
+      const isBase=p.kind==="base";
+      const m=L.marker([p.lat,p.lng],{icon:pin(isBase?"var(--info)":"var(--accent)",isBase?"⌂":p.rank),title:p.name}).addTo(mapObj);
+      m.bindPopup('<b>'+esc(p.name)+'</b>'+(p.thumb?'<br><img src="'+p.thumb+'" alt="" style="width:180px;border-radius:6px;margin-top:6px">':'')+(isBase?'':'<br><a href="#top10/'+esc(p.id)+'">Open card</a>'));
+      bounds.push([p.lat,p.lng]);
+    });
+    // group photos by location
+    const groups={};MD.photos.forEach((p,i)=>{if(p.lat==null)return;const k=p.lat.toFixed(4)+","+p.lng.toFixed(4);(groups[k]=groups[k]||[]).push(i)});
+    Object.values(groups).forEach(ids=>{
+      const p=MD.photos[ids[0]];const off=p.approx?0.0025:0;
+      const m=L.marker([p.lat+off,p.lng+off],{icon:pin("var(--good)","📷"),title:ids.length+" photo(s)"}).addTo(mapObj);
+      m.bindPopup('<div class="popphotos">'+ids.map(i=>'<img src="'+MD.photos[i].thumb+'" alt="" data-lbi="'+i+'" style="width:84px;height:64px;object-fit:cover;border-radius:5px;margin:2px;cursor:pointer">').join("")+'</div><small>'+ids.length+' photo'+(ids.length>1?'s':'')+(p.placeName?' '+(p.approx?'near ':'at ')+esc(p.placeName):'')+'</small>');
+      bounds.push([p.lat,p.lng]);
+    });
+    if(bounds.length)mapObj.fitBounds(bounds,{padding:[30,30]});else mapObj.setView(MD.center||[37,-113],MD.zoom||9);
+    el.addEventListener("click",e=>{const t=e.target.closest("[data-lbi]");if(t)lbShow(+t.dataset.lbi)});
+  }
+  const vsw=$(".viewsw");
+  if(vsw){vsw.addEventListener("click",e=>{
+    const b=e.target.closest("[data-view]");if(!b)return;
+    $$("[data-view]",vsw).forEach(x=>{x.classList.toggle("on",x===b);x.setAttribute("aria-pressed",x===b)});
+    const map=b.dataset.view==="map";$("#pgridwrap").hidden=map;$("#mapwrap").hidden=!map;
+    if(map){loadLeaflet().then(()=>{buildMap();mapObj&&setTimeout(()=>mapObj.invalidateSize(),50)}).catch(()=>{$("#map").innerHTML='<p class="card">The map needs an internet connection to load.</p>'})}
+  })}
   // ---- units toggle (mi ↔ km / °F ↔ °C) ----
   const ubtn=$("#unitBtn");
   function convText(s,metric){

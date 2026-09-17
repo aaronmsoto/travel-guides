@@ -218,6 +218,10 @@
    "sources": [
     "https://www.nps.gov/zion/planyourvisit/angels-landing-hiking-permits.htm",
     "https://www.nps.gov/thingstodo/hike-angels-landing.htm"
+   ],
+   "coords": [
+    37.269,
+    -112.9477
    ]
   },
   {
@@ -247,6 +251,10 @@
    "sources": [
     "https://www.nps.gov/zion/planyourvisit/thenarrows.htm",
     "https://www.nps.gov/zion/planyourvisit/narrowssafety.htm"
+   ],
+   "coords": [
+    37.2853,
+    -112.9477
    ]
   },
   {
@@ -274,6 +282,10 @@
    "image": "riverside-walk.jpg",
    "sources": [
     "https://www.nps.gov/thingstodo/hike-riverside-walk.htm"
+   ],
+   "coords": [
+    37.2853,
+    -112.9477
    ]
   },
   {
@@ -301,6 +313,10 @@
    "image": "emerald-pools.jpg",
    "sources": [
     "https://www.nps.gov/thingstodo/hike-middle-emerald-pools-trail.htm"
+   ],
+   "coords": [
+    37.251,
+    -112.9575
    ]
   },
   {
@@ -328,6 +344,10 @@
    "image": "canyon-overlook.jpg",
    "sources": [
     "https://www.nps.gov/thingstodo/hike-canyon-overlook.htm"
+   ],
+   "coords": [
+    37.2135,
+    -112.9404
    ]
   },
   {
@@ -357,6 +377,10 @@
    "sources": [
     "https://www.nps.gov/zion/planyourvisit/zion-canyon-shuttle-system.htm",
     "https://www.nps.gov/places/court-of-the-patriarchs.htm"
+   ],
+   "coords": [
+    37.2378,
+    -112.9603
    ]
   },
   {
@@ -386,6 +410,10 @@
    "sources": [
     "https://www.nps.gov/zion/planyourvisit/the-zion-mount-carmel-tunnel.htm",
     "https://www.nps.gov/zion/learn/news/2026-01-05-large-vehicles.htm"
+   ],
+   "coords": [
+    37.227,
+    -112.8815
    ]
   },
   {
@@ -413,6 +441,10 @@
    "image": "parus-trail.jpg",
    "sources": [
     "https://www.nps.gov/thingstodo/hike-pa-rus-trail.htm"
+   ],
+   "coords": [
+    37.2,
+    -112.9868
    ]
   },
   {
@@ -440,6 +472,10 @@
    "image": "watchman-trail.jpg",
    "sources": [
     "https://www.nps.gov/thingstodo/hike-watchman-trail.htm"
+   ],
+   "coords": [
+    37.2005,
+    -112.986
    ]
   },
   {
@@ -469,6 +505,10 @@
    "sources": [
     "https://www.nps.gov/zion/planyourvisit/east-rim-wilderness-trail-descriptions.htm",
     "https://www.nps.gov/zion/planyourvisit/conditions.htm"
+   ],
+   "coords": [
+    37.2856,
+    -112.8977
    ]
   }
  ],
@@ -966,7 +1006,11 @@
    "name": "Springdale, UT",
    "detail": "We are staying in town, <b>within 1 mile of the park’s South Entrance</b>. Springdale sits right at the gate: restaurants, groceries, gas and Narrows gear rental are all on the one main street, and the <b>free town shuttle</b> stops along it and drops at the park’s pedestrian entrance, so we can leave the cars parked most days.",
    "mapUrl": "https://maps.google.com/?q=Springdale,+UT+84767",
-   "bookingNote": "Book your own room in Springdale (see <a href=\"#stay\">Stay</a> for the town and example properties) as close to the South Entrance as you can, or ask about sharing ours. Springdale fills for the holiday week, so book early."
+   "bookingNote": "Book your own room in Springdale (see <a href=\"#stay\">Stay</a> for the town and example properties) as close to the South Entrance as you can, or ask about sharing ours. Springdale fills for the holiday week, so book early.",
+   "coords": [
+    37.1889,
+    -112.9986
+   ]
   },
   "arrival": "<b>Sat Nov 21:</b> travel day. Fly or drive to <b>Las Vegas</b> and sleep in or near the city.<br><b>Sun Nov 22:</b> drive Las Vegas → Springdale, about <b>160 mi, ~2 h 45 min</b> via I-15 north and UT-9 east through Hurricane. Utah is on <b>Mountain Time</b>, one hour ahead of Las Vegas. Stop for groceries in Hurricane or St. George; Springdale has a market but small selection.",
   "departure": "<b>Wed Nov 25:</b> a short morning in the park, then drive back to Las Vegas for evening flights or the drive home. It is the day before Thanksgiving, so expect heavier I-15 traffic near Las Vegas by late afternoon.",
@@ -1020,5 +1064,10 @@
    "Whether to add a Kolob Canyons detour on the way out (Exit 40 on I-15, about an hour)",
    "Wednesday timing — leave by noon to beat Thanksgiving-eve traffic, or make it a full day and drive after dinner"
   ]
- }
+ },
+ "mapCenter": [
+  37.24,
+  -112.95
+ ],
+ "mapZoom": 11
 }

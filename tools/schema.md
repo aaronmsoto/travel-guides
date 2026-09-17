@@ -65,6 +65,7 @@ All prose fields are plain text unless noted `html:` (limited inline HTML allowe
       "tips": ["3–5 concrete, actionable tips (≤ 140 chars each)"],
       "accessibility": "optional: paved/wheelchair/strollers/kids note",
       "image": "angels-landing.jpg",     // file in img/; MUST exist in img/manifest.json
+      "coords": [37.269, -112.9477],     // [lat, lng] of the viewpoint/trailhead — used by the map and to place photos
       "sources": ["https://www.nps.gov/..."]
     }
   ],
@@ -124,7 +125,7 @@ day-by-day schedule: the Top 10 attractions are rendered inside the trip tab as 
   "status": "planning|confirmed",
   "host": "Aaron",                                  // first name shown in "Join" copy
   "pitch": "html: 1–2 sentences inviting people",
-  "base": { "name": "Springdale, UT", "detail": "html: where exactly, what it's like, how far from the park",
+  "base": { "name": "Springdale, UT", "coords": [37.1889, -112.9986], "detail": "html: where exactly, what it's like, how far from the park",
             "mapUrl": "https://..." , "bookingNote": "html: optional — how joiners should book" },
   "arrival": "html: travel-in plan (airport, drive, first night)",
   "departure": "html: travel-out plan",
@@ -135,3 +136,14 @@ day-by-day schedule: the Top 10 attractions are rendered inside the trip tab as 
 }
 ```
 Internal links: `<a href="#top10/angels-landing">` opens that attraction card (no target=_blank).
+
+## Photos (optional) — `guides/<slug>/photos/photos.json`, written by tools/import_photos.py
+```jsonc
+{ "albums": [ { "title": "January 2025", "credit": "Aaron Soto",
+    "items": [ { "file": "january-2025-5b046217.jpg", "w": 1600, "h": 1067, "taken": "2025-01-18T09:12" | null,
+                 "lat": 36.42 | null, "lng": -116.81 | null,   // from EXIF when present
+                 "place": "zabriskie-point",                   // attraction id (or "base"); used for the map when no GPS
+                 "caption": "..." } ] } ] }
+```
+Renders as the "Photos & Map" tab: a grid with a lightbox, and a map (Leaflet + OpenStreetMap tiles, loaded only
+when the map view is opened) showing photo pins, Top 10 pins (from `coords`), and the trip base.

@@ -270,6 +270,34 @@ footer.site li{break-inside:avoid}
 .tile .noimg{height:100%;min-height:0}
 .conds .card{padding:14px 16px;margin:0}.conds p:last-child{margin-bottom:0}\n.conds .eyebrow{color:var(--accent-ink)}\n.sec{scroll-margin-top:calc(var(--stick,120px) + 12px)}
 .conds{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+
+/* photos & map */
+.viewsw{display:flex;gap:8px;margin:0 0 14px}
+.albh{display:flex;align-items:baseline;gap:12px;margin:.6em 0 .5em}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px;margin:0 0 20px}
+.ph{appearance:none;border:0;padding:0;background:var(--surface2);border-radius:10px;overflow:hidden;cursor:pointer;position:relative;aspect-ratio:4/3;text-align:left}
+.ph img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
+.ph:hover img{transform:scale(1.03)}
+.ph .cap{position:absolute;inset:auto 0 0 0;padding:18px 8px 6px;font-size:.72rem;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.7));opacity:0;transition:opacity .2s;line-height:1.25}
+.ph:hover .cap,.ph:focus-visible .cap{opacity:1}
+@media (hover:none){.ph .cap{opacity:1}}
+.map{height:min(70vh,560px);border-radius:var(--radius);border:1px solid var(--line);background:var(--surface2)}
+.pin span{display:grid;place-items:center;width:26px;height:26px;border-radius:99px;color:#fff;font:700 .72rem/1 var(--mono);box-shadow:0 1px 5px rgba(0,0,0,.4);border:2px solid #fff}
+.leaflet-popup-content{font:14px/1.4 var(--sans);color:#222}
+.lightbox{border:0;padding:0;background:transparent;max-width:100vw;max-height:100vh;width:100vw;height:100vh;margin:0}
+.lightbox::backdrop{background:rgba(0,0,0,.96)}
+.lightbox figure{margin:0;width:100vw;height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:16px}
+.lightbox img{max-width:100%;max-height:calc(100vh - 110px);object-fit:contain;border-radius:8px}
+.lightbox figcaption{color:#fff;text-align:center;max-width:70ch}
+.lightbox .lb-cap{display:block;font-size:1rem}
+.lightbox .lb-meta{display:block;font-size:.8rem;opacity:.75;font-family:var(--mono)}
+.lightbox .lb-meta a{color:#fff}
+.lb-x,.lb-nav{position:fixed;appearance:none;border:0;background:rgba(255,255,255,.12);color:#fff;font-size:1.8rem;line-height:1;width:46px;height:46px;border-radius:99px;cursor:pointer;z-index:2}
+.lb-x{top:14px;right:14px}
+.lb-nav{top:50%;transform:translateY(-50%)}
+.lb-prev{left:12px}.lb-next{right:12px}
+.lb-x:hover,.lb-nav:hover{background:rgba(255,255,255,.28)}
+@media (max-width:600px){.lb-nav{top:auto;bottom:14px;transform:none}}
 </style></head><body data-slug="landing" data-name="Travel guides">
 <header class="site"><div class="masthead"><div class="titles"><h1>Travel guides</h1><p class="sub">Research-backed guides to the places worth the drive. Top 10 attractions, where to stay, permits, safety, and ready-made itineraries.</p></div><div class="tools"><button type="button" class="iconbtn" id="themeBtn">☾ Dark</button></div></div></header>
 <main id="main"><div class="guides"><a class="gcard" href="guides/death-valley/index.html"><img src="guides/death-valley/img/hero.jpg" alt="Salt polygons on the floor of Badwater Basin with the Panamint Range beyond" loading="lazy"><div class="b"><p class="eyebrow">California</p><h2>Death Valley National Park</h2><p>The lowest, driest, hottest place in North America — and one of the most beautiful.</p><p class="credit" style="margin-top:.6em">$30/vehicle, 7 days · November–March · Las Vegas (LAS)</p></div></a><a class="gcard" href="guides/zion/index.html"><img src="guides/zion/img/hero.jpg" alt="Zion Canyon at sunrise with the Virgin River below towering red and cream sandstone walls" loading="lazy"><div class="b"><p class="eyebrow">Utah</p><h2>Zion National Park</h2><p>Navajo sandstone walls, a river you hike up, and a shuttle that runs the show</p><p class="credit" style="margin-top:.6em"><b>📅 Sat Nov 21 – Wed 25, 2026</b> · base: Springdale, UT · <span class="joinchip">Join this trip</span></p></div></a></div>
@@ -394,6 +422,67 @@ footer.site li{break-inside:avoid}
     (navigator.clipboard?navigator.clipboard.writeText(url):Promise.reject()).then(()=>{b.textContent="Link copied ✓";setTimeout(()=>b.textContent="Copy link to this trip",1800)},()=>prompt("Copy this link",url));
   });
   // deep link to #trip/join -> scroll to the join card
+  // ---- photos: grid/map switch, lightbox, lazy Leaflet map ----
+  const MD=(()=>{try{return JSON.parse(($("#mapdata")||{}).textContent||"null")}catch(e){return null}})();
+  const lb=$("#lightbox");let lbi=0;
+  function lbShow(i){
+    if(!MD||!MD.photos.length||!lb)return;lbi=(i+MD.photos.length)%MD.photos.length;const p=MD.photos[lbi];
+    const im=$("img",lb);im.src=p.file;im.alt=p.caption||"";
+    $(".lb-cap",lb).textContent=p.caption||"";
+    const meta=[p.album,p.placeName?(p.approx?"near ":"")+p.placeName:null,p.taken?p.taken.slice(0,10):null].filter(Boolean).join(" · ");
+    $(".lb-meta",lb).innerHTML=esc(meta)+(p.place&&p.place!=="base"?' · <a href="#top10/'+esc(p.place)+'">see the card</a>':'')+"  ("+(lbi+1)+"/"+MD.photos.length+")";
+    if(!lb.open)lb.showModal();
+    const nx=MD.photos[(lbi+1)%MD.photos.length];if(nx){const pre=new Image();pre.src=nx.file}
+  }
+  document.addEventListener("click",e=>{
+    const ph=e.target.closest(".ph[data-i]");if(ph){lbShow(+ph.dataset.i);return}
+    const nb=e.target.closest("[data-lb]");if(nb&&lb){const k=nb.dataset.lb;if(k==="close")lb.close();else lbShow(lbi+(k==="next"?1:-1));return}
+    if(lb&&lb.open&&e.target===lb)lb.close();
+  });
+  if(lb){lb.addEventListener("keydown",e=>{if(e.key==="ArrowRight")lbShow(lbi+1);else if(e.key==="ArrowLeft")lbShow(lbi-1)});
+    let tx=null;lb.addEventListener("touchstart",e=>{tx=e.touches[0].clientX},{passive:true});lb.addEventListener("touchend",e=>{if(tx===null)return;const dx=e.changedTouches[0].clientX-tx;if(Math.abs(dx)>50)lbShow(lbi+(dx<0?1:-1));tx=null});
+    lb.addEventListener("close",()=>{$("img",lb).src=""});}
+  let mapObj=null,leafletLoading=null;
+  function loadLeaflet(){
+    if(window.L)return Promise.resolve();
+    if(leafletLoading)return leafletLoading;
+    leafletLoading=new Promise((res,rej)=>{
+      const css=document.createElement("link");css.rel="stylesheet";css.href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css";document.head.appendChild(css);
+      const sc=document.createElement("script");sc.src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js";sc.onload=res;sc.onerror=rej;document.head.appendChild(sc);
+    });return leafletLoading;
+  }
+  function buildMap(){
+    if(mapObj||!MD||!window.L)return;
+    const el=$("#map");if(!el)return;
+    const all=[...MD.points,...MD.photos.filter(p=>p.lat!=null)];
+    mapObj=L.map(el,{scrollWheelZoom:false});
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:17,attribution:"© OpenStreetMap"}).addTo(mapObj);
+    const bounds=[];
+    const pin=(color,txt)=>L.divIcon({className:"pin",html:'<span style="background:'+color+'">'+txt+'</span>',iconSize:[26,26],iconAnchor:[13,13],popupAnchor:[0,-12]});
+    MD.points.forEach(p=>{
+      const isBase=p.kind==="base";
+      const m=L.marker([p.lat,p.lng],{icon:pin(isBase?"var(--info)":"var(--accent)",isBase?"⌂":p.rank),title:p.name}).addTo(mapObj);
+      m.bindPopup('<b>'+esc(p.name)+'</b>'+(p.thumb?'<br><img src="'+p.thumb+'" alt="" style="width:180px;border-radius:6px;margin-top:6px">':'')+(isBase?'':'<br><a href="#top10/'+esc(p.id)+'">Open card</a>'));
+      bounds.push([p.lat,p.lng]);
+    });
+    // group photos by location
+    const groups={};MD.photos.forEach((p,i)=>{if(p.lat==null)return;const k=p.lat.toFixed(4)+","+p.lng.toFixed(4);(groups[k]=groups[k]||[]).push(i)});
+    Object.values(groups).forEach(ids=>{
+      const p=MD.photos[ids[0]];const off=p.approx?0.0025:0;
+      const m=L.marker([p.lat+off,p.lng+off],{icon:pin("var(--good)","📷"),title:ids.length+" photo(s)"}).addTo(mapObj);
+      m.bindPopup('<div class="popphotos">'+ids.map(i=>'<img src="'+MD.photos[i].thumb+'" alt="" data-lbi="'+i+'" style="width:84px;height:64px;object-fit:cover;border-radius:5px;margin:2px;cursor:pointer">').join("")+'</div><small>'+ids.length+' photo'+(ids.length>1?'s':'')+(p.placeName?' '+(p.approx?'near ':'at ')+esc(p.placeName):'')+'</small>');
+      bounds.push([p.lat,p.lng]);
+    });
+    if(bounds.length)mapObj.fitBounds(bounds,{padding:[30,30]});else mapObj.setView(MD.center||[37,-113],MD.zoom||9);
+    el.addEventListener("click",e=>{const t=e.target.closest("[data-lbi]");if(t)lbShow(+t.dataset.lbi)});
+  }
+  const vsw=$(".viewsw");
+  if(vsw){vsw.addEventListener("click",e=>{
+    const b=e.target.closest("[data-view]");if(!b)return;
+    $$("[data-view]",vsw).forEach(x=>{x.classList.toggle("on",x===b);x.setAttribute("aria-pressed",x===b)});
+    const map=b.dataset.view==="map";$("#pgridwrap").hidden=map;$("#mapwrap").hidden=!map;
+    if(map){loadLeaflet().then(()=>{buildMap();mapObj&&setTimeout(()=>mapObj.invalidateSize(),50)}).catch(()=>{$("#map").innerHTML='<p class="card">The map needs an internet connection to load.</p>'})}
+  })}
   // ---- units toggle (mi ↔ km / °F ↔ °C) ----
   const ubtn=$("#unitBtn");
   function convText(s,metric){

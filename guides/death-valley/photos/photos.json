@@ -1,0 +1,60 @@
+{
+ "albums": [
+  {
+   "title": "January 2025",
+   "credit": "Aaron Soto",
+   "items": [
+    {
+     "file": "january-2025-5b046217.jpg",
+     "w": 1600,
+     "h": 1067,
+     "taken": null,
+     "lat": null,
+     "lng": null,
+     "place": "zabriskie-point",
+     "caption": "The whole crew at Zabriskie Point — the badlands glow in the low winter light"
+    },
+    {
+     "file": "january-2025-45cd51f2.jpg",
+     "w": 1600,
+     "h": 1200,
+     "taken": null,
+     "lat": null,
+     "lng": null,
+     "place": "furnace-creek",
+     "caption": "Checkers on the porch at The Ranch at Death Valley, Furnace Creek"
+    },
+    {
+     "file": "january-2025-2cb676c3.jpg",
+     "w": 1600,
+     "h": 1067,
+     "taken": null,
+     "lat": null,
+     "lng": null,
+     "place": "mesquite-flat-sand-dunes",
+     "caption": "Sand-dusted grin at Mesquite Flat Sand Dunes"
+    },
+    {
+     "file": "january-2025-96e3e51a.jpg",
+     "w": 1600,
+     "h": 1200,
+     "taken": null,
+     "lat": null,
+     "lng": null,
+     "place": "mesquite-flat-sand-dunes",
+     "caption": "Camp chairs on the dunes: the best seats in the park"
+    },
+    {
+     "file": "january-2025-359aa20f.jpg",
+     "w": 1600,
+     "h": 1200,
+     "taken": null,
+     "lat": null,
+     "lng": null,
+     "place": "mesquite-flat-sand-dunes",
+     "caption": "The kids own the dunes"
+    }
+   ]
+  }
+ ]
+}

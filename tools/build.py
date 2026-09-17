@@ -27,7 +27,7 @@ DIFF_LABEL={"easy":"Easy","moderate":"Moderate","strenuous":"Strenuous","extreme
 TYPE_LABEL={"hike":"Hike","viewpoint":"Viewpoint","scenic-drive":"Scenic drive","area":"Area","canyon":"Canyon","dunes":"Dunes","walk":"Walk"}
 PERMIT_LABEL={"none":"No permit","required":"Permit required","lottery":"Permit lottery"}
 BOOK_LABEL={"reservable":"Reservable","first-come":"First-come, first-served","mixed":"Reservable + first-come","permit":"Permit"}
-SECTIONS=[("trip","The Trip"),("overview","Overview"),("top10","Top 10"),("plan","Plan"),("stay","Stay"),("safety","Safety"),("itineraries","Itineraries"),("faq","FAQ")]
+SECTIONS=[("trip","The Trip"),("overview","Overview"),("top10","Top 10"),("photos","Photos & Map"),("plan","Plan"),("stay","Stay"),("safety","Safety"),("itineraries","Itineraries"),("faq","FAQ")]
 
 def load(slug):
     p=os.path.join(GUIDES,slug,"guide.json")
@@ -35,6 +35,8 @@ def load(slug):
     mp=os.path.join(GUIDES,slug,"img","manifest.json")
     g["_manifest"]=json.load(open(mp)) if os.path.exists(mp) else {}
     g["_dir"]=os.path.join(GUIDES,slug)
+    pp=os.path.join(GUIDES,slug,"photos","photos.json")
+    g["_photos"]=json.load(open(pp)) if os.path.exists(pp) else {"albums":[]}
     return g
 
 def credit(g,file,cls="credit"):
@@ -156,6 +158,48 @@ def sec_top10(g):
         also='<div class="card also"><h2>Also consider</h2><ul>'+"".join(f'<li><b>{E(x["name"])}</b> — {units(H(x.get("why","")))}'+(f' <a href="{E(x["url"])}" target="_blank" rel="noopener">details</a>' if x.get("url") else "")+'</li>' for x in g["alsoConsider"])+'</ul></div>'
     return f'<h2 class="sech">Top 10 natural attractions</h2><p class="lede">Ranked by popularity. Distances and times are official park figures where available; “time” assumes an average hiker with stops. Tap <b>Add to my trip</b> to build a personal shortlist.</p>{fb}{cards}{none}{also}'
 
+def mapdata(g):
+    """Points for the map: attractions with coords, the trip base, and photos (own GPS or via place)."""
+    pts=[]
+    for a in g.get("attractions",[]):
+        if a.get("coords"): pts.append({"kind":"attraction","id":a["id"],"name":a["name"],"lat":a["coords"][0],"lng":a["coords"][1],"rank":a["rank"],"thumb":("img/thumb-"+a["image"]) if a.get("image") and os.path.exists(os.path.join(g["_dir"],"img","thumb-"+a["image"])) else None})
+    t=g.get("trip")
+    if t and t.get("base",{}).get("coords"): pts.append({"kind":"base","id":"base","name":"Home base: "+t["base"]["name"],"lat":t["base"]["coords"][0],"lng":t["base"]["coords"][1]})
+    byid={p["id"]:p for p in pts}
+    names={a["id"]:a["name"] for a in g.get("attractions",[])}
+    if t: names["base"]="Home base: "+t["base"]["name"]
+    photos=[]
+    for alb in g["_photos"].get("albums",[]):
+        for it in alb["items"]:
+            lat,lng=it.get("lat"),it.get("lng"); approx=False
+            if (lat is None or lng is None) and it.get("place") in byid: lat,lng=byid[it["place"]]["lat"],byid[it["place"]]["lng"]; approx=True
+            photos.append({"file":"photos/"+it["file"],"thumb":"photos/thumb-"+it["file"],"w":it.get("w"),"h":it.get("h"),"caption":it.get("caption",""),"taken":it.get("taken"),"album":alb["title"],"credit":alb.get("credit",""),"place":it.get("place"),"placeName":names.get(it.get("place")),"lat":lat,"lng":lng,"approx":approx})
+    return {"points":pts,"photos":photos,"center":g.get("mapCenter"),"zoom":g.get("mapZoom",10)}
+
+def sec_photos(g):
+    P=g["_photos"].get("albums",[])
+    n=sum(len(a["items"]) for a in P)
+    out=[f'<h2 class="sech">Photos &amp; map</h2>']
+    if n:
+        out.append(f'<p class="lede">{n} photo{"s" if n!=1 else ""} from {", ".join(E(a["title"]) for a in P)} — a taste of what the trip actually looks like. Switch to the map to see where each one was taken alongside the Top 10.</p>')
+    else:
+        out.append('<p class="lede">No photos from past trips yet — the map still shows where the Top 10 and our home base are.</p>')
+    out.append('<div class="viewsw" role="group" aria-label="View"><button type="button" class="fbtn on" data-view="grid" aria-pressed="true">Grid</button><button type="button" class="fbtn" data-view="map" aria-pressed="false">Map</button></div>')
+    grid=[]
+    idx=0
+    for alb in P:
+        grid.append(f'<h3 class="albh">{E(alb["title"])}'+(f' <span class="credit" style="display:inline">photos: {E(alb["credit"])}</span>' if alb.get("credit") else "")+'</h3><div class="pgrid">')
+        for it in alb["items"]:
+            grid.append(f'<button type="button" class="ph" data-i="{idx}" aria-label="Open photo: {E(it.get("caption") or it["file"])}"><img src="photos/thumb-{E(it["file"])}" alt="{E(it.get("caption",""))}" loading="lazy" width="480" height="{int(480*it["h"]/it["w"]) if it.get("w") else 360}"><span class="cap">{E(it.get("caption",""))}</span></button>')
+            idx+=1
+        grid.append('</div>')
+    out.append(f'<div id="pgridwrap">{"".join(grid) if n else ""}</div>')
+    out.append('<div id="mapwrap" hidden><div id="map" class="map" role="region" aria-label="Map of photos and attractions"></div><p class="credit">Map tiles © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors, loaded only when you open the map. Photo pins marked “near” are placed at the attraction, not from GPS.</p></div>')
+    mdj=json.dumps(mapdata(g)).replace("</","<\\/")
+    out.append(f'<script id="mapdata" type="application/json">{mdj}</script>')
+    out.append('<dialog id="lightbox" class="lightbox" aria-label="Photo viewer"><button type="button" class="lb-x" data-lb="close" aria-label="Close">×</button><button type="button" class="lb-nav lb-prev" data-lb="prev" aria-label="Previous photo">‹</button><figure><img alt=""><figcaption><span class="lb-cap"></span><span class="lb-meta"></span></figcaption></figure><button type="button" class="lb-nav lb-next" data-lb="next" aria-label="Next photo">›</button></dialog>')
+    return "".join(out)
+
 def sec_plan(g):
     L=g["logistics"];out=['<h2 class="sech">Plan your visit</h2>']
     if L.get("gettingThere"):
@@ -214,7 +258,7 @@ def render_guide(slug):
     extra=""
     if theme.get("accent"): extra+=f':root{{--accent:{theme["accent"]};--accent-ink:{theme.get("accentInk",theme["accent"])};--accent-soft:{theme.get("accentSoft","#f6e6dd")}}}'
     if theme.get("accentDark"): extra+=f'@media (prefers-color-scheme: dark){{:root:not([data-theme="light"]){{--accent:{theme["accentDark"]};--accent-ink:{theme.get("accentInkDark",theme["accentDark"])};--accent-soft:{theme.get("accentSoftDark","#3a2418")}}}}}:root[data-theme="dark"]{{--accent:{theme["accentDark"]};--accent-ink:{theme.get("accentInkDark",theme["accentDark"])};--accent-soft:{theme.get("accentSoftDark","#3a2418")}}}'
-    body={"trip":sec_trip,"overview":sec_overview,"top10":sec_top10,"plan":sec_plan,"stay":sec_stay,"safety":sec_safety,"itineraries":sec_itin,"faq":sec_faq}
+    body={"trip":sec_trip,"overview":sec_overview,"photos":sec_photos,"top10":sec_top10,"plan":sec_plan,"stay":sec_stay,"safety":sec_safety,"itineraries":sec_itin,"faq":sec_faq}
     S=[x for x in SECTIONS if x[0]!="trip" or g.get("trip")]
     secs="".join(f'<section class="sec" id="{sid}" data-title="{t}" aria-labelledby="tab-{sid}">{body[sid](g)}</section>\n' for sid,t in S)
     tabs="".join(f'<a href="#{sid}" id="tab-{sid}" data-sec="{sid}">{t}</a>' for sid,t in S)
