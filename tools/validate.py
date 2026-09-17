@@ -76,6 +76,7 @@ def check(slug,links):
     if t:
         ctx=f"{slug}/trip"
         req(t,["title","start","end","host","pitch","base","join","conditions","bring"],ctx)
+        if t.get("status") not in (None,"planning","potential","confirmed"): err(f"{ctx}: status must be planning|potential|confirmed")
         try:
             s=datetime.date.fromisoformat(t["start"]);e=datetime.date.fromisoformat(t["end"])
             if not s<e: err(f"{ctx}: start must be before end")

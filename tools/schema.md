@@ -170,3 +170,5 @@ when the map view is opened) showing photo pins, Top 10 pins (from `coords`), an
 - `photos.json` items accept `private: true` — kept in the repo, excluded from the page and map.
 - Copy rules: no "html:" prefixes; expand jargon on first use on the Trip tab (Mountain Time, cfs, wag bags,
   dispersed); one bold run per paragraph; "Good to know" not "Tips from the research".
+- `trip.status`: `planning | potential | confirmed`. `potential` renders a "proposal" note, "(proposed)" on the
+  banner, a `potential` tag on the landing card, and "See the idea →" as the card CTA.

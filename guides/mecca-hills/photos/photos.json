@@ -1,0 +1,60 @@
+{
+ "albums": [
+  {
+   "title": "April 2023",
+   "credit": "Aaron Soto",
+   "items": [
+    {
+     "file": "april-2023-5d69d763.jpg",
+     "w": 1600,
+     "h": 1200,
+     "taken": null,
+     "lat": null,
+     "lng": null,
+     "place": "ladder-canyon",
+     "caption": "The whole crew — cousins, friends and DLI familia — in the mouth of Ladder Canyon"
+    },
+    {
+     "file": "april-2023-990af2d2.jpg",
+     "w": 1600,
+     "h": 600,
+     "taken": null,
+     "lat": null,
+     "lng": null,
+     "place": "ladder-canyon",
+     "caption": "On the ridge above the loop: badlands in every direction, Salton Sea on the horizon"
+    },
+    {
+     "file": "april-2023-5af33210.jpg",
+     "w": 1200,
+     "h": 1600,
+     "taken": null,
+     "lat": null,
+     "lng": null,
+     "place": "ladder-canyon",
+     "caption": "The ladders: kids first, spotters below"
+    },
+    {
+     "file": "april-2023-c29b984a.jpg",
+     "w": 1200,
+     "h": 1600,
+     "taken": null,
+     "lat": null,
+     "lng": null,
+     "place": "big-painted-canyon",
+     "caption": "Scrambling down the boulders of Big Painted Canyon"
+    },
+    {
+     "file": "april-2023-5cf5a0e8.jpg",
+     "w": 1600,
+     "h": 1200,
+     "taken": null,
+     "lat": null,
+     "lng": null,
+     "place": "painted-canyon",
+     "caption": "Camp in Painted Canyon after dark: headlamps, camp dinner, and singing under the stars"
+    }
+   ]
+  }
+ ]
+}

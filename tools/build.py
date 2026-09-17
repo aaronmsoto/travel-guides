@@ -126,7 +126,7 @@ def ics(g):
 def trip_banner(g):
     t=g.get("trip")
     if not t: return ""
-    return (f'<div class="tripbar" data-start="{E(t["start"])}" data-end="{E(t["end"])}"><span class="tb-dates">📅 {E(fmt_range(t["start"],t["end"]))}</span>'
+    return (f'<div class="tripbar" data-start="{E(t["start"])}" data-end="{E(t["end"])}"><span class="tb-dates">📅 {E(fmt_range(t["start"],t["end"]))}{" (proposed)" if t.get("status")=="potential" else ""}</span>'
             f'<span class="tb-nights">{nights_label(t)}</span><span class="tb-base">{"camping at" if t["base"].get("kind")=="campsite" else "base:"} <b>{E(t["base"]["name"])}</b></span>'
             f'<span class="tb-count" id="tripCountdown"></span><span class="spacer"></span><a class="btn primary" href="#trip/join">Join this trip →</a></div>')
 
@@ -134,7 +134,10 @@ def sec_trip(g):
     t=g.get("trip")
     if not t: return ""
     host=t.get("host",SITE.get("host",{}).get("name","the organizer"))
-    out=[f'<h2 class="sech">{E(t["title"])}</h2><p class="byline">Hosted by {E(host)}</p><p class="lede">{H(t.get("pitch",""))}</p>']
+    st=t.get("status","planning")
+    stlabel={"potential":"Potential trip — planning stage, dates not locked","confirmed":"Confirmed"}.get(st,"")
+    out=[f'<h2 class="sech">{E(t["title"])}</h2><p class="byline">Hosted by {E(host)}{(" · "+stlabel) if stlabel else ""}</p><p class="lede">{H(t.get("pitch",""))}</p>']
+    if st=="potential": out.append('<div class="callout info"><p><b>This one is a proposal.</b> The dates and plan below are what we have in mind — say if you’re interested and we’ll lock it in.</p></div>')
     # facts row: When · Cost (or Capacity)
     facts=[f'<div class="card fact-card"><p class="eyebrow">When</p><p class="big">{E(fmt_range(t["start"],t["end"]))}</p><p class="linkrow">{nights_label(t)} · <span id="tripCountdown2"></span></p><p class="linkrow"><a class="btn small" href="trip.ics" download="{E(g["slug"])}-trip.ics">＋ Add to calendar</a></p></div>']
     if t.get("capacity"):
@@ -430,11 +433,12 @@ def render_landing(guides):
         pic=f'<img src="guides/{E(g["slug"])}/img/{E(hero)}" alt="{E(g.get("hero",{}).get("alt",g["name"]))}" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement(\'div\'),{{className:\'noimg\'}}))">' if hero and has(g,hero) else '<div class="noimg"></div>'
         if t:
             meta=f'<p class="gdates">📅 {E(fmt_range(t["start"],t["end"]))} <span class="tb-count" data-start="{E(t["start"])}" data-end="{E(t["end"])}"></span></p><p>{nights_label(t)} · {"camping at" if t["base"].get("kind")=="campsite" else "base:"} {E(t["base"]["name"])}</p>'
-            cta=f'<span class="btn primary">See the plan →</span>'
+            cta=f'<span class="btn primary">{"See the idea →" if t.get("status")=="potential" else "See the plan →"}</span>'
             title=E(t["title"])
         else:
             meta=f'<p>{E(g.get("tagline",""))}</p>';cta='<span class="btn">Open the guide →</span>';title=E(g["name"])
-        cards+=f'<a class="gcard" href="guides/{E(g["slug"])}/index.html#trip">{pic}<div class="b"><p class="eyebrow">{E(g["name"])} · {E(g.get("state",""))}</p><h2>{title}</h2>{meta}<p class="linkrow">{E(trunc(t.get("pitch","") if t else g.get("tagline",""),140))}</p><p class="cta">{cta}</p></div></a>'
+        pot=' <span class="tag">potential</span>' if t and t.get("status")=="potential" else ""
+        cards+=f'<a class="gcard" href="guides/{E(g["slug"])}/index.html#trip">{pic}<div class="b"><p class="eyebrow">{E(g["name"])} · {E(g.get("state",""))}{pot}</p><h2>{title}</h2>{meta}<p class="linkrow">{E(trunc(t.get("pitch","") if t else g.get("tagline",""),140))}</p><p class="cta">{cta}</p></div></a>'
     n=sum(1 for g in guides if g.get("trip"))
     title=SITE.get("title","Travel guides");sub=SITE.get("tagline","")
     ogimg=""
