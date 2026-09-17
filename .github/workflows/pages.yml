@@ -1,0 +1,55 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Validate guide data
+        run: python3 tools/validate.py
+      - name: Build pages
+        run: python3 tools/build.py
+      - name: Committed HTML must match a fresh build
+        run: |
+          if ! git diff --quiet -- index.html guides/*/index.html; then
+            echo "::error::guides/*/index.html or index.html is stale — run tools/build.py and commit"; git --no-pager diff --stat; exit 1
+          fi
+      - name: Assemble site
+        run: |
+          mkdir -p _site
+          rsync -a ./ _site/ \
+            --exclude '.git' --exclude '.github' --exclude '_site' --exclude '_reviews' \
+            --exclude 'tools' --exclude 'shared' --exclude 'src' --exclude 'site.json' \
+            --exclude 'README.md' --exclude 'CLAUDE.md' --exclude '.gitignore'
+          touch _site/.nojekyll
+          du -sh _site
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
