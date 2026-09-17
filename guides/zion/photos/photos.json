@@ -1,0 +1,50 @@
+{
+ "albums": [
+  {
+   "title": "Summer 2012",
+   "credit": "Aaron Soto",
+   "items": [
+    {
+     "file": "summer-2012-25450d66.jpg",
+     "w": 1195,
+     "h": 797,
+     "taken": null,
+     "lat": null,
+     "lng": null,
+     "place": "angels-landing",
+     "caption": "The whole crew on top of Angels Landing, 1,500 feet above the canyon floor"
+    },
+    {
+     "file": "summer-2012-89cc0ae8.jpg",
+     "w": 1066,
+     "h": 1600,
+     "taken": null,
+     "lat": null,
+     "lng": null,
+     "place": "angels-landing",
+     "caption": "A rattlesnake coiled in the shade beside the Angels Landing trail — watch where you put your hands"
+    },
+    {
+     "file": "summer-2012-9fa2a5f6.jpg",
+     "w": 1066,
+     "h": 1600,
+     "taken": null,
+     "lat": null,
+     "lng": null,
+     "place": "the-narrows",
+     "caption": "Wading the Virgin River in The Narrows, walking sticks required"
+    },
+    {
+     "file": "summer-2012-c75385e3.jpg",
+     "w": 1195,
+     "h": 797,
+     "taken": null,
+     "lat": null,
+     "lng": null,
+     "place": "the-narrows",
+     "caption": "Regrouping on a gravel bar deep in The Narrows"
+    }
+   ]
+  }
+ ]
+}
