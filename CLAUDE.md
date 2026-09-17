@@ -2,7 +2,7 @@
 
 Declarative trip guides: `guides/<slug>/guide.json` is the source of truth; `tools/build.py`
 renders it. **Never hand-edit `guides/*/index.html` or root `index.html`** — rebuild instead.
-Live: https://aaronmsoto.github.io/travel-guides/ · three guides: mecca-hills, zion, death-valley.
+Live: https://juntar.net/ · three guides: mecca-hills, zion, death-valley.
 
 ## Commands
 - `python3 tools/validate.py [slug]` — 0 errors before building or committing; read the warnings

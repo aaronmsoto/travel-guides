@@ -1,7 +1,7 @@
 # Juntar — trip guides
 
 **The more the merrier!** Live site:
-https://aaronmsoto.github.io/travel-guides/
+https://juntar.net/
 
 Each guide is a research-backed destination page that doubles as a **trip invitation**: the first
 tab is *The Trip* (dates, home base, getting there from the LA/OC area, what those dates mean,
@@ -67,7 +67,7 @@ regions, reduced motion.
 
 ## Publishing
 
-Pushes to `main` deploy to GitHub Pages via `.github/workflows/pages.yml` (about 30 seconds).
+Pushes to `main` deploy to GitHub Pages via `.github/workflows/pages.yml` (about 30 seconds). The custom domain `juntar.net` is set by the `CNAME` file at the repo root (published with the site); the old `aaronmsoto.github.io/travel-guides/` URL redirects there.
 `site.json → noindex` keeps pages out of search engines; links work for anyone they're sent to.
 
 ## Licensing

@@ -13,7 +13,7 @@ description: Validate, build, commit, push to main, and confirm the GitHub Pages
    a half-written guide would fail the deploy or go live.
 4. Watch the run: `.github/workflows/pages.yml` (validate → build → stale check → deploy), ~30 s.
    Poll `https://api.github.com/repos/aaronmsoto/travel-guides/actions/runs?per_page=1&branch=main`
-   until `completed success`, then `curl -sI https://aaronmsoto.github.io/travel-guides/` and the
+   until `completed success`, then `curl -sI https://juntar.net/` and the
    guide URLs; grep the live HTML for a string from the change.
 5. If the deploy job is rejected by environment protection rules, the `github-pages` environment's
    deployment-branch policy must allow `main` (Settings → Environments → github-pages).

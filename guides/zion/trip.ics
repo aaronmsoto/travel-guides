@@ -4,13 +4,13 @@ PRODID:-//travel-guides//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:zion-2026-11-21@travel-guides
-DTSTAMP:20260917T173236Z
+DTSTAMP:20260917T175111Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261126
 SUMMARY:Zion — the week before Thanksgiving\, 2026
 LOCATION:Springdale\, UT\, Zion National Park
 GEO:37.1889;-112.9986
-DESCRIPTION:Three nights in Springdale (plus a Las Vegas night on the way in) with Zion Canyon a mile up the road. Late November means cool\, quiet trails\, a shuttle that is still running\, and the last week before the holiday crowds. There is room for more people: here is where we’ll be\, when\, and what’s worth coming for.\\nhttps://aaronmsoto.github.io/travel-guides/guides/zion/
-URL:https://aaronmsoto.github.io/travel-guides/guides/zion/
+DESCRIPTION:Three nights in Springdale (plus a Las Vegas night on the way in) with Zion Canyon a mile up the road. Late November means cool\, quiet trails\, a shuttle that is still running\, and the last week before the holiday crowds. There is room for more people: here is where we’ll be\, when\, and what’s worth coming for.\\nhttps://juntar.net/guides/zion/
+URL:https://juntar.net/guides/zion/
 END:VEVENT
 END:VCALENDAR
