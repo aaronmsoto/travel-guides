@@ -47,6 +47,13 @@ Live: https://aaronmsoto.github.io/travel-guides/ · three guides: mecca-hills, 
 - Safety entries carry `seasons`; alerts carry `affectsTrip`; both drive the trip-aware rendering.
 - Site-level text lives in `site.json` (title, tagline, host, baseUrl, noindex).
 
+## Host decisions (2026-09-17)
+- The three-persona critique runs only when the host asks — not by default for new guides.
+- Potential trips are shown on the home page (tagged "potential", "See the idea").
+- Uploading a photo is opting in: photos are public by default; `private: true` opts one out later.
+- Host is "Aaron" via `site.json` for now; per-trip hosts/co-hosts are a planned change if the
+  prototype gets positive feedback — keep `trip.host` in the data so that is a renderer-only change.
+
 ## Publishing
 - Commit on the working branch; fast-forward `main` and push only when every guide validates
   (a half-written guide fails the deploy or goes live). `.github/workflows/pages.yml` validates,
@@ -56,4 +63,4 @@ Live: https://aaronmsoto.github.io/travel-guides/ · three guides: mecca-hills, 
 ## Adding a guide (short form — the `new-trip` skill has the full version)
 1. `tools/new_guide.py` scaffold → 2. `trip-researcher` + `image-sourcer` in parallel →
 3. `import_photos.py` → 4. validate, build, review at 1200/390 px light+dark →
-5. `critique` skill → fixes → 6. `publish`.
+5. `publish` (run `critique` only when asked).

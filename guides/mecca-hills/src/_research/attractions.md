@@ -251,3 +251,5 @@ and is flagged.
   source for hours or access.
 
 - Dos Palmas Preserve promoted to attraction 9 (image available; Grottos reportedly collapsed). Coordinates 33.497,-115.828 are approximate map coordinates near the preserve gate — UNVERIFIED precision.
+
+- The Living Desert Zoo and Gardens (attraction 10, replacing night sky): 47900 Portola Ave, Palm Desert; Oct 1–May 31 open daily 8:00am–5:00pm, last admission 4:00pm; adult $44.95, child/youth 3–17 $34.95, under 3 free, military $37.95; advance ticket purchase required; free parking; under-18s need an adult. Source https://www.livingdesert.org/visit/ (fetched 2026-09-17). Coordinates 33.700,-116.373 approximate (UNVERIFIED precision). 'About an hour from camp' is an estimate.

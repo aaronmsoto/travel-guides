@@ -461,35 +461,31 @@
   },
   {
    "rank": 10,
-   "id": "night-sky-at-camp",
-   "name": "The night sky from camp",
+   "id": "living-desert",
+   "name": "The Living Desert Zoo and Gardens",
    "type": "area",
    "difficulty": "easy",
    "stats": {
-    "distance": "Step away from the fire pit",
-    "elevationGain": "None",
-    "time": "All night",
-    "trailheadOrParking": "Wherever you parked in the wash"
+    "time": "2–4 hr",
+    "trailheadOrParking": "47900 Portola Ave, Palm Desert — free parking"
    },
    "permit": "none",
-   "bestTime": "After the moon sets",
-   "seasonNote": "Fall and winter nights are long, cool and usually clear",
-   "summary": "Camp sits in a walled wash with no streetlight for miles and no town in the direction you are facing, which is a rarer thing than it sounds two and a half hours from the coast. The canyon walls cut off half the sky and frame the rest. <b>On Saturday October 17, 2026 the moon is a 42% crescent that sets at about 11:15 p.m.</b>, so the sky goes properly black late — which happens to be exactly when nobody wants to stop singing anyway.",
+   "bestTime": "Sunday on the way home; opens 8 a.m. in October, last admission 4 p.m.",
+   "summary": "A desert-only zoo and botanical garden in Palm Desert, about an hour from camp and right on the way home. Giraffes, cheetahs, bighorn sheep and a model-train village spread across gardens of the world’s deserts — the easy, shaded, bathroom-equipped counterpoint to a night in the wash, and the kids’ favorite way to end the weekend.",
    "tips": [
-    "Red-light mode on headlamps keeps everyone's eyes adjusted.",
-    "Give it twenty minutes with no white light before you decide the sky is not that good.",
-    "Binoculars beat a telescope for this — the Milky Way, not the planets.",
-    "Bring a warm layer; a 56°F dawn feels colder after sitting still for an hour."
+    "October 1 – May 31 hours are 8 a.m. to 5 p.m. daily, last admission 4 p.m.; summer hours are shorter.",
+    "Advance ticket purchase is required — buy online before you lose cell service at camp: adults $44.95, ages 3–17 $34.95, under 3 free, military $37.95 (prices vary by date).",
+    "Go straight from camp for the cooler morning; animals are most active before the heat.",
+    "Everyone under 18 needs an adult with them."
    ],
-   "accessibility": "Sit in a camp chair next to the car. The most accessible thing on this list.",
-   "image": "night-sky.jpg",
+   "image": "living-desert.jpg",
    "coords": [
-    33.6155,
-    -116.0
+    33.7,
+    -116.373
    ],
    "sources": [
-    "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-10-17&coords=33.6190,-116.0000&tz=-7",
-    "https://www.blm.gov/visit/mecca-hills-wilderness"
+    "https://www.livingdesert.org/visit/",
+    "https://www.livingdesert.org/"
    ]
   }
  ],
@@ -513,6 +509,11 @@
    "name": "Corn Springs Campground, Chuckwalla National Monument",
    "why": "If you want a developed site inside the same new monument: a small BLM campground by California fan palms in the Chuckwalla Mountains, $6 per night. A long way east of Painted Canyon, but a good second trip.",
    "url": "https://www.blm.gov/programs/national-conservation-lands/california/chuckwalla"
+  },
+  {
+   "name": "The night sky at camp",
+   "why": "Camp sits in a walled wash with no streetlight for miles and no town in the direction you are facing, which is a rarer thing than it sounds two and a half hours from the coast. The canyon walls cut off half the sky and frame the rest. <b>On Saturday October 17, 2026 the moon is a 42% crescent that s",
+   "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-10-17&coords=33.6190,-116.0000&tz=-7"
   }
  ],
  "stay": {
@@ -749,7 +750,7 @@
    "imageAlt": "Hikers walking into Painted Canyon"
   },
   "arrival": "<b>Saturday October 17:</b> leave Huntington Beach around midday. CA-91 east, then I-10 east past Palm Springs to Indio, then south on CA-86 or CA-111 through Coachella to Mecca. Turn east on 66th Avenue, which becomes Box Canyon Road, then left onto Painted Canyon Road and about four miles of dirt. Fill the tank and buy all your food, ice and water in Coachella or Indio — there is nothing after that. Roughly 2½ to 3 hours of driving, which is an estimate, not a promise. Aim to be in camp by 2 p.m. so we can set up and start the ladders loop around 3:30, finishing at sunset.",
-  "departure": "<b>Sunday October 18:</b> a slow morning, a short walk back up the canyon before it heats up, then pack out every scrap and drive home. Two good detours if you want to make a day of it: the Salton Sea shoreline half an hour south, or Box Canyon Road east to Joshua Tree's south entrance and home on I-10 — the long way around, and the better drive.",
+  "departure": "<b>Sunday October 18:</b> a slow morning, a short walk back up the canyon before it heats up, then pack out every scrap and drive home. Two good detours if you want to make a day of it: the Salton Sea shoreline half an hour south, or Box Canyon Road east to Joshua Tree's south entrance and home on I-10 — the long way around, and the better drive. Or make Sunday a full day: The Living Desert in Palm Desert opens at 8 a.m. and is about an hour from camp on the way home.",
   "conditions": [
    {
     "label": "Weather",
@@ -983,6 +984,14 @@
   {
    "title": "Visit Greater Palm Springs – Indio and the east valley",
    "url": "https://www.visitgreaterpalmsprings.com/"
+  },
+  {
+   "title": "The Living Desert Zoo and Gardens – Visit",
+   "url": "https://www.livingdesert.org/visit/"
+  },
+  {
+   "title": "The Living Desert Zoo and Gardens",
+   "url": "https://www.livingdesert.org/"
   }
  ],
  "images": {

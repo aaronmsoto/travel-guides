@@ -11,7 +11,7 @@ pick attractions and send the host a link to their picks.
 
 | Trip | Dates | Base | Status |
 |---|---|---|---|
-| [Mecca Hills — Painted Canyon & Ladder Canyon](guides/mecca-hills/) | Oct 17–18, 2026 | Dispersed camp in Painted Canyon (BLM) | potential |
+| [Mecca Hills — Painted Canyon & Ladder Canyon](guides/mecca-hills/) | Oct 17–18, 2026 | Dispersed camp in Painted Canyon (BLM); The Living Desert on the way home | potential |
 | [Zion National Park](guides/zion/) | Nov 21–25, 2026 | Springdale, UT (night 1 in Las Vegas) | planning |
 | [Death Valley National Park](guides/death-valley/) | Jan 15–18, 2027 | Echo Canyon Road site E1 (reserved dispersed) | planning |
 
@@ -50,7 +50,7 @@ Dependencies: Python 3.11+, Pillow (`pip install Pillow`). Playwright + Chromium
 
 ## Workflows (Claude Code skills)
 
-`/new-trip` scaffold → research → images → photos → validate → build → critique → publish ·
+`/new-trip` scaffold → research → images → photos → validate → build → publish ·
 `/add-photos` · `/update-trip` (dates, status, roster, re-verification) · `/critique`
 (three fresh-context reviewers → `_reviews/critique-report.md` → fixes) · `/publish`
 (validate, build, push `main`, confirm the deploy). Subagents: `trip-researcher` (Opus),

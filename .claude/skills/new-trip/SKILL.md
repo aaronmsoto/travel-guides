@@ -23,7 +23,7 @@ Steps
    `img/manifest.json`; check `photos.json` places resolve to attraction ids.
 5. `python3 tools/build.py` and review renders at 1200 px and 390 px (`#trip`, `#overview`,
    `#top10`, `#photos`, `#stay`), light and dark. Fix data, not HTML.
-6. Run the `critique` skill (three fresh-context critics), implement the fixes, rebuild.
+6. Critique only when the host asks for it (`critique` skill); by default go straight to publish.
 7. `publish` skill. Commit message: "<Place>: new guide (…)"; mention UNVERIFIED items in the reply.
 
 Conventions that must hold (validate.py enforces most): exactly 10 ranked attractions with coords;
