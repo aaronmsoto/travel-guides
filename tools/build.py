@@ -218,7 +218,7 @@ def sec_stay(g):
         out.append('<h2>Camping</h2>')
         for c in S["camping"]:
             b=c.get("booking","")
-            kv="".join(f'<div><div class="l">{l}</div><div class="v">{E(c[k])}</div></div>' for k,l in [("sites","Sites"),("cost","Cost"),("season","Season"),("goodFor","Good for")] if c.get(k))
+            kv="".join(f'<div><div class="l">{l}</div><div class="v">{units(H(c[k]))}</div></div>' for k,l in [("sites","Sites"),("cost","Cost"),("season","Season"),("goodFor","Good for")] if c.get(k))
             am=("<div class=\"amen\">"+"".join(f'<span>{E(x)}</span>' for x in c["amenities"])+"</div>") if c.get("amenities") else ""
             out.append(f'<div class="card stay"><div class="meta" style="margin-bottom:6px"><span class="tag {E(b)}">{E(BOOK_LABEL.get(b,b))}</span> <span class="tag">{E(c.get("kind",""))}</span></div><h3>{E(c["name"])}</h3><p class="where">{units(H(c.get("where","")))}</p><div class="kv">{kv}</div>{am}<p><b>How to book:</b> {units(H(c.get("bookingDetail","")))}</p>'+(f'<p>{units(H(c["notes"]))}</p>' if c.get("notes") else "")+(f'<p class="linkrow"><a href="{E(c["url"])}" target="_blank" rel="noopener">Official page / booking</a></p>' if c.get("url") else "")+'</div>')
     if S.get("lodging"):
