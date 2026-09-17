@@ -6,22 +6,73 @@
  "state": "California",
  "tagline": "The lowest, driest, hottest place in North America — and one of the most beautiful.",
  "lastVerified": "2026-09-17",
- "hero": {"image": "hero.jpg", "alt": "Salt polygons on the floor of Badwater Basin with the Panamint Range beyond"},
+ "hero": {
+  "image": "hero.jpg",
+  "alt": "Salt polygons on the floor of Badwater Basin with the Panamint Range beyond"
+ },
  "quickFacts": [
-  {"label": "Entrance fee", "value": "$30/vehicle, 7 days", "note": "No staffed entrance stations — pay at a kiosk, the visitor center, or online"},
-  {"label": "Best months", "value": "November–March", "note": "Spring is busiest; late October and February are the sweet spots"},
-  {"label": "Nearest airport", "value": "Las Vegas (LAS)", "note": "About 120 miles / 2–2.5 hours to Furnace Creek"},
-  {"label": "Elevation range", "value": "-282 ft to 11,049 ft", "note": "Badwater Basin to Telescope Peak, in sight of each other"},
-  {"label": "Park size", "value": "3.4 million acres", "note": "Largest national park outside Alaska; over 93% roadless wilderness"},
-  {"label": "Time zone", "value": "Pacific (PT)"},
-  {"label": "Cell service", "value": "Essentially none", "note": "Spotty at Furnace Creek and Stovepipe Wells only; free Wi-Fi at the visitor center"},
-  {"label": "Dark sky", "value": "Gold Tier Dark Sky Park", "note": "The highest International Dark-Sky Association rating"},
-  {"label": "Reservation needed?", "value": "No", "note": "No timed entry. Only campsites are reserved."}
+  {
+   "label": "Entrance fee",
+   "value": "$30/vehicle, 7 days",
+   "note": "No staffed entrance stations — pay at a kiosk, the visitor center, or online"
+  },
+  {
+   "label": "Best months",
+   "value": "November–March",
+   "note": "Spring is busiest; late October and February are the sweet spots"
+  },
+  {
+   "label": "Nearest airport",
+   "value": "Las Vegas (LAS)",
+   "note": "About 120 miles / 2–2.5 hours to Furnace Creek"
+  },
+  {
+   "label": "Elevation range",
+   "value": "-282 ft to 11,049 ft",
+   "note": "Badwater Basin to Telescope Peak, in sight of each other"
+  },
+  {
+   "label": "Park size",
+   "value": "3.4 million acres",
+   "note": "Largest national park outside Alaska; over 93% roadless wilderness"
+  },
+  {
+   "label": "Time zone",
+   "value": "Pacific (PT)"
+  },
+  {
+   "label": "Cell service",
+   "value": "Essentially none",
+   "note": "Spotty at Furnace Creek and Stovepipe Wells only; free Wi-Fi at the visitor center"
+  },
+  {
+   "label": "Dark sky",
+   "value": "Gold Tier Dark Sky Park",
+   "note": "The highest International Dark-Sky Association rating"
+  },
+  {
+   "label": "Reservation needed?",
+   "value": "No",
+   "note": "No timed entry. Only campsites are reserved."
+  }
  ],
  "overview": {
   "summary": "Death Valley's superlatives are all literally true. It holds the <b>world record air temperature</b> — 134°F, set at Furnace Creek on July 10, 1913 — and the lowest ground in North America at <b>282 feet below sea level</b>, in sight of Telescope Peak 11,049 ft above.<br><br>What surprises first-timers is the variety. Within an hour of Furnace Creek you can walk a salt pan, drive hills stained red and green by volcanic minerals, scramble a polished marble slot canyon, and circle a 2,000-year-old crater. Over 93% of its 3.4 million acres is roadless wilderness, and it is a Gold Tier Dark Sky Park.<br><br>It is also remote: no cell service across most of the park, three gas stations, and help hours away.",
-  "bestFor": ["Scenic driving", "Photography", "Stargazing", "Desert geology", "Canyon hikes", "Winter warmth"],
-  "dontMiss": ["Sunrise at Zabriskie Point, when the badlands turn gold", "Walking out onto the salt polygons at Badwater Basin", "Artists Drive in late afternoon, when the mineral colors peak", "The Mesquite Flat dunes at sunset, then again after dark for the Milky Way", "The 5,575-foot drop from Dante's View to the valley floor"],
+  "bestFor": [
+   "Scenic driving",
+   "Photography",
+   "Stargazing",
+   "Desert geology",
+   "Canyon hikes",
+   "Winter warmth"
+  ],
+  "dontMiss": [
+   "Sunrise at Zabriskie Point, when the badlands turn gold",
+   "Walking out onto the salt polygons at Badwater Basin",
+   "Artists Drive in late afternoon, when the mineral colors peak",
+   "The Mesquite Flat dunes at sunset, then again after dark for the Milky Way",
+   "The 5,575-foot drop from Dante's View to the valley floor"
+  ],
   "alerts": [
    {
     "level": "warn",
@@ -149,10 +200,21 @@
    "bestTime": "Sunrise or sunset; avoid midday in summer",
    "seasonNote": "Summer: no more than ~15 min outside the vehicle. Rare winter floods form shallow Lake Manly.",
    "summary": "The lowest point in North America, <b>282 feet below sea level</b>. Nearly 200 square miles of salt flat — mostly table salt, with calcite, gypsum and borax — crack into geometric polygons as groundwater seeps up and evaporates. Look east for the tiny <b>\"SEA LEVEL\" sign</b> on the cliff far above you, then west to Telescope Peak at 11,049 ft.",
-   "tips": ["Polygons near the boardwalk are trampled flat — walk 15–20 min out for sharp ones.", "Sunrise lights the Panamints; sunset lights the Black Mountains behind you.", "Glare off the white salt is brutal even in winter — bring sunglasses."],
+   "tips": [
+    "Polygons near the boardwalk are trampled flat — walk 15–20 min out for sharp ones.",
+    "Sunrise lights the Panamints; sunset lights the Black Mountains behind you.",
+    "Glare off the white salt is brutal even in winter — bring sunglasses."
+   ],
    "accessibility": "ADA ramp to a boardwalk over the spring pool (older boards, not level); the salt beyond is firm. Vault toilet, RV parking.",
    "image": "badwater-basin.jpg",
-   "sources": ["https://www.nps.gov/places/badwater-basin.htm", "https://www.nps.gov/thingstodo/visit-badwater-basin.htm"]
+   "sources": [
+    "https://www.nps.gov/places/badwater-basin.htm",
+    "https://www.nps.gov/thingstodo/visit-badwater-basin.htm"
+   ],
+   "coords": [
+    36.2298,
+    -116.7674
+   ]
   },
   {
    "rank": 2,
@@ -170,10 +232,20 @@
    "bestTime": "Sunrise — the classic. Sunset works too.",
    "seasonNote": "Comfortable year-round; the lot fills 30 minutes before sunrise in spring.",
    "summary": "The most photographed view in the park. A short paved ramp climbs to an overlook above a sea of yellow and brown badlands carved by water that almost never falls. The jutting spine in the middle is <b>Manly Beacon</b>, 823 ft, named for the 49er who walked out of the valley for help. Beyond it lie the salt flats and the Panamints.",
-   "tips": ["Arrive 30–40 min before sunrise: first light hits Manly Beacon before the sun clears the range.", "The Badlands Loop Trail starts here and links to Gower Gulch and Golden Canyon.", "Twenty Mule Team Canyon's one-way dirt road starts just east — a 2.5-mile bonus loop."],
+   "tips": [
+    "Arrive 30–40 min before sunrise: first light hits Manly Beacon before the sun clears the range.",
+    "The Badlands Loop Trail starts here and links to Gower Gulch and Golden Canyon.",
+    "Twenty Mule Team Canyon's one-way dirt road starts just east — a 2.5-mile bonus loop."
+   ],
    "accessibility": "Wheelchair accessible — the quarter-mile approach is paved, though it climbs. Bus/RV parking, vault toilet.",
    "image": "zabriskie-point.jpg",
-   "sources": ["https://www.nps.gov/places/zabriskie-point-scenic-viewpoint.htm"]
+   "sources": [
+    "https://www.nps.gov/places/zabriskie-point-scenic-viewpoint.htm"
+   ],
+   "coords": [
+    36.42,
+    -116.8106
+   ]
   },
   {
    "rank": 3,
@@ -192,10 +264,21 @@
    "bestTime": "Late afternoon, when the mineral colors are most saturated",
    "seasonNote": "Open year-round. Colors go flat in harsh midday sun.",
    "summary": "The most popular scenic drive in the park — a <b>one-way, nine-mile paved road</b> rollercoastering through hills splashed with red, orange, yellow, green, pink and lavender, all from volcanic deposits rich in iron oxides and chlorite. The Artists Palette pullout is the showpiece, visible from the parking area. Parts of <i>Star Wars: A New Hope</i> were filmed here.",
-   "tips": ["Drive it in late afternoon — the NPS says colors are \"most dramatic during afternoon light.\"", "The 25-ft length limit is real: leave the RV at camp.", "Watch for cyclists — the dips hide them. One-way, so you cannot double back."],
+   "tips": [
+    "Drive it in late afternoon — the NPS says colors are \"most dramatic during afternoon light.\"",
+    "The 25-ft length limit is real: leave the RV at camp.",
+    "Watch for cyclists — the dips hide them. One-way, so you cannot double back."
+   ],
    "accessibility": "Doable from the car; Artists Palette is visible from the paved lot. Vault toilet.",
    "image": "artists-palette.jpg",
-   "sources": ["https://www.nps.gov/places/artists-palette.htm", "https://www.nps.gov/thingstodo/tour-artists-drive.htm"]
+   "sources": [
+    "https://www.nps.gov/places/artists-palette.htm",
+    "https://www.nps.gov/thingstodo/tour-artists-drive.htm"
+   ],
+   "coords": [
+    36.3736,
+    -116.8039
+   ]
   },
   {
    "rank": 4,
@@ -213,10 +296,21 @@
    "bestTime": "Sunrise or sunset for the ripple shadows; then stay for the stars",
    "seasonNote": "Sand gets dangerously hot in summer — NPS posts \"hiking not advised after 10 am.\"",
    "summary": "The park's most accessible dune field, and the one that looks like everyone's mental image of a desert. Sand eroded from mountains to the north is carried by wind and trapped by mountains to the south, so the dunes stay put even as individual grains move. <b>There is no official trail</b> — the whole field is open for cross-country wandering.",
-   "tips": ["Go at sunrise: overnight wind erases footprints and low light shadows every ripple.", "The tallest dune is about a mile in — farther than it looks. Sight a landmark first.", "Stay for the stars — one of the best dark-sky spots, right off the highway."],
+   "tips": [
+    "Go at sunrise: overnight wind erases footprints and low light shadows every ripple.",
+    "The tallest dune is about a mile in — farther than it looks. Sight a landmark first.",
+    "Stay for the stars — one of the best dark-sky spots, right off the highway."
+   ],
    "accessibility": "Paved lot with bus/RV spaces and a dune view, but no accessible surface on the sand. Vault toilets, no pets.",
    "image": "mesquite-flat-sand-dunes.jpg",
-   "sources": ["https://www.nps.gov/places/mesquite-flat-sand-dunes.htm", "https://www.nps.gov/deva/planyourvisit/hiking.htm"]
+   "sources": [
+    "https://www.nps.gov/places/mesquite-flat-sand-dunes.htm",
+    "https://www.nps.gov/deva/planyourvisit/hiking.htm"
+   ],
+   "coords": [
+    36.6072,
+    -117.1166
+   ]
   },
   {
    "rank": 5,
@@ -234,10 +328,21 @@
    "bestTime": "Any time — the visitor center opens at 8 am daily",
    "seasonNote": "Open year-round. The world record 134°F was recorded here on July 10, 1913.",
    "summary": "Not a sight so much as the park's operating system: the <b>visitor center (8 am–5 pm, every day of the year)</b>, the only full-service fuel and groceries on the east side, The Inn and The Ranch, the campground, and the Timbisha Shoshone village. A mile west, <b>Harmony Borax Works</b> preserves adobe ruins and a twenty-mule-team wagon from the operation that hauled borax 165 miles to Mojave in the 1880s.",
-   "tips": ["Stop at the visitor center first — rangers have today's road conditions.", "Pay your fee here or at the 24/7 machine; there are no entrance stations on the roads.", "Free 24-hour Wi-Fi at the visitor center — your last reliable connection for a while."],
+   "tips": [
+    "Stop at the visitor center first — rangers have today's road conditions.",
+    "Pay your fee here or at the 24/7 machine; there are no entrance stations on the roads.",
+    "Free 24-hour Wi-Fi at the visitor center — your last reliable connection for a while."
+   ],
    "accessibility": "The visitor center is fully accessible, with assisted-listening and audio-description devices. The Harmony Borax loop is wheelchair accessible.",
    "image": "furnace-creek.jpg",
-   "sources": ["https://www.nps.gov/thingstodo/visit-the-furnace-creek-visitor-center.htm", "https://www.nps.gov/places/harmony-borax-works.htm"]
+   "sources": [
+    "https://www.nps.gov/thingstodo/visit-the-furnace-creek-visitor-center.htm",
+    "https://www.nps.gov/places/harmony-borax-works.htm"
+   ],
+   "coords": [
+    36.4614,
+    -116.8667
+   ]
   },
   {
    "rank": 6,
@@ -255,10 +360,20 @@
    "bestTime": "Sunrise, sunset, or after dark for the Milky Way",
    "seasonNote": "Around 5,500 ft, so 20–25°F cooler than the valley floor. Bring a jacket any month.",
    "summary": "The best single overview of Death Valley, <b>5,575 feet directly above Badwater Basin</b> on the crest of the Black Mountains. The whole salt pan unrolls below with the Panamints and Telescope Peak opposite. Asked in 1926 for the finest view of Death Valley, local Charles Brown said: \"I don't pay much attention to scenery, but I know one view that made me stop and look.\"",
-   "tips": ["Walk five minutes north along the ridge and you'll have the view to yourself.", "New moon for the Milky Way; full moon when the salt flats glow white below.", "Genuinely cold and windy — pack layers even when it's 100°F at Furnace Creek."],
+   "tips": [
+    "Walk five minutes north along the ridge and you'll have the view to yourself.",
+    "New moon for the Milky Way; full moon when the salt flats glow white below.",
+    "Genuinely cold and windy — pack layers even when it's 100°F at Furnace Creek."
+   ],
    "accessibility": "Wheelchair accessible viewing area at the lot, with exhibits and a vault toilet.",
    "image": "dantes-view.jpg",
-   "sources": ["https://www.nps.gov/places/dantes-view.htm"]
+   "sources": [
+    "https://www.nps.gov/places/dantes-view.htm"
+   ],
+   "coords": [
+    36.2206,
+    -116.7261
+   ]
   },
   {
    "rank": 7,
@@ -276,10 +391,21 @@
    "bestTime": "Early morning or the last two hours of light",
    "seasonNote": "NPS: \"hiking not advised after 10 am in the summer.\" Do not enter if rain threatens.",
    "summary": "The best short hike in the park, and the easiest way to get <i>inside</i> the badlands you photographed from Zabriskie Point. The trail climbs a wide golden-walled wash past ripple marks fossilized in stone. Half a mile of scrambling past the junction reaches <b>Red Cathedral</b>, an amphitheater of fluted rust-red walls. The full 7.8-mile loop climbs to Zabriskie Point and returns via Gower Gulch.",
-   "tips": ["Do the 7.8-mile loop downhill: get dropped at Zabriskie Point and walk back.", "The base hike has exactly one 3-foot rock scramble; kids handle it fine.", "Red Cathedral means crawling through tight rock — skip it with small children."],
+   "tips": [
+    "Do the 7.8-mile loop downhill: get dropped at Zabriskie Point and walk back.",
+    "The base hike has exactly one 3-foot rock scramble; kids handle it fine.",
+    "Red Cathedral means crawling through tight rock — skip it with small children."
+   ],
    "accessibility": "Not accessible. Paved lot with RV spaces and a vault toilet; no pets on the trail.",
    "image": "golden-canyon.jpg",
-   "sources": ["https://www.nps.gov/places/golden-canyon.htm", "https://www.nps.gov/deva/planyourvisit/hiking.htm"]
+   "sources": [
+    "https://www.nps.gov/places/golden-canyon.htm",
+    "https://www.nps.gov/deva/planyourvisit/hiking.htm"
+   ],
+   "coords": [
+    36.4205,
+    -116.8461
+   ]
   },
   {
    "rank": 8,
@@ -297,10 +423,20 @@
    "bestTime": "Any time; low sun makes the spires more dramatic",
    "seasonNote": "Mid-May to mid-September this spot can hit 120°F or higher. Best late fall to early spring.",
    "summary": "An immense field of rock salt eroded by wind and rain into jagged, ankle-breaking spires — so serrated, said an old guidebook, that \"only the devil could play golf on such rough links.\" The real reason to stop is to <b>switch off the engine and listen</b>: on a hot day you can hear faint pops and pings as billions of tiny salt crystals expand and burst apart.",
-   "tips": ["Stand still and stay quiet for a minute — the crackling is the whole experience.", "NPS says view it from the lot: the spires are razor-sharp and easily damaged.", "Big open horizon makes this a good sunrise, sunset and night-sky stop."],
+   "tips": [
+    "Stand still and stay quiet for a minute — the crackling is the whole experience.",
+    "NPS says view it from the lot: the spires are razor-sharp and easily damaged.",
+    "Big open horizon makes this a good sunrise, sunset and night-sky stop."
+   ],
    "accessibility": "Viewable from the car; spur and lot are compacted gravel suitable for most vehicles. No trail or restroom.",
    "image": "devils-golf-course.jpg",
-   "sources": ["https://www.nps.gov/thingstodo/check-out-devils-golf-course.htm"]
+   "sources": [
+    "https://www.nps.gov/thingstodo/check-out-devils-golf-course.htm"
+   ],
+   "coords": [
+    36.2856,
+    -116.8267
+   ]
   },
   {
    "rank": 9,
@@ -318,10 +454,21 @@
    "bestTime": "Morning, while the canyon is still in shade",
    "seasonNote": "NPS: \"hiking not advised after 10 am in the summer.\" This canyon floods — skip it if rain is possible.",
    "summary": "The park's best canyon walk, and it pays off within five minutes. Slick <b>marble narrows</b> polished to a shine by centuries of debris-laden floodwater open immediately above the trailhead. Further up, look for the <b>mosaic breccia</b> the canyon is named for — older rock fragments naturally cemented into a stone collage. Most hikers stop at the boulder jam 1.3 miles in.",
-   "tips": ["The first half mile of narrows is the highlight — a short visit justifies the drive.", "Wear shoes with grip: the polished marble is genuinely slippery.", "The 2.3-mile access road is unpaved but usually fine for sedans."],
+   "tips": [
+    "The first half mile of narrows is the highlight — a short visit justifies the drive.",
+    "Wear shoes with grip: the polished marble is genuinely slippery.",
+    "The 2.3-mile access road is unpaved but usually fine for sedans."
+   ],
    "accessibility": "Not accessible — an unimproved canyon bottom with scrambling. Gravel lot; nearest restroom at Stovepipe Wells.",
    "image": "mosaic-canyon.jpg",
-   "sources": ["https://www.nps.gov/places/mosaic-canyon.htm", "https://www.nps.gov/deva/planyourvisit/hiking.htm"]
+   "sources": [
+    "https://www.nps.gov/places/mosaic-canyon.htm",
+    "https://www.nps.gov/deva/planyourvisit/hiking.htm"
+   ],
+   "coords": [
+    36.5715,
+    -117.1442
+   ]
   },
   {
    "rank": 10,
@@ -339,10 +486,21 @@
    "bestTime": "Afternoon and sunset, when the ejecta layers show their colors",
    "seasonNote": "Windy in every season. Do not descend into the crater in summer — the climb out is a slog in loose debris.",
    "summary": "A <b>maar volcano</b> — molten rock met groundwater, flashed it to steam, and blew a hole in the desert roughly <b>2,100 years ago</b>. The result is half a mile across and 500–777 feet deep, the layers it punched through exposed under a black mantle of ejecta. A 1.5-mile loop circles the rim; Little Hebe Crater appears half a mile along. An important cultural site for the Timbisha Shoshone.",
-   "tips": ["Walk the rim counter-clockwise — the uphill comes first, views open gradually.", "Exposed drop-offs throughout: not for anyone uneasy with heights.", "No restrooms — the nearest are at Grapevine Ranger Station, 5 miles east."],
+   "tips": [
+    "Walk the rim counter-clockwise — the uphill comes first, views open gradually.",
+    "Exposed drop-offs throughout: not for anyone uneasy with heights.",
+    "No restrooms — the nearest are at Grapevine Ranger Station, 5 miles east."
+   ],
    "accessibility": "The crater is visible from the paved lot (buses/RVs fine). The rim loop is unimproved and exposed. No restrooms.",
    "image": "ubehebe-crater.jpg",
-   "sources": ["https://www.nps.gov/places/ubehebe-crater.htm", "https://www.nps.gov/deva/planyourvisit/hiking.htm"]
+   "sources": [
+    "https://www.nps.gov/places/ubehebe-crater.htm",
+    "https://www.nps.gov/deva/planyourvisit/hiking.htm"
+   ],
+   "coords": [
+    37.01,
+    -117.45
+   ]
   }
  ],
  "alsoConsider": [
@@ -383,10 +541,20 @@
     "sites": "136 sites (41 in summer) — 45 tent-only, 18 full hookup, 5 group",
     "cost": "$30–$60/night",
     "season": "Year-round",
-    "amenities": ["potable water", "flush toilets (year-round)", "dump station", "camp store", "full hookups (18 sites)", "no showers"],
+    "amenities": [
+     "potable water",
+     "flush toilets (year-round)",
+     "dump station",
+     "camp store",
+     "full hookups (18 sites)",
+     "no showers"
+    ],
     "goodFor": "Everyone — tents and RVs. Showers and laundry for a fee next door at The Ranch.",
     "url": "https://www.recreation.gov/camping/campgrounds/232496",
-    "sources": ["https://www.nps.gov/deva/planyourvisit/developed-campgrounds.htm", "https://www.nps.gov/deva/structured_data_deva.json"]
+    "sources": [
+     "https://www.nps.gov/deva/planyourvisit/developed-campgrounds.htm",
+     "https://www.nps.gov/deva/structured_data_deva.json"
+    ]
    },
    {
     "name": "Sunset Campground",
@@ -397,9 +565,19 @@
     "sites": "230 sites",
     "cost": "$18/night ($9 Senior/Access)",
     "season": "Typically late fall to mid-to-late April",
-    "amenities": ["potable water (seasonal)", "flush toilets (seasonal)", "dump station (seasonal)", "camp store", "no hookups"],
+    "amenities": [
+     "potable water (seasonal)",
+     "flush toilets (seasonal)",
+     "dump station (seasonal)",
+     "camp store",
+     "no hookups"
+    ],
     "goodFor": "RVs to 60 ft and trailers to 50 ft; late arrivals with no plan. Note: <b>no fire grates and no picnic tables at sites</b> — campfires only at a few community grates.",
-    "sources": ["https://www.nps.gov/deva/planyourvisit/developed-campgrounds.htm", "https://www.nps.gov/deva/structured_data_deva.json"]
+    "sources": [
+     "https://www.nps.gov/deva/planyourvisit/developed-campgrounds.htm",
+     "https://www.nps.gov/deva/structured_data_deva.json"
+    ],
+    "url": "https://www.nps.gov/deva/planyourvisit/campgrounds.htm"
    },
    {
     "name": "Texas Springs Campground",
@@ -410,9 +588,19 @@
     "sites": "106 sites (26 tent-only)",
     "cost": "$20/night ($10 Senior/Access)",
     "season": "Typically late fall through mid-April",
-    "amenities": ["potable water (seasonal)", "flush toilets (seasonal)", "dump station (seasonal)", "fire grate and table at every site", "no generators"],
+    "amenities": [
+     "potable water (seasonal)",
+     "flush toilets (seasonal)",
+     "dump station (seasonal)",
+     "fire grate and table at every site",
+     "no generators"
+    ],
     "goodFor": "Tent campers and small rigs — RVs to 35 ft, trailers to 25 ft.",
-    "sources": ["https://www.nps.gov/deva/planyourvisit/developed-campgrounds.htm", "https://www.nps.gov/deva/structured_data_deva.json"]
+    "sources": [
+     "https://www.nps.gov/deva/planyourvisit/developed-campgrounds.htm",
+     "https://www.nps.gov/deva/structured_data_deva.json"
+    ],
+    "url": "https://www.nps.gov/deva/planyourvisit/campgrounds.htm"
    },
    {
     "name": "Stovepipe Wells Campground",
@@ -423,9 +611,20 @@
     "sites": "190 sites (28 tent-only)",
     "cost": "$18/night ($9 Senior/Access)",
     "season": "Late fall to mid-to-late April; closed in extreme heat",
-    "amenities": ["potable water (seasonal)", "flush toilets (seasonal)", "dump station", "camp store", "firewood and ice for sale", "no hookups"],
+    "amenities": [
+     "potable water (seasonal)",
+     "flush toilets (seasonal)",
+     "dump station",
+     "camp store",
+     "firewood and ice for sale",
+     "no hookups"
+    ],
     "goodFor": "Anyone basing on the west side for the dunes, Mosaic Canyon and the Panamints.",
-    "sources": ["https://www.nps.gov/deva/planyourvisit/developed-campgrounds.htm", "https://www.nps.gov/deva/structured_data_deva.json"]
+    "sources": [
+     "https://www.nps.gov/deva/planyourvisit/developed-campgrounds.htm",
+     "https://www.nps.gov/deva/structured_data_deva.json"
+    ],
+    "url": "https://www.nps.gov/deva/planyourvisit/campgrounds.htm"
    },
    {
     "name": "Mesquite Spring Campground",
@@ -436,9 +635,19 @@
     "sites": "40 sites",
     "cost": "$20/night ($10 Senior/Access)",
     "season": "Year-round",
-    "amenities": ["potable water", "flush toilets (year-round)", "dump station", "fire grate and table at every site", "no hookups"],
+    "amenities": [
+     "potable water",
+     "flush toilets (year-round)",
+     "dump station",
+     "fire grate and table at every site",
+     "no hookups"
+    ],
     "goodFor": "Northern-park trips, dark skies, and anyone who wants quiet.",
-    "sources": ["https://www.nps.gov/deva/planyourvisit/developed-campgrounds.htm", "https://www.nps.gov/deva/structured_data_deva.json"]
+    "sources": [
+     "https://www.nps.gov/deva/planyourvisit/developed-campgrounds.htm",
+     "https://www.nps.gov/deva/structured_data_deva.json"
+    ],
+    "url": "https://www.nps.gov/deva/planyourvisit/campgrounds.htm"
    },
    {
     "name": "Echo Canyon Road designated roadside sites",
@@ -449,10 +658,19 @@
     "sites": "9 sites on Echo Canyon Road (47 across the facility)",
     "cost": "$10/night",
     "season": "Year-round",
-    "amenities": ["no water", "no toilets", "no shade", "no generators", "excellent stargazing"],
+    "amenities": [
+     "no water",
+     "no toilets",
+     "no shade",
+     "no generators",
+     "excellent stargazing"
+    ],
     "goodFor": "High-clearance 4x4 owners wanting a private site and a black sky 15 minutes from Furnace Creek.",
     "url": "https://www.recreation.gov/camping/campgrounds/10303151",
-    "sources": ["https://www.nps.gov/deva/planyourvisit/backcamp.htm", "https://www.recreation.gov/camping/campgrounds/10303151"]
+    "sources": [
+     "https://www.nps.gov/deva/planyourvisit/backcamp.htm",
+     "https://www.recreation.gov/camping/campgrounds/10303151"
+    ]
    },
    {
     "name": "Free backcountry roadside camping (everywhere else)",
@@ -463,9 +681,17 @@
     "sites": "Unlimited dispersed, plus free primitive campgrounds",
     "cost": "Free",
     "season": "Year-round, subject to snow at elevation",
-    "amenities": ["no services of any kind", "carry all water", "pack out everything"],
+    "amenities": [
+     "no services of any kind",
+     "carry all water",
+     "pack out everything"
+    ],
     "goodFor": "Self-sufficient travelers with the right vehicle, two spare tires and a satellite messenger.",
-    "sources": ["https://www.nps.gov/deva/planyourvisit/backcamp.htm", "https://www.nps.gov/deva/planyourvisit/conditions.htm"]
+    "sources": [
+     "https://www.nps.gov/deva/planyourvisit/backcamp.htm",
+     "https://www.nps.gov/deva/planyourvisit/conditions.htm"
+    ],
+    "url": "https://www.nps.gov/deva/planyourvisit/backcountry-roadside-camping.htm"
    }
   ],
   "lodging": [
@@ -475,7 +701,11 @@
     "distance": "Furnace Creek — at the visitor center",
     "priceBand": "$$$$",
     "summary": "The historic, upscale option: a 1927 mission-style hideaway terraced into the hillside, AAA Four Diamond for 35+ years, with a <b>spring-fed pool</b>, palm gardens, a formal dining room and views west to the Panamints. Inn rooms plus newer casitas. Open all year; Level 2 EV chargers. Xanterra, 800-236-7916.",
-    "examples": ["Inn rooms", "Casitas", "The Inn Dining Room"],
+    "examples": [
+     "Inn rooms",
+     "Casitas",
+     "The Inn Dining Room"
+    ],
     "url": "https://www.oasisatdeathvalley.com"
    },
    {
@@ -484,7 +714,10 @@
     "distance": "Furnace Creek — at the visitor center",
     "priceBand": "$$–$$$",
     "summary": "The family half of The Oasis, and the practical choice: renovated rooms and cottages around a town square of date palms, a <b>spring-fed pool</b>, casual restaurants, a saloon, general store, <b>gas and diesel</b>, and the pay showers and laundry campers rely on. Also the world's lowest golf course, 214 ft below sea level.",
-    "examples": ["Rooms and cottages", "Furnace Creek Golf Course"],
+    "examples": [
+     "Rooms and cottages",
+     "Furnace Creek Golf Course"
+    ],
     "url": "https://www.oasisatdeathvalley.com"
    },
    {
@@ -493,7 +726,10 @@
     "distance": "24 miles west of Furnace Creek on CA-190",
     "priceBand": "$$",
     "summary": "Simpler, cheaper and better placed for the west side — the dunes and Mosaic Canyon are minutes away. Renovated air-conditioned rooms, a pool with a lift, restaurant and saloon, general store, a <b>24-hour gas station</b> (87 octane only), four Blink EV chargers, and a concession-run <b>RV park with full hookups</b>. 760-786-7090.",
-    "examples": ["Motel rooms", "RV park with full hookups"],
+    "examples": [
+     "Motel rooms",
+     "RV park with full hookups"
+    ],
     "url": "https://www.stovepipedeathvalley.com"
    },
    {
@@ -502,7 +738,11 @@
     "distance": "Far west side of the park on CA-190",
     "priceBand": "$–$$",
     "summary": "The most low-key in-park option, on the western edge toward Lone Pine. Privately run, open all year, with resort rooms, camping and RV sites, a restaurant, and <b>gasoline and diesel</b>. Useful if you enter or leave via Olancha or the Panamint Valley. 775-482-7680.",
-    "examples": ["Motel rooms", "Cabins", "Campground and RV sites"],
+    "examples": [
+     "Motel rooms",
+     "Cabins",
+     "Campground and RV sites"
+    ],
     "url": "https://www.nps.gov/deva/planyourvisit/lodging.htm"
    },
    {
@@ -511,7 +751,11 @@
     "distance": "About 45 minutes / 43 miles from Furnace Creek",
     "priceBand": "$–$$",
     "summary": "The closest gateway town and the best value near the park: motels, casinos, restaurants, cheap fuel, and the <b>nearest DC fast chargers</b>. Rhyolite ghost town and the west end of Titus Canyon Road are right here. Enter via SR-374 over Daylight Pass.",
-    "examples": ["Motels on US-95", "Rhyolite ghost town", "Fast charging"],
+    "examples": [
+     "Motels on US-95",
+     "Rhyolite ghost town",
+     "Fast charging"
+    ],
     "url": "https://www.nps.gov/deva/planyourvisit/lodging.htm"
    },
    {
@@ -520,7 +764,11 @@
     "distance": "About 1.5 hours from Furnace Creek",
     "priceBand": "$–$$",
     "summary": "The biggest town on the Las Vegas side and the last full-service stop on the fastest route in: supermarkets, chain hotels, casinos, and the cheapest fuel you will see. Buy your water and food here.",
-    "examples": ["Chain hotels", "Supermarkets", "Fuel"],
+    "examples": [
+     "Chain hotels",
+     "Supermarkets",
+     "Fuel"
+    ],
     "url": "https://www.nps.gov/deva/planyourvisit/lodging.htm"
    },
    {
@@ -529,7 +777,11 @@
     "distance": "About 1 hour 45 minutes from Furnace Creek",
     "priceBand": "$–$$",
     "summary": "The west-side base, on US-395 under Mount Whitney and the Alabama Hills. Motels, outfitters, and the Lone Pine Interagency Visitor Center — one of the authorized places to buy a Death Valley pass before you arrive. Ridgecrest (~2.5 hr) and Shoshone (~1 hr) are the other gateways.",
-    "examples": ["Motels on US-395", "Alabama Hills", "Interagency Visitor Center"],
+    "examples": [
+     "Motels on US-395",
+     "Alabama Hills",
+     "Interagency Visitor Center"
+    ],
     "url": "https://www.nps.gov/deva/planyourvisit/lodging.htm"
    }
   ]
@@ -697,57 +949,284 @@
   }
  ],
  "sources": [
-  {"title": "NPS – Plan Your Visit", "url": "https://www.nps.gov/deva/planyourvisit/index.htm"},
-  {"title": "NPS – Alerts & Current Road Conditions", "url": "https://www.nps.gov/deva/planyourvisit/conditions.htm"},
-  {"title": "NPS – Fees & Passes", "url": "https://www.nps.gov/deva/planyourvisit/fees.htm"},
-  {"title": "NPS – Directions", "url": "https://www.nps.gov/deva/planyourvisit/directions.htm"},
-  {"title": "NPS – Operating Hours & Seasons", "url": "https://www.nps.gov/deva/planyourvisit/hours.htm"},
-  {"title": "NPS – Basic Information", "url": "https://www.nps.gov/deva/planyourvisit/basicinfo.htm"},
-  {"title": "NPS – Weather", "url": "https://www.nps.gov/deva/planyourvisit/weather.htm"},
-  {"title": "NPS – Safety", "url": "https://www.nps.gov/deva/planyourvisit/safety.htm"},
-  {"title": "NPS – Summer Guide", "url": "https://www.nps.gov/deva/planyourvisit/summer.htm"},
-  {"title": "NPS – Hiking (official day hike table)", "url": "https://www.nps.gov/deva/planyourvisit/hiking.htm"},
-  {"title": "NPS – Things To Do", "url": "https://www.nps.gov/deva/planyourvisit/things2do.htm"},
-  {"title": "NPS – Sightseeing & Park Highlights", "url": "https://www.nps.gov/deva/planyourvisit/sightseeing-park-highlights.htm"},
-  {"title": "NPS – Camping in Death Valley", "url": "https://www.nps.gov/deva/planyourvisit/camping-in-death-valley.htm"},
-  {"title": "NPS – Developed Campgrounds", "url": "https://www.nps.gov/deva/planyourvisit/developed-campgrounds.htm"},
-  {"title": "NPS – Backcountry Camping rules", "url": "https://www.nps.gov/deva/planyourvisit/backcamp.htm"},
-  {"title": "NPS – Backcountry Roads", "url": "https://www.nps.gov/deva/planyourvisit/backcountryroads.htm"},
-  {"title": "NPS – Lodging", "url": "https://www.nps.gov/deva/planyourvisit/lodging.htm"},
-  {"title": "NPS – Ranger Programs", "url": "https://www.nps.gov/deva/planyourvisit/ranger-programs.htm"},
-  {"title": "NPS – Sunrise and Sunset in Death Valley", "url": "https://www.nps.gov/deva/planyourvisit/sunrise-and-sunset-in-death-valley.htm"},
-  {"title": "NPS – Frequently Asked Questions", "url": "https://www.nps.gov/deva/faqs.htm"},
-  {"title": "NPS – Titus Canyon", "url": "https://www.nps.gov/deva/planyourvisit/titus-canyon.htm"},
-  {"title": "NPS – The Racetrack", "url": "https://www.nps.gov/deva/planyourvisit/the-racetrack.htm"},
-  {"title": "NPS – Wildflowers", "url": "https://www.nps.gov/deva/learn/nature/wildflowers.htm"},
-  {"title": "NPS – Lightscape / Night Sky", "url": "https://www.nps.gov/deva/learn/nature/lightscape.htm"},
-  {"title": "NPS – Scotty's Castle", "url": "https://www.nps.gov/deva/learn/historyculture/scottys-castle.htm"},
-  {"title": "NPS – Echo Canyon & Hole in the Wall open (2022 release)", "url": "https://www.nps.gov/deva/learn/news/echo-canyon.htm"},
+  {
+   "title": "NPS – Plan Your Visit",
+   "url": "https://www.nps.gov/deva/planyourvisit/index.htm"
+  },
+  {
+   "title": "NPS – Alerts & Current Road Conditions",
+   "url": "https://www.nps.gov/deva/planyourvisit/conditions.htm"
+  },
+  {
+   "title": "NPS – Fees & Passes",
+   "url": "https://www.nps.gov/deva/planyourvisit/fees.htm"
+  },
+  {
+   "title": "NPS – Directions",
+   "url": "https://www.nps.gov/deva/planyourvisit/directions.htm"
+  },
+  {
+   "title": "NPS – Operating Hours & Seasons",
+   "url": "https://www.nps.gov/deva/planyourvisit/hours.htm"
+  },
+  {
+   "title": "NPS – Basic Information",
+   "url": "https://www.nps.gov/deva/planyourvisit/basicinfo.htm"
+  },
+  {
+   "title": "NPS – Weather",
+   "url": "https://www.nps.gov/deva/planyourvisit/weather.htm"
+  },
+  {
+   "title": "NPS – Safety",
+   "url": "https://www.nps.gov/deva/planyourvisit/safety.htm"
+  },
+  {
+   "title": "NPS – Summer Guide",
+   "url": "https://www.nps.gov/deva/planyourvisit/summer.htm"
+  },
+  {
+   "title": "NPS – Hiking (official day hike table)",
+   "url": "https://www.nps.gov/deva/planyourvisit/hiking.htm"
+  },
+  {
+   "title": "NPS – Things To Do",
+   "url": "https://www.nps.gov/deva/planyourvisit/things2do.htm"
+  },
+  {
+   "title": "NPS – Sightseeing & Park Highlights",
+   "url": "https://www.nps.gov/deva/planyourvisit/sightseeing-park-highlights.htm"
+  },
+  {
+   "title": "NPS – Camping in Death Valley",
+   "url": "https://www.nps.gov/deva/planyourvisit/camping-in-death-valley.htm"
+  },
+  {
+   "title": "NPS – Developed Campgrounds",
+   "url": "https://www.nps.gov/deva/planyourvisit/developed-campgrounds.htm"
+  },
+  {
+   "title": "NPS – Backcountry Camping rules",
+   "url": "https://www.nps.gov/deva/planyourvisit/backcamp.htm"
+  },
+  {
+   "title": "NPS – Backcountry Roads",
+   "url": "https://www.nps.gov/deva/planyourvisit/backcountryroads.htm"
+  },
+  {
+   "title": "NPS – Lodging",
+   "url": "https://www.nps.gov/deva/planyourvisit/lodging.htm"
+  },
+  {
+   "title": "NPS – Ranger Programs",
+   "url": "https://www.nps.gov/deva/planyourvisit/ranger-programs.htm"
+  },
+  {
+   "title": "NPS – Sunrise and Sunset in Death Valley",
+   "url": "https://www.nps.gov/deva/planyourvisit/sunrise-and-sunset-in-death-valley.htm"
+  },
+  {
+   "title": "NPS – Frequently Asked Questions",
+   "url": "https://www.nps.gov/deva/faqs.htm"
+  },
+  {
+   "title": "NPS – Titus Canyon",
+   "url": "https://www.nps.gov/deva/planyourvisit/titus-canyon.htm"
+  },
+  {
+   "title": "NPS – The Racetrack",
+   "url": "https://www.nps.gov/deva/planyourvisit/the-racetrack.htm"
+  },
+  {
+   "title": "NPS – Wildflowers",
+   "url": "https://www.nps.gov/deva/learn/nature/wildflowers.htm"
+  },
+  {
+   "title": "NPS – Lightscape / Night Sky",
+   "url": "https://www.nps.gov/deva/learn/nature/lightscape.htm"
+  },
+  {
+   "title": "NPS – Scotty's Castle",
+   "url": "https://www.nps.gov/deva/learn/historyculture/scottys-castle.htm"
+  },
+  {
+   "title": "NPS – Echo Canyon & Hole in the Wall open (2022 release)",
+   "url": "https://www.nps.gov/deva/learn/news/echo-canyon.htm"
+  },
   {
    "title": "NPS – Death Valley structured park data (campgrounds, fees, visitor centers)",
    "url": "https://www.nps.gov/deva/structured_data_deva.json"
   },
-  {"title": "NPS – Badwater Basin", "url": "https://www.nps.gov/places/badwater-basin.htm"},
-  {"title": "NPS – Visit Badwater Basin", "url": "https://www.nps.gov/thingstodo/visit-badwater-basin.htm"},
-  {"title": "NPS – Artists Palette", "url": "https://www.nps.gov/places/artists-palette.htm"},
-  {"title": "NPS – Tour Artists Drive", "url": "https://www.nps.gov/thingstodo/tour-artists-drive.htm"},
-  {"title": "NPS – Zabriskie Point", "url": "https://www.nps.gov/places/zabriskie-point-scenic-viewpoint.htm"},
-  {"title": "NPS – Mesquite Flat Sand Dunes", "url": "https://www.nps.gov/places/mesquite-flat-sand-dunes.htm"},
-  {"title": "NPS – Dante's View", "url": "https://www.nps.gov/places/dantes-view.htm"},
-  {"title": "NPS – Golden Canyon", "url": "https://www.nps.gov/places/golden-canyon.htm"},
-  {"title": "NPS – Mosaic Canyon", "url": "https://www.nps.gov/places/mosaic-canyon.htm"},
-  {"title": "NPS – Check Out Devils Golf Course", "url": "https://www.nps.gov/thingstodo/check-out-devils-golf-course.htm"},
-  {"title": "NPS – Ubehebe Crater", "url": "https://www.nps.gov/places/ubehebe-crater.htm"},
-  {"title": "NPS – Harmony Borax Works", "url": "https://www.nps.gov/places/harmony-borax-works.htm"},
-  {"title": "NPS – Natural Bridge", "url": "https://www.nps.gov/places/natural-bridge.htm"},
-  {"title": "NPS – Twenty Mule Team Canyon", "url": "https://www.nps.gov/places/twenty-mule-team-canyon.htm"},
-  {"title": "NPS – Visit the Furnace Creek Visitor Center", "url": "https://www.nps.gov/thingstodo/visit-the-furnace-creek-visitor-center.htm"},
-  {"title": "NPS – Death Valley \"Must See\" Spots in 1-3 hours", "url": "https://www.nps.gov/tripideas/death-valley-must-see-spots-in-1-3-hours.htm"},
-  {"title": "Recreation.gov – Furnace Creek Campground", "url": "https://www.recreation.gov/camping/campgrounds/232496"},
-  {"title": "Recreation.gov – Death Valley Backcountry Roadside Camping", "url": "https://www.recreation.gov/camping/campgrounds/10303151"},
-  {"title": "Recreation.gov – Echo Canyon Site E1", "url": "https://www.recreation.gov/camping/campsites/10303166"},
-  {"title": "The Oasis at Death Valley (Xanterra) – The Inn and The Ranch", "url": "https://www.oasisatdeathvalley.com"},
-  {"title": "Stovepipe Wells Village", "url": "https://www.stovepipedeathvalley.com"}
+  {
+   "title": "NPS – Badwater Basin",
+   "url": "https://www.nps.gov/places/badwater-basin.htm"
+  },
+  {
+   "title": "NPS – Visit Badwater Basin",
+   "url": "https://www.nps.gov/thingstodo/visit-badwater-basin.htm"
+  },
+  {
+   "title": "NPS – Artists Palette",
+   "url": "https://www.nps.gov/places/artists-palette.htm"
+  },
+  {
+   "title": "NPS – Tour Artists Drive",
+   "url": "https://www.nps.gov/thingstodo/tour-artists-drive.htm"
+  },
+  {
+   "title": "NPS – Zabriskie Point",
+   "url": "https://www.nps.gov/places/zabriskie-point-scenic-viewpoint.htm"
+  },
+  {
+   "title": "NPS – Mesquite Flat Sand Dunes",
+   "url": "https://www.nps.gov/places/mesquite-flat-sand-dunes.htm"
+  },
+  {
+   "title": "NPS – Dante's View",
+   "url": "https://www.nps.gov/places/dantes-view.htm"
+  },
+  {
+   "title": "NPS – Golden Canyon",
+   "url": "https://www.nps.gov/places/golden-canyon.htm"
+  },
+  {
+   "title": "NPS – Mosaic Canyon",
+   "url": "https://www.nps.gov/places/mosaic-canyon.htm"
+  },
+  {
+   "title": "NPS – Check Out Devils Golf Course",
+   "url": "https://www.nps.gov/thingstodo/check-out-devils-golf-course.htm"
+  },
+  {
+   "title": "NPS – Ubehebe Crater",
+   "url": "https://www.nps.gov/places/ubehebe-crater.htm"
+  },
+  {
+   "title": "NPS – Harmony Borax Works",
+   "url": "https://www.nps.gov/places/harmony-borax-works.htm"
+  },
+  {
+   "title": "NPS – Natural Bridge",
+   "url": "https://www.nps.gov/places/natural-bridge.htm"
+  },
+  {
+   "title": "NPS – Twenty Mule Team Canyon",
+   "url": "https://www.nps.gov/places/twenty-mule-team-canyon.htm"
+  },
+  {
+   "title": "NPS – Visit the Furnace Creek Visitor Center",
+   "url": "https://www.nps.gov/thingstodo/visit-the-furnace-creek-visitor-center.htm"
+  },
+  {
+   "title": "NPS – Death Valley \"Must See\" Spots in 1-3 hours",
+   "url": "https://www.nps.gov/tripideas/death-valley-must-see-spots-in-1-3-hours.htm"
+  },
+  {
+   "title": "Recreation.gov – Furnace Creek Campground",
+   "url": "https://www.recreation.gov/camping/campgrounds/232496"
+  },
+  {
+   "title": "Recreation.gov – Death Valley Backcountry Roadside Camping",
+   "url": "https://www.recreation.gov/camping/campgrounds/10303151"
+  },
+  {
+   "title": "Recreation.gov – Echo Canyon Site E1",
+   "url": "https://www.recreation.gov/camping/campsites/10303166"
+  },
+  {
+   "title": "The Oasis at Death Valley (Xanterra) – The Inn and The Ranch",
+   "url": "https://www.oasisatdeathvalley.com"
+  },
+  {
+   "title": "Stovepipe Wells Village",
+   "url": "https://www.stovepipedeathvalley.com"
+  }
  ],
- "images": {"manifest": "img/manifest.json"}
+ "images": {
+  "manifest": "img/manifest.json"
+ },
+ "trip": {
+  "title": "Death Valley — MLK weekend, January 2027",
+  "start": "2027-01-15",
+  "end": "2027-01-18",
+  "status": "planning",
+  "host": "Aaron",
+  "pitch": "Three nights camped on our own gravel pad off Echo Canyon Road, a few miles from Furnace Creek, in the one season when Death Valley is comfortable: sunny 60s by day, dark skies and cold, silent nights. The lowest, hottest, driest place in North America is at its best in January — and there is room at camp for more people.",
+  "base": {
+   "name": "Echo Canyon Road, site E1",
+   "detail": "<b>Backcountry Roadside Camping, Echo Canyon Road, site E1</b> — a reserved, designated dispersed site. Echo Canyon Road leaves CA-190 about <b>4.6 miles east of the Furnace Creek Visitor Center</b>; E1 is the first site, <b>1 mile down the gravel road</b> and the closest one to pavement. It is a 70-ft pull-through gravel pad for up to 12 people and 3 vehicles, with <b>no water, toilets, shade or fire ring</b>. Our nearest — and only — neighbor is half a mile away. Furnace Creek (visitor center, store, fuel, restrooms, showers for a fee) is about 10 minutes back down the road.",
+   "mapUrl": "https://www.google.com/maps/search/?api=1&query=Echo+Canyon+Road,+Death+Valley+National+Park,+CA",
+   "bookingNote": "E1 is reserved through recreation.gov ($10/night, up to 6 months ahead) and holds 12 people and 3 vehicles, so joiners can share our site — just tell Aaron how many people and cars. If we outgrow it, Furnace Creek Campground is in its reservable season and Sunset and Texas Springs campgrounds next to it are first-come, first-served.",
+   "coords": [
+    36.4617,
+    -116.796
+   ]
+  },
+  "arrival": "<b>Fri Jan 15:</b> drive in from <b>Las Vegas via Pahrump</b> — I-15 to NV-160, Bell Vista Road to Death Valley Junction, then CA-190 west: about <b>120 mi and 2 hours</b> to Furnace Creek. Fill the tank and buy ice and groceries in Pahrump; in-park fuel is limited and expensive. Pay the entrance fee at the visitor center or an automated kiosk (there are no staffed entrance stations). Aim to reach camp with an hour of daylight to set up; sunset is around 4:50 p.m.",
+  "departure": "<b>Mon Jan 18 (MLK Day):</b> pack up in the morning, a last stop or two along CA-190, then the 2-hour drive back to Las Vegas — or continue west on CA-190 toward Lone Pine and US-395 if you are heading to California.",
+  "conditions": [
+   {
+    "label": "Weather",
+    "text": "January at Furnace Creek averages a <b>67°F high and 40°F low</b>. Expect sunny, still days that feel warm in the sun and cold the moment it sets. Rain is rare but a winter storm can close dirt roads."
+   },
+   {
+    "label": "Nights",
+    "text": "We are camping at about sea level with no shelter: plan on <b>upper 30s at night</b>, possibly colder. A 20°F sleeping bag, an insulated pad and a warm hat make it a great night instead of a long one."
+   },
+   {
+    "label": "Daylight & dark sky",
+    "text": "Sunrise around 6:50 a.m., sunset around 4:50 p.m. Death Valley is a Gold Tier International Dark Sky Park and January nights are long — bring binoculars or a camera for the Milky Way."
+   },
+   {
+    "label": "Roads to camp",
+    "text": "The first mile of Echo Canyon Road to E1 is graded gravel that a careful <b>SUV or crossover</b> handles; recreation.gov asks for high clearance and encourages 4WD for the sites beyond. No trailers or large RVs. Do not drive off the roadbed anywhere in the park."
+   },
+   {
+    "label": "Water & facilities",
+    "text": "There is <b>no water at camp</b>. Bring at least a gallon per person per day plus cooking water, refill at the Furnace Creek Visitor Center. Nearest restrooms are at Furnace Creek; pack out all trash. Generators are not allowed in the backcountry."
+   },
+   {
+    "label": "Crowds & closures",
+    "text": "MLK weekend is a busy winter weekend at Furnace Creek, but our site is private by design. Check the park’s current conditions page the week of the trip for road status — several backcountry roads are still recovering from recent storms."
+   }
+  ],
+  "bring": [
+   "Sleeping setup rated to 20°F: bag, insulated pad, and a warm hat for sleeping",
+   "All your water: 1 gal per person per day, plus cooking and washing water",
+   "Camp stove and fuel — there is no fire ring at the site; check current fire rules at the visitor center",
+   "Headlamp with spare batteries, and a red-light mode for stargazing",
+   "Layers for 40–70°F: sun hat and sunscreen by day, puffy jacket and gloves after dark",
+   "Camp chairs and a table — the site is a bare gravel pad",
+   "A full tank of gas from Pahrump or Las Vegas; offline maps downloaded (no cell service outside Furnace Creek)",
+   "Trash bags to pack everything out, and a shovel or wag bags — no toilets at camp",
+   "Park entrance: $30 per vehicle for 7 days, or an America the Beautiful pass"
+  ],
+  "join": {
+   "text": "This is an easy trip to say yes to: one drive from Las Vegas, one campsite that fits a dozen people, and days spent on short walks between some of the strangest landscapes in the country. Come for all three nights or just the weekend.",
+   "steps": [
+    "Tell Aaron you are in — how many people, which nights, and what you are driving (so we stay within 3 vehicles at E1 or add a nearby site).",
+    "Get yourself to Las Vegas, or plan the drive in on CA-190; we will coordinate a Pahrump meet-up for the last leg.",
+    "Sort a cold-weather sleeping setup and your own water and food (see Bring).",
+    "Skim the Top 10, tap Add to my trip on what you’d want to see, and tell us — that shapes which days we go where."
+   ]
+  },
+  "openQuestions": [
+   "Whether to add a second site nearby if the group passes three vehicles",
+   "One big-effort day (Dante’s View at sunrise, or Mosaic Canyon and the dunes) versus keeping every day short and easy",
+   "Group dinner at The Ranch at Death Valley one night, or cook at camp every night"
+  ]
+ },
+ "mapCenter": [
+  36.45,
+  -116.9
+ ],
+ "mapZoom": 9,
+ "theme": {
+  "accent": "#a8712a",
+  "accentInk": "#7d5218",
+  "accentSoft": "#f5e9d6",
+  "accentDark": "#e0a24a",
+  "accentInkDark": "#edbb6f",
+  "accentSoftDark": "#3a2c14"
+ }
 }
