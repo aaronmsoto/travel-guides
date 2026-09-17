@@ -1,7 +1,9 @@
 {
-  "title": "Come along",
-  "tagline": "Two trips I’m planning, with everything you need to decide and plan. Pick one and say yes.",
+  "title": "Contento Afuera",
+  "tagline": "Amazing outdoor adventures for our DLI families and friends",
   "baseUrl": "https://aaronmsoto.github.io/travel-guides",
-  "host": { "name": "Aaron" },
+  "host": {
+    "name": "Aaron"
+  },
   "noindex": true
 }
