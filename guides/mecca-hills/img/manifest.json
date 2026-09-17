@@ -1,12 +1,12 @@
 {
   "big-painted-canyon.jpg": {
     "author": "Bob Wick, BLM California",
-    "bytes": 1664103,
-    "height": 2400,
+    "bytes": 601798,
+    "height": 1067,
     "license": "Public domain",
     "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mecca_Hills_Wilderness_(29032217345).jpg",
-    "title": "Tall canyon walls, Painted Canyon, Mecca Hills Wilderness",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mecca_Hills_Wilderness_(28414780233).jpg",
+    "title": "Tall canyon walls and rock spire, Big Painted Canyon, Mecca Hills Wilderness",
     "width": 1600
   },
   "box-canyon-road.jpg": {
@@ -49,24 +49,14 @@
     "title": "Palm oasis at Dos Palmas Preserve ACEC",
     "width": 1600
   },
-  "grottos.jpg": {
-    "author": "Bob Wick, BLM California",
-    "bytes": 508687,
-    "height": 1067,
-    "license": "Public domain",
-    "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mecca_Hills_Wilderness_(28999035496).jpg",
-    "title": "Narrow boulder-choked slot, The Grottos area, Mecca Hills Wilderness",
-    "width": 1600
-  },
   "hero.jpg": {
-    "author": "Bob Wick, BLM California",
-    "bytes": 1023013,
-    "height": 1280,
+    "author": "Jesse Pluim, BLM California",
+    "bytes": 1579215,
+    "height": 2054,
     "license": "Public domain",
     "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mecca_Hills_Wilderness_(28414744053).jpg",
-    "title": "Painted Canyon badlands, Mecca Hills Wilderness",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mecca_Hills_Wilderness_(51859010510).jpg",
+    "title": "Colorful canyon walls, Painted Canyon, Mecca Hills Wilderness",
     "width": 1920
   },
   "ladder-canyon.jpg": {
@@ -80,13 +70,13 @@
     "width": 1600
   },
   "mecca-hills-overlook.jpg": {
-    "author": "Bob Wick, BLM California",
-    "bytes": 648050,
-    "height": 1060,
+    "author": "Jesse Pluim, BLM California",
+    "bytes": 275934,
+    "height": 944,
     "license": "Public domain",
     "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mecca_Hills_Wilderness_(28745912910).jpg",
-    "title": "Overlook above the Mecca Hills badlands",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mecca_Hills_Wilderness_(51858699764).jpg",
+    "title": "Ridge overlook above the Mecca Hills badlands toward the Salton Sea",
     "width": 1600
   },
   "night-sky.jpg": {

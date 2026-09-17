@@ -249,3 +249,5 @@ and is flagged.
   — https://maps.campendium.com/us/mecca-ca/camping-rv/painted-canyon-mecca-ca--4 (fetched 2026-09-17)
 - **Salvation Mountain / Bombay Beach** — dropped: too far south for a one-night trip and no official
   source for hours or access.
+
+- Dos Palmas Preserve promoted to attraction 9 (image available; Grottos reportedly collapsed). Coordinates 33.497,-115.828 are approximate map coordinates near the preserve gate — UNVERIFIED precision.

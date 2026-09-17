@@ -292,7 +292,7 @@
     "Keep the group together: the descent into Big Painted Canyon is not obvious from up top.",
     "Carry a headlamp even on an afternoon walk — twilight is short and the canyon below goes dark first."
    ],
-   "image": "ladder-canyon-overlook.jpg",
+   "image": "mecca-hills-overlook.jpg",
    "coords": [
     33.6245,
     -116.0075
@@ -435,34 +435,28 @@
   },
   {
    "rank": 9,
-   "id": "the-grottos",
-   "name": "The Grottos",
-   "type": "hike",
-   "difficulty": "strenuous",
+   "id": "dos-palmas-preserve",
+   "name": "Dos Palmas Preserve",
+   "type": "area",
+   "difficulty": "easy",
    "stats": {
-    "distance": "About 5.75 mi round trip",
-    "elevationGain": "Over 800 ft",
-    "time": "4–5 hr",
-    "trailheadOrParking": "Roadside on Box Canyon Road, southeast of Mecca"
+    "trailheadOrParking": "Parking lot with restrooms at the gate, Parkside Drive off Highway 111"
    },
    "permit": "none",
-   "bestTime": "Cool months, early start",
-   "seasonNote": "Serious heat exposure; the local conservancy runs this hike only in winter",
-   "summary": "BLM says it in one line: in the Box Canyon corridor \"you'll discover caves, known locally as grottoes.\" Getting to them is a real hike — Friends of the Desert Mountains rates their guided version <b>strenuous, 5.75 miles with over 800 feet of climbing</b>, up a ridge with Salton Sea views, down into a wash and up Grotto Canyon, with a side trip to the palms at Hidden Springs. One caution: that same conservancy reports the original Mecca grotto has collapsed, so treat the cave itself as a maybe, not a promise.",
+   "bestTime": "Sunday morning on the way home, before the heat",
+   "summary": "A 1,400-acre BLM Area of Critical Environmental Concern where springs feed real wetlands and groves of California fan palms a few minutes from the Salton Sea. It is flat, shaded in places, and quiet — the opposite of the slot canyon — and the parking lot has the first flush restrooms since Indio.",
    "tips": [
-    "This is a step up from Ladder Canyon — not a first hike for small kids.",
-    "There is no trailhead sign; the meetup point sits right on Box Canyon Road.",
-    "Carry three liters per person even in winter. There is no shade on the ridge.",
-    "Scrambling over boulders and through tunnels is the whole character of the route."
+    "Combine it with the Salton Sea shoreline; both are off Highway 111 south of Mecca.",
+    "Bring binoculars — the wetlands draw birds year-round.",
+    "Stay on the paths; the springs and palm groves are protected habitat."
    ],
-   "image": "the-grottos.jpg",
+   "image": "dos-palmas.jpg",
    "coords": [
-    33.5891,
-    -115.9301
+    33.497,
+    -115.828
    ],
    "sources": [
-    "https://www.blm.gov/visit/mecca-hills-wilderness",
-    "https://www.desertmountains.org/event/grottos-trail-hike/"
+    "https://www.blm.gov/visit/dos-palmas-preserve"
    ]
   },
   {
@@ -488,7 +482,7 @@
     "Bring a warm layer; a 56°F dawn feels colder after sitting still for an hour."
    ],
    "accessibility": "Sit in a camp chair next to the car. The most accessible thing on this list.",
-   "image": "night-sky-at-camp.jpg",
+   "image": "night-sky.jpg",
    "coords": [
     33.6155,
     -116.0
@@ -501,14 +495,14 @@
  ],
  "alsoConsider": [
   {
-   "name": "Sheep Hole Oasis and Hidden Springs Canyon",
-   "why": "BLM names both as the reliable water sources in the Box Canyon Road corridor, which is why wildlife concentrates there. They sit in the small southern slice of the range cut off by the road, and form the first half of the Grottos route.",
+   "name": "The Grottos (Box Canyon corridor)",
+   "why": "BLM’s one line: caves “known locally as grottoes” in the Box Canyon corridor. A real hike with scrambling and no official trail; the main grotto has reportedly collapsed, so treat it as an expedition for another trip, not a Sunday-morning add-on.",
    "url": "https://www.blm.gov/visit/mecca-hills-wilderness"
   },
   {
-   "name": "Dos Palmas Preserve",
-   "why": "A 1,400-acre BLM Area of Critical Environmental Concern of fan palms, springs and wetlands near the Salton Sea, with a parking lot and bathrooms at the gate off Highway 111. Quiet, birdy, and close.",
-   "url": "https://www.blm.gov/visit/dos-palmas-preserve"
+   "name": "Sheep Hole Oasis and Hidden Springs Canyon",
+   "why": "BLM names both as the reliable water sources in the Box Canyon Road corridor, which is why wildlife concentrates there. They sit in the small southern slice of the range cut off by the road, and form the first half of the Grottos route.",
+   "url": "https://www.blm.gov/visit/mecca-hills-wilderness"
   },
   {
    "name": "The side canyons off Big Painted Canyon",
@@ -545,7 +539,9 @@
     "sources": [
      "https://www.blm.gov/visit/mecca-hills-wilderness",
      "https://www.blm.gov/programs/recreation/camping"
-    ]
+    ],
+    "image": "hero.jpg",
+    "imageAlt": "Painted Canyon walls"
    },
    {
     "name": "Salton Sea State Recreation Area",
@@ -748,7 +744,9 @@
    ],
    "detail": "<b>A pull-out in the wash on the upper part of Painted Canyon Road</b>, somewhere in the last mile or two before the parking area at the end — we pick the spot when we get there, because there are no numbered sites and no map of them. Canyon walls on both sides, sand underfoot, about 590 feet above sea level. There is no water, no power, no trash service, no shade and no guaranteed restroom. The trailhead for Saturday's hike is a short drive or a walk up the road from wherever we land, and the nearest supermarket is back in Coachella or Indio, 15 to 25 minutes up the highway.",
    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Painted+Canyon+Road,+Mecca,+CA+92254",
-   "bookingNote": "There is nothing to reserve and nothing to pay — BLM lists no fee and no campground here, and spots are first come, first served. That is the whole booking process, and it is also the catch: the good pull-outs go by late afternoon on a nice weekend. <b>Arrive with daylight.</b> Tell Aaron roughly when you are coming and what you are driving, and we will hold room at whatever spot we take."
+   "bookingNote": "There is nothing to reserve and nothing to pay — BLM lists no fee and no campground here, and spots are first come, first served. That is the whole booking process, and it is also the catch: the good pull-outs go by late afternoon on a nice weekend. <b>Arrive with daylight.</b> Tell Aaron roughly when you are coming and what you are driving, and we will hold room at whatever spot we take.",
+   "image": "painted-canyon.jpg",
+   "imageAlt": "Hikers walking into Painted Canyon"
   },
   "arrival": "<b>Saturday October 17:</b> leave Huntington Beach around midday. CA-91 east, then I-10 east past Palm Springs to Indio, then south on CA-86 or CA-111 through Coachella to Mecca. Turn east on 66th Avenue, which becomes Box Canyon Road, then left onto Painted Canyon Road and about four miles of dirt. Fill the tank and buy all your food, ice and water in Coachella or Indio — there is nothing after that. Roughly 2½ to 3 hours of driving, which is an estimate, not a promise. Aim to be in camp by 2 p.m. so we can set up and start the ladders loop around 3:30, finishing at sunset.",
   "departure": "<b>Sunday October 18:</b> a slow morning, a short walk back up the canyon before it heats up, then pack out every scrap and drive home. Two good detours if you want to make a day of it: the Salton Sea shoreline half an hour south, or Box Canyon Road east to Joshua Tree's south entrance and home on I-10 — the long way around, and the better drive.",

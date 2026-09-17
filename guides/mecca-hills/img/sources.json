@@ -1,10 +1,10 @@
 [
   {
     "file": "hero.jpg",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Mecca_Hills_Wilderness_%2828414744053%29.jpg/1920px-Mecca_Hills_Wilderness_%2828414744053%29.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mecca_Hills_Wilderness_(28414744053).jpg",
-    "title": "Painted Canyon badlands, Mecca Hills Wilderness",
-    "author": "Bob Wick, BLM California",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Mecca_Hills_Wilderness_%2851859010510%29.jpg/1920px-Mecca_Hills_Wilderness_%2851859010510%29.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mecca_Hills_Wilderness_(51859010510).jpg",
+    "title": "Colorful canyon walls, Painted Canyon, Mecca Hills Wilderness",
+    "author": "Jesse Pluim, BLM California",
     "license": "Public domain",
     "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain"
   },
@@ -19,9 +19,9 @@
   },
   {
     "file": "big-painted-canyon.jpg",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Mecca_Hills_Wilderness_%2829032217345%29.jpg/1920px-Mecca_Hills_Wilderness_%2829032217345%29.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mecca_Hills_Wilderness_(29032217345).jpg",
-    "title": "Tall canyon walls, Painted Canyon, Mecca Hills Wilderness",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Mecca_Hills_Wilderness_%2828414780233%29.jpg/1920px-Mecca_Hills_Wilderness_%2828414780233%29.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mecca_Hills_Wilderness_(28414780233).jpg",
+    "title": "Tall canyon walls and rock spire, Big Painted Canyon, Mecca Hills Wilderness",
     "author": "Bob Wick, BLM California",
     "license": "Public domain",
     "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain"
@@ -37,19 +37,10 @@
   },
   {
     "file": "mecca-hills-overlook.jpg",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Mecca_Hills_Wilderness_%2828745912910%29.jpg/1920px-Mecca_Hills_Wilderness_%2828745912910%29.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mecca_Hills_Wilderness_(28745912910).jpg",
-    "title": "Overlook above the Mecca Hills badlands",
-    "author": "Bob Wick, BLM California",
-    "license": "Public domain",
-    "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain"
-  },
-  {
-    "file": "grottos.jpg",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Mecca_Hills_Wilderness_%2828999035496%29.jpg/1920px-Mecca_Hills_Wilderness_%2828999035496%29.jpg",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mecca_Hills_Wilderness_(28999035496).jpg",
-    "title": "Narrow boulder-choked slot, The Grottos area, Mecca Hills Wilderness",
-    "author": "Bob Wick, BLM California",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Mecca_Hills_Wilderness_%2851858699764%29.jpg/1920px-Mecca_Hills_Wilderness_%2851858699764%29.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mecca_Hills_Wilderness_(51858699764).jpg",
+    "title": "Ridge overlook above the Mecca Hills badlands toward the Salton Sea",
+    "author": "Jesse Pluim, BLM California",
     "license": "Public domain",
     "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain"
   },
