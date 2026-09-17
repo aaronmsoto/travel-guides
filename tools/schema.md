@@ -111,3 +111,27 @@ All prose fields are plain text unless noted `html:` (limited inline HTML allowe
     "licenseUrl": "...", "sourceUrl": "https://commons.wikimedia.org/wiki/File:...", "width": 1600, "height": 1067 } }
 ```
 Only public-domain, CC0, CC BY, or CC BY-SA images. Credit is rendered under every image.
+
+## `trip` — the specific upcoming trip this guide supports (schema 1.1)
+Guides are invitations: they exist to share the plan for a real trip with people who might join.
+`trip` renders as the FIRST tab ("The Trip") and as a banner on every other tab. There is NO
+day-by-day schedule: the Top 10 attractions are rendered inside the trip tab as a teaser grid of
+"what we might do", so the trip tab stays about logistics people can plan around plus the invitation.
+```jsonc
+"trip": {
+  "title": "Zion, Thanksgiving week 2026",
+  "start": "2026-11-21", "end": "2026-11-25",      // ISO dates, inclusive
+  "status": "planning|confirmed",
+  "host": "Aaron",                                  // first name shown in "Join" copy
+  "pitch": "html: 1–2 sentences inviting people",
+  "base": { "name": "Springdale, UT", "detail": "html: where exactly, what it's like, how far from the park",
+            "mapUrl": "https://..." , "bookingNote": "html: optional — how joiners should book" },
+  "arrival": "html: travel-in plan (airport, drive, first night)",
+  "departure": "html: travel-out plan",
+  "conditions": [ { "label": "Weather", "text": "html: ..." } ],   // 4–7 short blocks: temps, daylight, shuttle/permit status, closures, crowds
+  "bring": ["packing list items specific to these dates"],
+  "join": { "text": "html: why and how to join", "steps": ["1–4 concrete steps"] },
+  "openQuestions": ["optional: things still undecided that joiners can weigh in on"]
+}
+```
+Internal links: `<a href="#top10/angels-landing">` opens that attraction card (no target=_blank).

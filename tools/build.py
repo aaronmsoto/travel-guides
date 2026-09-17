@@ -18,6 +18,7 @@ def H(s):
             href=re.search(r'href="([^"]*)"',m.group(0))
             u=href.group(1) if href else "#"
             if not re.match(r"^(https?:|mailto:|#|/)",u): u="#"
+            if u.startswith("#"): return f'<a href="{E(u)}">'
             return f'<a href="{E(u)}" target="_blank" rel="noopener">'
         return f"<{m.group(1)}{tag}>"
     return re.sub(r"<(/?)([a-zA-Z]+)[^<>]*>",fix,s)
@@ -26,7 +27,7 @@ DIFF_LABEL={"easy":"Easy","moderate":"Moderate","strenuous":"Strenuous","extreme
 TYPE_LABEL={"hike":"Hike","viewpoint":"Viewpoint","scenic-drive":"Scenic drive","area":"Area","canyon":"Canyon","dunes":"Dunes","walk":"Walk"}
 PERMIT_LABEL={"none":"No permit","required":"Permit required","lottery":"Permit lottery"}
 BOOK_LABEL={"reservable":"Reservable","first-come":"First-come, first-served","mixed":"Reservable + first-come","permit":"Permit"}
-SECTIONS=[("overview","Overview"),("top10","Top 10"),("plan","Plan"),("stay","Stay"),("safety","Safety"),("itineraries","Itineraries"),("faq","FAQ")]
+SECTIONS=[("trip","The Trip"),("overview","Overview"),("top10","Top 10"),("plan","Plan"),("stay","Stay"),("safety","Safety"),("itineraries","Itineraries"),("faq","FAQ")]
 
 def load(slug):
     p=os.path.join(GUIDES,slug,"guide.json")
@@ -55,6 +56,55 @@ def img(g,file,alt,thumb=False,lazy=True,cls=""):
     wh=f' width="{m["width"]}" height="{m["height"]}"' if m.get("width") and not thumb else ""
     full=f' data-full="img/{E(file)}"' if thumb else ""
     return f'<img src="{E(src)}" alt="{E(alt)}"{wh}{full}{" loading=lazy" if lazy else ""}{(" class="+chr(34)+cls+chr(34)) if cls else ""}>'
+
+MONTHS=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
+DOW=["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]
+def pdate(s): return datetime.date.fromisoformat(s)
+def fmt_range(a,b):
+    a,b=pdate(a),pdate(b)
+    if a.year!=b.year: return f"{DOW[a.weekday()]} {MONTHS[a.month-1]} {a.day}, {a.year} – {DOW[b.weekday()]} {MONTHS[b.month-1]} {b.day}, {b.year}"
+    if a.month!=b.month: return f"{DOW[a.weekday()]} {MONTHS[a.month-1]} {a.day} – {DOW[b.weekday()]} {MONTHS[b.month-1]} {b.day}, {a.year}"
+    return f"{DOW[a.weekday()]} {MONTHS[a.month-1]} {a.day} – {DOW[b.weekday()]} {b.day}, {a.year}"
+def fmt_day(s): d=pdate(s); return f"{DOW[d.weekday()]} {MONTHS[d.month-1]} {d.day}"
+
+def trip_banner(g):
+    t=g.get("trip")
+    if not t: return ""
+    nights=(pdate(t["end"])-pdate(t["start"])).days
+    return (f'<div class="tripbar" data-start="{E(t["start"])}" data-end="{E(t["end"])}"><span class="tb-dates">📅 {E(fmt_range(t["start"],t["end"]))}</span>'
+            f'<span class="tb-sep">·</span><span>{nights} night{"s" if nights!=1 else ""}, base: <b>{E(t["base"]["name"])}</b></span>'
+            f'<span class="tb-sep">·</span><span class="tb-count" id="tripCountdown"></span><span class="spacer"></span><a class="btn primary" href="#trip/join">Join this trip →</a></div>')
+
+def sec_trip(g):
+    t=g.get("trip")
+    if not t: return ""
+    nights=(pdate(t["end"])-pdate(t["start"])).days
+    out=[f'<h2 class="sech">{E(t["title"])}</h2><p class="lede">{H(t.get("pitch",""))}</p>']
+    out.append('<div class="grid3 tripfacts">'
+        f'<div class="card"><p class="eyebrow">When</p><p class="big">{E(fmt_range(t["start"],t["end"]))}</p><p class="linkrow">{nights} nights · <span id="tripCountdown2"></span></p></div>'
+        f'<div class="card"><p class="eyebrow">Home base</p><p class="big">{E(t["base"]["name"])}</p>{H(t["base"].get("detail",""))}'+(f'<p class="linkrow"><a href="{E(t["base"]["mapUrl"])}" target="_blank" rel="noopener">Open in maps</a></p>' if t["base"].get("mapUrl") else "")+'</div>'
+        f'<div class="card"><p class="eyebrow">Status</p><p class="big">{E(t.get("status","planning").capitalize())}</p><p class="linkrow">Hosted by {E(t.get("host","the organizer"))}. Plans below are a working draft — say what you’d change.</p></div></div>')
+    if t["base"].get("bookingNote"): out.append(f'<div class="callout info"><p><b>If you’re joining:</b> {H(t["base"]["bookingNote"])}</p></div>')
+    out.append('<div class="grid2">')
+    if t.get("arrival"): out.append(f'<div class="card"><h3>Getting in</h3>{units(H(t["arrival"]))}</div>')
+    if t.get("departure"): out.append(f'<div class="card"><h3>Getting out</h3>{units(H(t["departure"]))}</div>')
+    out.append('</div>')
+    A=sorted(g.get("attractions",[]),key=lambda a:a["rank"])
+    if A:
+        tiles="".join(f'<a class="tile" href="#top10/{E(a["id"])}">{img(g,a.get("image"),a.get("imageAlt",a["name"]),thumb=True)}<span class="tile-b"><span class="tile-n">{a["rank"]}</span><b>{E(a["name"])}</b><small>{E(TYPE_LABEL.get(a.get("type",""),a.get("type","")))}{(" · "+DIFF_LABEL.get(a["difficulty"],a["difficulty"])) if a.get("difficulty") else ""}{(" · "+a["stats"]["distance"]) if a.get("stats",{}).get("distance") and len(a["stats"]["distance"])<=24 else ""}</small></span></a>' for a in A)
+        out.append(f'<h2 style="margin-top:.4em">What we might do</h2><p class="lede">No fixed schedule — these are the {len(A)} things worth the trip, ranked by popularity. Tap one for the full card, and use <b>Add to my trip</b> to mark what you’d want to do.</p><div class="tiles">{tiles}</div>')
+    C=t.get("conditions")
+    if isinstance(C,list):
+        out.append('<h2>What these dates mean</h2><div class="grid3 conds">'+"".join(f'<div class="card"><p class="eyebrow">{E(c["label"])}</p>{units(H(c["text"]))}</div>' for c in C)+'</div>')
+    elif C: out.append(f'<div class="card"><h2>What these dates mean</h2>{units(H(C))}</div>')
+    out.append('<div class="grid2">')
+    if t.get("bring"): out.append('<div class="card"><h3>Bring</h3><ul class="checks">'+"".join(f'<li>{units(H(b))}</li>' for b in t["bring"])+'</ul></div>')
+    if t.get("openQuestions"): out.append('<div class="card"><h3>Still deciding</h3><ul>'+"".join(f'<li>{H(q)}</li>' for q in t["openQuestions"])+'</ul></div>')
+    out.append('</div>')
+    if t.get("join"):
+        j=t["join"]
+        out.append(f'<div class="card join" id="join"><h2>Want to come?</h2>{H(j.get("text",""))}'+("<ol>"+"".join(f'<li>{H(x)}</li>' for x in j.get("steps",[]))+"</ol>" if j.get("steps") else "")+'<p class="linkrow"><button type="button" class="btn primary sharepage">Copy link to this trip</button> <button type="button" class="btn" onclick="window.print()">Print / save PDF</button></p></div>')
+    return "".join(out)
 
 def sec_overview(g):
     o=g["overview"];out=[]
@@ -164,9 +214,10 @@ def render_guide(slug):
     extra=""
     if theme.get("accent"): extra+=f':root{{--accent:{theme["accent"]};--accent-ink:{theme.get("accentInk",theme["accent"])};--accent-soft:{theme.get("accentSoft","#f6e6dd")}}}'
     if theme.get("accentDark"): extra+=f'@media (prefers-color-scheme: dark){{:root:not([data-theme="light"]){{--accent:{theme["accentDark"]};--accent-ink:{theme.get("accentInkDark",theme["accentDark"])};--accent-soft:{theme.get("accentSoftDark","#3a2418")}}}}}:root[data-theme="dark"]{{--accent:{theme["accentDark"]};--accent-ink:{theme.get("accentInkDark",theme["accentDark"])};--accent-soft:{theme.get("accentSoftDark","#3a2418")}}}'
-    body={"overview":sec_overview,"top10":sec_top10,"plan":sec_plan,"stay":sec_stay,"safety":sec_safety,"itineraries":sec_itin,"faq":sec_faq}
-    secs="".join(f'<section class="sec" id="{sid}" data-title="{t}" aria-labelledby="tab-{sid}">{body[sid](g)}</section>\n' for sid,t in SECTIONS)
-    tabs="".join(f'<a href="#{sid}" id="tab-{sid}" data-sec="{sid}">{t}</a>' for sid,t in SECTIONS)
+    body={"trip":sec_trip,"overview":sec_overview,"top10":sec_top10,"plan":sec_plan,"stay":sec_stay,"safety":sec_safety,"itineraries":sec_itin,"faq":sec_faq}
+    S=[x for x in SECTIONS if x[0]!="trip" or g.get("trip")]
+    secs="".join(f'<section class="sec" id="{sid}" data-title="{t}" aria-labelledby="tab-{sid}">{body[sid](g)}</section>\n' for sid,t in S)
+    tabs="".join(f'<a href="#{sid}" id="tab-{sid}" data-sec="{sid}">{t}</a>' for sid,t in S)
     desc=E(re.sub(r"<[^>]+>","",g["overview"].get("summary",""))[:155])
     heroimg=g.get("hero",{}).get("image","")
     page=f'''<!doctype html>
@@ -180,7 +231,7 @@ def render_guide(slug):
 <header class="site"><div class="masthead"><div class="titles"><p class="crumbs"><a href="../../index.html">Travel guides</a> / {E(g.get("state",""))}</p><h1>{E(g["name"])}</h1><p class="sub">{E(g.get("tagline",""))}</p></div>
 <div class="tools"><a class="iconbtn" href="#itineraries" title="Your saved shortlist">My trip <span class="cnt" id="tripCount" hidden>0</span></a><button type="button" class="iconbtn" id="unitBtn">mi / °F</button><button type="button" class="iconbtn" id="themeBtn">☾ Dark</button></div></div>
 <nav class="tabs" aria-label="Sections">{tabs}</nav></header>
-<main id="main">
+<main id="main">{trip_banner(g)}
 {secs}</main>
 {footer(g)}
 <script>{JS}</script>
@@ -195,6 +246,7 @@ def render_landing(guides):
     for g in guides:
         hero=g.get("hero",{}).get("image","")
         facts=" · ".join(H(f["value"]) for f in g.get("quickFacts",[])[:3])
+        if g.get("trip"): facts=f'<b>📅 {E(fmt_range(g["trip"]["start"],g["trip"]["end"]))}</b> · base: {E(g["trip"]["base"]["name"])} · <span class="joinchip">Join this trip</span>'
         cards+=f'<a class="gcard" href="guides/{E(g["slug"])}/index.html"><img src="guides/{E(g["slug"])}/img/{E(hero)}" alt="{E(g.get("hero",{}).get("alt",g["name"]))}" loading="lazy"><div class="b"><p class="eyebrow">{E(g.get("state",""))}</p><h2>{E(g["name"])}</h2><p>{E(g.get("tagline",""))}</p><p class="credit" style="margin-top:.6em">{facts}</p></div></a>'
     page=f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">

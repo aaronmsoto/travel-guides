@@ -29,6 +29,7 @@
     secs.forEach((s,k)=>s.classList.toggle("on",k===i));
     tabs.forEach(a=>{const on=a.dataset.sec===secs[i].id;a.classList.toggle("on",on);a.setAttribute("aria-current",on?"page":"false")});
     document.title=(secs[i].dataset.title||"")+" · "+document.body.dataset.name;
+    const tbar=document.querySelector(".tripbar");if(tbar)tbar.hidden=(secs[i].id==="trip");
     if(sub){const el=document.getElementById(sub);if(el){el.classList.remove("hide");requestAnimationFrame(()=>{el.scrollIntoView({block:"start"});el.classList.add("flash")})}}
     else window.scrollTo({top:0});
     const tab=tabs[i];if(tab&&tab.scrollIntoView)tab.scrollIntoView({inline:"center",block:"nearest"});
@@ -38,7 +39,10 @@
     show(id||secs[0].id,sub,scroll);
   }
   window.addEventListener("hashchange",()=>route(true));
+  try{history.scrollRestoration="manual"}catch(e){}
   route(false);
+  const toTop=()=>{if(!location.hash.includes("/"))window.scrollTo(0,0)};
+  setTimeout(toTop,0);window.addEventListener("load",()=>setTimeout(toTop,30));
   // sticky offset for filter bar
   function setStick(){const hd=$("header.site");if(hd)document.documentElement.style.setProperty("--stick",hd.offsetHeight+"px")}
   setStick();window.addEventListener("resize",setStick);
@@ -99,6 +103,21 @@
   });
   tripBtnState();applyFilters();
 
+  // ---- trip countdown + share ----
+  const tb=$(".tripbar");
+  if(tb){
+    const st=new Date(tb.dataset.start+"T00:00:00"),en=new Date(tb.dataset.end+"T23:59:59"),now=new Date();
+    const days=Math.ceil((st-now)/864e5);
+    let txt=days>1?days+" days away":days===1?"tomorrow":now<=en?"happening now":"wrapped up";
+    $$("#tripCountdown,#tripCountdown2").forEach(n=>n.textContent=txt);
+    if(days<=0&&now>en)tb.classList.add("past");
+  }
+  document.addEventListener("click",e=>{
+    const b=e.target.closest(".sharepage");if(!b)return;
+    const url=location.origin+location.pathname+"#trip";
+    (navigator.clipboard?navigator.clipboard.writeText(url):Promise.reject()).then(()=>{b.textContent="Link copied ✓";setTimeout(()=>b.textContent="Copy link to this trip",1800)},()=>prompt("Copy this link",url));
+  });
+  // deep link to #trip/join -> scroll to the join card
   // ---- units toggle (mi ↔ km / °F ↔ °C) ----
   const ubtn=$("#unitBtn");
   function convText(s,metric){

@@ -1,506 +1,506 @@
 {
- "schema":1,
- "slug":"zion",
- "name":"Zion National Park",
- "shortName":"Zion",
- "state":"Utah",
- "tagline":"Navajo sandstone walls, a river you hike up, and a shuttle that runs the show",
- "lastVerified":"2026-09-17",
- "hero":{
-  "image":"hero.jpg",
-  "alt":"Zion Canyon at sunrise with the Virgin River below towering red and cream sandstone walls"
+ "schema": 1,
+ "slug": "zion",
+ "name": "Zion National Park",
+ "shortName": "Zion",
+ "state": "Utah",
+ "tagline": "Navajo sandstone walls, a river you hike up, and a shuttle that runs the show",
+ "lastVerified": "2026-09-17",
+ "hero": {
+  "image": "hero.jpg",
+  "alt": "Zion Canyon at sunrise with the Virgin River below towering red and cream sandstone walls"
  },
- "quickFacts":[
+ "quickFacts": [
   {
-   "label":"Entrance fee",
-   "value":"$35/vehicle, valid 7 days",
-   "note":"$30 motorcycle, $20 per person on foot or bike"
+   "label": "Entrance fee",
+   "value": "$35/vehicle, valid 7 days",
+   "note": "$30 motorcycle, $20 per person on foot or bike"
   },
   {
-   "label":"Reservation to enter?",
-   "value":"No",
-   "note":"Only Angels Landing and wilderness routes need permits"
+   "label": "Reservation to enter?",
+   "value": "No",
+   "note": "Only Angels Landing and wilderness routes need permits"
   },
   {
-   "label":"Best months",
-   "value":"April–May, October–early November",
-   "note":"Warm days, cool nights, a river you can wade"
+   "label": "Best months",
+   "value": "April–May, October–early November",
+   "note": "Warm days, cool nights, a river you can wade"
   },
   {
-   "label":"Shuttle season 2026",
-   "value":"March 7 – November 28",
-   "note":"Plus December 26 – January 2; free, no ticket"
+   "label": "Shuttle season 2026",
+   "value": "March 7 – November 28",
+   "note": "Plus December 26 – January 2; free, no ticket"
   },
   {
-   "label":"Nearest airports",
-   "value":"St. George 49 mi, Las Vegas 170 mi",
-   "note":"Cedar City 60 mi, Salt Lake City 300 mi"
+   "label": "Nearest airports",
+   "value": "St. George 49 mi, Las Vegas 170 mi",
+   "note": "Cedar City 60 mi, Salt Lake City 300 mi"
   },
   {
-   "label":"Time zone",
-   "value":"Mountain Time",
-   "note":"All permit deadlines are quoted in MT"
+   "label": "Time zone",
+   "value": "Mountain Time",
+   "note": "All permit deadlines are quoted in MT"
   },
   {
-   "label":"Annual visitors",
-   "value":"Nearly 5 million",
-   "note":"65% arrive April through September"
+   "label": "Annual visitors",
+   "value": "Nearly 5 million",
+   "note": "65% arrive April through September"
   }
  ],
- "overview":{
-  "summary":"Zion is a narrow, 2,000-foot-deep gash of Navajo sandstone with a river running through the bottom, and almost everything famous about the park happens inside that one canyon. The two signature hikes go straight at the geology: <b>Angels Landing</b> climbs a fin to a knife-edge strung with chains, and <b>The Narrows</b> abandons dry land and walks you upstream between walls you can touch on both sides.<br><br>Know this first: from <b>March 7 to November 28, 2026</b> you cannot drive Zion Canyon Scenic Drive. A free shuttle runs it every 5–10 minutes, nine stops, no ticket. The rest of the park — the Zion–Mount Carmel Highway, Kolob Canyons, Kolob Terrace Road — stays open to cars all year, and is where you go when the canyon feels full.",
-  "bestFor":[
+ "overview": {
+  "summary": "Zion is a narrow, 2,000-foot-deep gash of Navajo sandstone with a river running through the bottom, and almost everything famous about the park happens inside that one canyon. The two signature hikes go straight at the geology: <b>Angels Landing</b> climbs a fin to a knife-edge strung with chains, and <b>The Narrows</b> abandons dry land and walks you upstream between walls you can touch on both sides.<br><br>Know this first: from <b>March 7 to November 28, 2026</b> you cannot drive Zion Canyon Scenic Drive. A free shuttle runs it every 5–10 minutes, nine stops, no ticket. The rest of the park — the Zion–Mount Carmel Highway, Kolob Canyons, Kolob Terrace Road — stays open to cars all year, and is where you go when the canyon feels full.",
+  "bestFor": [
    "Canyon hikes",
    "River wading",
    "Photography",
    "Scenic drives",
    "First national park trips"
   ],
-  "dontMiss":[
+  "dontMiss": [
    "Riding the shuttle to Temple of Sinawava and walking the Riverside Walk into the mouth of the Narrows",
    "Canyon Overlook Trail east of the tunnel — an hour for the best view-to-effort ratio in the park",
    "Court of the Patriarchs at low sun, when Abraham, Isaac and Jacob light up",
    "Angels Landing, if the lottery goes your way and heights don't",
    "The Zion–Mount Carmel Highway east to Checkerboard Mesa"
   ],
-  "alerts":[
+  "alerts": [
    {
-    "level":"warn",
-    "text":"<b>East Rim Trail is partially closed by rockfall near Weeping Rock.</b> Hidden Canyon is closed, and Observation Point cannot be reached from Zion Canyon — the only route is the East Mesa Trail from the east side.",
-    "sourceUrl":"https://www.nps.gov/zion/planyourvisit/conditions.htm"
+    "level": "warn",
+    "text": "<b>East Rim Trail is partially closed by rockfall near Weeping Rock.</b> Hidden Canyon is closed, and Observation Point cannot be reached from Zion Canyon — the only route is the East Mesa Trail from the east side.",
+    "sourceUrl": "https://www.nps.gov/zion/planyourvisit/conditions.htm"
    },
    {
-    "level":"warn",
-    "text":"<b>Toxic cyanobacteria health watch on the Virgin River and park streams</b> (updated 2026-05-21). Do not submerge your head, touch algae mats, or drink or filter in-stream water — no recreational filter removes cyanotoxins. Children and dogs are most at risk. Wading is still allowed.",
-    "sourceUrl":"https://www.nps.gov/zion/planyourvisit/toxic-cyanobacteria-bloom-in-the-virgin-river-and-the-streams-of-zion-national-park.htm"
+    "level": "warn",
+    "text": "<b>Toxic cyanobacteria health watch on the Virgin River and park streams</b> (updated 2026-05-21). Do not submerge your head, touch algae mats, or drink or filter in-stream water — no recreational filter removes cyanotoxins. Children and dogs are most at risk. Wading is still allowed.",
+    "sourceUrl": "https://www.nps.gov/zion/planyourvisit/toxic-cyanobacteria-bloom-in-the-virgin-river-and-the-streams-of-zion-national-park.htm"
    },
    {
-    "level":"warn",
-    "text":"<b>Since June 7, 2026, large vehicles are banned from the Zion–Mount Carmel Highway</b> between Canyon Junction and the East Entrance — anything over 35 ft 9 in long, 7 ft 10 in wide, 11 ft 4 in tall or 50,000 lbs is turned around at the gate. This replaced the old tunnel-escort permit, so ignore older advice about buying one.",
-    "sourceUrl":"https://www.nps.gov/zion/learn/news/2026-01-05-large-vehicles.htm"
+    "level": "warn",
+    "text": "<b>Since June 7, 2026, large vehicles are banned from the Zion–Mount Carmel Highway</b> between Canyon Junction and the East Entrance — anything over 35 ft 9 in long, 7 ft 10 in wide, 11 ft 4 in tall or 50,000 lbs is turned around at the gate. This replaced the old tunnel-escort permit, so ignore older advice about buying one.",
+    "sourceUrl": "https://www.nps.gov/zion/learn/news/2026-01-05-large-vehicles.htm"
    },
    {
-    "level":"info",
-    "text":"<b>South Campground reopened May 29, 2026</b> after rehabilitation. Reservations are required and open only 14 days ahead.",
-    "sourceUrl":"https://www.nps.gov/zion/learn/news/zion-national-park-to-reopen-south-campground-on-may-29.htm"
+    "level": "info",
+    "text": "<b>South Campground reopened May 29, 2026</b> after rehabilitation. Reservations are required and open only 14 days ahead.",
+    "sourceUrl": "https://www.nps.gov/zion/learn/news/zion-national-park-to-reopen-south-campground-on-may-29.htm"
    },
    {
-    "level":"info",
-    "text":"<b>The Narrows closes when the Virgin River runs above 150 cubic feet per second</b> and during any Flash Flood Warning. Check flow and the flash flood potential rating the morning you go.",
-    "sourceUrl":"https://www.nps.gov/zion/planyourvisit/conditions.htm"
+    "level": "info",
+    "text": "<b>The Narrows closes when the Virgin River runs above 150 cubic feet per second</b> and during any Flash Flood Warning. Check flow and the flash flood potential rating the morning you go.",
+    "sourceUrl": "https://www.nps.gov/zion/planyourvisit/conditions.htm"
    }
   ]
  },
- "seasons":[
+ "seasons": [
   {
-   "name":"Spring",
-   "months":"Mar–May",
-   "highs":"66–86°F",
-   "lows":"39–54°F",
-   "verdict":"Best",
-   "notes":"The sweet spot for temperature and the worst stretch for the Narrows: snowmelt pushes the river past the 150 cfs closure line, and NPS warns it \"may be closed for an extended period of time.\" Nights stay cold — the daily swing can be 32°F or more — and March and April are wet. Crowds arrive fast: March draws almost three times February's visitors, the shuttle goes full-time <b>March 7, 2026</b>, and South Campground reopens."
+   "name": "Spring",
+   "months": "Mar–May",
+   "highs": "66–86°F",
+   "lows": "39–54°F",
+   "verdict": "Best",
+   "notes": "The sweet spot for temperature and the worst stretch for the Narrows: snowmelt pushes the river past the 150 cfs closure line, and NPS warns it \"may be closed for an extended period of time.\" Nights stay cold — the daily swing can be 32°F or more — and March and April are wet. Crowds arrive fast: March draws almost three times February's visitors, the shuttle goes full-time <b>March 7, 2026</b>, and South Campground reopens."
   },
   {
-   "name":"Summer",
-   "months":"Jun–Aug",
-   "highs":"95–100°F",
-   "lows":"63–70°F",
-   "verdict":"Hard",
-   "notes":"Hot and crowded — \"regularly over 100°F,\" 16 days above 100°F in an average July, roughly half a million visitors a month, parking often full by 9:00 am. The upside is the Narrows: flow drops to wadeable and water reaches 56–68°F. The downside is the monsoon, July–September, with 14–15 thunderstorm days a month and real flash-flood risk. Hike at dawn and carry a gallon per person."
+   "name": "Summer",
+   "months": "Jun–Aug",
+   "highs": "95–100°F",
+   "lows": "63–70°F",
+   "verdict": "Hard",
+   "notes": "Hot and crowded — \"regularly over 100°F,\" 16 days above 100°F in an average July, roughly half a million visitors a month, parking often full by 9:00 am. The upside is the Narrows: flow drops to wadeable and water reaches 56–68°F. The downside is the monsoon, July–September, with 14–15 thunderstorm days a month and real flash-flood risk. Hike at dawn and carry a gallon per person."
   },
   {
-   "name":"Fall",
-   "months":"Sep–Nov",
-   "highs":"64–91°F",
-   "lows":"37–61°F",
-   "verdict":"Best",
-   "notes":"The other sweet spot, and better than spring if the Narrows is your reason for coming — flow is low and the water still tolerable in September. September stays busy (11% of the year's visitors) before visitation drops sharply in November. Daily swings of 30°F are normal, and color shows at the highest elevations by late October. The shuttle's last run drops to 5:00 pm from October 25."
+   "name": "Fall",
+   "months": "Sep–Nov",
+   "highs": "64–91°F",
+   "lows": "37–61°F",
+   "verdict": "Best",
+   "notes": "The other sweet spot, and better than spring if the Narrows is your reason for coming — flow is low and the water still tolerable in September. September stays busy (11% of the year's visitors) before visitation drops sharply in November. Daily swings of 30°F are normal, and color shows at the highest elevations by late October. The shuttle's last run drops to 5:00 pm from October 25."
   },
   {
-   "name":"Winter",
-   "months":"Dec–Feb",
-   "highs":"54–59°F",
-   "lows":"30–34°F",
-   "verdict":"Good",
-   "notes":"The quiet season, and the only time you can drive the Scenic Drive yourself — the shuttle stops after November 28 and returns only December 26 to January 2. Expect 13–20 freezing nights a month and snow that \"typically disappears within a matter of hours at lower elevations.\" Ice on the Angels Landing chains and the Riverside Walk is the real hazard; Kolob Terrace Road and often Kolob Canyons Road close with snow."
+   "name": "Winter",
+   "months": "Dec–Feb",
+   "highs": "54–59°F",
+   "lows": "30–34°F",
+   "verdict": "Good",
+   "notes": "The quiet season, and the only time you can drive the Scenic Drive yourself — the shuttle stops after November 28 and returns only December 26 to January 2. Expect 13–20 freezing nights a month and snow that \"typically disappears within a matter of hours at lower elevations.\" Ice on the Angels Landing chains and the Riverside Walk is the real hazard; Kolob Terrace Road and often Kolob Canyons Road close with snow."
   }
  ],
- "logistics":{
-  "gettingThere":[
+ "logistics": {
+  "gettingThere": [
    {
-    "from":"Las Vegas (LAS)",
-    "how":"The usual approach. I-15 north into Utah, then UT-9 east through Hurricane and La Verkin to Springdale and the South Entrance. NPS lists the airport at 170 miles.",
-    "miles":170
+    "from": "Las Vegas (LAS)",
+    "how": "The usual approach. I-15 north into Utah, then UT-9 east through Hurricane and La Verkin to Springdale and the South Entrance. NPS lists the airport at 170 miles.",
+    "miles": 170
    },
    {
-    "from":"St. George (SGU), UT",
-    "how":"The closest airport at 49 miles, via I-15 north to UT-9 east. Rental cars and full-size groceries are here, and it is a common budget base.",
-    "miles":49
+    "from": "St. George (SGU), UT",
+    "how": "The closest airport at 49 miles, via I-15 north to UT-9 east. Rental cars and full-size groceries are here, and it is a common budget base.",
+    "miles": 49
    },
    {
-    "from":"Cedar City (CDC), UT",
-    "how":"60 miles. Convenient if you want Kolob Canyons first — that entrance is at I-15 Exit 40, only 17 miles south of Cedar City.",
-    "miles":60
+    "from": "Cedar City (CDC), UT",
+    "how": "60 miles. Convenient if you want Kolob Canyons first — that entrance is at I-15 Exit 40, only 17 miles south of Cedar City.",
+    "miles": 60
    },
    {
-    "from":"Salt Lake City (SLC)",
-    "how":"300 miles, essentially all I-15 south. Most people break the drive or fly into St. George or Las Vegas instead.",
-    "miles":300
+    "from": "Salt Lake City (SLC)",
+    "how": "300 miles, essentially all I-15 south. Most people break the drive or fly into St. George or Las Vegas instead.",
+    "miles": 300
    },
    {
-    "from":"Bryce Canyon / the east",
-    "how":"Enter at the East Entrance, 13 miles west of Mt. Carmel Junction on SR-9, and drive the Zion–Mount Carmel Highway down into the canyon. NPS gives the alternate route via Highway 20 north of Cedar City as roughly 150 miles and 2.5 hours. <b>Large vehicles cannot use this route since June 7, 2026.</b>",
-    "miles":150
+    "from": "Bryce Canyon / the east",
+    "how": "Enter at the East Entrance, 13 miles west of Mt. Carmel Junction on SR-9, and drive the Zion–Mount Carmel Highway down into the canyon. NPS gives the alternate route via Highway 20 north of Cedar City as roughly 150 miles and 2.5 hours. <b>Large vehicles cannot use this route since June 7, 2026.</b>",
+    "miles": 150
    }
   ],
-  "gettingAround":"From <b>March 7 to November 28, 2026</b>, and again December 26 to January 2, personal vehicles are barred from Zion Canyon Scenic Drive. The free <b>Zion Canyon Line</b> runs it with nine stops — Visitor Center, Human History Museum, Canyon Junction, Court of the Patriarchs, Zion Lodge, The Grotto, Weeping Rock, Big Bend, Temple of Sinawava — every 5–10 minutes, about 45 minutes end to end. Only Zion Lodge and Canyon Trail Rides guests with reservations, and medical accommodation permit holders, may drive it.<br><br>The free <b>Springdale Line</b> runs nine stops through town every 10–15 minutes to the park's Pedestrian/Bike Entrance. Park in town and ride in: the visitor center lot holds just over 350 cars and NPS says parking \"often fills by early or mid-morning\" February through November. Everything east of Canyon Junction, plus Kolob Canyons and Kolob Terrace Road, stays open to cars year-round.",
-  "fees":"<b>$35 per private vehicle</b>, <b>$30 per motorcycle</b>, <b>$20 per person</b> on foot or by bicycle (16+); standard passes are valid 7 days. A <b>Zion Annual Pass</b> is $70. <b>America the Beautiful</b> is $80 for residents and $250 for non-residents; Senior Annual $20, Senior Lifetime $80, Military and Access passes free. No charge for either shuttle. 2026 fee-free days: Feb 16, May 25, Jun 14, Jul 3–5, Aug 25, Sep 17, Oct 27, Nov 11.",
-  "permits":[
+  "gettingAround": "From <b>March 7 to November 28, 2026</b>, and again December 26 to January 2, personal vehicles are barred from Zion Canyon Scenic Drive. The free <b>Zion Canyon Line</b> runs it with nine stops — Visitor Center, Human History Museum, Canyon Junction, Court of the Patriarchs, Zion Lodge, The Grotto, Weeping Rock, Big Bend, Temple of Sinawava — every 5–10 minutes, about 45 minutes end to end. Only Zion Lodge and Canyon Trail Rides guests with reservations, and medical accommodation permit holders, may drive it.<br><br>The free <b>Springdale Line</b> runs nine stops through town every 10–15 minutes to the park's Pedestrian/Bike Entrance. Park in town and ride in: the visitor center lot holds just over 350 cars and NPS says parking \"often fills by early or mid-morning\" February through November. Everything east of Canyon Junction, plus Kolob Canyons and Kolob Terrace Road, stays open to cars year-round.",
+  "fees": "<b>$35 per private vehicle</b>, <b>$30 per motorcycle</b>, <b>$20 per person</b> on foot or by bicycle (16+); standard passes are valid 7 days. A <b>Zion Annual Pass</b> is $70. <b>America the Beautiful</b> is $80 for residents and $250 for non-residents; Senior Annual $20, Senior Lifetime $80, Military and Access passes free. No charge for either shuttle. 2026 fee-free days: Feb 16, May 25, Jun 14, Jul 3–5, Aug 25, Sep 17, Oct 27, Nov 11.",
+  "permits": [
    {
-    "name":"Angels Landing permit",
-    "required":true,
-    "how":"Everyone hiking past <b>Scout Lookout</b> needs one, via recreation.gov only. A <b>seasonal lottery</b> runs months ahead; a <b>day-before lottery</b> opens 12:01 a.m. and closes 3 p.m. MT with results at 4 p.m. MT. Cost: <b>$6 per application</b> (up to six people, non-refundable) plus <b>$3 per person</b> if awarded, refundable if you cancel two or more days out on a seasonal permit. Your start time is measured at The Grotto and rangers check anywhere on the trail. The 2026 seasonal lotteries ran Feb 13–25, Apr 1–20 and Jul 1–20; the one for <b>Dec 1, 2026 – Feb 28, 2027 opens October 1, 2026</b>.",
-    "url":"https://www.nps.gov/zion/planyourvisit/angels-landing-hiking-permits.htm"
+    "name": "Angels Landing permit",
+    "required": true,
+    "how": "Everyone hiking past <b>Scout Lookout</b> needs one, via recreation.gov only. A <b>seasonal lottery</b> runs months ahead; a <b>day-before lottery</b> opens 12:01 a.m. and closes 3 p.m. MT with results at 4 p.m. MT. Cost: <b>$6 per application</b> (up to six people, non-refundable) plus <b>$3 per person</b> if awarded, refundable if you cancel two or more days out on a seasonal permit. Your start time is measured at The Grotto and rangers check anywhere on the trail. The 2026 seasonal lotteries ran Feb 13–25, Apr 1–20 and Jul 1–20; the one for <b>Dec 1, 2026 – Feb 28, 2027 opens October 1, 2026</b>.",
+    "url": "https://www.nps.gov/zion/planyourvisit/angels-landing-hiking-permits.htm"
    },
    {
-    "name":"The Narrows bottom-up",
-    "required":false,
-    "how":"<b>No permit.</b> You can walk upstream from the Temple of Sinawava as far as Big Spring without one. The limits are the river, not paperwork: the route closes above 150 cfs and during Flash Flood Warnings.",
-    "url":"https://www.nps.gov/zion/planyourvisit/thenarrows.htm"
+    "name": "The Narrows bottom-up",
+    "required": false,
+    "how": "<b>No permit.</b> You can walk upstream from the Temple of Sinawava as far as Big Spring without one. The limits are the river, not paperwork: the route closes above 150 cfs and during Flash Flood Warnings.",
+    "url": "https://www.nps.gov/zion/planyourvisit/thenarrows.htm"
    },
    {
-    "name":"The Narrows top-down / overnight",
-    "required":true,
-    "how":"The 16-mile through-hike from Chamberlain's Ranch needs a wilderness permit, as does any overnight campsite in the Narrows. Three routes to a day permit: an <b>advance reservation</b> on recreation.gov at least a day ahead, a <b>daily lottery</b> two days before (12:00 a.m.–3:00 p.m. MT), or <b>first-come, first-served</b> at the Wilderness Desk the day before. Day use is $6 per application plus $10 per person per day; overnight is $20 per reservation plus $7 per person per night. Arrange your own ride to Chamberlain's Ranch.",
-    "url":"https://www.nps.gov/zion/planyourvisit/narrowspermits.htm"
+    "name": "The Narrows top-down / overnight",
+    "required": true,
+    "how": "The 16-mile through-hike from Chamberlain's Ranch needs a wilderness permit, as does any overnight campsite in the Narrows. Three routes to a day permit: an <b>advance reservation</b> on recreation.gov at least a day ahead, a <b>daily lottery</b> two days before (12:00 a.m.–3:00 p.m. MT), or <b>first-come, first-served</b> at the Wilderness Desk the day before. Day use is $6 per application plus $10 per person per day; overnight is $20 per reservation plus $7 per person per night. Arrange your own ride to Chamberlain's Ranch.",
+    "url": "https://www.nps.gov/zion/planyourvisit/narrowspermits.htm"
    },
    {
-    "name":"Canyoneering permits",
-    "required":true,
-    "how":"Required for every canyon needing ropes or descending gear. Advance reservations open up to three months ahead and stay bookable until 5:00 p.m. MT the day before; a daily lottery runs two days out (12:00 a.m.–3:00 p.m. MT), and walk-in spaces go the day before at the Wilderness Desk. Fees: $6 per application plus $10 per person.",
-    "url":"https://www.nps.gov/zion/planyourvisit/canyoneeringpermits.htm"
+    "name": "Canyoneering permits",
+    "required": true,
+    "how": "Required for every canyon needing ropes or descending gear. Advance reservations open up to three months ahead and stay bookable until 5:00 p.m. MT the day before; a daily lottery runs two days out (12:00 a.m.–3:00 p.m. MT), and walk-in spaces go the day before at the Wilderness Desk. Fees: $6 per application plus $10 per person.",
+    "url": "https://www.nps.gov/zion/planyourvisit/canyoneeringpermits.htm"
    },
    {
-    "name":"Wilderness / backpacking permit",
-    "required":true,
-    "how":"Needed for all overnight backpacking, climbing bivouacs, Narrows and tributary through-hikes, and all trips into the Left Fork of North Creek. $20 per reservation plus $7 per person per night. Permits are picked up in person by the reservation holder at the Visitor Center Wilderness Desk and are non-transferable. Campfires are prohibited in the Zion Wilderness.",
-    "url":"https://www.nps.gov/zion/planyourvisit/wildernesspermitinfo.htm"
+    "name": "Wilderness / backpacking permit",
+    "required": true,
+    "how": "Needed for all overnight backpacking, climbing bivouacs, Narrows and tributary through-hikes, and all trips into the Left Fork of North Creek. $20 per reservation plus $7 per person per night. Permits are picked up in person by the reservation holder at the Visitor Center Wilderness Desk and are non-transferable. Campfires are prohibited in the Zion Wilderness.",
+    "url": "https://www.nps.gov/zion/planyourvisit/wildernesspermitinfo.htm"
    }
   ],
-  "reservations":"<b>You do not need a reservation or timed entry to enter Zion, and you do not need one to ride the shuttle</b> — NPS states both plainly. The only things you reserve are an Angels Landing permit, a wilderness or canyoneering permit, a campsite, or a room. Camping is the tight one: Watchman books six months out and the park says campgrounds are \"full almost every night mid-March through late November.\"",
-  "services":"Open 24 hours a day, year-round. <b>Zion Canyon Visitor Center</b> 8 am–5 pm, <b>Human History Museum</b> 10 am–5 pm, <b>Kolob Canyons Visitor Center</b> 8 am–12 pm and 1 pm–5 pm; rangers answer 435-772-3256 from 10 am to 5 pm MT. <b>Zion Lodge is the only place inside the park to buy food</b>, and holds the gift shop and post office. Water and restrooms are at the visitor center, The Grotto, Scout Lookout and the Riverside Walk trailhead. Groceries, fuel, restaurants and the outfitters renting Narrows gear are in Springdale. Cell coverage is unreliable in the canyon — download maps first."
+  "reservations": "<b>You do not need a reservation or timed entry to enter Zion, and you do not need one to ride the shuttle</b> — NPS states both plainly. The only things you reserve are an Angels Landing permit, a wilderness or canyoneering permit, a campsite, or a room. Camping is the tight one: Watchman books six months out and the park says campgrounds are \"full almost every night mid-March through late November.\"",
+  "services": "Open 24 hours a day, year-round. <b>Zion Canyon Visitor Center</b> 8 am–5 pm, <b>Human History Museum</b> 10 am–5 pm, <b>Kolob Canyons Visitor Center</b> 8 am–12 pm and 1 pm–5 pm; rangers answer 435-772-3256 from 10 am to 5 pm MT. <b>Zion Lodge is the only place inside the park to buy food</b>, and holds the gift shop and post office. Water and restrooms are at the visitor center, The Grotto, Scout Lookout and the Riverside Walk trailhead. Groceries, fuel, restaurants and the outfitters renting Narrows gear are in Springdale. Cell coverage is unreliable in the canyon — download maps first."
  },
- "attractions":[
+ "attractions": [
   {
-   "rank":1,
-   "id":"angels-landing",
-   "name":"Angels Landing",
-   "type":"hike",
-   "difficulty":"strenuous",
-   "stats":{
-    "distance":"1.9 mi each way to Scout Lookout, plus 0.5 mi each way on the chains (~4.8 mi round trip)",
-    "elevationGain":"1,187 ft to Scout Lookout",
-    "time":"3–4 hr to Scout Lookout; 1–2 hr more for the chains",
-    "trailheadOrParking":"The Grotto (shuttle stop 6)"
+   "rank": 1,
+   "id": "angels-landing",
+   "name": "Angels Landing",
+   "type": "hike",
+   "difficulty": "strenuous",
+   "stats": {
+    "distance": "1.9 mi each way to Scout Lookout, plus 0.5 mi each way on the chains (~4.8 mi round trip)",
+    "elevationGain": "1,187 ft to Scout Lookout",
+    "time": "3–4 hr to Scout Lookout; 1–2 hr more for the chains",
+    "trailheadOrParking": "The Grotto (shuttle stop 6)"
    },
-   "permit":"lottery",
-   "permitNote":"Required for everyone past Scout Lookout, via recreation.gov only. <b>$6 per application</b> (up to six people) plus <b>$3 per person</b> if awarded. Apply in the seasonal lottery months ahead, or in the <b>day-before lottery</b> — 12:01 a.m. to 3 p.m. MT, results at 4 p.m. MT. Start time is measured at The Grotto. <b>No permit is needed to reach Scout Lookout.</b>",
-   "bestTime":"First shuttle at 7:00 am — the switchbacks face the sun and the chains bottleneck by mid-morning",
-   "seasonNote":"Chains and slickrock ice up in winter; the route stays open with a permit, but traction devices matter",
-   "summary":"The park's signature hike, and one of the most exposed maintained trails in the national park system. The West Rim Trail climbs the canyon wall in paved switchbacks, cools off in Refrigerator Canyon, then stacks 21 tight switchbacks — Walter's Wiggles — to Scout Lookout. From there a half-mile fin runs to the summit along a ridge under three feet wide in places, chains bolted into the rock, drop-offs of up to 1,000 feet.",
-   "tips":[
+   "permit": "lottery",
+   "permitNote": "Required for everyone past Scout Lookout, via recreation.gov only. <b>$6 per application</b> (up to six people) plus <b>$3 per person</b> if awarded. Apply in the seasonal lottery months ahead, or in the <b>day-before lottery</b> — 12:01 a.m. to 3 p.m. MT, results at 4 p.m. MT. Start time is measured at The Grotto. <b>No permit is needed to reach Scout Lookout.</b>",
+   "bestTime": "First shuttle at 7:00 am — the switchbacks face the sun and the chains bottleneck by mid-morning",
+   "seasonNote": "Chains and slickrock ice up in winter; the route stays open with a permit, but traction devices matter",
+   "summary": "The park's signature hike, and one of the most exposed maintained trails in the national park system. The West Rim Trail climbs the canyon wall in paved switchbacks, cools off in Refrigerator Canyon, then stacks 21 tight switchbacks — Walter's Wiggles — to Scout Lookout. From there a half-mile fin runs to the summit along a ridge under three feet wide in places, chains bolted into the rock, drop-offs of up to 1,000 feet.",
+   "tips": [
     "Hike to Scout Lookout without a permit — great view, and you decide about the chains there",
     "Skip the chains if the rock is wet or icy or the wind is up; there is no easy retreat mid-ridge",
     "Fill up at The Grotto — no water past it, and restrooms end at Scout Lookout"
    ],
-   "accessibility":"Not accessible. Unpaved, rocky, under 3 ft wide in places; not for young children. Pets prohibited",
-   "image":"angels-landing.jpg",
-   "sources":[
+   "accessibility": "Not accessible. Unpaved, rocky, under 3 ft wide in places; not for young children. Pets prohibited",
+   "image": "angels-landing.jpg",
+   "sources": [
     "https://www.nps.gov/zion/planyourvisit/angels-landing-hiking-permits.htm",
     "https://www.nps.gov/thingstodo/hike-angels-landing.htm"
    ]
   },
   {
-   "rank":2,
-   "id":"the-narrows",
-   "name":"The Narrows (bottom-up)",
-   "type":"canyon",
-   "difficulty":"strenuous",
-   "stats":{
-    "distance":"Up to a 10 mi round trip to Big Spring; turn around anywhere",
-    "elevationGain":"Negligible — you walk upstream in the riverbed",
-    "time":"2 hr for a taste; all day to Big Spring",
-    "trailheadOrParking":"Temple of Sinawava (shuttle stop 9), then 1 mi on the Riverside Walk"
+   "rank": 2,
+   "id": "the-narrows",
+   "name": "The Narrows (bottom-up)",
+   "type": "canyon",
+   "difficulty": "strenuous",
+   "stats": {
+    "distance": "Up to a 10 mi round trip to Big Spring; turn around anywhere",
+    "elevationGain": "Negligible — you walk upstream in the riverbed",
+    "time": "2 hr for a taste; all day to Big Spring",
+    "trailheadOrParking": "Temple of Sinawava (shuttle stop 9), then 1 mi on the Riverside Walk"
    },
-   "permit":"none",
-   "permitNote":"No permit going upstream from the Temple of Sinawava as far as <b>Big Spring</b>. A wilderness permit is required only for the 16-mile top-down through-hike from Chamberlain's Ranch, or to camp.",
-   "bestTime":"Late summer and early fall, when flow is low and the water is warmest",
-   "seasonNote":"Often closed for weeks during spring snowmelt; closes above 150 cfs and in any Flash Flood Warning",
-   "summary":"There is no trail — the Virgin River <i>is</i> the route. You wade, sometimes thigh-deep, up a slot where the walls close to a couple of dozen feet apart and rise a thousand. No permit is needed, which is why it is also the most crowded hike in the park. Most people go an hour or two upstream and turn back; Big Spring is a ten-mile round trip and a full day.",
-   "tips":[
+   "permit": "none",
+   "permitNote": "No permit going upstream from the Temple of Sinawava as far as <b>Big Spring</b>. A wilderness permit is required only for the 16-mile top-down through-hike from Chamberlain's Ranch, or to camp.",
+   "bestTime": "Late summer and early fall, when flow is low and the water is warmest",
+   "seasonNote": "Often closed for weeks during spring snowmelt; closes above 150 cfs and in any Flash Flood Warning",
+   "summary": "There is no trail — the Virgin River <i>is</i> the route. You wade, sometimes thigh-deep, up a slot where the walls close to a couple of dozen feet apart and rise a thousand. No permit is needed, which is why it is also the most crowded hike in the park. Most people go an hour or two upstream and turn back; Big Spring is a ten-mile round trip and a full day.",
+   "tips": [
     "Check flow and the flash flood rating that morning — 150 cfs closes it",
     "Rent canyoneering boots, neoprene socks and a stick in Springdale",
     "56–68°F in summer but 41–53°F spring and fall; dress for hypothermia, not a swim"
    ],
-   "accessibility":"The paved Riverside Walk to the river's edge is accessible; the Narrows is not",
-   "image":"the-narrows.jpg",
-   "sources":[
+   "accessibility": "The paved Riverside Walk to the river's edge is accessible; the Narrows is not",
+   "image": "the-narrows.jpg",
+   "sources": [
     "https://www.nps.gov/zion/planyourvisit/thenarrows.htm",
     "https://www.nps.gov/zion/planyourvisit/narrowssafety.htm"
    ]
   },
   {
-   "rank":3,
-   "id":"riverside-walk",
-   "name":"Riverside Walk",
-   "type":"hike",
-   "difficulty":"easy",
-   "stats":{
-    "distance":"1 mi each way",
-    "elevationGain":"154 ft",
-    "time":"1–2 hr",
-    "trailheadOrParking":"Temple of Sinawava (shuttle stop 9)"
+   "rank": 3,
+   "id": "riverside-walk",
+   "name": "Riverside Walk",
+   "type": "hike",
+   "difficulty": "easy",
+   "stats": {
+    "distance": "1 mi each way",
+    "elevationGain": "154 ft",
+    "time": "1–2 hr",
+    "trailheadOrParking": "Temple of Sinawava (shuttle stop 9)"
    },
-   "permit":"none",
-   "bestTime":"Early morning or the last shuttle up — the walls glow and the crowd thins",
-   "seasonNote":"Can close in winter when the pavement ices over",
-   "summary":"The paved path at the end of the shuttle line, following the river upstream while the canyon squeezes shut. Hanging gardens seep from the walls, and the trail ends where the river fills the canyon floor — the doorway to the Narrows. Nearly everyone who rides the shuttle walks it, and it earns the traffic.",
-   "tips":[
+   "permit": "none",
+   "bestTime": "Early morning or the last shuttle up — the walls glow and the crowd thins",
+   "seasonNote": "Can close in winter when the pavement ices over",
+   "summary": "The paved path at the end of the shuttle line, following the river upstream while the canyon squeezes shut. Hanging gardens seep from the walls, and the trail ends where the river fills the canyon floor — the doorway to the Narrows. Nearly everyone who rides the shuttle walks it, and it earns the traffic.",
+   "tips": [
     "Ride to the last stop first thing; queues here are worst mid-day",
     "Stop where the pavement ends even if you skip the Narrows — that is the view",
     "Restrooms and water are at the trailhead and nowhere beyond"
    ],
-   "accessibility":"Concrete, typically 77 in wide at about a 4.6% grade — wheelchair and stroller friendly, with some irregular paving and minor drop-offs",
-   "image":"riverside-walk.jpg",
-   "sources":[
+   "accessibility": "Concrete, typically 77 in wide at about a 4.6% grade — wheelchair and stroller friendly, with some irregular paving and minor drop-offs",
+   "image": "riverside-walk.jpg",
+   "sources": [
     "https://www.nps.gov/thingstodo/hike-riverside-walk.htm"
    ]
   },
   {
-   "rank":4,
-   "id":"emerald-pools",
-   "name":"Emerald Pools",
-   "type":"hike",
-   "difficulty":"moderate",
-   "stats":{
-    "distance":"2.2 mi round trip to the Middle pools; Upper adds 0.3 mi each way",
-    "elevationGain":"333 ft to Middle; 76 ft more to Upper",
-    "time":"1–2 hr",
-    "trailheadOrParking":"Emerald Pools Trailhead across from Zion Lodge (shuttle stop 5), or The Grotto (stop 6) via the Kayenta Trail"
+   "rank": 4,
+   "id": "emerald-pools",
+   "name": "Emerald Pools",
+   "type": "hike",
+   "difficulty": "moderate",
+   "stats": {
+    "distance": "2.2 mi round trip to the Middle pools; Upper adds 0.3 mi each way",
+    "elevationGain": "333 ft to Middle; 76 ft more to Upper",
+    "time": "1–2 hr",
+    "trailheadOrParking": "Emerald Pools Trailhead across from Zion Lodge (shuttle stop 5), or The Grotto (stop 6) via the Kayenta Trail"
    },
-   "permit":"none",
-   "bestTime":"Spring, when the ephemeral waterfalls are actually falling",
-   "seasonNote":"Open year-round; the waterfalls are seasonal and can be dry by late summer",
-   "summary":"The classic family hike from Zion Lodge, and three destinations you can take as far as you like. Lower runs under a dripping overhang behind a thin waterfall; Middle climbs a sandstone ledge to open canyon views; Upper ends at a green pool in a dead-end amphitheater below the Great White Throne.",
-   "tips":[
+   "permit": "none",
+   "bestTime": "Spring, when the ephemeral waterfalls are actually falling",
+   "seasonNote": "Open year-round; the waterfalls are seasonal and can be dry by late summer",
+   "summary": "The classic family hike from Zion Lodge, and three destinations you can take as far as you like. Lower runs under a dripping overhang behind a thin waterfall; Middle climbs a sandstone ledge to open canyon views; Upper ends at a green pool in a dead-end amphitheater below the Great White Throne.",
+   "tips": [
     "Up the Kayenta Trail from The Grotto, down to Zion Lodge, and it becomes a loop",
     "Do not enter the pools — fragile wildlife water, and swimming is prohibited",
     "The pools are on the cyanobacteria advisory list; keep dogs and children out"
    ],
-   "accessibility":"Lower is partly paved but rough; Middle and Upper are unpaved with steps and ledges",
-   "image":"emerald-pools.jpg",
-   "sources":[
+   "accessibility": "Lower is partly paved but rough; Middle and Upper are unpaved with steps and ledges",
+   "image": "emerald-pools.jpg",
+   "sources": [
     "https://www.nps.gov/thingstodo/hike-middle-emerald-pools-trail.htm"
    ]
   },
   {
-   "rank":5,
-   "id":"canyon-overlook",
-   "name":"Canyon Overlook Trail",
-   "type":"hike",
-   "difficulty":"moderate",
-   "stats":{
-    "distance":"1 mi round trip",
-    "elevationGain":"154 ft gain, 49 ft loss",
-    "time":"1–2 hr",
-    "trailheadOrParking":"Small lot on SR-9 immediately east of the Zion–Mount Carmel Tunnel — drive yourself, no shuttle"
+   "rank": 5,
+   "id": "canyon-overlook",
+   "name": "Canyon Overlook Trail",
+   "type": "hike",
+   "difficulty": "moderate",
+   "stats": {
+    "distance": "1 mi round trip",
+    "elevationGain": "154 ft gain, 49 ft loss",
+    "time": "1–2 hr",
+    "trailheadOrParking": "Small lot on SR-9 immediately east of the Zion–Mount Carmel Tunnel — drive yourself, no shuttle"
    },
-   "permit":"none",
-   "bestTime":"Sunrise or the hour before sunset; the lot is emptiest at dawn",
-   "seasonNote":"Drivable and hikeable all year, but the slickrock and the steps are slick when wet or icy",
-   "summary":"The best view in Zion per unit of effort. A half-mile of sandstone steps, handrails and a catwalk bolted over a dark slot canyon opens onto red and cream slickrock, ending at a fenced cliff edge above the switchbacks of the Zion–Mount Carmel Highway, with the Towers of the Virgin beyond.",
-   "tips":[
+   "permit": "none",
+   "bestTime": "Sunrise or the hour before sunset; the lot is emptiest at dawn",
+   "seasonNote": "Drivable and hikeable all year, but the slickrock and the steps are slick when wet or icy",
+   "summary": "The best view in Zion per unit of effort. A half-mile of sandstone steps, handrails and a catwalk bolted over a dark slot canyon opens onto red and cream slickrock, ending at a fenced cliff edge above the switchbacks of the Zion–Mount Carmel Highway, with the Towers of the Virgin beyond.",
+   "tips": [
     "NPS says it plainly: \"Parking is extremely limited, be prepared to try multiple times\"",
     "East side, outside the shuttle system — you need a car to get here",
     "Do it driving out toward the East Entrance in low afternoon light"
    ],
-   "accessibility":"Not accessible — steps, uneven rock, tread narrowing to 12 in, drop-offs. Pets prohibited",
-   "image":"canyon-overlook.jpg",
-   "sources":[
+   "accessibility": "Not accessible — steps, uneven rock, tread narrowing to 12 in, drop-offs. Pets prohibited",
+   "image": "canyon-overlook.jpg",
+   "sources": [
     "https://www.nps.gov/thingstodo/hike-canyon-overlook.htm"
    ]
   },
   {
-   "rank":6,
-   "id":"zion-canyon-scenic-drive",
-   "name":"Zion Canyon Scenic Drive & Court of the Patriarchs",
-   "type":"scenic-drive",
-   "difficulty":"easy",
-   "stats":{
-    "distance":"Nine shuttle stops end to end",
-    "elevationGain":"None",
-    "time":"About 45 min one way; about 1.5 hr for a full round trip without getting off",
-    "trailheadOrParking":"Zion Canyon Visitor Center (shuttle stop 1)"
+   "rank": 6,
+   "id": "zion-canyon-scenic-drive",
+   "name": "Zion Canyon Scenic Drive & Court of the Patriarchs",
+   "type": "scenic-drive",
+   "difficulty": "easy",
+   "stats": {
+    "distance": "Nine shuttle stops end to end",
+    "elevationGain": "None",
+    "time": "About 45 min one way; about 1.5 hr for a full round trip without getting off",
+    "trailheadOrParking": "Zion Canyon Visitor Center (shuttle stop 1)"
    },
-   "permit":"none",
-   "permitNote":"No permit, but <b>no private cars either</b> during shuttle season — March 7 to November 28, 2026, and December 26 to January 2. Only Zion Lodge and Canyon Trail Rides guests with reservations, and medical accommodation permit holders, may drive it.",
-   "bestTime":"The first shuttle at 7:00 am, or the last runs of the evening for low light",
-   "seasonNote":"Drivable in your own car only outside shuttle season, and it closes for the day when its parking fills — common in December, January and February",
-   "summary":"The spine of the park, and what almost every visitor actually does. The shuttle runs the canyon floor past the Court of the Patriarchs, Zion Lodge, The Grotto, Big Bend and the Temple of Sinawava, walls rising 2,000 feet on both sides. <b>Court of the Patriarchs</b> at stop 4 is the set-piece: a short steep walk to an overlook facing Abraham, Isaac and Jacob, named in 1916.",
-   "tips":[
+   "permit": "none",
+   "permitNote": "No permit, but <b>no private cars either</b> during shuttle season — March 7 to November 28, 2026, and December 26 to January 2. Only Zion Lodge and Canyon Trail Rides guests with reservations, and medical accommodation permit holders, may drive it.",
+   "bestTime": "The first shuttle at 7:00 am, or the last runs of the evening for low light",
+   "seasonNote": "Drivable in your own car only outside shuttle season, and it closes for the day when its parking fills — common in December, January and February",
+   "summary": "The spine of the park, and what almost every visitor actually does. The shuttle runs the canyon floor past the Court of the Patriarchs, Zion Lodge, The Grotto, Big Bend and the Temple of Sinawava, walls rising 2,000 feet on both sides. <b>Court of the Patriarchs</b> at stop 4 is the set-piece: a short steep walk to an overlook facing Abraham, Isaac and Jacob, named in 1916.",
+   "tips": [
     "Shuttles come every 5–10 minutes — get off freely, you are never stranded long",
     "Ride to stop 9 first, then work back down; the crowd moves the other way",
     "Court of the Patriarchs faces east: brilliant in the morning, flat by afternoon"
    ],
-   "accessibility":"Every shuttle bus is wheelchair accessible (lift limit 600 lbs; chairs to 45 in long by 25 in wide). The Court of the Patriarchs overlook walk is short but steep",
-   "image":"zion-canyon-scenic-drive.jpg",
-   "sources":[
+   "accessibility": "Every shuttle bus is wheelchair accessible (lift limit 600 lbs; chairs to 45 in long by 25 in wide). The Court of the Patriarchs overlook walk is short but steep",
+   "image": "court-of-the-patriarchs.jpg",
+   "sources": [
     "https://www.nps.gov/zion/planyourvisit/zion-canyon-shuttle-system.htm",
     "https://www.nps.gov/places/court-of-the-patriarchs.htm"
    ]
   },
   {
-   "rank":7,
-   "id":"zion-mount-carmel-highway",
-   "name":"Zion–Mount Carmel Highway & Checkerboard Mesa",
-   "type":"scenic-drive",
-   "difficulty":"easy",
-   "stats":{
-    "distance":"10.7 mi between Canyon Junction and the East Entrance",
-    "elevationGain":"Climbs out of the canyon in a series of engineered switchbacks",
-    "time":"45 min to 1.5 hr with stops",
-    "trailheadOrParking":"Canyon Junction (SR-9) — open to private vehicles year-round"
+   "rank": 7,
+   "id": "zion-mount-carmel-highway",
+   "name": "Zion–Mount Carmel Highway & Checkerboard Mesa",
+   "type": "scenic-drive",
+   "difficulty": "easy",
+   "stats": {
+    "distance": "10.7 mi between Canyon Junction and the East Entrance",
+    "elevationGain": "Climbs out of the canyon in a series of engineered switchbacks",
+    "time": "45 min to 1.5 hr with stops",
+    "trailheadOrParking": "Canyon Junction (SR-9) — open to private vehicles year-round"
    },
-   "permit":"none",
-   "permitNote":"No permit. <b>Since June 7, 2026 large vehicles are prohibited</b> here: nothing over 35 ft 9 in long, 7 ft 10 in wide, 11 ft 4 in tall or 50,000 lbs, and combined vehicles no more than 50 ft with a trailer under 26 ft. Oversize vehicles are turned around at the entrance stations.",
-   "bestTime":"Late afternoon heading east, when the slickrock warms up",
-   "seasonNote":"Open all year; snow and ice are possible on the switchbacks in winter",
-   "summary":"Opened July 3, 1930, this is the road that made the Grand Circle tour of Zion, Bryce and the Grand Canyon possible: switchbacks stacked up the canyon wall, a long tunnel bored through the cliff, and a different landscape beyond. East of the tunnel the red canyon gives way to cream slickrock domes, ending at <b>Checkerboard Mesa</b>, cross-hatched into a giant grid.",
-   "tips":[
+   "permit": "none",
+   "permitNote": "No permit. <b>Since June 7, 2026 large vehicles are prohibited</b> here: nothing over 35 ft 9 in long, 7 ft 10 in wide, 11 ft 4 in tall or 50,000 lbs, and combined vehicles no more than 50 ft with a trailer under 26 ft. Oversize vehicles are turned around at the entrance stations.",
+   "bestTime": "Late afternoon heading east, when the slickrock warms up",
+   "seasonNote": "Open all year; snow and ice are possible on the switchbacks in winter",
+   "summary": "Opened July 3, 1930, this is the road that made the Grand Circle tour of Zion, Bryce and the Grand Canyon possible: switchbacks stacked up the canyon wall, a long tunnel bored through the cliff, and a different landscape beyond. East of the tunnel the red canyon gives way to cream slickrock domes, ending at <b>Checkerboard Mesa</b>, cross-hatched into a giant grid.",
+   "tips": [
     "Pull into every signed overlook; Checkerboard Mesa has its own near the East Entrance",
     "The drive to do when shuttle queues are absurd — it needs no shuttle",
     "Bighorn sheep are common here; slow down and do not approach"
    ],
-   "accessibility":"Fully drivable; the overlooks are roadside pullouts with short, mostly level approaches",
-   "image":"zion-mount-carmel-highway.jpg",
-   "sources":[
+   "accessibility": "Fully drivable; the overlooks are roadside pullouts with short, mostly level approaches",
+   "image": "checkerboard-mesa.jpg",
+   "sources": [
     "https://www.nps.gov/zion/planyourvisit/the-zion-mount-carmel-tunnel.htm",
     "https://www.nps.gov/zion/learn/news/2026-01-05-large-vehicles.htm"
    ]
   },
   {
-   "rank":8,
-   "id":"parus-trail",
-   "name":"Pa'rus Trail",
-   "type":"hike",
-   "difficulty":"easy",
-   "stats":{
-    "distance":"3.5 mi end to end",
-    "elevationGain":"152 ft",
-    "time":"30 min–2 hr",
-    "trailheadOrParking":"Zion Canyon Visitor Center (shuttle stop 1) or Canyon Junction (stop 3)"
+   "rank": 8,
+   "id": "parus-trail",
+   "name": "Pa'rus Trail",
+   "type": "hike",
+   "difficulty": "easy",
+   "stats": {
+    "distance": "3.5 mi end to end",
+    "elevationGain": "152 ft",
+    "time": "30 min–2 hr",
+    "trailheadOrParking": "Zion Canyon Visitor Center (shuttle stop 1) or Canyon Junction (stop 3)"
    },
-   "permit":"none",
-   "bestTime":"Sunset, then stay for the stars",
-   "seasonNote":"Open and usable year-round, including when the shuttle is not running",
-   "summary":"\"Pa'rus\" is Paiute for bubbling water, and the trail follows the river from the visitor center to Canyon Junction on pavement and boardwalk, with the best straight-on views of the Watchman in the park. It is Zion's only pet-friendly trail and its only bike trail, which makes it far more useful than its easy rating suggests.",
-   "tips":[
+   "permit": "none",
+   "bestTime": "Sunset, then stay for the stars",
+   "seasonNote": "Open and usable year-round, including when the shuttle is not running",
+   "summary": "\"Pa'rus\" is Paiute for bubbling water, and the trail follows the river from the visitor center to Canyon Junction on pavement and boardwalk, with the best straight-on views of the Watchman in the park. It is Zion's only pet-friendly trail and its only bike trail, which makes it far more useful than its easy rating suggests.",
+   "tips": [
     "The one trail where leashed dogs are allowed — leash no longer than 6 feet",
     "Bikes allowed, so it is the natural link from Springdale to Canyon Junction",
     "Sunset over the Watchman from the bridges is the classic Zion photograph"
    ],
-   "accessibility":"93.6% paved with the remainder hardwood decking, minimum tread width 96 inches, typical grade 2.6% — wheelchair accessible",
-   "image":"parus-trail.jpg",
-   "sources":[
+   "accessibility": "93.6% paved with the remainder hardwood decking, minimum tread width 96 inches, typical grade 2.6% — wheelchair accessible",
+   "image": "parus-trail.jpg",
+   "sources": [
     "https://www.nps.gov/thingstodo/hike-pa-rus-trail.htm"
    ]
   },
   {
-   "rank":9,
-   "id":"watchman-trail",
-   "name":"Watchman Trail",
-   "type":"hike",
-   "difficulty":"moderate",
-   "stats":{
-    "distance":"3.3 mi round trip",
-    "elevationGain":"479 ft",
-    "time":"1–2 hr",
-    "trailheadOrParking":"Zion Canyon Visitor Center — walk through the plaza past the shuttle stop"
+   "rank": 9,
+   "id": "watchman-trail",
+   "name": "Watchman Trail",
+   "type": "hike",
+   "difficulty": "moderate",
+   "stats": {
+    "distance": "3.3 mi round trip",
+    "elevationGain": "479 ft",
+    "time": "1–2 hr",
+    "trailheadOrParking": "Zion Canyon Visitor Center — walk through the plaza past the shuttle stop"
    },
-   "permit":"none",
-   "bestTime":"Late afternoon into sunset, when lower Zion Canyon turns orange",
-   "seasonNote":"Year-round, but muddy or icy in winter and in the monsoon, with very little shade in summer",
-   "summary":"The best short hike you can start without touching a shuttle. It runs flat along the river, then climbs sandy switchbacks to a bench below the Watchman, with a loop at the top over lower Zion Canyon, the temples and towers, and Springdale. The obvious answer when you arrive mid-afternoon and the shuttle line is 40 minutes long.",
-   "tips":[
+   "permit": "none",
+   "bestTime": "Late afternoon into sunset, when lower Zion Canyon turns orange",
+   "seasonNote": "Year-round, but muddy or icy in winter and in the monsoon, with very little shade in summer",
+   "summary": "The best short hike you can start without touching a shuttle. It runs flat along the river, then climbs sandy switchbacks to a bench below the Watchman, with a loop at the top over lower Zion Canyon, the temples and towers, and Springdale. The obvious answer when you arrive mid-afternoon and the shuttle line is 40 minutes long.",
+   "tips": [
     "Perfect first-evening hike — you can walk to the trailhead from Springdale",
     "Almost no shade; in summer go after 5 pm, not at noon",
     "No bikes and no pets on this one"
    ],
-   "accessibility":"Not accessible — sandy, rocky, uneven, with moderate drop-offs",
-   "image":"watchman-trail.jpg",
-   "sources":[
+   "accessibility": "Not accessible — sandy, rocky, uneven, with moderate drop-offs",
+   "image": "watchman-trail.jpg",
+   "sources": [
     "https://www.nps.gov/thingstodo/hike-watchman-trail.htm"
    ]
   },
   {
-   "rank":10,
-   "id":"observation-point-east-mesa",
-   "name":"Observation Point via East Mesa Trail",
-   "type":"viewpoint",
-   "difficulty":"moderate",
-   "stats":{
-    "distance":"6.8 mi round trip",
-    "elevationGain":"300 ft",
-    "time":"About 3 hr round trip",
-    "trailheadOrParking":"East Mesa Trailhead, reached only by high-clearance or 4WD dirt roads off North Fork Road"
+   "rank": 10,
+   "id": "observation-point-east-mesa",
+   "name": "Observation Point via East Mesa Trail",
+   "type": "viewpoint",
+   "difficulty": "moderate",
+   "stats": {
+    "distance": "6.8 mi round trip",
+    "elevationGain": "300 ft",
+    "time": "About 3 hr round trip",
+    "trailheadOrParking": "East Mesa Trailhead, reached only by high-clearance or 4WD dirt roads off North Fork Road"
    },
-   "permit":"none",
-   "permitNote":"No permit — but <b>Observation Point can no longer be reached from Zion Canyon</b>. The East Rim Trail from Weeping Rock is partially closed by rockfall, and the East Mesa approach is the only way there.",
-   "bestTime":"Morning, before the mesa bakes and before afternoon storms build",
-   "seasonNote":"Roads can be \"extremely muddy and inaccessible in the winter, spring, and after rainstorms\"",
-   "summary":"Observation Point sits roughly 700 feet above Angels Landing and looks down on it, and the East Mesa Trail gets you there almost level — you start high on the plateau and walk to the rim instead of climbing out of the canyon. The catch is access: a rough dirt road, no shuttle, no services. The best big overlook in Zion per unit of suffering, and no lottery.",
-   "tips":[
+   "permit": "none",
+   "permitNote": "No permit — but <b>Observation Point can no longer be reached from Zion Canyon</b>. The East Rim Trail from Weeping Rock is partially closed by rockfall, and the East Mesa approach is the only way there.",
+   "bestTime": "Morning, before the mesa bakes and before afternoon storms build",
+   "seasonNote": "Roads can be \"extremely muddy and inaccessible in the winter, spring, and after rainstorms\"",
+   "summary": "Observation Point sits roughly 700 feet above Angels Landing and looks down on it, and the East Mesa Trail gets you there almost level — you start high on the plateau and walk to the rim instead of climbing out of the canyon. The catch is access: a rough dirt road, no shuttle, no services. The best big overlook in Zion per unit of suffering, and no lottery.",
+   "tips": [
     "Check the road first — a passenger car is not enough, and mud shuts it for days",
     "Park only in designated spaces; illegally parked vehicles are cited or towed",
     "Carry all your water; there is nothing at this trailhead"
    ],
-   "accessibility":"Not accessible; the trailhead is not reachable by ordinary vehicles",
-   "image":"observation-point-east-mesa.jpg",
-   "sources":[
+   "accessibility": "Not accessible; the trailhead is not reachable by ordinary vehicles",
+   "image": "observation-point.jpg",
+   "sources": [
     "https://www.nps.gov/zion/planyourvisit/east-rim-wilderness-trail-descriptions.htm",
     "https://www.nps.gov/zion/planyourvisit/conditions.htm"
    ]
   }
  ],
- "alsoConsider":[
+ "alsoConsider": [
   {
-   "name":"Kolob Canyons & Timber Creek Overlook",
-   "why":"A separate entrance at I-15 Exit 40, 40 miles from Zion Canyon and 17 miles south of Cedar City: a five-mile scenic drive under 2,000-foot crimson walls, no shuttle at all. Timber Creek Overlook is 0.6 mi each way with 117 ft of gain. The road can close in winter.",
-   "url":"https://www.nps.gov/zion/planyourvisit/kolob-canyons.htm"
+   "name": "Kolob Canyons & Timber Creek Overlook",
+   "why": "A separate entrance at I-15 Exit 40, 40 miles from Zion Canyon and 17 miles south of Cedar City: a five-mile scenic drive under 2,000-foot crimson walls, no shuttle at all. Timber Creek Overlook is 0.6 mi each way with 117 ft of gain. The road can close in winter.",
+   "url": "https://www.nps.gov/zion/planyourvisit/kolob-canyons.htm"
   },
   {
-   "name":"The Subway (Left Fork of North Creek)",
-   "why":"Zion's other lottery. Bottom-up is a very strenuous 9-mile round trip with knee-deep water and boulder scrambling; top-down is a 9.5-mile technical through-hike needing rappelling skills, 60 feet of rope and swims through deep pools. A wilderness permit is always required, group size is capped at 12, and both a seasonal and a daily lottery run on recreation.gov.",
-   "url":"https://www.nps.gov/zion/planyourvisit/thesubway.htm"
+   "name": "The Subway (Left Fork of North Creek)",
+   "why": "Zion's other lottery. Bottom-up is a very strenuous 9-mile round trip with knee-deep water and boulder scrambling; top-down is a 9.5-mile technical through-hike needing rappelling skills, 60 feet of rope and swims through deep pools. A wilderness permit is always required, group size is capped at 12, and both a seasonal and a daily lottery run on recreation.gov.",
+   "url": "https://www.nps.gov/zion/planyourvisit/thesubway.htm"
   },
   {
-   "name":"Kolob Terrace Road & Lava Point",
-   "why":"The high, quiet third of the park, climbing out of Virgin, UT into ponderosa country about an hour from Zion Canyon. Lava Point has six primitive campsites and a big overlook. Usually closed fall through spring for snow.",
-   "url":"https://www.nps.gov/zion/planyourvisit/lava-point-campground.htm"
+   "name": "Kolob Terrace Road & Lava Point",
+   "why": "The high, quiet third of the park, climbing out of Virgin, UT into ponderosa country about an hour from Zion Canyon. Lava Point has six primitive campsites and a big overlook. Usually closed fall through spring for snow.",
+   "url": "https://www.nps.gov/zion/planyourvisit/lava-point-campground.htm"
   }
  ],
- "stay":{
-  "camping":[
+ "stay": {
+  "camping": [
    {
-    "name":"Watchman Campground",
-    "kind":"developed",
-    "where":"Just inside the <b>South Entrance</b>, next to the Zion Canyon Visitor Center and the Pedestrian Entrance. Walk to the shuttle stop, and walk into Springdale for dinner.",
-    "booking":"reservable",
-    "bookingDetail":"<b>100% reservation — no first-come, first-served sites.</b> Standard sites open on recreation.gov <b>six months in advance</b>, and the park says campgrounds are \"full almost every night mid-March through late November.\" Five loops: <b>A and B electric</b> (30-amp, a few 50-amp), tents or RVs; <b>C and D non-electric</b>, barring vehicles 19 feet or over including combined length; <b>E tent-only group sites</b> for 7–40 people; <b>F walk-to, tent-only</b>. No hookups beyond power and no water or sewer at sites, but a dump station with potable water sits at the entrance ($5 for non-campers). Sites take 6 people, 2 vehicles, 3 tents; check-out 11 am, check-in after 12 pm, quiet hours 10 pm–8 am.",
-    "sites":"Five loops, A through F",
-    "cost":"$45/night electric; $35/night non-electric",
-    "season":"Year-round",
-    "amenities":[
+    "name": "Watchman Campground",
+    "kind": "developed",
+    "where": "Just inside the <b>South Entrance</b>, next to the Zion Canyon Visitor Center and the Pedestrian Entrance. Walk to the shuttle stop, and walk into Springdale for dinner.",
+    "booking": "reservable",
+    "bookingDetail": "<b>100% reservation — no first-come, first-served sites.</b> Standard sites open on recreation.gov <b>six months in advance</b>, and the park says campgrounds are \"full almost every night mid-March through late November.\" Five loops: <b>A and B electric</b> (30-amp, a few 50-amp), tents or RVs; <b>C and D non-electric</b>, barring vehicles 19 feet or over including combined length; <b>E tent-only group sites</b> for 7–40 people; <b>F walk-to, tent-only</b>. No hookups beyond power and no water or sewer at sites, but a dump station with potable water sits at the entrance ($5 for non-campers). Sites take 6 people, 2 vehicles, 3 tents; check-out 11 am, check-in after 12 pm, quiet hours 10 pm–8 am.",
+    "sites": "Five loops, A through F",
+    "cost": "$45/night electric; $35/night non-electric",
+    "season": "Year-round",
+    "amenities": [
      "drinking water",
      "flush toilets",
      "picnic tables",
@@ -509,9 +509,9 @@
      "no showers",
      "no generators"
     ],
-    "goodFor":"Tents and RVs in A/B; non-electric C/D loops cap vehicles at 19 ft",
-    "url":"https://www.recreation.gov/camping/campgrounds/232445",
-    "sources":[
+    "goodFor": "Tents and RVs in A/B; non-electric C/D loops cap vehicles at 19 ft",
+    "url": "https://www.recreation.gov/camping/campgrounds/232445",
+    "sources": [
      "https://www.nps.gov/zion/planyourvisit/watchman-campground.htm",
      "https://www.nps.gov/zion/planyourvisit/campgrounds-in-zion.htm",
      "https://www.nps.gov/zion/planyourvisit/camping-regulations.htm",
@@ -519,15 +519,15 @@
     ]
    },
    {
-    "name":"South Campground",
-    "kind":"developed",
-    "where":"Also near the South Entrance, within walking distance of the visitor center, the shuttle and Springdale.",
-    "booking":"reservable",
-    "bookingDetail":"<b>Reopened May 29, 2026</b> after a full rehabilitation — no longer closed. Reservations are required on recreation.gov and open only <b>14 days before arrival</b>, a short sharp window that makes it a real option for trips you did not plan six months out. Closes for winter. Unlike Watchman, <b>generators are allowed</b>, 8–10 am and 6–8 pm only.",
-    "sites":"Varies — the park has not published a post-rehabilitation site count",
-    "cost":"$35/night, non-electric",
-    "season":"Seasonal; closed in winter",
-    "amenities":[
+    "name": "South Campground",
+    "kind": "developed",
+    "where": "Also near the South Entrance, within walking distance of the visitor center, the shuttle and Springdale.",
+    "booking": "reservable",
+    "bookingDetail": "<b>Reopened May 29, 2026</b> after a full rehabilitation — no longer closed. Reservations are required on recreation.gov and open only <b>14 days before arrival</b>, a short sharp window that makes it a real option for trips you did not plan six months out. Closes for winter. Unlike Watchman, <b>generators are allowed</b>, 8–10 am and 6–8 pm only.",
+    "sites": "Varies — the park has not published a post-rehabilitation site count",
+    "cost": "$35/night, non-electric",
+    "season": "Seasonal; closed in winter",
+    "amenities": [
      "drinking water",
      "flush toilets",
      "picnic tables",
@@ -535,46 +535,46 @@
      "generators 8–10 am and 6–8 pm",
      "no hookups"
     ],
-    "goodFor":"Tents and smaller RVs; the fallback when Watchman is full",
-    "url":"https://www.nps.gov/zion/planyourvisit/campgrounds-in-zion.htm",
-    "sources":[
+    "goodFor": "Tents and smaller RVs; the fallback when Watchman is full",
+    "url": "https://www.nps.gov/zion/planyourvisit/campgrounds-in-zion.htm",
+    "sources": [
      "https://www.nps.gov/zion/learn/news/zion-national-park-to-reopen-south-campground-on-may-29.htm",
      "https://www.nps.gov/zion/planyourvisit/campgrounds-in-zion.htm",
      "https://www.nps.gov/zion/learn/news/zion-2024-campground-and-wilderness-permit-changes.htm"
     ]
    },
    {
-    "name":"Lava Point Campground",
-    "kind":"primitive",
-    "where":"High on <b>Kolob Terrace Road</b>, roughly an hour from Zion Canyon — cool, forested, and removed from the canyon scene.",
-    "booking":"reservable",
-    "bookingDetail":"Six primitive sites, reservable on recreation.gov <b>up to 14 days in advance</b>. <b>There is no water</b> — bring everything. Closes seasonally, and Lava Point Road is typically closed fall into spring. It cannot be part of a wilderness backpacking itinerary. Generators 8–10 am and 6–8 pm.",
-    "sites":"6 primitive sites",
-    "cost":"$25/night",
-    "season":"Seasonal; road typically closed fall into spring",
-    "amenities":[
+    "name": "Lava Point Campground",
+    "kind": "primitive",
+    "where": "High on <b>Kolob Terrace Road</b>, roughly an hour from Zion Canyon — cool, forested, and removed from the canyon scene.",
+    "booking": "reservable",
+    "bookingDetail": "Six primitive sites, reservable on recreation.gov <b>up to 14 days in advance</b>. <b>There is no water</b> — bring everything. Closes seasonally, and Lava Point Road is typically closed fall into spring. It cannot be part of a wilderness backpacking itinerary. Generators 8–10 am and 6–8 pm.",
+    "sites": "6 primitive sites",
+    "cost": "$25/night",
+    "season": "Seasonal; road typically closed fall into spring",
+    "amenities": [
      "pit toilets",
      "fire rings",
      "picnic tables",
      "trash cans",
      "no water"
     ],
-    "goodFor":"Tents and small vehicles; escaping the canyon heat",
-    "url":"https://www.nps.gov/zion/planyourvisit/lava-point-campground.htm",
-    "sources":[
+    "goodFor": "Tents and small vehicles; escaping the canyon heat",
+    "url": "https://www.nps.gov/zion/planyourvisit/lava-point-campground.htm",
+    "sources": [
      "https://www.nps.gov/zion/planyourvisit/lava-point-campground.htm",
      "https://www.nps.gov/zion/learn/news/zion-2024-campground-and-wilderness-permit-changes.htm"
     ]
    }
   ],
-  "lodging":[
+  "lodging": [
    {
-    "name":"Springdale, UT",
-    "kind":"town",
-    "distance":"At the South Entrance — the park boundary is the north end of town",
-    "priceBand":"$$–$$$$",
-    "summary":"A single main street running up to the park gate, and where the overwhelming majority of Zion visitors sleep — several dozen hotels, motels, inns and B&amp;Bs in a town of barely 600 people. The decisive feature is the <b>free town shuttle</b>: nine stops the length of town, every 10–15 minutes, same season as the park shuttle, ending at the park's <b>Pedestrian/Bike Entrance</b>. Stay anywhere in town and you reach the park without moving your car. Springdale also has the groceries, restaurants, fuel and the outfitters renting Narrows gear; town parking is paid, with large-vehicle spaces.",
-    "examples":[
+    "name": "Springdale, UT",
+    "kind": "town",
+    "distance": "At the South Entrance — the park boundary is the north end of town",
+    "priceBand": "$$–$$$$",
+    "summary": "A single main street running up to the park gate, and where the overwhelming majority of Zion visitors sleep — several dozen hotels, motels, inns and B&amp;Bs in a town of barely 600 people. The decisive feature is the <b>free town shuttle</b>: nine stops the length of town, every 10–15 minutes, same season as the park shuttle, ending at the park's <b>Pedestrian/Bike Entrance</b>. Stay anywhere in town and you reach the park without moving your car. Springdale also has the groceries, restaurants, fuel and the outfitters renting Narrows gear; town parking is paid, with large-vehicle spaces.",
+    "examples": [
      "Cliffrose Springdale",
      "Desert Pearl Inn",
      "Cable Mountain Lodge",
@@ -582,377 +582,443 @@
      "Bumbleberry Inn",
      "Hotel DeNovo"
     ],
-    "url":"https://www.springdale.utah.gov/424/Shuttles"
+    "url": "https://www.springdale.utah.gov/424/Shuttles"
    },
    {
-    "name":"Zion Lodge",
-    "kind":"in-park lodge",
-    "distance":"Shuttle stop 5, in the middle of Zion Canyon",
-    "priceBand":"$$$–$$$$",
-    "summary":"The only lodging inside the park: <b>76 hotel rooms, 6 suites and 40 historic cabins</b> on the canyon floor at shuttle stop 5, with the Emerald Pools and Kayenta trailheads across the road. It is also <b>the only place inside the park to buy food</b> — Red Rock Grill year-round plus a seasonal café — and holds the gift shop and post office. Guests with reservations are among the few allowed to drive the Scenic Drive in shuttle season. Rooms open roughly a year ahead and popular dates vanish immediately: zionlodge.com.",
-    "examples":[
+    "name": "Zion Lodge",
+    "kind": "in-park lodge",
+    "distance": "Shuttle stop 5, in the middle of Zion Canyon",
+    "priceBand": "$$$–$$$$",
+    "summary": "The only lodging inside the park: <b>76 hotel rooms, 6 suites and 40 historic cabins</b> on the canyon floor at shuttle stop 5, with the Emerald Pools and Kayenta trailheads across the road. It is also <b>the only place inside the park to buy food</b> — Red Rock Grill year-round plus a seasonal café — and holds the gift shop and post office. Guests with reservations are among the few allowed to drive the Scenic Drive in shuttle season. Rooms open roughly a year ahead and popular dates vanish immediately: zionlodge.com.",
+    "examples": [
      "Historic cabins with gas fireplaces",
      "Hotel rooms with canyon-facing balconies",
      "Red Rock Grill"
     ],
-    "url":"https://www.nps.gov/zion/planyourvisit/lodging.htm"
+    "url": "https://www.nps.gov/zion/planyourvisit/lodging.htm"
    },
    {
-    "name":"Nearby towns: Hurricane, La Verkin, St. George, Cedar City, Kanab",
-    "kind":"nearby town",
-    "distance":"Hurricane and La Verkin on the UT-9 approach; St. George 49 mi; Cedar City 60 mi; Kanab east of the park",
-    "priceBand":"$–$$$",
-    "summary":"<b>Hurricane and La Verkin</b> are the standard budget answer — chain motels, RV parks and supermarkets directly on the UT-9 approach, so you are not detouring, just sleeping earlier on the same road. <b>St. George</b> (49 mi) has the closest airport and the deepest hotel supply; <b>Cedar City</b> (60 mi) is the practical base if you want <b>Kolob Canyons</b> first, 17 miles south at I-15 Exit 40. <b>Kanab</b> is the east-side base for a loop with Bryce Canyon and the North Rim — but <b>check your vehicle size</b>, since June 7, 2026 large vehicles cannot use that route. The tradeoff everywhere is arriving with the morning traffic rather than walking in ahead of it.",
-    "examples":[
+    "name": "Nearby towns: Hurricane, La Verkin, St. George, Cedar City, Kanab",
+    "kind": "nearby town",
+    "distance": "Hurricane and La Verkin on the UT-9 approach; St. George 49 mi; Cedar City 60 mi; Kanab east of the park",
+    "priceBand": "$–$$$",
+    "summary": "<b>Hurricane and La Verkin</b> are the standard budget answer — chain motels, RV parks and supermarkets directly on the UT-9 approach, so you are not detouring, just sleeping earlier on the same road. <b>St. George</b> (49 mi) has the closest airport and the deepest hotel supply; <b>Cedar City</b> (60 mi) is the practical base if you want <b>Kolob Canyons</b> first, 17 miles south at I-15 Exit 40. <b>Kanab</b> is the east-side base for a loop with Bryce Canyon and the North Rim — but <b>check your vehicle size</b>, since June 7, 2026 large vehicles cannot use that route. The tradeoff everywhere is arriving with the morning traffic rather than walking in ahead of it.",
+    "examples": [
      "Chain motels along SR-9",
      "RV parks",
      "Vacation rentals",
      "Nearest hospitals and airports"
     ],
-    "url":"https://www.nps.gov/zion/planyourvisit/directions.htm"
+    "url": "https://www.nps.gov/zion/planyourvisit/directions.htm"
    }
   ]
  },
- "safety":[
+ "safety": [
   {
-   "title":"Heat",
-   "body":"July averages 100°F with 16 days over 100°F, and June and August are barely cooler. NPS is specific: \"Carry enough water, at least one gallon per person per day, and drink it\" — and eat with it, because water alone does not replace salt. Start at first light and be off exposed rock by late morning. Heat exhaustion looks like nausea, headache, cramps and cool clammy skin: stop, find shade, elevate the feet, take fluids and food. Heat stroke is an emergency.",
-   "level":"critical"
+   "title": "Heat",
+   "body": "July averages 100°F with 16 days over 100°F, and June and August are barely cooler. NPS is specific: \"Carry enough water, at least one gallon per person per day, and drink it\" — and eat with it, because water alone does not replace salt. Start at first light and be off exposed rock by late morning. Heat exhaustion looks like nausea, headache, cramps and cool clammy skin: stop, find shade, elevate the feet, take fluids and food. Heat stroke is an emergency.",
+   "level": "critical"
   },
   {
-   "title":"Flash floods",
-   "body":"Flash floods happen year-round and peak with the monsoon — July and August average 14 and 15 thunderstorm days. They arrive as sudden surges carrying tree trunks and boulders, and a storm miles away can trigger one under blue sky. The park posts a daily flash flood potential rating: <b>not expected, possible, probable, expected</b>. Check it and the river flow before any slot canyon or the Narrows, which closes above <b>150 cfs</b> and in any Flash Flood Warning. If water rises or muddies, get high — do not run downstream.",
-   "level":"critical"
+   "title": "Flash floods",
+   "body": "Flash floods happen year-round and peak with the monsoon — July and August average 14 and 15 thunderstorm days. They arrive as sudden surges carrying tree trunks and boulders, and a storm miles away can trigger one under blue sky. The park posts a daily flash flood potential rating: <b>not expected, possible, probable, expected</b>. Check it and the river flow before any slot canyon or the Narrows, which closes above <b>150 cfs</b> and in any Flash Flood Warning. If water rises or muddies, get high — do not run downstream.",
+   "level": "critical"
   },
   {
-   "title":"Falls",
-   "body":"NPS states it directly: \"Falls from cliffs on trails have resulted in death.\" Angels Landing is the sharpest example — press tallies compiled in 2021 counted 13 deaths in falls on Angels Landing and its approach since 2000, most on the final chained section; the park publishes no running total. The mechanics are ordinary: loose sand on slickrock is slippery, the ridge narrows to under three feet with 1,000-foot drops, and two-way traffic forces passing in bad places.",
-   "level":"critical"
+   "title": "Falls",
+   "body": "NPS states it directly: \"Falls from cliffs on trails have resulted in death.\" Angels Landing is the sharpest example — press tallies compiled in 2021 counted 13 deaths in falls on Angels Landing and its approach since 2000, most on the final chained section; the park publishes no running total. The mechanics are ordinary: loose sand on slickrock is slippery, the ridge narrows to under three feet with 1,000-foot drops, and two-way traffic forces passing in bad places.",
+   "level": "critical"
   },
   {
-   "title":"Cold water and hypothermia in the Narrows",
-   "body":"The Narrows is a cold-water hike even in July: 56–68°F in summer, 41–53°F spring and fall, 38–45°F in winter, and you are in it for hours with little sun. NPS calls hypothermia \"the number one killer of outdoor recreationists, even in summer\" and a greater hazard in narrow canyons. Wear quick-drying layers, never cotton; rent neoprene socks and canyoneering boots spring and fall, a wetsuit or drysuit in winter. Carry a stick — the riverbed is slick, uneven and invisible.",
-   "level":"critical"
+   "title": "Cold water and hypothermia in the Narrows",
+   "body": "The Narrows is a cold-water hike even in July: 56–68°F in summer, 41–53°F spring and fall, 38–45°F in winter, and you are in it for hours with little sun. NPS calls hypothermia \"the number one killer of outdoor recreationists, even in summer\" and a greater hazard in narrow canyons. Wear quick-drying layers, never cotton; rent neoprene socks and canyoneering boots spring and fall, a wetsuit or drysuit in winter. Carry a stick — the riverbed is slick, uneven and invisible.",
+   "level": "critical"
   },
   {
-   "title":"Toxic cyanobacteria in the Virgin River",
-   "body":"A <b>health watch advisory</b> is in effect (updated 2026-05-21) for the North Fork of the Virgin River — the Narrows, Pine Creek, Deep Creek, Kolob Creek, Orderville Canyon, the Emerald Pools — plus North Creek and La Verkin Creek. Do not touch or ingest algae mats, do not submerge your head, and do not drink in-stream water: <b>no recreational filter removes cyanotoxins</b>. Children and dogs are most at risk. Wading is not prohibited.",
-   "level":"important"
+   "title": "Toxic cyanobacteria in the Virgin River",
+   "body": "A <b>health watch advisory</b> is in effect (updated 2026-05-21) for the North Fork of the Virgin River — the Narrows, Pine Creek, Deep Creek, Kolob Creek, Orderville Canyon, the Emerald Pools — plus North Creek and La Verkin Creek. Do not touch or ingest algae mats, do not submerge your head, and do not drink in-stream water: <b>no recreational filter removes cyanotoxins</b>. Children and dogs are most at risk. Wading is not prohibited.",
+   "level": "important"
   },
   {
-   "title":"Rockfall",
-   "body":"Rockfall is an ongoing hazard throughout Zion, especially near cliff faces — the 2019 rockfall near Weeping Rock still has the East Rim Trail partially closed and Hidden Canyon shut. Do not linger under overhangs or at the base of cliffs, and never throw or roll rocks. If rockfall starts and you cannot move clear, shelter behind a large boulder and pull your pack over your head. Keep your distance from wildlife too: NPS warns that contact with animals or their droppings can transmit dangerous illnesses.",
-   "level":"important"
+   "title": "Rockfall",
+   "body": "Rockfall is an ongoing hazard throughout Zion, especially near cliff faces — the 2019 rockfall near Weeping Rock still has the East Rim Trail partially closed and Hidden Canyon shut. Do not linger under overhangs or at the base of cliffs, and never throw or roll rocks. If rockfall starts and you cannot move clear, shelter behind a large boulder and pull your pack over your head. Keep your distance from wildlife too: NPS warns that contact with animals or their droppings can transmit dangerous illnesses.",
+   "level": "important"
   },
   {
-   "title":"Winter ice",
-   "body":"Zion Canyon gets 13–20 freezing nights a month December through February, and nearly half the year's precipitation falls December through March. Canyon-floor snow melts fast, but ice persists on shaded slickrock, on the Angels Landing chains, and on the paved Riverside Walk, which can close when it glazes over. Traction devices are worth the space.",
-   "level":"note"
+   "title": "Winter ice",
+   "body": "Zion Canyon gets 13–20 freezing nights a month December through February, and nearly half the year's precipitation falls December through March. Canyon-floor snow melts fast, but ice persists on shaded slickrock, on the Angels Landing chains, and on the paved Riverside Walk, which can close when it glazes over. Traction devices are worth the space.",
+   "level": "note"
   }
  ],
- "itineraries":[
+ "itineraries": [
   {
-   "title":"One perfect day",
-   "days":1,
-   "plan":[
+   "title": "One perfect day",
+   "days": 1,
+   "plan": [
     {
-     "when":"6:15 am",
-     "what":"Park in Springdale or at the visitor center and be at the stop before the <b>first bus at 7:00 am</b>. In summer the lot is often full by 9."
+     "when": "6:15 am",
+     "what": "Park in Springdale or at the visitor center and be at the stop before the <b>first bus at 7:00 am</b>. In summer the lot is often full by 9."
     },
     {
-     "when":"7:00 am",
-     "what":"Ride to <b>Temple of Sinawava (stop 9)</b>, about 45 minutes end to end. You arrive with the canyon almost to yourself."
+     "when": "7:00 am",
+     "what": "Ride to <b>Temple of Sinawava (stop 9)</b>, about 45 minutes end to end. You arrive with the canyon almost to yourself."
     },
     {
-     "when":"7:45 am",
-     "what":"Walk the <b>Riverside Walk</b>, 1 mile of pavement to where the canyon closes in. With boots and a stick, continue upstream into <b>The Narrows</b> for an hour or two — check flow and the flash flood rating first."
+     "when": "7:45 am",
+     "what": "Walk the <b>Riverside Walk</b>, 1 mile of pavement to where the canyon closes in. With boots and a stick, continue upstream into <b>The Narrows</b> for an hour or two — check flow and the flash flood rating first."
     },
     {
-     "when":"10:30 am",
-     "what":"Back to <b>Zion Lodge (stop 5)</b> for the <b>Emerald Pools</b>: 2.2 miles and 333 feet to Middle, 0.3 miles each way more to Upper. Return via the Kayenta Trail for a loop, and eat at the lodge — the only food in the park."
+     "when": "10:30 am",
+     "what": "Back to <b>Zion Lodge (stop 5)</b> for the <b>Emerald Pools</b>: 2.2 miles and 333 feet to Middle, 0.3 miles each way more to Upper. Return via the Kayenta Trail for a loop, and eat at the lodge — the only food in the park."
     },
     {
-     "when":"1:30 pm",
-     "what":"Ten-minute stops at <b>Court of the Patriarchs (stop 4)</b> and <b>Big Bend (stop 8)</b>, then shuttle out and collect the car."
+     "when": "1:30 pm",
+     "what": "Ten-minute stops at <b>Court of the Patriarchs (stop 4)</b> and <b>Big Bend (stop 8)</b>, then shuttle out and collect the car."
     },
     {
-     "when":"3:00 pm",
-     "what":"Drive the <b>Zion–Mount Carmel Highway</b> east through the tunnel into white slickrock domes, ending at Checkerboard Mesa."
+     "when": "3:00 pm",
+     "what": "Drive the <b>Zion–Mount Carmel Highway</b> east through the tunnel into white slickrock domes, ending at Checkerboard Mesa."
     },
     {
-     "when":"4:30 pm",
-     "what":"Hike <b>Canyon Overlook</b>, 1 mile round trip from the small lot east of the tunnel. Parking is extremely limited; late afternoon gives the best odds and the best light."
+     "when": "4:30 pm",
+     "what": "Hike <b>Canyon Overlook</b>, 1 mile round trip from the small lot east of the tunnel. Parking is extremely limited; late afternoon gives the best odds and the best light."
     },
     {
-     "when":"7:00 pm",
-     "what":"Dinner in Springdale, then the <b>Pa'rus Trail</b> for sunset on the Watchman and, once dark, the stars. Paved, flat, no shuttle needed."
+     "when": "7:00 pm",
+     "what": "Dinner in Springdale, then the <b>Pa'rus Trail</b> for sunset on the Watchman and, once dark, the stars. Paved, flat, no shuttle needed."
     }
    ]
   },
   {
-   "title":"Two days",
-   "days":2,
-   "plan":[
+   "title": "Two days",
+   "days": 2,
+   "plan": [
     {
-     "when":"Day 1 · 6:15 am",
-     "what":"Be on the <b>7:00 am first shuttle</b> to <b>The Grotto (stop 6)</b>. With an Angels Landing permit this is the morning — the chains jam by mid-morning. Without one, take the same West Rim Trail to <b>Scout Lookout</b>: 1.9 miles and 1,187 feet each way, no permit, most of the view."
+     "when": "Day 1 · 6:15 am",
+     "what": "Be on the <b>7:00 am first shuttle</b> to <b>The Grotto (stop 6)</b>. With an Angels Landing permit this is the morning — the chains jam by mid-morning. Without one, take the same West Rim Trail to <b>Scout Lookout</b>: 1.9 miles and 1,187 feet each way, no permit, most of the view."
     },
     {
-     "when":"Day 1 · 11:30 am",
-     "what":"Refill at The Grotto and take the Kayenta Trail across to the <b>Emerald Pools</b>, finishing at Zion Lodge for a late lunch."
+     "when": "Day 1 · 11:30 am",
+     "what": "Refill at The Grotto and take the Kayenta Trail across to the <b>Emerald Pools</b>, finishing at Zion Lodge for a late lunch."
     },
     {
-     "when":"Day 1 · 2:30 pm",
-     "what":"Shuttle down, stopping at <b>Court of the Patriarchs</b> and the <b>Human History Museum</b> for the park film and the Towers of the Virgin."
+     "when": "Day 1 · 2:30 pm",
+     "what": "Shuttle down, stopping at <b>Court of the Patriarchs</b> and the <b>Human History Museum</b> for the park film and the Towers of the Virgin."
     },
     {
-     "when":"Day 1 · 5:00 pm",
-     "what":"<b>Watchman Trail</b> straight from the visitor center — 3.3 miles, 479 feet, about 90 minutes — for sunset over lower Zion Canyon. No shuttle required."
+     "when": "Day 1 · 5:00 pm",
+     "what": "<b>Watchman Trail</b> straight from the visitor center — 3.3 miles, 479 feet, about 90 minutes — for sunset over lower Zion Canyon. No shuttle required."
     },
     {
-     "when":"Day 2 · 7:00 am",
-     "what":"First shuttle to <b>Temple of Sinawava</b>, then the <b>Riverside Walk</b> and <b>The Narrows</b> properly: four to six hours upstream and back gets you well past Wall Street, and starting early buys quiet water and time to spare."
+     "when": "Day 2 · 7:00 am",
+     "what": "First shuttle to <b>Temple of Sinawava</b>, then the <b>Riverside Walk</b> and <b>The Narrows</b> properly: four to six hours upstream and back gets you well past Wall Street, and starting early buys quiet water and time to spare."
     },
     {
-     "when":"Day 2 · 1:30 pm",
-     "what":"Dry off and eat in Springdale, then pick up the car. The afternoon belongs to the east side."
+     "when": "Day 2 · 1:30 pm",
+     "what": "Dry off and eat in Springdale, then pick up the car. The afternoon belongs to the east side."
     },
     {
-     "when":"Day 2 · 3:30 pm",
-     "what":"Drive the <b>Zion–Mount Carmel Highway</b> out to <b>Checkerboard Mesa</b> and back, stopping at the pullouts. Watch for bighorn sheep."
+     "when": "Day 2 · 3:30 pm",
+     "what": "Drive the <b>Zion–Mount Carmel Highway</b> out to <b>Checkerboard Mesa</b> and back, stopping at the pullouts. Watch for bighorn sheep."
     },
     {
-     "when":"Day 2 · 5:00 pm",
-     "what":"<b>Canyon Overlook Trail</b> at golden hour — 1 mile round trip for the view onto the highway switchbacks and lower Zion Canyon."
+     "when": "Day 2 · 5:00 pm",
+     "what": "<b>Canyon Overlook Trail</b> at golden hour — 1 mile round trip for the view onto the highway switchbacks and lower Zion Canyon."
     },
     {
-     "when":"Day 2 · evening",
-     "what":"With a third morning, leave the canyon: <b>Kolob Canyons</b> off I-15 Exit 40, five-mile scenic drive plus the Timber Creek Overlook Trail. No shuttle, rarely crowded."
+     "when": "Day 2 · evening",
+     "what": "With a third morning, leave the canyon: <b>Kolob Canyons</b> off I-15 Exit 40, five-mile scenic drive plus the Timber Creek Overlook Trail. No shuttle, rarely crowded."
     }
    ]
   }
  ],
- "faq":[
+ "faq": [
   {
-   "q":"Do I need a reservation to enter Zion?",
-   "a":"No. NPS states it plainly: \"You do not need a permit or reservation to enter the park\" and \"You do not need a permit or reservation to ride a park shuttle.\" You do pay the entrance fee — $35 per vehicle, valid 7 days. The only reservations in play are Angels Landing permits, wilderness and canyoneering permits, campsites and rooms."
+   "q": "Do I need a reservation to enter Zion?",
+   "a": "No. NPS states it plainly: \"You do not need a permit or reservation to enter the park\" and \"You do not need a permit or reservation to ride a park shuttle.\" You do pay the entrance fee — $35 per vehicle, valid 7 days. The only reservations in play are Angels Landing permits, wilderness and canyoneering permits, campsites and rooms."
   },
   {
-   "q":"Can I drive Zion Canyon Scenic Drive?",
-   "a":"Not during shuttle season. In 2026 the shuttle runs <b>March 7 through November 28</b> plus December 26 to January 2, and personal vehicles are barred throughout; the exceptions are Zion Lodge and Canyon Trail Rides guests with reservations and medical accommodation permit holders. Outside those dates you can drive it — though the road closes for the day once its parking fills, common December through February. Everything east of Canyon Junction, plus Kolob Canyons and Kolob Terrace Road, is drivable all year."
+   "q": "Can I drive Zion Canyon Scenic Drive?",
+   "a": "Not during shuttle season. In 2026 the shuttle runs <b>March 7 through November 28</b> plus December 26 to January 2, and personal vehicles are barred throughout; the exceptions are Zion Lodge and Canyon Trail Rides guests with reservations and medical accommodation permit holders. Outside those dates you can drive it — though the road closes for the day once its parking fills, common December through February. Everything east of Canyon Junction, plus Kolob Canyons and Kolob Terrace Road, is drivable all year."
   },
   {
-   "q":"How do I get an Angels Landing permit?",
-   "a":"Only through recreation.gov, in one of two lotteries. The <b>seasonal lottery</b> runs months ahead for a three-month block; the one covering <b>December 1, 2026 to February 28, 2027 opens October 1, 2026</b>, closes October 20, permits issued October 25. Otherwise the <b>day-before lottery</b> opens 12:01 a.m. and closes 3 p.m. MT, results at 4 p.m. MT the same day. Either way: <b>$6 per application</b> for up to six people plus <b>$3 per person</b> if you win. No permit is needed to reach Scout Lookout, which is most of the climb and much of the view."
+   "q": "How do I get an Angels Landing permit?",
+   "a": "Only through recreation.gov, in one of two lotteries. The <b>seasonal lottery</b> runs months ahead for a three-month block; the one covering <b>December 1, 2026 to February 28, 2027 opens October 1, 2026</b>, closes October 20, permits issued October 25. Otherwise the <b>day-before lottery</b> opens 12:01 a.m. and closes 3 p.m. MT, results at 4 p.m. MT the same day. Either way: <b>$6 per application</b> for up to six people plus <b>$3 per person</b> if you win. No permit is needed to reach Scout Lookout, which is most of the climb and much of the view."
   },
   {
-   "q":"Can kids do the Narrows?",
-   "a":"No minimum age, and plenty of families do the first mile or two — but be honest about conditions: you are wading a moving river over slick, uneven, invisible cobbles in water that is 56–68°F at its warmest and 41–53°F spring and fall, and current knee-deep on an adult is waist-deep on a child. Rent proper boots and a stick, go in late summer or early fall when flow is lowest, turn around early, and keep heads out of the water. If in doubt, the Riverside Walk gets the same scenery with none of it."
+   "q": "Can kids do the Narrows?",
+   "a": "No minimum age, and plenty of families do the first mile or two — but be honest about conditions: you are wading a moving river over slick, uneven, invisible cobbles in water that is 56–68°F at its warmest and 41–53°F spring and fall, and current knee-deep on an adult is waist-deep on a child. Rent proper boots and a stick, go in late summer or early fall when flow is lowest, turn around early, and keep heads out of the water. If in doubt, the Riverside Walk gets the same scenery with none of it."
   },
   {
-   "q":"When is the shuttle running?",
-   "a":"In 2026, <b>March 7 to November 28</b>, then a holiday run <b>December 26 to January 2</b>. The first bus leaves the visitor center at <b>7:00 am</b> all season (8:00 am over the holidays). Last departure up-canyon is 6:00 pm Mar 7–May 16, 7:00 pm May 17–Sep 12, 6:00 pm Sep 13–Oct 24 and 5:00 pm Oct 25–Nov 28; the last bus down from Temple of Sinawava runs about 75 minutes later. Every 5–10 minutes in the canyon, 10–15 in Springdale. Free — no ticket, no reservation."
+   "q": "When is the shuttle running?",
+   "a": "In 2026, <b>March 7 to November 28</b>, then a holiday run <b>December 26 to January 2</b>. The first bus leaves the visitor center at <b>7:00 am</b> all season (8:00 am over the holidays). Last departure up-canyon is 6:00 pm Mar 7–May 16, 7:00 pm May 17–Sep 12, 6:00 pm Sep 13–Oct 24 and 5:00 pm Oct 25–Nov 28; the last bus down from Temple of Sinawava runs about 75 minutes later. Every 5–10 minutes in the canyon, 10–15 in Springdale. Free — no ticket, no reservation."
   },
   {
-   "q":"Is Zion open in winter?",
-   "a":"Yes — open 24 hours a day, 365 days a year, and the only time you can drive the Scenic Drive yourself. Highs run 54–59°F with 13–20 freezing nights a month, and canyon-floor snow usually melts within hours. The catches: ice on the chains and shaded slickrock, Riverside Walk closures, Kolob Terrace Road closed and Kolob Canyons Road frequently closed, South Campground and Lava Point shut, and the Scenic Drive closing for the day when its parking fills. Watchman stays open year-round."
+   "q": "Is Zion open in winter?",
+   "a": "Yes — open 24 hours a day, 365 days a year, and the only time you can drive the Scenic Drive yourself. Highs run 54–59°F with 13–20 freezing nights a month, and canyon-floor snow usually melts within hours. The catches: ice on the chains and shaded slickrock, Riverside Walk closures, Kolob Terrace Road closed and Kolob Canyons Road frequently closed, South Campground and Lava Point shut, and the Scenic Drive closing for the day when its parking fills. Watchman stays open year-round."
   },
   {
-   "q":"Where do I park?",
-   "a":"The visitor center lot has just over 350 spaces and the Human History Museum 51, and NPS says parking \"often fills by early or mid-morning\" February through November — in summer often by 9:00 am. The reliable move is to park in <b>Springdale</b>, which has paid street and lot parking including large-vehicle spaces, and ride the free town shuttle to the Pedestrian Entrance. If you must park inside, arrive before 8 am or after 4 pm, and prefer weekdays."
+   "q": "Where do I park?",
+   "a": "The visitor center lot has just over 350 spaces and the Human History Museum 51, and NPS says parking \"often fills by early or mid-morning\" February through November — in summer often by 9:00 am. The reliable move is to park in <b>Springdale</b>, which has paid street and lot parking including large-vehicle spaces, and ride the free town shuttle to the Pedestrian Entrance. If you must park inside, arrive before 8 am or after 4 pm, and prefer weekdays."
   }
  ],
- "sources":[
+ "sources": [
   {
-   "title":"NPS – Plan Your Visit",
-   "url":"https://www.nps.gov/zion/planyourvisit/index.htm"
+   "title": "NPS – Plan Your Visit",
+   "url": "https://www.nps.gov/zion/planyourvisit/index.htm"
   },
   {
-   "title":"NPS – Operating Hours & Seasons",
-   "url":"https://www.nps.gov/zion/planyourvisit/hours.htm"
+   "title": "NPS – Operating Hours & Seasons",
+   "url": "https://www.nps.gov/zion/planyourvisit/hours.htm"
   },
   {
-   "title":"NPS – Current Conditions",
-   "url":"https://www.nps.gov/zion/planyourvisit/conditions.htm"
+   "title": "NPS – Current Conditions",
+   "url": "https://www.nps.gov/zion/planyourvisit/conditions.htm"
   },
   {
-   "title":"NPS – Fees & Passes",
-   "url":"https://www.nps.gov/zion/planyourvisit/fees.htm"
+   "title": "NPS – Fees & Passes",
+   "url": "https://www.nps.gov/zion/planyourvisit/fees.htm"
   },
   {
-   "title":"NPS – Directions & Transportation",
-   "url":"https://www.nps.gov/zion/planyourvisit/directions.htm"
+   "title": "NPS – Directions & Transportation",
+   "url": "https://www.nps.gov/zion/planyourvisit/directions.htm"
   },
   {
-   "title":"NPS – Traffic & Travel Tips",
-   "url":"https://www.nps.gov/zion/planyourvisit/traffic.htm"
+   "title": "NPS – Traffic & Travel Tips",
+   "url": "https://www.nps.gov/zion/planyourvisit/traffic.htm"
   },
   {
-   "title":"NPS – Canyon Shuttle System",
-   "url":"https://www.nps.gov/zion/planyourvisit/zion-canyon-shuttle-system.htm"
+   "title": "NPS – Canyon Shuttle System",
+   "url": "https://www.nps.gov/zion/planyourvisit/zion-canyon-shuttle-system.htm"
   },
   {
-   "title":"NPS – 2026 shuttle schedule",
-   "url":"https://www.nps.gov/zion/learn/news/2026-02-06-shuttle-schedule.htm"
+   "title": "NPS – 2026 shuttle schedule",
+   "url": "https://www.nps.gov/zion/learn/news/2026-02-06-shuttle-schedule.htm"
   },
   {
-   "title":"NPS – Angels Landing Permits & Hiking",
-   "url":"https://www.nps.gov/zion/planyourvisit/angels-landing-hiking-permits.htm"
+   "title": "NPS – Angels Landing Permits & Hiking",
+   "url": "https://www.nps.gov/zion/planyourvisit/angels-landing-hiking-permits.htm"
   },
   {
-   "title":"NPS – 2026 Angels Landing lottery dates",
-   "url":"https://www.nps.gov/zion/learn/news/2026-02-11-angels-landing.htm"
+   "title": "NPS – 2026 Angels Landing lottery dates",
+   "url": "https://www.nps.gov/zion/learn/news/2026-02-11-angels-landing.htm"
   },
   {
-   "title":"NPS – Angels Landing (Things to Do)",
-   "url":"https://www.nps.gov/thingstodo/hike-angels-landing.htm"
+   "title": "NPS – Angels Landing (Things to Do)",
+   "url": "https://www.nps.gov/thingstodo/hike-angels-landing.htm"
   },
   {
-   "title":"NPS – West Rim to Scout Lookout",
-   "url":"https://www.nps.gov/thingstodo/hike-to-scout-lookout.htm"
+   "title": "NPS – West Rim to Scout Lookout",
+   "url": "https://www.nps.gov/thingstodo/hike-to-scout-lookout.htm"
   },
   {
-   "title":"NPS – The Narrows",
-   "url":"https://www.nps.gov/zion/planyourvisit/thenarrows.htm"
+   "title": "NPS – The Narrows",
+   "url": "https://www.nps.gov/zion/planyourvisit/thenarrows.htm"
   },
   {
-   "title":"NPS – Virgin River Narrows Safety",
-   "url":"https://www.nps.gov/zion/planyourvisit/narrowssafety.htm"
+   "title": "NPS – Virgin River Narrows Safety",
+   "url": "https://www.nps.gov/zion/planyourvisit/narrowssafety.htm"
   },
   {
-   "title":"NPS – The Narrows Permits",
-   "url":"https://www.nps.gov/zion/planyourvisit/narrowspermits.htm"
+   "title": "NPS – The Narrows Permits",
+   "url": "https://www.nps.gov/zion/planyourvisit/narrowspermits.htm"
   },
   {
-   "title":"NPS – Riverside Walk",
-   "url":"https://www.nps.gov/thingstodo/hike-riverside-walk.htm"
+   "title": "NPS – Riverside Walk",
+   "url": "https://www.nps.gov/thingstodo/hike-riverside-walk.htm"
   },
   {
-   "title":"NPS – Middle Emerald Pools Trail",
-   "url":"https://www.nps.gov/thingstodo/hike-middle-emerald-pools-trail.htm"
+   "title": "NPS – Middle Emerald Pools Trail",
+   "url": "https://www.nps.gov/thingstodo/hike-middle-emerald-pools-trail.htm"
   },
   {
-   "title":"NPS – Upper Emerald Pools Trail",
-   "url":"https://www.nps.gov/thingstodo/hike-upper-emerald-pools.htm"
+   "title": "NPS – Upper Emerald Pools Trail",
+   "url": "https://www.nps.gov/thingstodo/hike-upper-emerald-pools.htm"
   },
   {
-   "title":"NPS – Canyon Overlook",
-   "url":"https://www.nps.gov/thingstodo/hike-canyon-overlook.htm"
+   "title": "NPS – Canyon Overlook",
+   "url": "https://www.nps.gov/thingstodo/hike-canyon-overlook.htm"
   },
   {
-   "title":"NPS – Watchman Trail",
-   "url":"https://www.nps.gov/thingstodo/hike-watchman-trail.htm"
+   "title": "NPS – Watchman Trail",
+   "url": "https://www.nps.gov/thingstodo/hike-watchman-trail.htm"
   },
   {
-   "title":"NPS – Pa'rus Trail",
-   "url":"https://www.nps.gov/thingstodo/hike-pa-rus-trail.htm"
+   "title": "NPS – Pa'rus Trail",
+   "url": "https://www.nps.gov/thingstodo/hike-pa-rus-trail.htm"
   },
   {
-   "title":"NPS – Timber Creek Overlook",
-   "url":"https://www.nps.gov/thingstodo/timber-creek-overlook.htm"
+   "title": "NPS – Timber Creek Overlook",
+   "url": "https://www.nps.gov/thingstodo/timber-creek-overlook.htm"
   },
   {
-   "title":"NPS – Court of the Patriarchs",
-   "url":"https://www.nps.gov/places/court-of-the-patriarchs.htm"
+   "title": "NPS – Court of the Patriarchs",
+   "url": "https://www.nps.gov/places/court-of-the-patriarchs.htm"
   },
   {
-   "title":"NPS – East Mesa Trail",
-   "url":"https://www.nps.gov/zion/planyourvisit/east-rim-wilderness-trail-descriptions.htm"
+   "title": "NPS – East Mesa Trail",
+   "url": "https://www.nps.gov/zion/planyourvisit/east-rim-wilderness-trail-descriptions.htm"
   },
   {
-   "title":"NPS – Kolob Canyons",
-   "url":"https://www.nps.gov/zion/planyourvisit/kolob-canyons.htm"
+   "title": "NPS – Kolob Canyons",
+   "url": "https://www.nps.gov/zion/planyourvisit/kolob-canyons.htm"
   },
   {
-   "title":"NPS – Left Fork (Subway)",
-   "url":"https://www.nps.gov/zion/planyourvisit/thesubway.htm"
+   "title": "NPS – Left Fork (Subway)",
+   "url": "https://www.nps.gov/zion/planyourvisit/thesubway.htm"
   },
   {
-   "title":"NPS – Wilderness Permits",
-   "url":"https://www.nps.gov/zion/planyourvisit/wildernesspermitinfo.htm"
+   "title": "NPS – Wilderness Permits",
+   "url": "https://www.nps.gov/zion/planyourvisit/wildernesspermitinfo.htm"
   },
   {
-   "title":"NPS – Canyoneering Permits",
-   "url":"https://www.nps.gov/zion/planyourvisit/canyoneeringpermits.htm"
+   "title": "NPS – Canyoneering Permits",
+   "url": "https://www.nps.gov/zion/planyourvisit/canyoneeringpermits.htm"
   },
   {
-   "title":"NPS – Camping in Zion",
-   "url":"https://www.nps.gov/zion/planyourvisit/campgrounds-in-zion.htm"
+   "title": "NPS – Camping in Zion",
+   "url": "https://www.nps.gov/zion/planyourvisit/campgrounds-in-zion.htm"
   },
   {
-   "title":"NPS – Lava Point Campground",
-   "url":"https://www.nps.gov/zion/planyourvisit/lava-point-campground.htm"
+   "title": "NPS – Lava Point Campground",
+   "url": "https://www.nps.gov/zion/planyourvisit/lava-point-campground.htm"
   },
   {
-   "title":"NPS – Campground & permit fees",
-   "url":"https://www.nps.gov/zion/learn/news/zion-2024-campground-and-wilderness-permit-changes.htm"
+   "title": "NPS – Campground & permit fees",
+   "url": "https://www.nps.gov/zion/learn/news/zion-2024-campground-and-wilderness-permit-changes.htm"
   },
   {
-   "title":"NPS – South Campground reopening",
-   "url":"https://www.nps.gov/zion/learn/news/zion-national-park-to-reopen-south-campground-on-may-29.htm"
+   "title": "NPS – South Campground reopening",
+   "url": "https://www.nps.gov/zion/learn/news/zion-national-park-to-reopen-south-campground-on-may-29.htm"
   },
   {
-   "title":"Rec.gov – Watchman Campground",
-   "url":"https://www.recreation.gov/camping/campgrounds/232445"
+   "title": "Rec.gov – Watchman Campground",
+   "url": "https://www.recreation.gov/camping/campgrounds/232445"
   },
   {
-   "title":"Rec.gov – Angels Landing Permits",
-   "url":"https://www.recreation.gov/permits/4675325"
+   "title": "Rec.gov – Angels Landing Permits",
+   "url": "https://www.recreation.gov/permits/4675325"
   },
   {
-   "title":"NPS – Lodging (Zion Lodge)",
-   "url":"https://www.nps.gov/zion/planyourvisit/lodging.htm"
+   "title": "NPS – Lodging (Zion Lodge)",
+   "url": "https://www.nps.gov/zion/planyourvisit/lodging.htm"
   },
   {
-   "title":"NPS – Large Vehicles (Zion–Mt. Carmel Tunnel)",
-   "url":"https://www.nps.gov/zion/planyourvisit/the-zion-mount-carmel-tunnel.htm"
+   "title": "NPS – Large Vehicles (Zion–Mt. Carmel Tunnel)",
+   "url": "https://www.nps.gov/zion/planyourvisit/the-zion-mount-carmel-tunnel.htm"
   },
   {
-   "title":"NPS – 2026 large vehicle restrictions",
-   "url":"https://www.nps.gov/zion/learn/news/2026-01-05-large-vehicles.htm"
+   "title": "NPS – 2026 large vehicle restrictions",
+   "url": "https://www.nps.gov/zion/learn/news/2026-01-05-large-vehicles.htm"
   },
   {
-   "title":"NPS – Climate Chart (PDF)",
-   "url":"https://www.nps.gov/zion/planyourvisit/upload/2021-Climate-Chart.pdf"
+   "title": "NPS – Climate Chart (PDF)",
+   "url": "https://www.nps.gov/zion/planyourvisit/upload/2021-Climate-Chart.pdf"
   },
   {
-   "title":"NPS – by season",
-   "url":"https://www.nps.gov/zion/planyourvisit/seasons.htm"
+   "title": "NPS – by season",
+   "url": "https://www.nps.gov/zion/planyourvisit/seasons.htm"
   },
   {
-   "title":"NPS – Safety",
-   "url":"https://www.nps.gov/zion/planyourvisit/safety.htm"
+   "title": "NPS – Safety",
+   "url": "https://www.nps.gov/zion/planyourvisit/safety.htm"
   },
   {
-   "title":"NPS – Toxic cyanobacteria advisory",
-   "url":"https://www.nps.gov/zion/planyourvisit/toxic-cyanobacteria-bloom-in-the-virgin-river-and-the-streams-of-zion-national-park.htm"
+   "title": "NPS – Toxic cyanobacteria advisory",
+   "url": "https://www.nps.gov/zion/planyourvisit/toxic-cyanobacteria-bloom-in-the-virgin-river-and-the-streams-of-zion-national-park.htm"
   },
   {
-   "title":"Town of Springdale – Shuttles",
-   "url":"https://www.springdale.utah.gov/424/Shuttles"
+   "title": "Town of Springdale – Shuttles",
+   "url": "https://www.springdale.utah.gov/424/Shuttles"
   },
   {
-   "title":"Zion Canyon Visitors Bureau",
-   "url":"https://www.zionpark.com/"
+   "title": "Zion Canyon Visitors Bureau",
+   "url": "https://www.zionpark.com/"
   },
   {
-   "title":"Zion Lodge (concessioner reservations)",
-   "url":"https://www.zionlodge.com/"
+   "title": "Zion Lodge (concessioner reservations)",
+   "url": "https://www.zionlodge.com/"
   },
   {
-   "title":"Salt Lake Tribune – Angels Landing fatality tally (press, not NPS)",
-   "url":"https://www.sltrib.com/news/nation-world/2021/03/21/people-have-died-since/"
+   "title": "Salt Lake Tribune – Angels Landing fatality tally (press, not NPS)",
+   "url": "https://www.sltrib.com/news/nation-world/2021/03/21/people-have-died-since/"
   },
   {
-   "title":"NPS – Camping regulations",
-   "url":"https://www.nps.gov/zion/planyourvisit/camping-regulations.htm"
+   "title": "NPS – Camping regulations",
+   "url": "https://www.nps.gov/zion/planyourvisit/camping-regulations.htm"
   },
   {
-   "title":"NPS – Watchman Campground",
-   "url":"https://www.nps.gov/zion/planyourvisit/watchman-campground.htm"
+   "title": "NPS – Watchman Campground",
+   "url": "https://www.nps.gov/zion/planyourvisit/watchman-campground.htm"
   }
  ],
- "images":{
-  "manifest":"img/manifest.json"
+ "images": {
+  "manifest": "img/manifest.json"
+ },
+ "trip": {
+  "title": "Zion — the week before Thanksgiving, 2026",
+  "start": "2026-11-21",
+  "end": "2026-11-25",
+  "status": "planning",
+  "host": "Aaron",
+  "pitch": "Four nights in Springdale with Zion Canyon a mile up the road. Late November means cool, quiet trails, a shuttle that is still running, and the last week before the holiday crowds. There is room for more people: here is where we’ll be, when, and what’s worth coming for.",
+  "base": {
+   "name": "Springdale, UT",
+   "detail": "We are staying in town, <b>within 1 mile of the park’s South Entrance</b>. Springdale sits right at the gate: restaurants, groceries, gas and Narrows gear rental are all on the one main street, and the <b>free town shuttle</b> stops along it and drops at the park’s pedestrian entrance, so we can leave the cars parked most days.",
+   "mapUrl": "https://maps.google.com/?q=Springdale,+UT+84767",
+   "bookingNote": "Book your own room in Springdale (see <a href=\"#stay\">Stay</a> for the town and example properties) as close to the South Entrance as you can, or ask about sharing ours. Springdale fills for the holiday week, so book early."
+  },
+  "arrival": "<b>Sat Nov 21:</b> travel day. Fly or drive to <b>Las Vegas</b> and sleep in or near the city.<br><b>Sun Nov 22:</b> drive Las Vegas → Springdale, about <b>160 mi, ~2 h 45 min</b> via I-15 north and UT-9 east through Hurricane. Utah is on <b>Mountain Time</b>, one hour ahead of Las Vegas. Stop for groceries in Hurricane or St. George; Springdale has a market but small selection.",
+  "departure": "<b>Wed Nov 25:</b> a short morning in the park, then drive back to Las Vegas for evening flights or the drive home. It is the day before Thanksgiving, so expect heavier I-15 traffic near Las Vegas by late afternoon.",
+  "conditions": [
+   {
+    "label": "Weather",
+    "text": "November averages a <b>64°F high and 37°F low</b> on the canyon floor, and about ten November nights drop below freezing. Great hiking days; mornings and evenings need layers."
+   },
+   {
+    "label": "Daylight",
+    "text": "About ten hours. Sunrise is a little after 7 a.m. and the canyon is in shadow well before the ~5:15 p.m. sunset, so we start early and eat dinner in town."
+   },
+   {
+    "label": "Shuttle",
+    "text": "The Zion Canyon shuttle runs through Nov 28: first bus <b>7:00 a.m.</b>, last bus into the canyon 5:00 p.m., last bus out 6:15 p.m. Private cars cannot drive the Scenic Drive while it runs. The free Springdale town shuttle runs the same season."
+   },
+   {
+    "label": "Angels Landing",
+    "text": "The Sep–Nov seasonal lottery closed in July, so the route in is the <b>day-before lottery</b>: apply 12:01 a.m.–3 p.m. MT the day before, $6 per application for up to six people, $3 per person if drawn. Scout Lookout needs no permit."
+   },
+   {
+    "label": "The Narrows",
+    "text": "Open unless flow is above 150 cfs or a flash flood warning is issued. Water will be in the low 40s °F — rented dry pants or a drysuit from a Springdale outfitter is the difference between fun and misery."
+   },
+   {
+    "label": "Crowds",
+    "text": "Visitation drops sharply in November. We leave the day before Thanksgiving, just ahead of the holiday surge — but Springdale lodging still books up for that week."
+   }
+  ],
+  "bring": [
+   "Layers for 35–65°F: warm base layer, fleece or puffy, wind shell, beanie and gloves for mornings",
+   "Real hiking shoes with grip; microspikes if the forecast turns cold (shaded slickrock ices)",
+   "Headlamp — the canyon is dark by 5:30 p.m.",
+   "2 liters of water per person per hike; there is water at the visitor center and Zion Lodge",
+   "Recreation.gov account set up in advance for the Angels Landing day-before lottery",
+   "Narrows day: rent dry pants or drysuit, neoprene socks, canyon boots and a walking stick in Springdale; bring a dry bag",
+   "America the Beautiful pass if anyone has one ($35 per vehicle otherwise, good 7 days)",
+   "Snacks and a packed lunch — there is no food in the canyon beyond Zion Lodge"
+  ],
+  "join": {
+   "text": "The more the better: hikes are more fun in a group, cars fill up efficiently, and dinners in Springdale are better with company. You do not need to do every day — join for the whole stretch or drive in for a day or two.",
+   "steps": [
+    "Tell Aaron you are in, and which nights.",
+    "Book a Springdale room near the South Entrance (or ask about sharing ours) and your travel to Las Vegas.",
+    "Create a recreation.gov account before the trip so you can enter the Angels Landing day-before lottery with us.",
+    "Skim the Top 10, tap Add to my trip on what you’d want to do, and tell us — that is how we’ll plan cars and shuttle times."
+   ]
+  },
+  "openQuestions": [
+   "Which big hikes people want most — Angels Landing (lottery), The Narrows (cold-water gear), or Observation Point via East Mesa (a drive to the east side)",
+   "Whether to add a Kolob Canyons detour on the way out (Exit 40 on I-15, about an hour)",
+   "Wednesday timing — leave by noon to beat Thanksgiving-eve traffic, or make it a full day and drive after dinner"
+  ]
  }
 }
