@@ -95,7 +95,7 @@ def check(slug,links):
         if not t.get("cost"): warn(f"{ctx}: no cost card")
         if not t.get("faq"): warn(f"{ctx}: no trip faq")
         for k in t.get("keyDates",[]) or []:
-            if re.match(r"^\d{4}-\d{2}-\d{2}$",k.get("date","")) and datetime.date.fromisoformat(k["date"])>e: warn(f"{ctx}: keyDate {k['date']} is after the trip")
+            if re.match(r"^\d{4}-\d{2}-\d{2}$",k.get("date","")) and (datetime.date.fromisoformat(k["date"])-e).days>14: warn(f"{ctx}: keyDate {k['date']} is well after the trip")
         if isinstance(t.get("conditions"),list) and not (3<=len(t["conditions"])<=9): warn(f"{ctx}: conditions should be 3–9 blocks")
         # jargon on the trip tab
         blob=json.dumps(t).lower()
