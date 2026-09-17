@@ -128,29 +128,18 @@
  "logistics": {
   "gettingThere": [
    {
-    "from": "Las Vegas (LAS)",
-    "how": "The usual approach. I-15 north into Utah, then UT-9 east through Hurricane and La Verkin to Springdale and the South Entrance.",
-    "miles": 170
+    "from": "LA / OC area (our route)",
+    "how": "<b>I-15 north</b> the whole way: through Las Vegas (our first night), across the Arizona Strip and the Virgin River Gorge, past St. George, then <b>UT-9 east at Exit 16</b> through Hurricane and La Verkin to Springdale and the South Entrance. NPS puts Las Vegas → Springdale at 170 miles, about 2 h 45 min. Utah is on Mountain Time, one hour ahead of California."
    },
    {
-    "from": "St. George (SGU), UT",
-    "how": "49 miles via I-15 north to UT-9 east. Full-size groceries are here, and it is a common budget base.",
-    "miles": 49
-   },
-   {
-    "from": "Cedar City (CDC), UT",
-    "how": "60 miles. Convenient if you want Kolob Canyons first — that entrance is at I-15 Exit 40, only 17 miles south of Cedar City.",
-    "miles": 60
-   },
-   {
-    "from": "Salt Lake City (SLC)",
-    "how": "300 miles, essentially all I-15 south. Most people break the drive.",
-    "miles": 300
+    "from": "St. George, UT (last big town)",
+    "miles": 49,
+    "how": "49 miles via I-15 north to UT-9 east. Full-size groceries here or in Hurricane; Springdale’s market is small."
    },
    {
     "from": "Bryce Canyon / the east",
-    "how": "Enter at the East Entrance, 13 miles west of Mt. Carmel Junction on SR-9, and drive the Zion–Mount Carmel Highway down into the canyon. NPS gives the alternate route via Highway 20 north of Cedar City as roughly 150 miles and 2.5 hours. <b>Large vehicles cannot use this route since June 7, 2026.</b>",
-    "miles": 150
+    "miles": 150,
+    "how": "Enter at the East Entrance, 13 miles west of Mt. Carmel Junction on SR-9, and drive the Zion–Mount Carmel Highway down into the canyon — only if your vehicle is under the tunnel size limits."
    }
   ],
   "gettingAround": "From <b>March 7 to November 28, 2026</b>, and again December 26 to January 2, personal vehicles are barred from Zion Canyon Scenic Drive. The free <b>Zion Canyon Line</b> runs it with nine stops — Visitor Center, Human History Museum, Canyon Junction, Court of the Patriarchs, Zion Lodge, The Grotto, Weeping Rock, Big Bend, Temple of Sinawava — every 5–10 minutes, about 45 minutes end to end. Only Zion Lodge and Canyon Trail Rides guests with reservations, and medical accommodation permit holders, may drive it.<br><br>The free <b>Springdale Line</b> runs nine stops through town every 10–15 minutes to the park's Pedestrian/Bike Entrance. Park in town and ride in: the visitor center lot holds just over 350 cars and NPS says parking \"often fills by early or mid-morning\" February through November. Everything east of Canyon Junction, plus Kolob Canyons and Kolob Terrace Road, stays open to cars year-round.",
@@ -1037,8 +1026,8 @@
    "image": "springdale.jpg",
    "imageAlt": "Springdale’s main street with Zion’s cliffs behind it"
   },
-  "arrival": "<b>Sat Nov 21:</b> drive up from Southern California and sleep in or near <b>Las Vegas</b>.<br><b>Sun Nov 22:</b> Las Vegas → Springdale, about <b>170 mi, roughly 2 h 45 min</b> via I-15 north and UT-9 east through Hurricane. Utah is on <b>Mountain Time</b>, one hour ahead of Las Vegas. Stop for groceries in Hurricane; Springdale has a small market.",
-  "departure": "<b>Wed Nov 25:</b> a short morning in the park, then the drive home. It is the day before Thanksgiving, so expect heavier I-15 traffic near Las Vegas by late afternoon.",
+  "arrival": "<b>Sat Nov 21:</b> I-15 north from the LA/OC area to <b>Las Vegas</b> for the night.<br><b>Sun Nov 22:</b> Las Vegas → Springdale, about <b>170 mi, roughly 2 h 45 min</b>, still on I-15 to UT-9 east through Hurricane. Utah is on <b>Mountain Time</b>, one hour ahead. Stop for groceries in Hurricane; Springdale has a small market.",
+  "departure": "<b>Wed Nov 25:</b> a short morning in the park, then I-15 south all the way home. It is the day before Thanksgiving, so expect heavier traffic through Las Vegas by late afternoon.",
   "conditions": [
    {
     "label": "Weather",

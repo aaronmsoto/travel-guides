@@ -4,13 +4,13 @@ PRODID:-//travel-guides//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:death-valley-2027-01-15@travel-guides
-DTSTAMP:20260917T054459Z
+DTSTAMP:20260917T054742Z
 DTSTART;VALUE=DATE:20270115
 DTEND;VALUE=DATE:20270119
 SUMMARY:Death Valley — MLK weekend\, January 2027
 LOCATION:Echo Canyon Road\, site E1\, Death Valley National Park
 GEO:36.4617;-116.796
-DESCRIPTION:Three nights camped on our own gravel pad off Echo Canyon Road\, a few miles from Furnace Creek\, in the one season when Death Valley is comfortable: sunny 60s by day\, dark skies and cold\, silent nights. Ben’s family from the 3rd grade DLI class is already in\, and there is room at camp for more.\\nhttps://aaronmsoto.github.io/travel-guides/guides/death-valley/
+DESCRIPTION:Three nights camped on our own gravel pad off Echo Canyon Road\, a few miles from Furnace Creek\, in the one season when Death Valley is comfortable: sunny 60s by day\, dark skies and cold\, silent nights. Ben’s family from the 3rd grade DLI class is in\, camping at Furnace Creek Campground ten minutes from our site\, and there is room at camp for more.\\nhttps://aaronmsoto.github.io/travel-guides/guides/death-valley/
 URL:https://aaronmsoto.github.io/travel-guides/guides/death-valley/
 END:VEVENT
 END:VCALENDAR

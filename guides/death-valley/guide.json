@@ -144,25 +144,16 @@
  "logistics": {
   "gettingThere": [
    {
-    "from": "Las Vegas (LAS) via Pahrump",
-    "how": "The fastest route. I-15 to <b>NV-160</b> to Pahrump; north of town turn left on Bell Vista Road, which becomes Stateline Road and ends at Death Valley Junction; right on CA-127, quick left on <b>CA-190</b>. NPS: \"about 120 miles and takes 2 hours\" (its lodging page says 2.5).",
-    "miles": 120
+    "from": "LA / OC area via Shoshone (our route)",
+    "how": "I-15 north to <b>Baker</b>, then <b>CA-127</b> north through Tecopa to <b>Shoshone</b> (last gas and store), then <b>CA-178</b> west over Jubilee and Salsberry passes and north up <b>Badwater Road</b> — past Badwater Basin and Artists Drive — to Furnace Creek. NPS puts Shoshone about 1 hour from Furnace Creek. The southern end of Badwater Road still has flood-damage stretches with soft shoulders: take it slowly, and not after dark on the first drive."
    },
    {
-    "from": "Las Vegas (LAS) via Beatty, NV",
-    "how": "The scenic alternative: US-95 north to Beatty, then <b>SR-374</b> over Daylight Pass. Beatty is <b>43 miles / about 45 minutes</b> from Furnace Creek, with fuel, motels, Rhyolite ghost town and the <b>closest DC fast chargers</b>."
+    "from": "LA / OC area via Death Valley Junction",
+    "how": "The all-highway alternative: the same I-15 → Baker → <b>CA-127</b> north, but continue past Shoshone to <b>Death Valley Junction</b> and turn west on <b>CA-190</b> straight to Furnace Creek."
    },
    {
-    "from": "Lone Pine / Olancha, CA",
-    "how": "The west-side approach. SR-136 from Lone Pine joins <b>CA-190</b> at Olancha and runs in past Panamint Springs and Stovepipe Wells. NPS gives Lone Pine as <b>about 1 hour 45 minutes</b> from Furnace Creek."
-   },
-   {
-    "from": "Ridgecrest / Trona, CA",
-    "how": "From the Los Angeles side: I-5 or CA-14 north to Ridgecrest, then <b>SR-178 (Panamint Valley Road)</b> through Trona to CA-190. NPS gives Ridgecrest as <b>about 2.5 hours</b> — the last full-service town, so fuel here."
-   },
-   {
-    "from": "Shoshone / Tecopa, CA",
-    "how": "<b>CA-178</b> north from Shoshone joins Badwater Road past Ashford Mill — a quiet back door, hot springs at Tecopa nearby. Shoshone is <b>about 1 hour</b> out. Southern Badwater Road still has flood damage."
+    "from": "LA area via Ridgecrest / Trona",
+    "how": "The west-side approach: I-5 or CA-14 north to Ridgecrest, then <b>SR-178 (Panamint Valley Road)</b> through Trona to CA-190 and in past Stovepipe Wells. NPS gives Ridgecrest about 2.5 hours from Furnace Creek."
    }
   ],
   "gettingAround": "There is no shuttle and <b>no public transportation to or within the park</b>. Most headline sights sit on CA-190 and Badwater Road and need nothing more than a regular car; the short gravel spurs to Devils Golf Course, Natural Bridge, Mosaic Canyon and Twenty Mule Team Canyon are normally fine for sedans, but washouts happen — ask at the visitor center.<br><br><b>Do not rely on GPS.</b> The NPS warns navigation here is \"notoriously unreliable.\" There is no street address for the park; coordinates are N 36°27.70, W 116°52.00. Download the NPS App and save Death Valley offline.",
@@ -182,7 +173,7 @@
    }
   ],
   "reservations": "<b>None.</b> No timed entry and no day-use reservation system — you can drive in at any hour of any day. The only things you reserve are <b>Furnace Creek Campground</b> (October 15 – April 15), the <b>designated backcountry roadside campsites</b>, park lodges, and occasional ticketed ranger programs.",
-  "services": "<b>Fuel — only three stations</b> in an area the size of Connecticut: The Oasis at Death Valley (Furnace Creek, two grades plus diesel), Panamint Springs (gasoline and diesel) and Stovepipe Wells (87-octane only, 24 hours). All are a captive market — <b>fill up in Pahrump, Beatty, Lone Pine or Ridgecrest first</b>.<br><br><b>EV charging:</b> no DC fast chargers in the park; the nearest are in <b>Beatty, 43 miles out</b>. Inside, Level 2 J1772 chargers at The Inn and The Ranch (four at each, some reported out of service) and four faster Blink units at Stovepipe Wells. <b>Never plug an EV into a Furnace Creek Campground pedestal</b> — the NPS warns it can destroy your car and the campground system at your expense.<br><br><b>Water</b> only at Furnace Creek, Stovepipe Wells and Panamint Springs. <b>Cell service:</b> assume none.<br><br><b>Furnace Creek Visitor Center: 8 am–5 pm, every day of the year</b> — fees, ranger advice, a 20-minute film, exhibits, the Death Valley Natural History Association bookstore and free 24-hour Wi-Fi. Stovepipe Wells Ranger Station has irregular hours; call 760-786-3200. General stores at both; showers and laundry for a fee at The Ranch."
+  "services": "<b>Fuel — only three stations</b> in an area the size of Connecticut: The Oasis at Death Valley (Furnace Creek, two grades plus diesel), Panamint Springs (gasoline and diesel) and Stovepipe Wells (87-octane only, 24 hours). All are a captive market — <b>fill up in Baker or Shoshone first</b>.<br><br><b>EV charging:</b> no DC fast chargers in the park; the nearest are in <b>Beatty, 43 miles out</b>. Inside, Level 2 J1772 chargers at The Inn and The Ranch (four at each, some reported out of service) and four faster Blink units at Stovepipe Wells. <b>Never plug an EV into a Furnace Creek Campground pedestal</b> — the NPS warns it can destroy your car and the campground system at your expense.<br><br><b>Water</b> only at Furnace Creek, Stovepipe Wells and Panamint Springs. <b>Cell service:</b> assume none.<br><br><b>Furnace Creek Visitor Center: 8 am–5 pm, every day of the year</b> — fees, ranger advice, a 20-minute film, exhibits, the Death Valley Natural History Association bookstore and free 24-hour Wi-Fi. Stovepipe Wells Ranger Station has irregular hours; call 760-786-3200. General stores at both; showers and laundry for a fee at The Ranch."
  },
  "attractions": [
   {
@@ -1190,7 +1181,7 @@
   "end": "2027-01-18",
   "status": "planning",
   "host": "Aaron",
-  "pitch": "Three nights camped on our own gravel pad off Echo Canyon Road, a few miles from Furnace Creek, in the one season when Death Valley is comfortable: sunny 60s by day, dark skies and cold, silent nights. Ben’s family from the 3rd grade DLI class is already in, and there is room at camp for more.",
+  "pitch": "Three nights camped on our own gravel pad off Echo Canyon Road, a few miles from Furnace Creek, in the one season when Death Valley is comfortable: sunny 60s by day, dark skies and cold, silent nights. Ben’s family from the 3rd grade DLI class is in, camping at Furnace Creek Campground ten minutes from our site, and there is room at camp for more.",
   "base": {
    "name": "Echo Canyon Road, site E1",
    "detail": "<b>Backcountry Roadside Camping, Echo Canyon Road, site E1</b> — a reserved, designated dispersed site: a private gravel pad on a dirt road that we booked, with nothing at it. Echo Canyon Road leaves CA-190 about <b>4.6 miles east of the Furnace Creek Visitor Center</b>; E1 is the first site, one mile down the gravel road and the closest one to pavement. It is a 70-ft pull-through pad for up to 12 people and 3 vehicles, with no water, toilets, shade or fire ring. Our nearest — and only — neighbor is half a mile away. Furnace Creek (visitor center, store, fuel, restrooms, showers for a fee) is about 10 minutes back down the road.",
@@ -1202,8 +1193,8 @@
    ],
    "kind": "campsite"
   },
-  "arrival": "<b>Fri Jan 15:</b> drive in from Southern California — I-15 to Baker, CA-127 north to Death Valley Junction, then CA-190 west to Furnace Creek — or via Las Vegas and Pahrump (from Las Vegas it is about <b>120 mi and 2 hours</b>). Fill the tank and buy ice and groceries in Baker or Pahrump; in-park fuel is limited and expensive. Pay the entrance fee at the visitor center or an automated kiosk. Aim to reach camp with an hour of daylight; sunset is around 4:50 p.m.",
-  "departure": "<b>Mon Jan 18 (MLK Day):</b> pack up in the morning, a last stop or two along CA-190, then the drive home.",
+  "arrival": "<b>Fri Jan 15:</b> drive from the LA/OC area — I-15 north to <b>Baker</b>, <b>CA-127</b> north through Tecopa to <b>Shoshone</b>, then <b>CA-178</b> west into the park and north up <b>Badwater Road</b> to Furnace Creek (Shoshone is about an hour from Furnace Creek). Fill the tank and buy ice and groceries in Baker; Shoshone has a small store and the last gas. The south end of Badwater Road still has flood-damage stretches, so take it easy and aim to be through it in daylight. Pay the entrance fee at the visitor center or an automated kiosk. Reach camp with an hour of daylight; sunset is around 4:50 p.m.",
+  "departure": "<b>Mon Jan 18 (MLK Day):</b> pack up in the morning, a last stop or two, then home the way we came — Badwater Road south to CA-178 and Shoshone, or CA-190 east to Death Valley Junction and CA-127 south to Baker and I-15.",
   "conditions": [
    {
     "label": "Weather",
@@ -1227,7 +1218,7 @@
    },
    {
     "label": "Crowds & closures",
-    "text": "MLK weekend is a busy winter weekend at Furnace Creek, but our site is private by design. Titus Canyon Road is closed for repairs through September 2027; the Top 10 is unaffected. Check the park’s conditions page the week of the trip for any storm closures."
+    "text": "MLK weekend is a busy winter weekend at Furnace Creek, but our site is private by design. Titus Canyon Road is closed for repairs through September 2027; the Top 10 is unaffected. The south end of Badwater Road (our way in from Shoshone) still carries flood-damage warnings — drive it in daylight the first time. Check the park’s conditions page the week of the trip."
    }
   ],
   "bring": [
@@ -1237,7 +1228,7 @@
    "Headlamp with spare batteries, and a red-light mode for stargazing",
    "Layers for 40–70°F: sun hat and sunscreen by day, puffy jacket and gloves after dark",
    "Camp chairs and a table — the site is a bare gravel pad",
-   "A full tank of gas from Pahrump or Las Vegas; offline maps downloaded (no cell service outside Furnace Creek)",
+   "A full tank of gas from Baker or Shoshone; offline maps downloaded (no cell service outside Furnace Creek)",
    "Trash bags to pack everything out, and wag bags (sealable human-waste bags) or a small shovel — no toilets at camp",
    "Park entrance: $30 per vehicle for 7 days, or an America the Beautiful pass"
   ],
@@ -1268,7 +1259,7 @@
    {
     "label": "Gas and food",
     "amount": "your own",
-    "note": "Fill up in Baker or Pahrump. We cook at camp; one dinner at The Ranch is on the table."
+    "note": "Fill up in Baker; Shoshone has the last gas before the park. We cook at camp; one dinner at The Ranch is on the table."
    },
    {
     "label": "Cold-weather sleeping setup",
@@ -1280,7 +1271,7 @@
   "keyDates": [
    {
     "date": "2026-07-15",
-    "what": "The 6-month recreation.gov window for <b>Furnace Creek Campground</b> on our nights opened — already open and filling. Book it now if you’d rather have a developed campground (water, flush toilets) 10 minutes from us."
+    "what": "The 6-month recreation.gov window for <b>Furnace Creek Campground</b> on our nights opened — already open and filling. Ben’s family is there; book it now if you’d rather have a developed campground (water, flush toilets) 10 minutes from our site."
    },
    {
     "date": "2027-01-15",
@@ -1294,7 +1285,7 @@
    },
    {
     "q": "Do I have to camp on gravel? Is there a bed option?",
-    "a": "Yes, there is. Furnace Creek Campground (reservable, water, flush toilets) is 10 minutes from our site, and The Ranch at Death Valley and The Inn have rooms at the same junction. Sleep there and join us for the days."
+    "a": "Yes, there is. Furnace Creek Campground (reservable, water, flush toilets) is 10 minutes from our site — Ben’s family is camping there — and The Ranch at Death Valley and The Inn have rooms at the same junction. Sleep there and join us for the days."
    },
    {
     "q": "Can I come for just the weekend?",
@@ -1316,10 +1307,11 @@
   "roster": [
    {
     "name": "Aaron’s family",
-    "nights": "all three nights"
+    "nights": "all three nights at Echo Canyon site E1"
    },
    {
-    "name": "Ben’s family (3rd grade DLI class)"
+    "name": "Ben’s family (3rd grade DLI class)",
+    "nights": "camping at Furnace Creek Campground, 10 minutes from our site"
    }
   ]
  },
