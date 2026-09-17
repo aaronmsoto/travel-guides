@@ -69,6 +69,16 @@
     "title": "Ladder Canyon slot, Mecca Hills Wilderness",
     "width": 1600
   },
+  "living-desert.jpg": {
+    "author": "Don Graham (Flickr: inkknife_2000)",
+    "bytes": 1057930,
+    "height": 1580,
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Giraffe,_Living_Desert_3-15_(16173981203).jpg",
+    "title": "Giraffe grazing below the Santa Rosa Mountains, The Living Desert Zoo and Gardens",
+    "width": 1600
+  },
   "mecca-hills-overlook.jpg": {
     "author": "Jesse Pluim, BLM California",
     "bytes": 275934,
@@ -77,16 +87,6 @@
     "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mecca_Hills_Wilderness_(51858699764).jpg",
     "title": "Ridge overlook above the Mecca Hills badlands toward the Salton Sea",
-    "width": 1600
-  },
-  "night-sky.jpg": {
-    "author": "Brad Sutton, NPS / Joshua Tree National Park",
-    "bytes": 328816,
-    "height": 1068,
-    "license": "Public domain",
-    "licenseUrl": "https://en.wikipedia.org/wiki/Public_domain",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Night_sky_of_Joshua_Tree_National_Park_(35211054330).jpg",
-    "title": "Milky Way over a Joshua tree, Joshua Tree National Park",
     "width": 1600
   },
   "painted-canyon.jpg": {
