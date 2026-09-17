@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 -c 'import PIL' 2>/dev/null || pip install -q Pillow >/dev/null 2>&1; echo 'travel-guides: validate → build → publish (see CLAUDE.md, .claude/skills)'"
+          }
+        ]
+      }
+    ]
+  }
+}
