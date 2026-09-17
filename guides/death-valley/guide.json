@@ -145,11 +145,11 @@
   "gettingThere": [
    {
     "from": "LA / OC area via Shoshone (our route)",
-    "how": "I-15 north to <b>Baker</b>, then <b>CA-127</b> north through Tecopa to <b>Shoshone</b> (last gas and store), then <b>CA-178</b> west over Jubilee and Salsberry passes and north up <b>Badwater Road</b> — past Badwater Basin and Artists Drive — to Furnace Creek. NPS puts Shoshone about 1 hour from Furnace Creek. The southern end of Badwater Road still has flood-damage stretches with soft shoulders: take it slowly, and not after dark on the first drive."
+    "how": "I-15 north to <b>Baker</b>, then <b>CA-127</b> north through Tecopa to <b>Shoshone</b> (last gas and store), on to <b>Death Valley Junction</b>, then <b>CA-190 west</b> straight to Furnace Creek — paved highway the whole way. NPS puts Shoshone about 1 hour from Furnace Creek."
    },
    {
-    "from": "LA / OC area via Death Valley Junction",
-    "how": "The all-highway alternative: the same I-15 → Baker → <b>CA-127</b> north, but continue past Shoshone to <b>Death Valley Junction</b> and turn west on <b>CA-190</b> straight to Furnace Creek."
+    "from": "The Badwater Road back door",
+    "how": "From Shoshone, <b>CA-178</b> west over Jubilee and Salsberry passes joins Badwater Road at the south end of the valley and runs north past Badwater Basin to Furnace Creek. Scenic, but the southern stretch still carries flood-damage warnings (soft shoulders, unpaved sections) — a daylight option for a day trip, not the way in with a loaded car."
    },
    {
     "from": "LA area via Ridgecrest / Trona",
@@ -1193,8 +1193,8 @@
    ],
    "kind": "campsite"
   },
-  "arrival": "<b>Fri Jan 15:</b> drive from the LA/OC area — I-15 north to <b>Baker</b>, <b>CA-127</b> north through Tecopa to <b>Shoshone</b>, then <b>CA-178</b> west into the park and north up <b>Badwater Road</b> to Furnace Creek (Shoshone is about an hour from Furnace Creek). Fill the tank and buy ice and groceries in Baker; Shoshone has a small store and the last gas. The south end of Badwater Road still has flood-damage stretches, so take it easy and aim to be through it in daylight. Pay the entrance fee at the visitor center or an automated kiosk. Reach camp with an hour of daylight; sunset is around 4:50 p.m.",
-  "departure": "<b>Mon Jan 18 (MLK Day):</b> pack up in the morning, a last stop or two, then home the way we came — Badwater Road south to CA-178 and Shoshone, or CA-190 east to Death Valley Junction and CA-127 south to Baker and I-15.",
+  "arrival": "<b>Fri Jan 15:</b> drive from the LA/OC area — I-15 north to <b>Baker</b>, <b>CA-127</b> north through Tecopa and <b>Shoshone</b> to <b>Death Valley Junction</b>, then <b>CA-190 west</b> to Furnace Creek (Shoshone is about an hour from Furnace Creek). Fill the tank and buy ice and groceries in Baker; Shoshone has a small store and the last gas. Pay the entrance fee at the visitor center or an automated kiosk. Reach camp with an hour of daylight; sunset is around 4:50 p.m.",
+  "departure": "<b>Mon Jan 18 (MLK Day):</b> pack up in the morning, a last stop or two, then home the way we came — CA-190 east to Death Valley Junction, CA-127 south through Shoshone to Baker, and I-15.",
   "conditions": [
    {
     "label": "Weather",
@@ -1218,7 +1218,7 @@
    },
    {
     "label": "Crowds & closures",
-    "text": "MLK weekend is a busy winter weekend at Furnace Creek, but our site is private by design. Titus Canyon Road is closed for repairs through September 2027; the Top 10 is unaffected. The south end of Badwater Road (our way in from Shoshone) still carries flood-damage warnings — drive it in daylight the first time. Check the park’s conditions page the week of the trip."
+    "text": "MLK weekend is a busy winter weekend at Furnace Creek, but our site is private by design. Titus Canyon Road is closed for repairs through September 2027, and the south end of Badwater Road still carries flood-damage warnings; the Top 10 and our route in are unaffected. Check the park’s conditions page the week of the trip."
    }
   ],
   "bring": [
