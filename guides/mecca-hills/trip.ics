@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//travel-guides//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:mecca-hills-2026-10-17@travel-guides
+DTSTAMP:20260917T064456Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261019
+SUMMARY:Mecca Hills — an easy overnight starter trip\, October 2026
+LOCATION:Painted Canyon Road\, Mecca Hills\, Mecca Hills Wilderness
+GEO:33.6155;-116.0
+DESCRIPTION:One night\, roughly two and a half hours from Huntington Beach\, in a canyon most people from here have never heard of. We camp in the wash in Painted Canyon\, walk the ladder slot canyon in the last light of Saturday\, cook a real dinner in the sand\, and sing until the moon sets. No fees\, nothing to book\, and you can be home by lunchtime Sunday. We did this in April 2023 with cousins\, friends and…\\nhttps://aaronmsoto.github.io/travel-guides/guides/mecca-hills/
+URL:https://aaronmsoto.github.io/travel-guides/guides/mecca-hills/
+END:VEVENT
+END:VCALENDAR
