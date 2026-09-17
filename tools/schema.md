@@ -147,3 +147,26 @@ Internal links: `<a href="#top10/angels-landing">` opens that attraction card (n
 ```
 Renders as the "Photos & Map" tab: a grid with a lightbox, and a map (Leaflet + OpenStreetMap tiles, loaded only
 when the map view is opened) showing photo pins, Top 10 pins (from `coords`), and the trip base.
+
+## Schema 1.2 additions (after the v1 critique)
+- Top-level `site.json` (repo root): `{ title, tagline, baseUrl, host:{name}, noindex }` — `baseUrl` makes
+  Open Graph image/url tags absolute so shared links unfurl; `noindex` adds a robots meta tag.
+- `trip.nightsNote`: "3 in Springdale + 1 in Las Vegas" — shown next to the night count everywhere.
+- `trip.contact`: `{ name, email?, sms?, chatUrl?, chatLabel? }` — with `email`/`sms` the "I'm in" button opens
+  a prefilled message; with neither it copies a ready-to-paste RSVP (dates, nights, headcount, vehicle, picks).
+- `trip.capacity`: `{ people, vehicles, peopleTaken?, vehiclesTaken?, note }` — renders a "Room at camp" meter.
+- `trip.cost`: `[ { label, amount, note? } ]` + `trip.costNote` — "Roughly what it costs" card. Only sourced
+  figures; write "varies" with the reason otherwise.
+- `trip.keyDates`: `[ { date: "YYYY-MM-DD" | "text", what } ]` — "Dates that matter" (lottery windows, booking
+  windows computed against the trip dates).
+- `trip.roster`: `[ { name, nights? } ]` — "Who's in so far".
+- `trip.faq`: `[ { q, a } ]` — objections a joiner has (cost, one day only, must I camp, kids, car, fitness).
+- `trip.base.kind`: `town | campsite | lodge`; `trip.base.image` (file in img/) — base card photo.
+- `attractions[].coords` required; `stay.camping[] / stay.lodging[] / alsoConsider[]` accept `image` and
+  `stay.*[].ours: true` pins "Where we're staying" first.
+- `safety[].seasons`: subset of `["spring","summer","fall","winter"]`; entries matching the trip's season (or
+  with no `seasons`) render under "For our dates", the rest collapse under "Risks in other seasons".
+- `overview.alerts[].affectsTrip: true` — shown on the trip tab under "Affects our dates".
+- `photos.json` items accept `private: true` — kept in the repo, excluded from the page and map.
+- Copy rules: no "html:" prefixes; expand jargon on first use on the Trip tab (Mountain Time, cfs, wag bags,
+  dispersed); one bold run per paragraph; "Good to know" not "Tips from the research".

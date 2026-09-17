@@ -67,27 +67,32 @@
    {
     "level": "warn",
     "text": "<b>East Rim Trail is partially closed by rockfall near Weeping Rock.</b> Hidden Canyon is closed, and Observation Point cannot be reached from Zion Canyon — the only route is the East Mesa Trail from the east side.",
-    "sourceUrl": "https://www.nps.gov/zion/planyourvisit/conditions.htm"
+    "sourceUrl": "https://www.nps.gov/zion/planyourvisit/conditions.htm",
+    "affectsTrip": true
    },
    {
     "level": "warn",
     "text": "<b>Toxic cyanobacteria health watch on the Virgin River and park streams</b> (updated 2026-05-21). Do not submerge your head, touch algae mats, or drink or filter in-stream water — no recreational filter removes cyanotoxins. Children and dogs are most at risk. Wading is still allowed.",
-    "sourceUrl": "https://www.nps.gov/zion/planyourvisit/toxic-cyanobacteria-bloom-in-the-virgin-river-and-the-streams-of-zion-national-park.htm"
+    "sourceUrl": "https://www.nps.gov/zion/planyourvisit/toxic-cyanobacteria-bloom-in-the-virgin-river-and-the-streams-of-zion-national-park.htm",
+    "affectsTrip": true
    },
    {
     "level": "warn",
     "text": "<b>Since June 7, 2026, large vehicles are banned from the Zion–Mount Carmel Highway</b> between Canyon Junction and the East Entrance — anything over 35 ft 9 in long, 7 ft 10 in wide, 11 ft 4 in tall or 50,000 lbs is turned around at the gate. This replaced the old tunnel-escort permit, so ignore older advice about buying one.",
-    "sourceUrl": "https://www.nps.gov/zion/learn/news/2026-01-05-large-vehicles.htm"
+    "sourceUrl": "https://www.nps.gov/zion/learn/news/2026-01-05-large-vehicles.htm",
+    "affectsTrip": true
    },
    {
     "level": "info",
     "text": "<b>South Campground reopened May 29, 2026</b> after rehabilitation. Reservations are required and open only 14 days ahead.",
-    "sourceUrl": "https://www.nps.gov/zion/learn/news/zion-national-park-to-reopen-south-campground-on-may-29.htm"
+    "sourceUrl": "https://www.nps.gov/zion/learn/news/zion-national-park-to-reopen-south-campground-on-may-29.htm",
+    "affectsTrip": false
    },
    {
     "level": "info",
     "text": "<b>The Narrows closes when the Virgin River runs above 150 cubic feet per second</b> and during any Flash Flood Warning. Check flow and the flash flood potential rating the morning you go.",
-    "sourceUrl": "https://www.nps.gov/zion/planyourvisit/conditions.htm"
+    "sourceUrl": "https://www.nps.gov/zion/planyourvisit/conditions.htm",
+    "affectsTrip": true
    }
   ]
  },
@@ -198,9 +203,9 @@
    "type": "hike",
    "difficulty": "strenuous",
    "stats": {
-    "distance": "1.9 mi each way to Scout Lookout, plus 0.5 mi each way on the chains (~4.8 mi round trip)",
-    "elevationGain": "1,187 ft to Scout Lookout",
-    "time": "3–4 hr to Scout Lookout; 1–2 hr more for the chains",
+    "distance": "4.8 mi round trip",
+    "elevationGain": "1,488 ft",
+    "time": "4–6 hr",
     "trailheadOrParking": "The Grotto (shuttle stop 6)"
    },
    "permit": "lottery",
@@ -231,7 +236,7 @@
    "type": "canyon",
    "difficulty": "strenuous",
    "stats": {
-    "distance": "Up to a 10 mi round trip to Big Spring; turn around anywhere",
+    "distance": "Any length; up to 10 mi round trip",
     "elevationGain": "Negligible — you walk upstream in the riverbed",
     "time": "2 hr for a taste; all day to Big Spring",
     "trailheadOrParking": "Temple of Sinawava (shuttle stop 9), then 1 mi on the Riverside Walk"
@@ -295,7 +300,7 @@
    "type": "hike",
    "difficulty": "moderate",
    "stats": {
-    "distance": "2.2 mi round trip to the Middle pools; Upper adds 0.3 mi each way",
+    "distance": "2.2–2.8 mi round trip",
     "elevationGain": "333 ft to Middle; 76 ft more to Upper",
     "time": "1–2 hr",
     "trailheadOrParking": "Emerald Pools Trailhead across from Zion Lodge (shuttle stop 5), or The Grotto (stop 6) via the Kayenta Trail"
@@ -390,7 +395,7 @@
    "type": "scenic-drive",
    "difficulty": "easy",
    "stats": {
-    "distance": "10.7 mi between Canyon Junction and the East Entrance",
+    "distance": "10.7 mi one way",
     "elevationGain": "Climbs out of the canyon in a series of engineered switchbacks",
     "time": "45 min to 1.5 hr with stops",
     "trailheadOrParking": "Canyon Junction (SR-9) — open to private vehicles year-round"
@@ -516,7 +521,8 @@
   {
    "name": "Kolob Canyons & Timber Creek Overlook",
    "why": "A separate entrance at I-15 Exit 40, 40 miles from Zion Canyon and 17 miles south of Cedar City: a five-mile scenic drive under 2,000-foot crimson walls, no shuttle at all. Timber Creek Overlook is 0.6 mi each way with 117 ft of gain. The road can close in winter.",
-   "url": "https://www.nps.gov/zion/planyourvisit/kolob-canyons.htm"
+   "url": "https://www.nps.gov/zion/planyourvisit/kolob-canyons.htm",
+   "image": "kolob-canyons.jpg"
   },
   {
    "name": "The Subway (Left Fork of North Creek)",
@@ -526,7 +532,8 @@
   {
    "name": "Kolob Terrace Road & Lava Point",
    "why": "The high, quiet third of the park, climbing out of Virgin, UT into ponderosa country about an hour from Zion Canyon. Lava Point has six primitive campsites and a big overlook. Usually closed fall through spring for snow.",
-   "url": "https://www.nps.gov/zion/planyourvisit/lava-point-campground.htm"
+   "url": "https://www.nps.gov/zion/planyourvisit/lava-point-campground.htm",
+   "image": "kolob-canyons.jpg"
   }
  ],
  "stay": {
@@ -556,7 +563,9 @@
      "https://www.nps.gov/zion/planyourvisit/campgrounds-in-zion.htm",
      "https://www.nps.gov/zion/planyourvisit/camping-regulations.htm",
      "https://www.nps.gov/zion/learn/news/zion-2024-campground-and-wilderness-permit-changes.htm"
-    ]
+    ],
+    "image": "watchman-campground.jpg",
+    "imageAlt": "Watchman Campground below the Watchman peak"
    },
    {
     "name": "South Campground",
@@ -622,7 +631,10 @@
      "Bumbleberry Inn",
      "Hotel DeNovo"
     ],
-    "url": "https://www.springdale.utah.gov/424/Shuttles"
+    "url": "https://www.springdale.utah.gov/424/Shuttles",
+    "ours": true,
+    "image": "springdale.jpg",
+    "imageAlt": "Springdale, Utah, at the mouth of Zion Canyon"
    },
    {
     "name": "Zion Lodge",
@@ -657,12 +669,19 @@
   {
    "title": "Heat",
    "body": "July averages 100°F with 16 days over 100°F, and June and August are barely cooler. NPS is specific: \"Carry enough water, at least one gallon per person per day, and drink it\" — and eat with it, because water alone does not replace salt. Start at first light and be off exposed rock by late morning. Heat exhaustion looks like nausea, headache, cramps and cool clammy skin: stop, find shade, elevate the feet, take fluids and food. Heat stroke is an emergency.",
-   "level": "critical"
+   "level": "critical",
+   "seasons": [
+    "summer"
+   ]
   },
   {
    "title": "Flash floods",
    "body": "Flash floods happen year-round and peak with the monsoon — July and August average 14 and 15 thunderstorm days. They arrive as sudden surges carrying tree trunks and boulders, and a storm miles away can trigger one under blue sky. The park posts a daily flash flood potential rating: <b>not expected, possible, probable, expected</b>. Check it and the river flow before any slot canyon or the Narrows, which closes above <b>150 cfs</b> and in any Flash Flood Warning. If water rises or muddies, get high — do not run downstream.",
-   "level": "critical"
+   "level": "critical",
+   "seasons": [
+    "summer",
+    "fall"
+   ]
   },
   {
    "title": "Falls",
@@ -672,7 +691,12 @@
   {
    "title": "Cold water and hypothermia in the Narrows",
    "body": "The Narrows is a cold-water hike even in July: 56–68°F in summer, 41–53°F spring and fall, 38–45°F in winter, and you are in it for hours with little sun. NPS calls hypothermia \"the number one killer of outdoor recreationists, even in summer\" and a greater hazard in narrow canyons. Wear quick-drying layers, never cotton; rent neoprene socks and canyoneering boots spring and fall, a wetsuit or drysuit in winter. Carry a stick — the riverbed is slick, uneven and invisible.",
-   "level": "critical"
+   "level": "critical",
+   "seasons": [
+    "fall",
+    "winter",
+    "spring"
+   ]
   },
   {
    "title": "Toxic cyanobacteria in the Virgin River",
@@ -687,7 +711,11 @@
   {
    "title": "Winter ice",
    "body": "Zion Canyon gets 13–20 freezing nights a month December through February, and nearly half the year's precipitation falls December through March. Canyon-floor snow melts fast, but ice persists on shaded slickrock, on the Angels Landing chains, and on the paved Riverside Walk, which can close when it glazes over. Traction devices are worth the space.",
-   "level": "note"
+   "level": "note",
+   "seasons": [
+    "fall",
+    "winter"
+   ]
   }
  ],
  "itineraries": [
@@ -1001,18 +1029,21 @@
   "end": "2026-11-25",
   "status": "planning",
   "host": "Aaron",
-  "pitch": "Four nights in Springdale with Zion Canyon a mile up the road. Late November means cool, quiet trails, a shuttle that is still running, and the last week before the holiday crowds. There is room for more people: here is where we’ll be, when, and what’s worth coming for.",
+  "pitch": "Three nights in Springdale (plus a Las Vegas night on the way in) with Zion Canyon a mile up the road. Late November means cool, quiet trails, a shuttle that is still running, and the last week before the holiday crowds. There is room for more people: here is where we’ll be, when, and what’s worth coming for.",
   "base": {
    "name": "Springdale, UT",
    "detail": "We are staying in town, <b>within 1 mile of the park’s South Entrance</b>. Springdale sits right at the gate: restaurants, groceries, gas and Narrows gear rental are all on the one main street, and the <b>free town shuttle</b> stops along it and drops at the park’s pedestrian entrance, so we can leave the cars parked most days.",
    "mapUrl": "https://maps.google.com/?q=Springdale,+UT+84767",
-   "bookingNote": "Book your own room in Springdale (see <a href=\"#stay\">Stay</a> for the town and example properties) as close to the South Entrance as you can, or ask about sharing ours. Springdale fills for the holiday week, so book early.",
+   "bookingNote": "Book a Springdale room for <b>Sun Nov 22, Mon Nov 23 and Tue Nov 24</b> (check out Wed Nov 25) — three nights, not four — as close to the South Entrance as you can, or ask about sharing ours. If you fly in, add Las Vegas for Sat Nov 21. Springdale fills for the holiday week, so book early; see <a href=\"#stay\">Stay</a> for the town and example properties.",
    "coords": [
     37.1889,
     -112.9986
-   ]
+   ],
+   "kind": "town",
+   "image": "springdale.jpg",
+   "imageAlt": "Springdale’s main street with Zion’s cliffs behind it"
   },
-  "arrival": "<b>Sat Nov 21:</b> travel day. Fly or drive to <b>Las Vegas</b> and sleep in or near the city.<br><b>Sun Nov 22:</b> drive Las Vegas → Springdale, about <b>160 mi, ~2 h 45 min</b> via I-15 north and UT-9 east through Hurricane. Utah is on <b>Mountain Time</b>, one hour ahead of Las Vegas. Stop for groceries in Hurricane or St. George; Springdale has a market but small selection.",
+  "arrival": "<b>Sat Nov 21:</b> travel day. Fly or drive to <b>Las Vegas</b> and sleep in or near the city.<br><b>Sun Nov 22:</b> drive Las Vegas → Springdale, about <b>170 mi, roughly 2 h 45 min</b> via I-15 north and UT-9 east through Hurricane. Utah is on <b>Mountain Time</b>, one hour ahead of Las Vegas. Stop for groceries in Hurricane or St. George; Springdale has a market but small selection.",
   "departure": "<b>Wed Nov 25:</b> a short morning in the park, then drive back to Las Vegas for evening flights or the drive home. It is the day before Thanksgiving, so expect heavier I-15 traffic near Las Vegas by late afternoon.",
   "conditions": [
    {
@@ -1025,19 +1056,19 @@
    },
    {
     "label": "Shuttle",
-    "text": "The Zion Canyon shuttle runs through Nov 28: first bus <b>7:00 a.m.</b>, last bus into the canyon 5:00 p.m., last bus out 6:15 p.m. Private cars cannot drive the Scenic Drive while it runs. The free Springdale town shuttle runs the same season."
+    "text": "The Zion Canyon shuttle runs through Nov 28: first bus <b>7:00 a.m.</b>, last bus into the canyon 5:00 p.m., last bus out 6:15 p.m. Private cars cannot drive the Scenic Drive while it runs. The free Springdale town shuttle runs the same season and drops at the park’s walk-in entrance."
    },
    {
     "label": "Angels Landing",
-    "text": "The Sep–Nov seasonal lottery closed in July, so the route in is the <b>day-before lottery</b>: apply 12:01 a.m.–3 p.m. MT the day before, $6 per application for up to six people, $3 per person if drawn. Scout Lookout needs no permit."
+    "text": "The Sep–Nov seasonal lottery closed in July, so the route in is the <b>day-before lottery</b>: apply between 12:01 a.m. and 3 p.m. Mountain Time (Utah is one hour ahead of Las Vegas) the day before you want to hike, $6 per application for up to six people, $3 per person if drawn. Scout Lookout — most of the climb and the view — needs no permit."
    },
    {
     "label": "The Narrows",
-    "text": "Open unless flow is above 150 cfs or a flash flood warning is issued. Water will be in the low 40s °F — rented dry pants or a drysuit from a Springdale outfitter is the difference between fun and misery."
+    "text": "Open unless the river runs above 150 cubic feet per second (the park’s closure line) or a flash flood warning is issued. Water will be in the low 40s °F — rented dry pants or a drysuit from a Springdale outfitter is the difference between fun and misery. There is also an active <b>toxic-algae advisory</b> on the Virgin River: wading is fine, keep your head out and don’t drink or filter the water (details in Safety)."
    },
    {
-    "label": "Crowds",
-    "text": "Visitation drops sharply in November. We leave the day before Thanksgiving, just ahead of the holiday surge — but Springdale lodging still books up for that week."
+    "label": "Is late November a good time?",
+    "text": "It is a week past the Overview’s “best months” — we’re trading a little warmth for far fewer people, an empty shuttle, and low golden light on the walls. Visitation drops sharply in November; the holiday surge starts after we leave."
    }
   ],
   "bring": [
@@ -1051,18 +1082,99 @@
    "Snacks and a packed lunch — there is no food in the canyon beyond Zion Lodge"
   ],
   "join": {
-   "text": "The more the better: hikes are more fun in a group, cars fill up efficiently, and dinners in Springdale are better with company. You do not need to do every day — join for the whole stretch or drive in for a day or two.",
+   "text": "The more the better: hikes are more fun in a group, cars fill up efficiently, and dinners in Springdale are better with company. Come for the whole stretch, or drive in from Las Vegas for a day or two — Springdale is 2 h 45 min from the Strip.",
    "steps": [
-    "Tell Aaron you are in, and which nights.",
-    "Book a Springdale room near the South Entrance (or ask about sharing ours) and your travel to Las Vegas.",
+    "Hit <b>I’m in</b> below — it drafts a message with the dates filled in; tell Aaron your nights, headcount and whether you’re driving.",
+    "Book a Springdale room for Nov 22–24 (or ask about sharing ours) and your travel to Las Vegas.",
     "Create a recreation.gov account before the trip so you can enter the Angels Landing day-before lottery with us.",
-    "Skim the Top 10, tap Add to my trip on what you’d want to do, and tell us — that is how we’ll plan cars and shuttle times."
+    "Skim the Top 10, tap <b>Add to my picks</b> on what you’d want to do — they go out with your RSVP so we can plan cars and shuttle times."
    ]
   },
   "openQuestions": [
    "Which big hikes people want most — Angels Landing (lottery), The Narrows (cold-water gear), or Observation Point via East Mesa (a drive to the east side)",
    "Whether to add a Kolob Canyons detour on the way out (Exit 40 on I-15, about an hour)",
    "Wednesday timing — leave by noon to beat Thanksgiving-eve traffic, or make it a full day and drive after dinner"
+  ],
+  "nightsNote": "3 in Springdale + 1 in Las Vegas",
+  "contact": {
+   "name": "Aaron"
+  },
+  "cost": [
+   {
+    "label": "Springdale room, 3 nights",
+    "amount": "varies",
+    "note": "The main cost. Rates range widely by property and Thanksgiving week is peak — the Stay tab lists example properties to price."
+   },
+   {
+    "label": "Park entrance",
+    "amount": "$35 per vehicle",
+    "note": "Good for 7 days; split among the car. Free with an America the Beautiful pass."
+   },
+   {
+    "label": "Angels Landing lottery",
+    "amount": "$6 + $3 per person",
+    "note": "$6 per application (up to six people), $3 per person only if you win."
+   },
+   {
+    "label": "Narrows gear rental",
+    "amount": "varies",
+    "note": "Dry pants or drysuit, canyon boots and a stick from a Springdale outfitter, by the day. Only if you do the Narrows."
+   },
+   {
+    "label": "Getting to Las Vegas + rental car",
+    "amount": "your own",
+    "note": "Cars fill up: tell us if you need a seat from Las Vegas."
+   },
+   {
+    "label": "Food",
+    "amount": "varies",
+    "note": "Dinners out in Springdale most nights; groceries in Hurricane on the way in."
+   }
+  ],
+  "costNote": "No group fee. Entrance and gas split per car; everything else is what you choose.",
+  "keyDates": [
+   {
+    "date": "now",
+    "what": "Book your Springdale room (Nov 22–24) — holiday-week rooms go first."
+   },
+   {
+    "date": "2026-11-22",
+    "what": "<b>12:01 a.m.–3 p.m. Mountain Time:</b> apply to the Angels Landing <b>day-before lottery</b> for Monday’s hike on recreation.gov ($6 per group). Results by 4 p.m. Repeat Monday for a Tuesday attempt."
+   },
+   {
+    "date": "2026-11-25",
+    "what": "Wednesday is the day before Thanksgiving: leave Springdale by early afternoon to stay ahead of I-15 traffic into Las Vegas."
+   },
+   {
+    "date": "2026-11-28",
+    "what": "Last day of the Zion Canyon shuttle season — our whole trip is inside it, so the Scenic Drive is shuttle-only."
+   }
+  ],
+  "faq": [
+   {
+    "q": "Roughly what will this cost me?",
+    "a": "Your Springdale room is the big number and depends entirely on the property; the park is $35 per car for the week, the Angels Landing lottery is $6 plus $3 a person if you win, and Narrows gear is a day rental if you go. Everything else is food and getting to Las Vegas. See “Roughly what it costs” above."
+   },
+   {
+    "q": "Can I come for just one day?",
+    "a": "Yes. Springdale is about 2 h 45 min from Las Vegas. The best single day is Monday or Tuesday: first shuttle at 7 a.m., one big hike, dinner in town, drive back."
+   },
+   {
+    "q": "Do I have to do Angels Landing?",
+    "a": "No. The chains section is exposed and needs a lottery permit. Scout Lookout, right below it, needs no permit and has most of the view. The Narrows, Emerald Pools, Canyon Overlook and the Watchman are all great days without it."
+   },
+   {
+    "q": "Is it kid-friendly?",
+    "a": "Very, for the right hikes: Pa’rus Trail (paved), Riverside Walk, the lower Emerald Pools, Canyon Overlook. Kids have done the Narrows in warmer months with dry gear; in November keep them to the first stretch. Angels Landing is not for young children."
+   },
+   {
+    "q": "What kind of car do I need?",
+    "a": "Any car. Everything on this trip is paved, and inside the canyon you ride the shuttle. Oversize RVs and trailers cannot use the Zion–Mount Carmel Highway since June 2026."
+   },
+   {
+    "q": "How fit do I need to be?",
+    "a": "If you can walk a few miles with some uphill, you have a full trip. Angels Landing to Scout Lookout is the steep one (about 1,200 ft of climb over 2 miles); the Narrows is slow wading, not climbing; several of the Top 10 are flat."
+   }
   ]
  },
  "mapCenter": [

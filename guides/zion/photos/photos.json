@@ -15,16 +15,6 @@
      "caption": "The whole crew on top of Angels Landing, 1,500 feet above the canyon floor"
     },
     {
-     "file": "summer-2012-89cc0ae8.jpg",
-     "w": 1066,
-     "h": 1600,
-     "taken": null,
-     "lat": null,
-     "lng": null,
-     "place": "angels-landing",
-     "caption": "A rattlesnake coiled in the shade beside the Angels Landing trail — watch where you put your hands"
-    },
-    {
      "file": "summer-2012-9fa2a5f6.jpg",
      "w": 1066,
      "h": 1600,
@@ -83,6 +73,16 @@
      "lng": null,
      "place": "angels-landing",
      "caption": "On the chains of Angels Landing, with Zion Canyon a long way down"
+    },
+    {
+     "file": "summer-2012-89cc0ae8.jpg",
+     "w": 1066,
+     "h": 1600,
+     "taken": null,
+     "lat": null,
+     "lng": null,
+     "place": "angels-landing",
+     "caption": "A rattlesnake coiled in the shade beside the Angels Landing trail — watch where you put your hands"
     }
    ]
   }

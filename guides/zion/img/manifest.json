@@ -1,172 +1,142 @@
 {
-  "angels-landing.jpg": {
-    "author": "Zion National Park (NPS Photo/Caitlin Ceci)",
-    "bytes": 427820,
-    "height": 1200,
-    "license": "Public domain (NPS)",
-    "licenseUrl": "",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Angels_Landing_Hiker_(5015792234).jpg",
-    "title": "Angels Landing Hiker",
-    "width": 1600
-  },
-  "canyon-overlook.jpg": {
-    "author": "Zion National Park (ZionNPS / NPS Photo)",
-    "bytes": 381929,
-    "height": 1200,
-    "license": "Public domain (NPS)",
-    "licenseUrl": "",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Canyon_Overlook_Trail_(5946832741).jpg",
-    "title": "Canyon Overlook Trail",
-    "width": 1600
-  },
-  "checkerboard-mesa.jpg": {
-    "author": "Zion National Park (NPS Photo/Caitlin Ceci)",
-    "bytes": 317955,
-    "height": 1200,
-    "license": "Public domain (NPS)",
-    "licenseUrl": "",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Checkerboard_Mesa_(5014798065).jpg",
-    "title": "Checkerboard Mesa",
-    "width": 1600
-  },
-  "court-of-the-patriarchs.jpg": {
-    "author": "Ken Lund",
-    "bytes": 348084,
-    "height": 1200,
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Three_Patriarchs,_Zion_Canyon,_Zion_National_Park,_Utah_(1025201277).jpg",
-    "title": "Three Patriarchs, Zion Canyon (Zion Canyon Scenic Drive)",
-    "width": 1600
-  },
-  "emerald-pools.jpg": {
-    "author": "Zion National Park (NPS Photo)",
-    "bytes": 816299,
-    "height": 2390,
-    "license": "Public domain (NPS)",
-    "licenseUrl": "",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Winter_at_the_Lower_Emerald_Pool_(6721820397).jpg",
-    "title": "Winter at the Lower Emerald Pool",
-    "width": 1600
-  },
-  "hero.jpg": {
-    "author": "Zion National Park (NPS Photo/Sarah Stio)",
-    "bytes": 471997,
-    "height": 1494,
-    "license": "Public domain (NPS)",
-    "licenseUrl": "",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Watchman_Sunset_(8119657621).jpg",
-    "title": "Watchman Sunset",
-    "width": 2000
-  },
-  "hidden-canyon.jpg": {
-    "author": "McGhiever",
-    "bytes": 227252,
-    "height": 768,
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hidden_Canyon_Trail,_Zion_NP.JPG",
-    "title": "Hidden Canyon Trail",
-    "width": 1024
-  },
-  "kolob-canyons.jpg": {
-    "author": "Anna Irene",
-    "bytes": 529444,
-    "height": 1200,
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kolob_Canyons_Zion_National_Park_(35042047702).jpg",
-    "title": "Kolob Canyons",
-    "width": 1600
-  },
-  "observation-point.jpg": {
-    "author": "Zion National Park (NPS Photo)",
-    "bytes": 456585,
-    "height": 1176,
-    "license": "Public domain (NPS)",
-    "licenseUrl": "",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Observation_Point_(8700361102).jpg",
-    "title": "Observation Point",
-    "width": 1600
-  },
-  "parus-trail.jpg": {
-    "author": "Vulturesong",
-    "bytes": 620628,
-    "height": 1200,
-    "license": "CC0",
-    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zion_National_Park_-_HCP_-_October_02,_2022_-_013_-_Pa%27rus_Trail.jpg",
-    "title": "Pa'rus Trail",
-    "width": 1600
-  },
-  "riverside-walk.jpg": {
-    "author": "Zion National Park (NPS Photo)",
-    "bytes": 714697,
-    "height": 2133,
-    "license": "Public domain (NPS)",
-    "licenseUrl": "",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Riverside_Walk_(5874575728).jpg",
-    "title": "Riverside Walk",
-    "width": 1600
-  },
-  "springdale.jpg": {
-    "author": "inkknife_2000 (John Morgan)",
-    "bytes": 287978,
-    "height": 562,
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Springdale,_UT_4-29-14_-_Gateway_to_Zion_NP_(14122051332).jpg",
-    "title": "Springdale, UT - Gateway to Zion NP",
-    "width": 1600
-  },
-  "the-narrows.jpg": {
-    "author": "Zion National Park (NPS Photo/Marc Neidig)",
-    "bytes": 789645,
-    "height": 2133,
-    "license": "Public domain (NPS)",
-    "licenseUrl": "",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Narrows_(5204965221).jpg",
-    "title": "The Narrows",
-    "width": 1600
-  },
-  "watchman-campground.jpg": {
-    "author": "John Manard",
-    "bytes": 493437,
-    "height": 1200,
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Watchmen_Campground,_Zion_National_Par_-_49118999483.jpg",
-    "title": "Watchman Campground",
-    "width": 1600
-  },
-  "watchman-trail.jpg": {
-    "author": "Fiocarretti",
-    "bytes": 594013,
-    "height": 1200,
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zion_National_Park,_Vigin_River,_Watchman.jpg",
-    "title": "View from Watchman, over Springdale and the Virgin River",
-    "width": 1600
-  },
-  "weeping-rock.jpg": {
-    "author": "Zinneke",
-    "bytes": 1008548,
-    "height": 2398,
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Weeping_Rock_-_Zion_National_Park,_Utah_2018-04.jpg",
-    "title": "Weeping Rock",
-    "width": 1600
-  },
-  "zion-mount-carmel-highway.jpg": {
-    "author": "Ken Lund",
-    "bytes": 137286,
-    "height": 1200,
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zion-Mount_Carmel_Tunnel,_Zion_National_Park,_Utah_(8096073406).jpg",
-    "title": "Zion-Mount Carmel Tunnel",
-    "width": 1600
-  }
+ "angels-landing.jpg": {
+  "author": "Zion National Park (NPS Photo/Caitlin Ceci)",
+  "bytes": 427820,
+  "height": 1200,
+  "license": "Public domain (NPS)",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Angels_Landing_Hiker_(5015792234).jpg",
+  "title": "Angels Landing Hiker",
+  "width": 1600
+ },
+ "canyon-overlook.jpg": {
+  "author": "Zion National Park (ZionNPS / NPS Photo)",
+  "bytes": 381929,
+  "height": 1200,
+  "license": "Public domain (NPS)",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Canyon_Overlook_Trail_(5946832741).jpg",
+  "title": "Canyon Overlook Trail",
+  "width": 1600
+ },
+ "checkerboard-mesa.jpg": {
+  "author": "Zion National Park (NPS Photo/Caitlin Ceci)",
+  "bytes": 317955,
+  "height": 1200,
+  "license": "Public domain (NPS)",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Checkerboard_Mesa_(5014798065).jpg",
+  "title": "Checkerboard Mesa",
+  "width": 1600
+ },
+ "court-of-the-patriarchs.jpg": {
+  "author": "Ken Lund",
+  "bytes": 348084,
+  "height": 1200,
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Three_Patriarchs,_Zion_Canyon,_Zion_National_Park,_Utah_(1025201277).jpg",
+  "title": "Three Patriarchs, Zion Canyon (Zion Canyon Scenic Drive)",
+  "width": 1600
+ },
+ "emerald-pools.jpg": {
+  "author": "Zion National Park (NPS Photo)",
+  "bytes": 816299,
+  "height": 2390,
+  "license": "Public domain (NPS)",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Winter_at_the_Lower_Emerald_Pool_(6721820397).jpg",
+  "title": "Winter at the Lower Emerald Pool",
+  "width": 1600
+ },
+ "hero.jpg": {
+  "author": "Zion National Park (NPS Photo/Sarah Stio)",
+  "bytes": 471997,
+  "height": 1494,
+  "license": "Public domain (NPS)",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Watchman_Sunset_(8119657621).jpg",
+  "title": "Watchman Sunset",
+  "width": 2000
+ },
+ "kolob-canyons.jpg": {
+  "author": "Anna Irene",
+  "bytes": 529444,
+  "height": 1200,
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kolob_Canyons_Zion_National_Park_(35042047702).jpg",
+  "title": "Kolob Canyons",
+  "width": 1600
+ },
+ "observation-point.jpg": {
+  "author": "Zion National Park (NPS Photo)",
+  "bytes": 456585,
+  "height": 1176,
+  "license": "Public domain (NPS)",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Observation_Point_(8700361102).jpg",
+  "title": "Observation Point",
+  "width": 1600
+ },
+ "parus-trail.jpg": {
+  "author": "Vulturesong",
+  "bytes": 620628,
+  "height": 1200,
+  "license": "CC0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zion_National_Park_-_HCP_-_October_02,_2022_-_013_-_Pa%27rus_Trail.jpg",
+  "title": "Pa'rus Trail",
+  "width": 1600
+ },
+ "riverside-walk.jpg": {
+  "author": "Zion National Park (NPS Photo)",
+  "bytes": 714697,
+  "height": 2133,
+  "license": "Public domain (NPS)",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Riverside_Walk_(5874575728).jpg",
+  "title": "Riverside Walk",
+  "width": 1600
+ },
+ "springdale.jpg": {
+  "author": "inkknife_2000 (John Morgan)",
+  "bytes": 287978,
+  "height": 562,
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Springdale,_UT_4-29-14_-_Gateway_to_Zion_NP_(14122051332).jpg",
+  "title": "Springdale, UT - Gateway to Zion NP",
+  "width": 1600
+ },
+ "the-narrows.jpg": {
+  "author": "Zion National Park (NPS Photo/Marc Neidig)",
+  "bytes": 789645,
+  "height": 2133,
+  "license": "Public domain (NPS)",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Narrows_(5204965221).jpg",
+  "title": "The Narrows",
+  "width": 1600
+ },
+ "watchman-campground.jpg": {
+  "author": "John Manard",
+  "bytes": 493437,
+  "height": 1200,
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Watchmen_Campground,_Zion_National_Par_-_49118999483.jpg",
+  "title": "Watchman Campground",
+  "width": 1600
+ },
+ "watchman-trail.jpg": {
+  "author": "Fiocarretti",
+  "bytes": 594013,
+  "height": 1200,
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zion_National_Park,_Vigin_River,_Watchman.jpg",
+  "title": "View from Watchman, over Springdale and the Virgin River",
+  "width": 1600
+ }
 }

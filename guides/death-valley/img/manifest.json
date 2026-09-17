@@ -1,162 +1,152 @@
 {
-  "artists-palette.jpg": {
-    "author": "Christian David",
-    "bytes": 408107,
-    "height": 900,
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Artist%27s_Palette,_Death_Valley_National_Park,_California.jpg",
-    "title": "Artist's Palette",
-    "width": 1600
-  },
-  "badwater-basin.jpg": {
-    "author": "Christian David",
-    "bytes": 428818,
-    "height": 1067,
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Visitors_on_the_salt_flats_of_Badwater_Basin,_Death_Valley_National_Park,_California.jpg",
-    "title": "Visitors on the salt flats of Badwater Basin",
-    "width": 1600
-  },
-  "dantes-view.jpg": {
-    "author": "Christian David",
-    "bytes": 172948,
-    "height": 480,
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Badwater_Basin_seen_from_Dante%27s_View,_Death_Valley_National_Park,_California.jpg",
-    "title": "Badwater Basin seen from Dante's View",
-    "width": 1600
-  },
-  "devils-golf-course.jpg": {
-    "author": "National Park Service / Kurt Moses",
-    "bytes": 353627,
-    "height": 1064,
-    "license": "Public domain (NPS)",
-    "licenseUrl": "",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Devils_Golf_Course,_Death_Valley_National_Park.jpg",
-    "title": "Devils Golf Course",
-    "width": 1600
-  },
-  "furnace-creek.jpg": {
-    "author": "Ken Lund",
-    "bytes": 211152,
-    "height": 1200,
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Furnace_Creek,_Death_Valley_National_Park,_California_(15083151153).jpg",
-    "title": "Furnace Creek",
-    "width": 1600
-  },
-  "golden-canyon.jpg": {
-    "author": "Christian David",
-    "bytes": 418415,
-    "height": 1067,
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Red_Cathedral_from_Golden_Canyon,_Death_Valley_National_Park,_California.jpg",
-    "title": "Red Cathedral from Golden Canyon",
-    "width": 1600
-  },
-  "harmony-borax-works.jpg": {
-    "author": "Thomas Swan",
-    "bytes": 587555,
-    "height": 2403,
-    "license": "CC BY-SA 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Harmony_Borax_Works,_Death_Valley.jpg",
-    "title": "Harmony Borax Works",
-    "width": 1600
-  },
-  "hero.jpg": {
-    "author": "Christian David",
-    "bytes": 593796,
-    "height": 1280,
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Salt_pool_at_Badwater_Basin,_Death_Valley_National_Park,_California.jpg",
-    "title": "Salt pool at Badwater Basin",
-    "width": 1920
-  },
-  "mesquite-flat-sand-dunes.jpg": {
-    "author": "Ken Lund",
-    "bytes": 167039,
-    "height": 1200,
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mesquite_Flat_Sand_Dunes,_Death_Valley_National_Park,_California_(15700605221).jpg",
-    "title": "Mesquite Flat Sand Dunes",
-    "width": 1600
-  },
-  "mosaic-canyon.jpg": {
-    "author": "National Park Service (via NARA)",
-    "bytes": 440655,
-    "height": 1200,
-    "license": "Public domain (NPS)",
-    "licenseUrl": "",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Death_Valley_Scenic_Byway_-_Rock_Mosaic_at_Mosaic_Canyon_-_NARA_-_7717982.jpg",
-    "title": "Rock Mosaic at Mosaic Canyon",
-    "width": 1600
-  },
-  "natural-bridge.jpg": {
-    "author": "Jeffhollett",
-    "bytes": 411773,
-    "height": 1200,
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Natural_Bridge_at_Death_Valley_National_Park_in_California.jpg",
-    "title": "Natural Bridge",
-    "width": 1600
-  },
-  "racetrack-playa.jpg": {
-    "author": "Lgcharlot",
-    "bytes": 499693,
-    "height": 1762,
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Racetrack_Playa_in_Death_Valley_National_Park.jpg",
-    "title": "Racetrack Playa",
-    "width": 1600
-  },
-  "titus-canyon.jpg": {
-    "author": "Fabio Achilli",
-    "bytes": 646963,
-    "height": 1200,
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Titus_Canyon,_Death_Valley_(29529482756).jpg",
-    "title": "Titus Canyon",
-    "width": 1600
-  },
-  "twenty-mule-team-canyon.jpg": {
-    "author": "Alexander Hatley",
-    "bytes": 286532,
-    "height": 900,
-    "license": "CC BY 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:USA_-_California_-_Death_Valley_NP_-_Twenty_Mule_Team_Canyon_-_52977443735.jpg",
-    "title": "Twenty Mule Team Canyon",
-    "width": 1600
-  },
-  "ubehebe-crater.jpg": {
-    "author": "Ken Lund",
-    "bytes": 269307,
-    "height": 1200,
-    "license": "CC BY-SA 2.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ubehebe_Crater,_Death_Valley_National_Park,_California_(15516654369).jpg",
-    "title": "Ubehebe Crater",
-    "width": 1600
-  },
-  "zabriskie-point.jpg": {
-    "author": "National Park Service / Kurt Moses",
-    "bytes": 126892,
-    "height": 732,
-    "license": "Public domain (NPS)",
-    "licenseUrl": "",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zabriskie_Sunrise,_Death_Valley_National_Park.jpg",
-    "title": "Zabriskie Sunrise",
-    "width": 1100
-  }
+ "artists-palette.jpg": {
+  "author": "Christian David",
+  "bytes": 408107,
+  "height": 900,
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Artist%27s_Palette,_Death_Valley_National_Park,_California.jpg",
+  "title": "Artist's Palette",
+  "width": 1600
+ },
+ "badwater-basin.jpg": {
+  "author": "Christian David",
+  "bytes": 428818,
+  "height": 1067,
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Visitors_on_the_salt_flats_of_Badwater_Basin,_Death_Valley_National_Park,_California.jpg",
+  "title": "Visitors on the salt flats of Badwater Basin",
+  "width": 1600
+ },
+ "dantes-view.jpg": {
+  "author": "Christian David",
+  "bytes": 172948,
+  "height": 480,
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Badwater_Basin_seen_from_Dante%27s_View,_Death_Valley_National_Park,_California.jpg",
+  "title": "Badwater Basin seen from Dante's View",
+  "width": 1600
+ },
+ "devils-golf-course.jpg": {
+  "author": "National Park Service / Kurt Moses",
+  "bytes": 353627,
+  "height": 1064,
+  "license": "Public domain (NPS)",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Devils_Golf_Course,_Death_Valley_National_Park.jpg",
+  "title": "Devils Golf Course",
+  "width": 1600
+ },
+ "furnace-creek.jpg": {
+  "author": "Ken Lund",
+  "bytes": 211152,
+  "height": 1200,
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Furnace_Creek,_Death_Valley_National_Park,_California_(15083151153).jpg",
+  "title": "Furnace Creek",
+  "width": 1600
+ },
+ "golden-canyon.jpg": {
+  "author": "Christian David",
+  "bytes": 418415,
+  "height": 1067,
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Red_Cathedral_from_Golden_Canyon,_Death_Valley_National_Park,_California.jpg",
+  "title": "Red Cathedral from Golden Canyon",
+  "width": 1600
+ },
+ "hero.jpg": {
+  "author": "Christian David",
+  "bytes": 593796,
+  "height": 1280,
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Salt_pool_at_Badwater_Basin,_Death_Valley_National_Park,_California.jpg",
+  "title": "Salt pool at Badwater Basin",
+  "width": 1920
+ },
+ "mesquite-flat-sand-dunes.jpg": {
+  "author": "Ken Lund",
+  "bytes": 167039,
+  "height": 1200,
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mesquite_Flat_Sand_Dunes,_Death_Valley_National_Park,_California_(15700605221).jpg",
+  "title": "Mesquite Flat Sand Dunes",
+  "width": 1600
+ },
+ "mosaic-canyon.jpg": {
+  "author": "National Park Service (via NARA)",
+  "bytes": 440655,
+  "height": 1200,
+  "license": "Public domain (NPS)",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Death_Valley_Scenic_Byway_-_Rock_Mosaic_at_Mosaic_Canyon_-_NARA_-_7717982.jpg",
+  "title": "Rock Mosaic at Mosaic Canyon",
+  "width": 1600
+ },
+ "natural-bridge.jpg": {
+  "author": "Jeffhollett",
+  "bytes": 411773,
+  "height": 1200,
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Natural_Bridge_at_Death_Valley_National_Park_in_California.jpg",
+  "title": "Natural Bridge",
+  "width": 1600
+ },
+ "racetrack-playa.jpg": {
+  "author": "Lgcharlot",
+  "bytes": 499693,
+  "height": 1762,
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Racetrack_Playa_in_Death_Valley_National_Park.jpg",
+  "title": "Racetrack Playa",
+  "width": 1600
+ },
+ "titus-canyon.jpg": {
+  "author": "Fabio Achilli",
+  "bytes": 646963,
+  "height": 1200,
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Titus_Canyon,_Death_Valley_(29529482756).jpg",
+  "title": "Titus Canyon",
+  "width": 1600
+ },
+ "twenty-mule-team-canyon.jpg": {
+  "author": "Alexander Hatley",
+  "bytes": 286532,
+  "height": 900,
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:USA_-_California_-_Death_Valley_NP_-_Twenty_Mule_Team_Canyon_-_52977443735.jpg",
+  "title": "Twenty Mule Team Canyon",
+  "width": 1600
+ },
+ "ubehebe-crater.jpg": {
+  "author": "Ken Lund",
+  "bytes": 269307,
+  "height": 1200,
+  "license": "CC BY-SA 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ubehebe_Crater,_Death_Valley_National_Park,_California_(15516654369).jpg",
+  "title": "Ubehebe Crater",
+  "width": 1600
+ },
+ "zabriskie-point.jpg": {
+  "author": "National Park Service / Kurt Moses",
+  "bytes": 126892,
+  "height": 732,
+  "license": "Public domain (NPS)",
+  "licenseUrl": "",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zabriskie_Sunrise,_Death_Valley_National_Park.jpg",
+  "title": "Zabriskie Sunrise",
+  "width": 1100
+ }
 }
