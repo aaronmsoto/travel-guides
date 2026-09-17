@@ -152,8 +152,8 @@ when the map view is opened) showing photo pins, Top 10 pins (from `coords`), an
 - Top-level `site.json` (repo root): `{ title, tagline, baseUrl, host:{name}, noindex }` — `baseUrl` makes
   Open Graph image/url tags absolute so shared links unfurl; `noindex` adds a robots meta tag.
 - `trip.nightsNote`: "3 in Springdale + 1 in Las Vegas" — shown next to the night count everywhere.
-- `trip.contact`: `{ name, email?, sms?, chatUrl?, chatLabel? }` — with `email`/`sms` the "I'm in" button opens
-  a prefilled message; with neither it copies a ready-to-paste RSVP (dates, nights, headcount, vehicle, picks).
+- Joining is coordinated directly with the host: `trip.join.text/steps` say so. There is no RSVP form or contact
+  field; readers send the host a link to their picks (`#trip/picks=…`).
 - `trip.capacity`: `{ people, vehicles, peopleTaken?, vehiclesTaken?, note }` — renders a "Room at camp" meter.
 - `trip.cost`: `[ { label, amount, note? } ]` + `trip.costNote` — "Roughly what it costs" card. Only sourced
   figures; write "varies" with the reason otherwise.

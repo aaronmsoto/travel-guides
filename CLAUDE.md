@@ -23,8 +23,11 @@ renders it. **Never hand-edit `guides/*/index.html` or root `index.html`** — r
 - US spelling; miles/feet/°F in data (the client converts to metric).
 - Shared CSS/JS is in `shared/`; per-park accent colors go in `guide.json → theme` (the light
   accent must pass 4.5:1 against `--on-accent` white; dark accents use a dark `--on-accent`).
-- The Trip tab is the product: keep `trip` complete (contact, cost, capacity, keyDates, conditions,
-  faq) and never restate a night count that disagrees with the dates — `validate.py` checks it.
+- The Trip tab is the product: keep `trip` complete (cost, capacity, keyDates, conditions, faq,
+  join) and never restate a night count that disagrees with the dates — `validate.py` checks it.
+- Joining is coordinated with the host in person/chat: no RSVP forms, no contact fields, no
+  flights or rental-car advice (everyone drives from Southern California). Never name people from
+  photos; the roster only lists what the host states.
 - No day-by-day schedule on the trip tab (owner's call); the Top 10 tiles carry "what we might do".
 - Personal photos: `private: true` in photos.json hides a photo from the page; get consent before a
   link with identifiable people goes out.

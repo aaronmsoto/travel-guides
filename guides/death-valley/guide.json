@@ -22,11 +22,6 @@
    "note": "Spring is busiest; late October and February are the sweet spots"
   },
   {
-   "label": "Nearest airport",
-   "value": "Las Vegas (LAS)",
-   "note": "About 120 miles / 2–2.5 hours to Furnace Creek"
-  },
-  {
    "label": "Elevation range",
    "value": "-282 ft to 11,049 ft",
    "note": "Badwater Basin to Telescope Peak, in sight of each other"
@@ -530,7 +525,7 @@
   },
   {
    "name": "Racetrack Playa",
-   "why": "The sailing stones and their trails across a dry lakebed. 4x4, high clearance and heavy-duty tires, no cell service, and the NPS says <b>at least 3.5 hours each way</b> from Furnace Creek. Rental cars get flats here constantly.",
+   "why": "The sailing stones and their trails across a dry lakebed. 4x4, high clearance and heavy-duty tires, no cell service, and the NPS says <b>at least 3.5 hours each way</b> from Furnace Creek.",
    "url": "https://www.nps.gov/deva/planyourvisit/the-racetrack.htm",
    "image": "racetrack-playa.jpg"
   },
@@ -957,7 +952,7 @@
   },
   {
    "q": "Do I need a 4WD or high-clearance vehicle?",
-   "a": "<b>No, not for the highlights.</b> Badwater, Artists Drive, Zabriskie Point, Dante's View, the dunes, Golden Canyon and Harmony Borax Works are all on pavement, and the short gravel spurs to Devils Golf Course, Natural Bridge, Mosaic Canyon and Twenty Mule Team Canyon are normally fine for a sedan.<br><br>You need high clearance and usually 4x4 for the Racetrack, the upper Echo Canyon sites and most backcountry roads; the NPS defines high clearance as <b>15-inch wheel rims and 8 inches of ground clearance</b>. Note that <b>most rental agreements forbid unpaved roads</b> — Farabee's Jeep Rentals in Furnace Creek rents vehicles that are allowed off pavement."
+   "a": "<b>No, not for the highlights.</b> Badwater, Artists Drive, Zabriskie Point, Dante's View, the dunes, Golden Canyon and Harmony Borax Works are all on pavement, and the short gravel spurs to Devils Golf Course, Natural Bridge, Mosaic Canyon and Twenty Mule Team Canyon are normally fine for a sedan.<br><br>You need high clearance and usually 4x4 for the Racetrack, the upper Echo Canyon sites and most backcountry roads; the NPS defines high clearance as <b>15-inch wheel rims and 8 inches of ground clearance</b>."
   },
   {
    "q": "Is there cell service in Death Valley?",
@@ -1195,7 +1190,7 @@
   "end": "2027-01-18",
   "status": "planning",
   "host": "Aaron",
-  "pitch": "Three nights camped on our own gravel pad off Echo Canyon Road, a few miles from Furnace Creek, in the one season when Death Valley is comfortable: sunny 60s by day, dark skies and cold, silent nights. The lowest, hottest, driest place in North America is at its best in January — and there is room at camp for more people.",
+  "pitch": "Three nights camped on our own gravel pad off Echo Canyon Road, a few miles from Furnace Creek, in the one season when Death Valley is comfortable: sunny 60s by day, dark skies and cold, silent nights. Ben’s family from the 3rd grade DLI class is already in, and there is room at camp for more.",
   "base": {
    "name": "Echo Canyon Road, site E1",
    "detail": "<b>Backcountry Roadside Camping, Echo Canyon Road, site E1</b> — a reserved, designated dispersed site: a private gravel pad on a dirt road that we booked, with nothing at it. Echo Canyon Road leaves CA-190 about <b>4.6 miles east of the Furnace Creek Visitor Center</b>; E1 is the first site, one mile down the gravel road and the closest one to pavement. It is a 70-ft pull-through pad for up to 12 people and 3 vehicles, with no water, toilets, shade or fire ring. Our nearest — and only — neighbor is half a mile away. Furnace Creek (visitor center, store, fuel, restrooms, showers for a fee) is about 10 minutes back down the road.",
@@ -1207,8 +1202,8 @@
    ],
    "kind": "campsite"
   },
-  "arrival": "<b>Fri Jan 15:</b> drive in from <b>Las Vegas via Pahrump</b> — I-15 to NV-160, Bell Vista Road to Death Valley Junction, then CA-190 west: about <b>120 mi and 2 hours</b> to Furnace Creek. Fill the tank and buy ice and groceries in Pahrump; in-park fuel is limited and expensive. Pay the entrance fee at the visitor center or an automated kiosk (there are no staffed entrance stations). Aim to reach camp with an hour of daylight to set up; sunset is around 4:50 p.m.",
-  "departure": "<b>Mon Jan 18 (MLK Day):</b> pack up in the morning, a last stop or two along CA-190, then the 2-hour drive back to Las Vegas — or continue west on CA-190 toward Lone Pine and US-395 if you are heading to California.",
+  "arrival": "<b>Fri Jan 15:</b> drive in from Southern California — I-15 to Baker, CA-127 north to Death Valley Junction, then CA-190 west to Furnace Creek — or via Las Vegas and Pahrump (from Las Vegas it is about <b>120 mi and 2 hours</b>). Fill the tank and buy ice and groceries in Baker or Pahrump; in-park fuel is limited and expensive. Pay the entrance fee at the visitor center or an automated kiosk. Aim to reach camp with an hour of daylight; sunset is around 4:50 p.m.",
+  "departure": "<b>Mon Jan 18 (MLK Day):</b> pack up in the morning, a last stop or two along CA-190, then the drive home.",
   "conditions": [
    {
     "label": "Weather",
@@ -1224,7 +1219,7 @@
    },
    {
     "label": "Can my car get to camp?",
-    "text": "<b>E1 is the easy site.</b> It is one mile in on graded gravel, and NPS rates the lower canyon as needing moderate clearance at minimum — a crossover or SUV driven carefully is fine. The “high clearance, 15-inch rims, 4WD encouraged” rule quoted on recreation.gov is for the sites farther up the canyon (E2–E9). No trailers or big RVs; never drive off the roadbed. <b>Renting a car?</b> Most rental contracts forbid unpaved roads — leave it at Furnace Creek and ride the last mile with us, or rent from Farabee’s Jeep Rentals at Furnace Creek."
+    "text": "<b>E1 is the easy site.</b> It is one mile in on graded gravel, and NPS rates the lower canyon as needing moderate clearance at minimum — a crossover or SUV driven carefully is fine. The “high clearance, 15-inch rims, 4WD encouraged” rule quoted on recreation.gov is for the sites farther up the canyon (E2–E9). No trailers or big RVs; never drive off the roadbed. Sedans can park at Furnace Creek and ride the last mile with us."
    },
    {
     "label": "Camp life: water, toilets, trash",
@@ -1247,21 +1242,12 @@
    "Park entrance: $30 per vehicle for 7 days, or an America the Beautiful pass"
   ],
   "join": {
-   "text": "This is an easy trip to say yes to: one drive from Las Vegas, one campsite that fits a dozen people, and days spent on short walks between some of the strangest landscapes in the country. Come for all three nights, or just Saturday and Sunday — the site is booked either way.",
+   "text": "This is an easy trip to say yes to: one drive, one campsite that fits a dozen people, and days spent on short walks between some of the strangest landscapes in the country. Come for all three nights, or just Saturday and Sunday — the site is booked either way.",
    "steps": [
-    "Hit <b>I’m in</b> below — it drafts a message with the dates filled in; tell Aaron how many people, which nights, and what you’re driving (E1 allows 3 vehicles).",
-    "Get yourself to Las Vegas, or plan the drive in on CA-190. <b>Rental cars usually can’t go on dirt roads</b> — ride the last mile with us or rent a Jeep at Furnace Creek.",
+    "<b>Coordinate with Aaron</b> — how many people, which nights, and what you’re driving (E1 allows 3 vehicles).",
     "Sort a cold-weather sleeping setup and your own water and food (see Bring); ask about spare gear.",
-    "Skim the Top 10, tap <b>Add to my picks</b> on what you’d want to see — they go out with your RSVP and shape which days we go where."
+    "Tap <b>Add to my picks</b> on what you’d want to see, then send Aaron the link — it shapes which days we go where."
    ]
-  },
-  "openQuestions": [
-   "Whether to add a second site nearby if the group passes three vehicles",
-   "One big-effort day (Dante’s View at sunrise, or Mosaic Canyon and the dunes) versus keeping every day short and easy",
-   "Group dinner at The Ranch at Death Valley one night, or cook at camp every night"
-  ],
-  "contact": {
-   "name": "Aaron"
   },
   "capacity": {
    "people": 12,
@@ -1280,32 +1266,18 @@
     "note": "Good for 7 days; pay at a kiosk or the visitor center. Free with an America the Beautiful pass."
    },
    {
-    "label": "Gas",
-    "amount": "varies",
-    "note": "Fill up in Pahrump or Las Vegas; in-park fuel exists at Furnace Creek and Stovepipe Wells but is expensive."
-   },
-   {
-    "label": "Food and water",
+    "label": "Gas and food",
     "amount": "your own",
-    "note": "We cook at camp; one dinner at The Ranch at Death Valley is on the table."
+    "note": "Fill up in Baker or Pahrump. We cook at camp; one dinner at The Ranch is on the table."
    },
    {
     "label": "Cold-weather sleeping setup",
     "amount": "varies",
-    "note": "Only if you don’t own a 20°F bag and pad. Ask — there may be spares to borrow."
-   },
-   {
-    "label": "Getting to Las Vegas",
-    "amount": "your own",
-    "note": "Cars have room: tell us if you need a seat from Las Vegas or Pahrump."
+    "note": "Only if you don’t own a 20°F bag and pad — ask about spares."
    }
   ],
   "costNote": "This is the cheap trip: the site is $10 a night for all of us.",
   "keyDates": [
-   {
-    "date": "now",
-    "what": "Tell Aaron you’re in and what you’re driving — E1 allows 3 vehicles, so seats get planned early."
-   },
    {
     "date": "2026-07-15",
     "what": "The 6-month recreation.gov window for <b>Furnace Creek Campground</b> on our nights opened — already open and filling. Book it now if you’d rather have a developed campground (water, flush toilets) 10 minutes from us."
@@ -1313,40 +1285,41 @@
    {
     "date": "2027-01-15",
     "what": "Arrive with an hour of daylight (sunset ≈ 4:50 p.m.). Pay the entrance fee at the Furnace Creek Visitor Center or a kiosk on the way in; there are no staffed entrance stations."
-   },
-   {
-    "date": "2027-01-18",
-    "what": "Martin Luther King Jr. Day — a busy weekend at Furnace Creek. Pack up in the morning; the drive to Las Vegas is about 2 hours."
    }
   ],
   "faq": [
    {
     "q": "Roughly what will this cost me?",
-    "a": "Almost nothing beyond getting there: the site is $10 a night for all of us, the park is $30 per car for the week, and the rest is gas and groceries. If you need a winter sleeping bag, that is the one real purchase — or ask about spares."
+    "a": "Almost nothing beyond gas: the site is $10 a night for all of us, the park is $30 per car for the week, and the rest is groceries. If you need a winter sleeping bag, that is the one real purchase — or ask about spares."
    },
    {
     "q": "Do I have to camp on gravel? Is there a bed option?",
-    "a": "Yes, there is. Furnace Creek Campground (reservable, water, flush toilets) is 10 minutes from our site, and The Ranch at Death Valley and The Inn have rooms at the same junction. Sleep there and join us for the days and the campfire-less evenings."
+    "a": "Yes, there is. Furnace Creek Campground (reservable, water, flush toilets) is 10 minutes from our site, and The Ranch at Death Valley and The Inn have rooms at the same junction. Sleep there and join us for the days."
    },
    {
     "q": "Can I come for just the weekend?",
-    "a": "Yes — Saturday and Sunday are the full days. Drive in Friday evening or Saturday morning (2 hours from Las Vegas via Pahrump) and leave Sunday night or Monday."
+    "a": "Yes — Saturday and Sunday are the full days. Drive in Friday evening or Saturday morning and leave Sunday night or Monday."
    },
    {
     "q": "Is it kid-friendly?",
-    "a": "Yes. Our January 2025 photos are proof: dunes, salt flats, Golden Canyon and checkers on the porch at The Ranch. Cold nights are the only real consideration; kids need proper bags too."
+    "a": "Yes — see the January 2025 photos: dunes, salt flats, Golden Canyon and checkers on the porch at The Ranch. Cold nights are the only real consideration; kids need proper bags too."
    },
    {
     "q": "What car do I need?",
-    "a": "For E1, a crossover or SUV driven carefully; sedans should park at Furnace Creek and ride in with us. Rental cars generally aren’t allowed on unpaved roads. Nothing in the Top 10 needs 4WD."
+    "a": "For E1, a crossover or SUV driven carefully; sedans park at Furnace Creek and ride in with us. Nothing in the Top 10 needs 4WD."
    },
    {
     "q": "How fit do I need to be?",
     "a": "Not very. Most of the Top 10 are short walks from the car; the longest we’d likely do is Mosaic Canyon or Golden Canyon at 3–4 miles round trip. Dante’s View and Zabriskie Point are drive-ups."
+   }
+  ],
+  "roster": [
+   {
+    "name": "Aaron’s family",
+    "nights": "all three nights"
    },
    {
-    "q": "What if I don’t want to hike?",
-    "a": "Half the list is viewpoints and drives — Zabriskie, Dante’s View, Artists Drive, Badwater — and the visitor center, museum and Ranch at Furnace Creek make an easy afternoon."
+    "name": "Ben’s family (3rd grade DLI class)"
    }
   ]
  },

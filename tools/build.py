@@ -36,7 +36,7 @@ TYPE_LABEL={"hike":"Hike","viewpoint":"Viewpoint","scenic-drive":"Scenic drive",
 TYPE_PLURAL={"hike":"Hikes","viewpoint":"Viewpoints","scenic-drive":"Scenic drives","area":"Areas","canyon":"Canyons","dunes":"Dunes","walk":"Walks"}
 PERMIT_LABEL={"none":"No permit","required":"Permit required","lottery":"Permit lottery"}
 BOOK_LABEL={"reservable":"Reservable","first-come":"First-come, first-served","mixed":"Reservable + first-come","permit":"Permit"}
-SECTIONS=[("trip","The Trip"),("overview","Overview"),("top10","Top 10"),("photos","Photos & Map"),("plan","Plan"),("stay","Stay"),("safety","Safety"),("itineraries","Itineraries"),("faq","FAQ")]
+SECTIONS=[("trip","The Trip"),("overview","Overview"),("top10","Top 10"),("photos","Photos & Map"),("plan","Plan"),("stay","Stay"),("safety","Safety"),("faq","FAQ")]
 MONTHS=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
 MONTHS_LONG=["January","February","March","April","May","June","July","August","September","October","November","December"]
 DOW=["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]
@@ -130,25 +130,11 @@ def trip_banner(g):
             f'<span class="tb-nights">{nights_label(t)}</span><span class="tb-base">{"camping at" if t["base"].get("kind")=="campsite" else "base:"} <b>{E(t["base"]["name"])}</b></span>'
             f'<span class="tb-count" id="tripCountdown"></span><span class="spacer"></span><a class="btn primary" href="#trip/join">Join this trip →</a></div>')
 
-def contact_buttons(g,cls="btn primary",label="I’m in →"):
-    """Primary RSVP action: mailto/sms when configured, otherwise copy a prefilled RSVP to paste into chat."""
-    t=g["trip"];c=t.get("contact",{})
-    out=[]
-    if c.get("email"):
-        out.append(f'<a class="{cls} rsvp" data-kind="mail" href="mailto:{E(c["email"])}">{label}</a>')
-    elif c.get("sms"):
-        out.append(f'<a class="{cls} rsvp" data-kind="sms" href="sms:{E(c["sms"])}">{label}</a>')
-    else:
-        out.append(f'<button type="button" class="{cls} rsvp" data-kind="copy">{label}</button>')
-    if c.get("chatUrl"):
-        out.append(f'<a class="btn" href="{E(c["chatUrl"])}" target="_blank" rel="noopener">{E(c.get("chatLabel","Open the group chat"))}</a>')
-    return "".join(out)
-
 def sec_trip(g):
     t=g.get("trip")
     if not t: return ""
     host=t.get("host",SITE.get("host",{}).get("name","the organizer"))
-    out=[f'<h2 class="sech">{E(t["title"])}</h2><p class="byline">Hosted by {E(host)} · {E(t.get("status","planning").capitalize())} · plans are a working draft — say what you’d change</p><p class="lede">{H(t.get("pitch",""))}</p>']
+    out=[f'<h2 class="sech">{E(t["title"])}</h2><p class="byline">Hosted by {E(host)}</p><p class="lede">{H(t.get("pitch",""))}</p>']
     # facts row: When · Cost (or Capacity)
     facts=[f'<div class="card fact-card"><p class="eyebrow">When</p><p class="big">{E(fmt_range(t["start"],t["end"]))}</p><p class="linkrow">{nights_label(t)} · <span id="tripCountdown2"></span></p><p class="linkrow"><a class="btn small" href="trip.ics" download="{E(g["slug"])}-trip.ics">＋ Add to calendar</a></p></div>']
     if t.get("capacity"):
@@ -183,7 +169,7 @@ def sec_trip(g):
     A=sorted(g.get("attractions",[]),key=lambda a:a["rank"])
     if A:
         tiles="".join(f'<a class="tile" href="#top10/{E(a["id"])}">{img(g,a.get("image"),a.get("imageAlt",a["name"]),mode="thumb")}<span class="tile-b"><span class="tile-n">{a["rank"]}</span><b>{E(a["name"])}</b><small>{E(TYPE_LABEL.get(a.get("type",""),a.get("type","")))}{(" · "+DIFF_LABEL.get(a["difficulty"],a["difficulty"])) if a.get("difficulty") else ""}{(" · "+E(a["stats"]["distance"])) if a.get("stats",{}).get("distance") and len(a["stats"]["distance"])<=24 else ""}</small></span></a>' for a in A)
-        out.append(f'<h2 class="mt">What we might do</h2><p class="lede">No fixed schedule — these are the {len(A)} things worth the trip, ranked by popularity. Tap one for the full card, and use <b>Add to my picks</b> to tell {E(host)} what you’d want to do.</p><div class="tiles">{tiles}</div>')
+        out.append(f'<h2 class="mt">What we might do</h2><p class="lede">No fixed schedule — these are the {len(A)} things worth the trip, ranked by popularity. Tap one for the full card; <b>Add to my picks</b> builds a list you can send {E(host)}.</p><div class="tiles">{tiles}</div>')
         out.append(f'<div class="card" id="picks"><h3>My picks</h3><div id="picksBox" aria-live="polite"></div></div>')
     C=t.get("conditions")
     if isinstance(C,list):
@@ -191,13 +177,12 @@ def sec_trip(g):
     elif C: out.append(f'<div class="card"><h2>What these dates mean</h2>{units(H(C))}</div>')
     out.append('<div class="grid2">')
     if t.get("bring"): out.append('<div class="card"><h3>Bring</h3><p class="linkrow" id="packCount"></p><ul class="checks">'+"".join(f'<li><label><input type="checkbox" data-pack="{i}"> <span>{units(H(b))}</span></label></li>' for i,b in enumerate(t["bring"]))+'</ul></div>')
-    if t.get("openQuestions"): out.append('<div class="card"><h3>Still deciding</h3><ul>'+"".join(f'<li>{H(q)}</li>' for q in t["openQuestions"])+f'</ul><p class="linkrow">Have an opinion? Say so when you RSVP.</p></div>')
+    if t.get("openQuestions"): out.append('<div class="card"><h3>Still deciding</h3><ul>'+"".join(f'<li>{H(q)}</li>' for q in t["openQuestions"])+'</ul></div>')
     out.append('</div>')
     if t.get("join"):
-        j=t["join"];c=t.get("contact",{})
-        how=("Opens an email to "+E(c.get("name",host))) if c.get("email") else ("Opens a text to "+E(c.get("name",host))) if c.get("sms") else "Copies a ready-to-send RSVP — paste it into the chat this link came from"
+        j=t["join"]
         out.append(f'<div class="card join" id="join"><h2>Want to come?</h2>{H(j.get("text",""))}'+("<ol>"+"".join(f'<li>{H(x)}</li>' for x in j.get("steps",[]))+"</ol>" if j.get("steps") else "")
-                   +f'<div class="cta">{contact_buttons(g)}<a class="btn" href="trip.ics" download="{E(g["slug"])}-trip.ics">Add to calendar</a><button type="button" class="btn sharepage">Copy link to this trip</button></div><p class="linkrow how">{how}. Your picks and the trip details are filled in for you.</p><span class="visually-hidden" role="status" id="copyStatus"></span></div>')
+                   +f'<div class="cta"><button type="button" class="btn sharepage">Copy link to this trip</button><a class="btn" href="trip.ics" download="{E(g["slug"])}-trip.ics">Add to calendar</a></div><span class="visually-hidden" role="status" id="copyStatus"></span></div>')
         if t.get("roster"):
             out.append('<div class="card"><h3>Who’s in so far</h3><ul>'+"".join(f'<li><b>{E(r["name"])}</b>'+(f' — {E(r["nights"])}' if r.get("nights") else "")+'</li>' for r in t["roster"])+'</ul></div>')
     if t.get("faq"):
@@ -261,7 +246,7 @@ def sec_top10(g):
             pic=img(g,x.get("image"),x.get("name",""),mode="thumb") if x.get("image") and has(g,x["image"]) else ""
             items+=f'<li>{("<span class=also-pic>"+pic+"</span>") if pic else ""}<span><b>{E(x["name"])}</b> — {units(H(x.get("why","")))}'+(f' <a href="{E(x["url"])}" target="_blank" rel="noopener">Details<span class="visually-hidden"> about {E(x["name"])}</span></a>' if x.get("url") else "")+(f'<span class="credit">{credit_text(g,x.get("image"))}</span>' if x.get("image") and credit_text(g,x.get("image")) else "")+'</span></li>'
         also=f'<div class="card also"><h2>Also consider</h2><ul>{items}</ul></div>'
-    return f'<h2 class="sech">Top 10 natural attractions</h2><p class="lede">Ranked by popularity. Distances and times are official park figures where available; “time” assumes an average hiker with stops. Tap <b>Add to my picks</b> to build the list you’ll send back with your RSVP.</p>{fb}{cards}{none}{also}'
+    return f'<h2 class="sech">Top 10 natural attractions</h2><p class="lede">Ranked by popularity. Distances and times are official park figures where available. Tap <b>Add to my picks</b> to build a list you can send the host.</p>{fb}{cards}{none}{also}'
 
 def mapdata(g):
     pts=[]
@@ -365,7 +350,7 @@ def sec_itin(g):
     return "".join(out)
 
 def sec_faq(g):
-    return '<h2 class="sech">Frequently asked</h2><p class="lede">About the park in general. Questions about joining our trip are answered on <a href="#trip">The Trip</a>.</p>'+"".join(f'<details><summary>{E(q["q"])}</summary><div class="body">{units(H(q["a"]))}</div></details>' for q in g.get("faq",[]))
+    return '<h2 class="sech">Frequently asked</h2><p class="lede">About the park in general. Trip questions are on <a href="#trip">The Trip</a>.</p>'+"".join(f'<details><summary>{E(q["q"])}</summary><div class="body">{units(H(q["a"]))}</div></details>' for q in g.get("faq",[]))
 
 def footer(g):
     srcs="".join(f'<li><a href="{E(s["url"])}" target="_blank" rel="noopener">{E(s["title"])}</a></li>' for s in g.get("sources",[]))
@@ -404,12 +389,12 @@ def render_guide(slug):
     extra=""
     if theme.get("accent"): extra+=f':root{{--accent:{theme["accent"]};--accent-ink:{theme.get("accentInk",theme["accent"])};--accent-soft:{theme.get("accentSoft","#f6e6dd")}}}'
     if theme.get("accentDark"): extra+=f'@media (prefers-color-scheme: dark){{:root:not([data-theme="light"]){{--accent:{theme["accentDark"]};--accent-ink:{theme.get("accentInkDark",theme["accentDark"])};--accent-soft:{theme.get("accentSoftDark","#3a2418")}}}}}:root[data-theme="dark"]{{--accent:{theme["accentDark"]};--accent-ink:{theme.get("accentInkDark",theme["accentDark"])};--accent-soft:{theme.get("accentSoftDark","#3a2418")}}}'
-    body={"trip":sec_trip,"overview":sec_overview,"top10":sec_top10,"photos":sec_photos,"plan":sec_plan,"stay":sec_stay,"safety":sec_safety,"itineraries":sec_itin,"faq":sec_faq}
+    body={"trip":sec_trip,"overview":sec_overview,"top10":sec_top10,"photos":sec_photos,"plan":sec_plan,"stay":sec_stay,"safety":sec_safety,"faq":sec_faq}
     S=[x for x in SECTIONS if x[0]!="trip" or g.get("trip")]
     secs="".join(f'<section class="sec" id="{sid}" data-title="{t}" aria-labelledby="tab-{sid}">{body[sid](g)}</section>\n' for sid,t in S)
     tabs="".join(f'<a href="#{sid}" id="tab-{sid}" data-sec="{sid}">{t}</a>' for sid,t in S)
     t=g.get("trip");host=(t or {}).get("host",SITE.get("host",{}).get("name",""))
-    rsvp=json.dumps({"title":t["title"],"dates":fmt_range(t["start"],t["end"]),"host":host,"url":g["_url"] or None,"contactName":(t.get("contact") or {}).get("name",host)}) if t else "null"
+    rsvp=json.dumps({"title":t["title"],"host":host,"url":g["_url"] or None}) if t else "null"
     rsvpj=rsvp.replace("</","<\\/")
     page=f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -442,7 +427,7 @@ def render_landing(guides):
         pic=f'<img src="guides/{E(g["slug"])}/img/{E(hero)}" alt="{E(g.get("hero",{}).get("alt",g["name"]))}" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement(\'div\'),{{className:\'noimg\'}}))">' if hero and has(g,hero) else '<div class="noimg"></div>'
         if t:
             meta=f'<p class="gdates">📅 {E(fmt_range(t["start"],t["end"]))} <span class="tb-count" data-start="{E(t["start"])}" data-end="{E(t["end"])}"></span></p><p>{nights_label(t)} · {"camping at" if t["base"].get("kind")=="campsite" else "base:"} {E(t["base"]["name"])}</p>'
-            cta=f'<span class="btn primary">See the plan &amp; RSVP →</span>'
+            cta=f'<span class="btn primary">See the plan →</span>'
             title=E(t["title"])
         else:
             meta=f'<p>{E(g.get("tagline",""))}</p>';cta='<span class="btn">Open the guide →</span>';title=E(g["name"])

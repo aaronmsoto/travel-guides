@@ -119,12 +119,6 @@
   // ---- My picks (localStorage + shareable) ----
   function pickNames(){return ST.trip.map(id=>cards.find(c=>c.id===id)).filter(Boolean).map(c=>c.dataset.name)}
   function picksUrl(){return pageUrl()+"#trip/picks="+ST.trip.join(",")}
-  function rsvpText(){
-    const who=RSVP?RSVP.contactName||RSVP.host:"";
-    const names=pickNames();
-    return "Hi "+(who||"there")+" — I’m in for "+(RSVP?RSVP.title+" ("+RSVP.dates+")":"the trip")+".\n"+
-      "People: \nNights: \nDriving: \n"+(names.length?"My picks: "+names.join(", ")+"\n":"")+(names.length?picksUrl():pageUrl());
-  }
   function tripBtnState(){
     cards.forEach(c=>{const b=$(".addtrip",c);if(!b)return;const on=ST.trip.includes(c.id);b.classList.toggle("on",on);b.setAttribute("aria-pressed",on);b.textContent=on?"✓ In my picks":"+ Add to my picks"});
     const cnt=$("#tripCount");if(cnt){cnt.textContent=ST.trip.length;cnt.hidden=!ST.trip.length}
@@ -132,17 +126,15 @@
   }
   function renderTrip(){
     const box=$("#picksBox");if(!box)return;
-    if(!ST.trip.length){box.innerHTML='<p class="trip-empty">Nothing picked yet. Tap a tile above or open <a href="#top10">Top 10</a> and hit <b>Add to my picks</b> on anything you’d want to do. Your picks are kept in this browser and go out with your RSVP.</p>';return}
+    if(!ST.trip.length){box.innerHTML='<p class="trip-empty">Nothing picked yet. Tap a tile above or open <a href="#top10">Top 10</a> and hit <b>Add to my picks</b> on anything you’d want to do. Picks are kept in this browser; copy the link to send them to the host.</p>';return}
     let permits=0;
     const items=ST.trip.map(id=>cards.find(c=>c.id===id)).filter(Boolean).map((c,i)=>{
       const d=c.dataset;if(d.permit!=="none")permits++;
       return '<li><span class="n">'+(i+1)+'</span><span class="t"><a href="#top10/'+esc(c.id)+'">'+esc(d.name)+'</a><small>'+esc([d.typeLabel,d.difficultyLabel,d.time].filter(Boolean).join(" · "))+(d.permit!=="none"?' · permit '+esc(d.permit):'')+'</small></span><button type="button" class="btn ghost rmtrip" data-id="'+esc(c.id)+'" aria-label="Remove '+esc(d.name)+'">Remove</button></li>';
     }).join("");
     box.innerHTML='<ul class="trip-list">'+items+'</ul><p class="linkrow">'+ST.trip.length+' of '+cards.length+' picked'+(permits?' · <b>'+permits+'</b> need'+(permits>1?'':'s')+' a permit or lottery':'')+' · kept in this browser</p>'+
-      '<p class="cta"><button type="button" class="btn primary" id="picksSend">Send my picks with my RSVP</button> <button type="button" class="btn" id="picksCopy">Copy a link to my picks</button> <button type="button" class="btn ghost" id="tripPrint">Print my picks</button> <button type="button" class="btn ghost danger" id="tripClear">Clear</button></p>';
-    $("#picksSend",box).addEventListener("click",()=>{const r=$(".rsvp");if(r)r.click();else copy(rsvpText(),$("#picksSend",box),"RSVP copied","Copied ✓")});
-    $("#picksCopy",box).addEventListener("click",e=>copy(picksUrl(),e.currentTarget,"Link to your picks copied"));
-    $("#tripPrint",box).addEventListener("click",()=>{document.body.classList.add("print-picks");addEventListener("afterprint",()=>document.body.classList.remove("print-picks"),{once:true});window.print()});
+      '<p class="cta"><button type="button" class="btn primary" id="picksCopy">Copy a link to my picks</button> <button type="button" class="btn ghost danger" id="tripClear">Clear</button></p>';
+    $("#picksCopy",box).addEventListener("click",e=>copy(picksUrl(),e.currentTarget,"Link to your picks copied","Link copied ✓ — send it to the host"));
     $("#tripClear",box).addEventListener("click",()=>{if(confirm("Clear your picks?")){ST.trip=[];save(ST);tripBtnState();applyFilters()}});
   }
   document.addEventListener("click",e=>{
@@ -150,13 +142,6 @@
     const r=e.target.closest(".rmtrip");if(r){ST.trip=ST.trip.filter(x=>x!==r.dataset.id);save(ST);tripBtnState();if(F.trip)applyFilters();return}
     const cp=e.target.closest(".copylink");if(cp){copy(pageUrl()+"#top10/"+cp.dataset.id,cp,"Link copied","Link copied");return}
     const sp=e.target.closest(".sharepage");if(sp){copy(pageUrl()+"#trip",sp,"Link copied","Link copied ✓");return}
-    const rs=e.target.closest(".rsvp");
-    if(rs){
-      const text=rsvpText();
-      if(rs.dataset.kind==="mail"){const subj=(RSVP?RSVP.title:"Trip")+" — count me in";rs.href=rs.href.split("?")[0]+"?subject="+encodeURIComponent(subj)+"&body="+encodeURIComponent(text);return}
-      if(rs.dataset.kind==="sms"){rs.href=rs.href.split("?")[0]+"?&body="+encodeURIComponent(text);return}
-      e.preventDefault();copy(text,rs,"RSVP copied — paste it into the chat","RSVP copied ✓ — paste it into the chat");
-    }
   });
   tripBtnState();applyFilters();
 

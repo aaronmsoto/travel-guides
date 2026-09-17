@@ -4,7 +4,7 @@ Research-backed, single-page travel guides that double as **trip invitations**. 
 **declarative `guide.json`** rendered by a small build step into a self-contained HTML page
 (inline CSS/JS, relative images) that works offline (except the map), prints cleanly, and needs
 no server. The first tab is **The Trip**: dates, home base, getting in/out, what these dates mean,
-cost, capacity, a packing list, and an "I'm in" RSVP that carries the reader's picks.
+cost, capacity, a packing list, and a "Want to come?" card that points readers to the host.
 
 | Guide | Page | Source of truth |
 |---|---|---|
@@ -16,7 +16,7 @@ Open `index.html` at the repo root for the landing page. Every guide has the sam
 natural attractions with filters and "Add to my picks") · **Photos & Map** (personal photos from
 past trips, a lightbox, and a map of photo pins, Top 10 pins and the home base) · **Plan** ·
 **Stay** (camping with exact booking mechanics, lodging) · **Safety** (sorted for the trip's
-season) · **Itineraries** · **FAQ**. A footer lists every source and photo credit.
+season) · **FAQ**. A footer lists every source and photo credit.
 
 ## Architecture
 
@@ -64,22 +64,19 @@ Dependencies: Python 3.11+, Pillow (`pip install Pillow`) for image fetching onl
 
 ## Publishing
 
-The site is built for GitHub Pages at the `baseUrl` in `site.json`
-(`https://aaronmsoto.github.io/travel-guides/`). Plan: create `main` from the working branch, add a
-Pages workflow that runs `validate.py` + `build.py` and deploys, add `.nojekyll`, and enable
-Pages (Settings → Pages → Source: GitHub Actions). `noindex` in `site.json` keeps the pages out of
-search engines while links still work for anyone they're sent to.
+Live at https://aaronmsoto.github.io/travel-guides/ (the `baseUrl` in `site.json`). Every push to
+`main` runs `.github/workflows/pages.yml`: validate, build, fail if the committed HTML is stale,
+then deploy. `noindex` in `site.json` keeps the pages out of search engines while links still work
+for anyone they're sent to.
 
 ## Client features
 
 Hash routing (`#top10/angels-landing` deep-links to a card; `#trip/picks=a,b` shares a pick
-list) · filters by type, difficulty, permit-free, "my picks" · **My picks** saved in `localStorage`,
-sent with the RSVP, copyable as a link · **I'm in** RSVP (prefilled email/text when a contact is
-set, otherwise a ready-to-paste message) · `trip.ics` calendar file · packing checklist that
+list) · filters by type, difficulty, permit-free, "my picks" · **My picks** saved in `localStorage`
+and copyable as a link to send the host · `trip.ics` calendar file · packing checklist that
 remembers ticks · miles/°F ↔ km/°C toggle · light/dark theme with an `--on-accent` token · print
-(whole guide, or just the picks, with URLs printed) · live regions, reduced-motion, keyboard
-accessible · no external requests except the on-demand map (Leaflet from cdnjs with SRI,
-OpenStreetMap tiles).
+with URLs · live regions, reduced-motion, keyboard accessible · no external requests except the
+on-demand map (Leaflet from cdnjs with SRI, OpenStreetMap tiles).
 
 ## Licensing
 

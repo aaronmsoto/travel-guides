@@ -91,7 +91,6 @@ def check(slug,links):
         if b.get("kind") not in ("town","campsite","lodge"): err(f"{ctx}/base: kind must be town|campsite|lodge")
         if not b.get("coords"): err(f"{ctx}/base: coords required (map home pin)")
         if b.get("image"): used_imgs.add(b["image"])
-        if not t.get("contact"): warn(f"{ctx}: no contact — the I'm-in button will copy an RSVP instead of opening a message")
         if not t.get("cost"): warn(f"{ctx}: no cost card")
         if not t.get("faq"): warn(f"{ctx}: no trip faq")
         for k in t.get("keyDates",[]) or []:

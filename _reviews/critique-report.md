@@ -125,5 +125,7 @@ interactive bring list with a "N of 9 packed" counter (P28, T27), share-card ima
 - Images: pruned 4 unused files; generated a 960 px `mid-` tier for `srcset`.
 - Verified in-browser: no horizontal scroll at 390 px; deep links land below the sticky stack;
   picks → RSVP text includes the pick list and a `#trip/picks=` link; dark-mode buttons readable.
-- Left for the owner: set `trip.contact.email` or `chatUrl`; decide which personal photos stay
-  public (`private: true`); fill `trip.roster` and `capacity.peopleTaken` as people say yes.
+- Owner decisions (v1.2): photos stay public, no names inferred; RSVP mechanics removed in favor of
+  "coordinate with the host"; flights/rental-car content removed (everyone drives from Southern
+  California); Itineraries tab dropped and trip content trimmed; Death Valley roster lists the
+  host's family and Ben's family from the 3rd grade DLI class.

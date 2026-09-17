@@ -32,11 +32,6 @@
    "note": "Plus December 26 – January 2; free, no ticket"
   },
   {
-   "label": "Nearest airports",
-   "value": "St. George 49 mi, Las Vegas 170 mi",
-   "note": "Cedar City 60 mi, Salt Lake City 300 mi"
-  },
-  {
    "label": "Time zone",
    "value": "Mountain Time",
    "note": "All permit deadlines are quoted in MT"
@@ -134,12 +129,12 @@
   "gettingThere": [
    {
     "from": "Las Vegas (LAS)",
-    "how": "The usual approach. I-15 north into Utah, then UT-9 east through Hurricane and La Verkin to Springdale and the South Entrance. NPS lists the airport at 170 miles.",
+    "how": "The usual approach. I-15 north into Utah, then UT-9 east through Hurricane and La Verkin to Springdale and the South Entrance.",
     "miles": 170
    },
    {
     "from": "St. George (SGU), UT",
-    "how": "The closest airport at 49 miles, via I-15 north to UT-9 east. Rental cars and full-size groceries are here, and it is a common budget base.",
+    "how": "49 miles via I-15 north to UT-9 east. Full-size groceries are here, and it is a common budget base.",
     "miles": 49
    },
    {
@@ -149,7 +144,7 @@
    },
    {
     "from": "Salt Lake City (SLC)",
-    "how": "300 miles, essentially all I-15 south. Most people break the drive or fly into St. George or Las Vegas instead.",
+    "how": "300 miles, essentially all I-15 south. Most people break the drive.",
     "miles": 300
    },
    {
@@ -654,12 +649,11 @@
     "kind": "nearby town",
     "distance": "Hurricane and La Verkin on the UT-9 approach; St. George 49 mi; Cedar City 60 mi; Kanab east of the park",
     "priceBand": "$–$$$",
-    "summary": "<b>Hurricane and La Verkin</b> are the standard budget answer — chain motels, RV parks and supermarkets directly on the UT-9 approach, so you are not detouring, just sleeping earlier on the same road. <b>St. George</b> (49 mi) has the closest airport and the deepest hotel supply; <b>Cedar City</b> (60 mi) is the practical base if you want <b>Kolob Canyons</b> first, 17 miles south at I-15 Exit 40. <b>Kanab</b> is the east-side base for a loop with Bryce Canyon and the North Rim — but <b>check your vehicle size</b>, since June 7, 2026 large vehicles cannot use that route. The tradeoff everywhere is arriving with the morning traffic rather than walking in ahead of it.",
+    "summary": "<b>Hurricane and La Verkin</b> are the standard budget answer — chain motels, RV parks and supermarkets directly on the UT-9 approach, so you are not detouring, just sleeping earlier on the same road. <b>St. George</b> (49 mi) has the deepest hotel supply; <b>Cedar City</b> (60 mi) is the practical base if you want <b>Kolob Canyons</b> first, 17 miles south at I-15 Exit 40. <b>Kanab</b> is the east-side base for a loop with Bryce Canyon and the North Rim — but <b>check your vehicle size</b>, since June 7, 2026 large vehicles cannot use that route. The tradeoff everywhere is arriving with the morning traffic rather than walking in ahead of it.",
     "examples": [
      "Chain motels along SR-9",
      "RV parks",
-     "Vacation rentals",
-     "Nearest hospitals and airports"
+     "Vacation rentals"
     ],
     "url": "https://www.nps.gov/zion/planyourvisit/directions.htm"
    }
@@ -1034,7 +1028,7 @@
    "name": "Springdale, UT",
    "detail": "We are staying in town, <b>within 1 mile of the park’s South Entrance</b>. Springdale sits right at the gate: restaurants, groceries, gas and Narrows gear rental are all on the one main street, and the <b>free town shuttle</b> stops along it and drops at the park’s pedestrian entrance, so we can leave the cars parked most days.",
    "mapUrl": "https://maps.google.com/?q=Springdale,+UT+84767",
-   "bookingNote": "Book a Springdale room for <b>Sun Nov 22, Mon Nov 23 and Tue Nov 24</b> (check out Wed Nov 25) — three nights, not four — as close to the South Entrance as you can, or ask about sharing ours. If you fly in, add Las Vegas for Sat Nov 21. Springdale fills for the holiday week, so book early; see <a href=\"#stay\">Stay</a> for the town and example properties.",
+   "bookingNote": "Book a Springdale room for <b>Sun Nov 22, Mon Nov 23 and Tue Nov 24</b> (check out Wed Nov 25) — three nights, not four — as close to the South Entrance as you can, or ask about sharing ours. Add Las Vegas for Sat Nov 21 if you’re driving up with us. Springdale fills for the holiday week, so book early; see <a href=\"#stay\">Stay</a> for the town and example properties.",
    "coords": [
     37.1889,
     -112.9986
@@ -1043,8 +1037,8 @@
    "image": "springdale.jpg",
    "imageAlt": "Springdale’s main street with Zion’s cliffs behind it"
   },
-  "arrival": "<b>Sat Nov 21:</b> travel day. Fly or drive to <b>Las Vegas</b> and sleep in or near the city.<br><b>Sun Nov 22:</b> drive Las Vegas → Springdale, about <b>170 mi, roughly 2 h 45 min</b> via I-15 north and UT-9 east through Hurricane. Utah is on <b>Mountain Time</b>, one hour ahead of Las Vegas. Stop for groceries in Hurricane or St. George; Springdale has a market but small selection.",
-  "departure": "<b>Wed Nov 25:</b> a short morning in the park, then drive back to Las Vegas for evening flights or the drive home. It is the day before Thanksgiving, so expect heavier I-15 traffic near Las Vegas by late afternoon.",
+  "arrival": "<b>Sat Nov 21:</b> drive up from Southern California and sleep in or near <b>Las Vegas</b>.<br><b>Sun Nov 22:</b> Las Vegas → Springdale, about <b>170 mi, roughly 2 h 45 min</b> via I-15 north and UT-9 east through Hurricane. Utah is on <b>Mountain Time</b>, one hour ahead of Las Vegas. Stop for groceries in Hurricane; Springdale has a small market.",
+  "departure": "<b>Wed Nov 25:</b> a short morning in the park, then the drive home. It is the day before Thanksgiving, so expect heavier I-15 traffic near Las Vegas by late afternoon.",
   "conditions": [
    {
     "label": "Weather",
@@ -1082,28 +1076,20 @@
    "Snacks and a packed lunch — there is no food in the canyon beyond Zion Lodge"
   ],
   "join": {
-   "text": "The more the better: hikes are more fun in a group, cars fill up efficiently, and dinners in Springdale are better with company. Come for the whole stretch, or drive in from Las Vegas for a day or two — Springdale is 2 h 45 min from the Strip.",
+   "text": "The more the better: hikes are more fun in a group, cars fill up efficiently, and dinners in Springdale are better with company. Come for the whole stretch or just a day or two.",
    "steps": [
-    "Hit <b>I’m in</b> below — it drafts a message with the dates filled in; tell Aaron your nights, headcount and whether you’re driving.",
-    "Book a Springdale room for Nov 22–24 (or ask about sharing ours) and your travel to Las Vegas.",
-    "Create a recreation.gov account before the trip so you can enter the Angels Landing day-before lottery with us.",
-    "Skim the Top 10, tap <b>Add to my picks</b> on what you’d want to do — they go out with your RSVP so we can plan cars and shuttle times."
+    "<b>Coordinate with Aaron</b> — which nights, how many people, and whether you’re driving or want a seat.",
+    "Book a Springdale room for Nov 22–24, or ask about sharing ours.",
+    "Set up a recreation.gov account so you can enter the Angels Landing day-before lottery with us.",
+    "Tap <b>Add to my picks</b> on what you’d want to do, then send Aaron the link — that’s how we plan cars and shuttle times."
    ]
   },
-  "openQuestions": [
-   "Which big hikes people want most — Angels Landing (lottery), The Narrows (cold-water gear), or Observation Point via East Mesa (a drive to the east side)",
-   "Whether to add a Kolob Canyons detour on the way out (Exit 40 on I-15, about an hour)",
-   "Wednesday timing — leave by noon to beat Thanksgiving-eve traffic, or make it a full day and drive after dinner"
-  ],
   "nightsNote": "3 in Springdale + 1 in Las Vegas",
-  "contact": {
-   "name": "Aaron"
-  },
   "cost": [
    {
     "label": "Springdale room, 3 nights",
     "amount": "varies",
-    "note": "The main cost. Rates range widely by property and Thanksgiving week is peak — the Stay tab lists example properties to price."
+    "note": "The main cost; Thanksgiving week is peak. The Stay tab lists example properties to price."
    },
    {
     "label": "Park entrance",
@@ -1118,20 +1104,10 @@
    {
     "label": "Narrows gear rental",
     "amount": "varies",
-    "note": "Dry pants or drysuit, canyon boots and a stick from a Springdale outfitter, by the day. Only if you do the Narrows."
-   },
-   {
-    "label": "Getting to Las Vegas + rental car",
-    "amount": "your own",
-    "note": "Cars fill up: tell us if you need a seat from Las Vegas."
-   },
-   {
-    "label": "Food",
-    "amount": "varies",
-    "note": "Dinners out in Springdale most nights; groceries in Hurricane on the way in."
+    "note": "Dry pants or drysuit, boots and a stick from a Springdale outfitter, by the day — only if you do the Narrows."
    }
   ],
-  "costNote": "No group fee. Entrance and gas split per car; everything else is what you choose.",
+  "costNote": "No group fee. Gas and entrance split per car; cars fill up, so ask Aaron for a seat.",
   "keyDates": [
    {
     "date": "now",
@@ -1140,24 +1116,16 @@
    {
     "date": "2026-11-22",
     "what": "<b>12:01 a.m.–3 p.m. Mountain Time:</b> apply to the Angels Landing <b>day-before lottery</b> for Monday’s hike on recreation.gov ($6 per group). Results by 4 p.m. Repeat Monday for a Tuesday attempt."
-   },
-   {
-    "date": "2026-11-25",
-    "what": "Wednesday is the day before Thanksgiving: leave Springdale by early afternoon to stay ahead of I-15 traffic into Las Vegas."
-   },
-   {
-    "date": "2026-11-28",
-    "what": "Last day of the Zion Canyon shuttle season — our whole trip is inside it, so the Scenic Drive is shuttle-only."
    }
   ],
   "faq": [
    {
     "q": "Roughly what will this cost me?",
-    "a": "Your Springdale room is the big number and depends entirely on the property; the park is $35 per car for the week, the Angels Landing lottery is $6 plus $3 a person if you win, and Narrows gear is a day rental if you go. Everything else is food and getting to Las Vegas. See “Roughly what it costs” above."
+    "a": "Your Springdale room is the big number and depends on the property; the park is $35 per car for the week, the Angels Landing lottery is $6 plus $3 a person if you win, and Narrows gear is a day rental if you go. The rest is gas and food."
    },
    {
     "q": "Can I come for just one day?",
-    "a": "Yes. Springdale is about 2 h 45 min from Las Vegas. The best single day is Monday or Tuesday: first shuttle at 7 a.m., one big hike, dinner in town, drive back."
+    "a": "Yes. The best single day is Monday or Tuesday: first shuttle at 7 a.m., one big hike, dinner in town."
    },
    {
     "q": "Do I have to do Angels Landing?",
@@ -1165,11 +1133,7 @@
    },
    {
     "q": "Is it kid-friendly?",
-    "a": "Very, for the right hikes: Pa’rus Trail (paved), Riverside Walk, the lower Emerald Pools, Canyon Overlook. Kids have done the Narrows in warmer months with dry gear; in November keep them to the first stretch. Angels Landing is not for young children."
-   },
-   {
-    "q": "What kind of car do I need?",
-    "a": "Any car. Everything on this trip is paved, and inside the canyon you ride the shuttle. Oversize RVs and trailers cannot use the Zion–Mount Carmel Highway since June 2026."
+    "a": "Very, for the right hikes: Pa’rus Trail (paved), Riverside Walk, the lower Emerald Pools, Canyon Overlook. In November keep kids to the first stretch of the Narrows. Angels Landing is not for young children."
    },
    {
     "q": "How fit do I need to be?",
