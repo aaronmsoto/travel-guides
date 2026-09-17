@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [main, claude/travel-guides-zion-death-valley-mkahmr]  # remove the second entry once the github-pages environment allows main
   workflow_dispatch:
 
 permissions:

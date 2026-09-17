@@ -352,7 +352,10 @@ def sec_itin(g):
 def sec_faq(g):
     return '<h2 class="sech">Frequently asked</h2><p class="lede">About the park in general. Trip questions are on <a href="#trip">The Trip</a>.</p>'+"".join(f'<details><summary>{E(q["q"])}</summary><div class="body">{units(H(q["a"]))}</div></details>' for q in g.get("faq",[]))
 
-def footer(g):
+def footnav(g,others):
+    items="".join(f'<li><a href="../{E(o["slug"])}/index.html#trip">{E(o["name"])}{(" — "+E(fmt_range(o["trip"]["start"],o["trip"]["end"]))) if o.get("trip") else ""} →</a></li>' for o in others)
+    return f'<nav class="footnav" aria-label="More"><a class="btn" href="../../index.html">← All trips</a>'+(f'<div><p class="eyebrow">Other trips</p><ul>{items}</ul></div>' if items else "")+'</nav>'
+def footer(g,others=()):
     srcs="".join(f'<li><a href="{E(s["url"])}" target="_blank" rel="noopener">{E(s["title"])}</a></li>' for s in g.get("sources",[]))
     creds=[]
     for f,m in sorted(g["_manifest"].items()):
@@ -361,7 +364,7 @@ def footer(g):
         if m.get("sourceUrl"): inner=f'<a href="{E(m["sourceUrl"])}" target="_blank" rel="noopener">{inner}</a>'
         creds.append(f'<li>{inner}</li>')
     pc="".join(f'<li>{E(a["title"])} album — {E(a.get("credit","personal photos"))}, used with permission</li>' for a in g["_photos"].get("albums",[]) if a["items"])
-    return (f'<footer class="site"><p><b>Last verified {E(g.get("lastVerified",""))}.</b> Conditions, fees, and reservation rules change — always confirm on the official pages below before you go. This guide is independent and not affiliated with the National Park Service.</p>'
+    return (f'<footer class="site">{footnav(g,others)}<p><b>Last verified {E(g.get("lastVerified",""))}.</b> Conditions, fees, and reservation rules change — always confirm on the official pages below before you go. This guide is independent and not affiliated with the National Park Service.</p>'
             f'<h2>Sources</h2><ul>{srcs}</ul><h2>Photo credits</h2><ul>{"".join(creds)}{pc}</ul></footer>')
 
 def head_meta(g):
@@ -383,7 +386,7 @@ def head_meta(g):
     if SITE.get("noindex"): og.append('<meta name="robots" content="noindex">')
     return f'<title>{E(title)}</title>\n<meta name="description" content="{E(desc)}">\n'+"\n".join(og)
 
-def render_guide(slug):
+def render_guide(slug,others=()):
     g=load(slug)
     theme=g.get("theme",{})
     extra=""
@@ -402,12 +405,12 @@ def render_guide(slug):
 <style>{CSS}{extra}</style>
 </head><body data-slug="{E(slug)}" data-name="{E(g["name"])}" data-verified="{E(g.get("lastVerified",""))}">
 <a class="skip" href="#main">Skip to content</a>
-<header class="site"><div class="masthead"><div class="titles"><p class="crumbs"><a href="../../index.html">{E(SITE.get("title","Travel guides"))}</a> / {E(g.get("state",""))}</p><h1>{E(g["name"])}</h1><p class="sub">{E(g.get("tagline",""))}</p></div>
+<header class="site"><div class="masthead"><div class="titles"><p class="crumbs"><a class="homelink" href="../../index.html">← All trips</a><span class="sep">{E(g.get("state",""))}</span></p><h1>{E(g["name"])}</h1><p class="sub">{E(g.get("tagline",""))}</p></div>
 <div class="tools">{('<a class="iconbtn" href="#trip/picks" title="The attractions you picked">My picks <span class="cnt" id="tripCount" hidden>0</span></a>') if t else ''}<button type="button" class="iconbtn" id="unitBtn" aria-pressed="false"><span class="visually-hidden">Units: </span>mi / °F</button><button type="button" class="iconbtn" id="themeBtn">☾ Dark</button></div></div>
 <nav class="tabs" aria-label="Sections">{tabs}</nav></header>
 <main id="main">{trip_banner(g)}
 {secs}</main>
-{footer(g)}
+{footer(g,others)}
 <script id="rsvpdata" type="application/json">{rsvpj}</script>
 <script>{JS}</script>
 </body></html>'''
@@ -452,6 +455,6 @@ def render_landing(guides):
 
 if __name__=="__main__":
     slugs=sys.argv[1:] or sorted(d for d in os.listdir(GUIDES) if os.path.exists(os.path.join(GUIDES,d,"guide.json")))
-    gs=[render_guide(s) for s in slugs]
     allg=[load(d) for d in sorted(os.listdir(GUIDES)) if os.path.exists(os.path.join(GUIDES,d,"guide.json"))]
+    gs=[render_guide(s,[o for o in allg if o["slug"]!=s]) for s in slugs]
     render_landing(allg)
