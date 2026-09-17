@@ -1,6 +1,6 @@
-# Contento Afuera — trip guides
+# Juntar — trip guides
 
-**Amazing outdoor adventures for our DLI families and friends.** Live site:
+**The more the merrier!** Live site:
 https://aaronmsoto.github.io/travel-guides/
 
 Each guide is a research-backed destination page that doubles as a **trip invitation**: the first

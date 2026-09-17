@@ -1,4 +1,4 @@
-# CLAUDE.md — Contento Afuera trip guides
+# CLAUDE.md — Juntar trip guides
 
 Declarative trip guides: `guides/<slug>/guide.json` is the source of truth; `tools/build.py`
 renders it. **Never hand-edit `guides/*/index.html` or root `index.html`** — rebuild instead.
