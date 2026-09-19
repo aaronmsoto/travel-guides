@@ -148,3 +148,9 @@ USGS 3DEP point queries (queried 2026-09-17, https://epqs.nationalmap.gov/v1/jso
 
 Campendium lists 393 ft and freecampsites 593 ft for "Painted Canyon" — the USGS figure is the one to
 use; the guide says **about 590 feet**.
+
+## Addendum (2026-09-19)
+
+Trip dates moved to **Oct 24–25, 2026**. Still inside the BLM California Desert District seasonal
+fire restriction window (through Oct 29, 2026) — the no-campfire / stove-with-permit guidance is
+unchanged and still applies.

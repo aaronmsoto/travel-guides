@@ -512,8 +512,8 @@
   },
   {
    "name": "The night sky at camp",
-   "why": "Camp sits in a walled wash with no streetlight for miles and no town in the direction you are facing, which is a rarer thing than it sounds two and a half hours from the coast. The canyon walls cut off half the sky and frame the rest. <b>On Saturday October 17, 2026 the moon is a 42% crescent that s",
-   "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-10-17&coords=33.6190,-116.0000&tz=-7"
+   "why": "Camp sits in a walled wash with no streetlight for miles and no town in the direction you are facing, which is a rarer thing than it sounds two and a half hours from the coast. The canyon walls cut off half the sky and frame the rest. On Saturday October 24, 2026 the moon is a 97% waxing gibbous (full moon is the next night) that rises at 4:58 p.m. — before sunset — so it will be a bright, not a dark-sky, night: good for finding your way around camp, less good for the Milky Way.",
+   "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-10-24&coords=33.6190,-116.0000&tz=-7"
   }
  ],
  "stay": {
@@ -731,8 +731,8 @@
  ],
  "trip": {
   "title": "Mecca Hills — an easy overnight starter trip, October 2026",
-  "start": "2026-10-17",
-  "end": "2026-10-18",
+  "start": "2026-10-24",
+  "end": "2026-10-25",
   "status": "potential",
   "host": "Aaron",
   "pitch": "One night, roughly two and a half hours from Huntington Beach, in a canyon most people from here have never heard of. We camp in the wash in Painted Canyon, walk the ladder slot canyon in the last light of Saturday, cook a real dinner in the sand, and sing until the moon sets. No fees, nothing to book, and you can be home by lunchtime Sunday. We did this in April 2023 with cousins, friends and DLI familia — the photos are in the Photos tab.",
@@ -749,8 +749,8 @@
    "image": "painted-canyon.jpg",
    "imageAlt": "Hikers walking into Painted Canyon"
   },
-  "arrival": "<b>Saturday October 17:</b> leave Huntington Beach around midday. CA-91 east, then I-10 east past Palm Springs to Indio, then south on CA-86 or CA-111 through Coachella to Mecca. Turn east on 66th Avenue, which becomes Box Canyon Road, then left onto Painted Canyon Road and about four miles of dirt. Fill the tank and buy all your food, ice and water in Coachella or Indio — there is nothing after that. Roughly 2½ to 3 hours of driving, which is an estimate, not a promise. Aim to be in camp by 2 p.m. so we can set up and start the ladders loop around 3:30, finishing at sunset.",
-  "departure": "<b>Sunday October 18:</b> a slow morning, a short walk back up the canyon before it heats up, then pack out every scrap and drive home. Two good detours if you want to make a day of it: the Salton Sea shoreline half an hour south, or Box Canyon Road east to Joshua Tree's south entrance and home on I-10 — the long way around, and the better drive. Or make Sunday a full day: The Living Desert in Palm Desert opens at 8 a.m. and is about an hour from camp on the way home.",
+  "arrival": "<b>Saturday October 24:</b> leave Huntington Beach around midday. CA-91 east, then I-10 east past Palm Springs to Indio, then south on CA-86 or CA-111 through Coachella to Mecca. Turn east on 66th Avenue, which becomes Box Canyon Road, then left onto Painted Canyon Road and about four miles of dirt. Fill the tank and buy all your food, ice and water in Coachella or Indio — there is nothing after that. Roughly 2½ to 3 hours of driving, which is an estimate, not a promise. Aim to be in camp by 2 p.m. so we can set up and start the ladders loop around 3:30, finishing at sunset.",
+  "departure": "<b>Sunday October 25:</b> a slow morning, a short walk back up the canyon before it heats up, then pack out every scrap and drive home. Two good detours if you want to make a day of it: the Salton Sea shoreline half an hour south, or Box Canyon Road east to Joshua Tree's south entrance and home on I-10 — the long way around, and the better drive. Or make Sunday a full day: The Living Desert in Palm Desert opens at 8 a.m. and is about an hour from camp on the way home.",
   "conditions": [
    {
     "label": "Weather",
@@ -758,7 +758,7 @@
    },
    {
     "label": "Daylight",
-    "text": "On Saturday the sun rises at 6:51 a.m. and sets at <b>6:08 p.m.</b>, with usable twilight until about 6:33. The plan is the ladders loop in the last light: start around 3:30 p.m. so the ridge is in golden hour and we are out of the slot and back at camp right around sunset. Everyone carries a headlamp anyway."
+    "text": "On Saturday the sun rises at 6:56 a.m. and sets at <b>6:00 p.m.</b>, with usable twilight until about 6:25. The plan is the ladders loop in the last light: start around 3:30 p.m. so the ridge is in golden hour and we are out of the slot and back at camp right around sunset. Everyone carries a headlamp anyway. Heads up: the moon is 97% full that night (full moon is Oct 25) and rises at 4:58 p.m. — before sunset — so camp will be bright even without headlamps, but the Milky Way will be washed out compared with a dark-moon night."
    },
    {
     "label": "The drive in, and what car works",
@@ -823,8 +823,8 @@
   "costNote": "This is about as cheap as a trip gets: the camping is free, the permit is free, and the only real cost is gas and groceries.",
   "keyDates": [
    {
-    "date": "2026-10-17",
-    "what": "Arrive with daylight. Sunset is 6:08 p.m. and the last four miles are dirt — get to camp by about 2 p.m. to set up, then start the ladders loop around 3:30 so it ends at sunset."
+    "date": "2026-10-24",
+    "what": "Arrive with daylight. Sunset is 6:00 p.m. and the last four miles are dirt — get to camp by about 2 p.m. to set up, then start the ladders loop around 3:30 so it ends at sunset."
    },
    {
     "date": "2026-10-29",
@@ -938,8 +938,8 @@
    "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=normals-monthly-1991-2020&stations=USW00003104&dataTypes=MLY-TMAX-NORMAL,MLY-TMIN-NORMAL,MLY-PRCP-NORMAL&format=json"
   },
   {
-   "title": "US Naval Observatory – sun and moon data for October 17, 2026 at Mecca Hills",
-   "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-10-17&coords=33.6190,-116.0000&tz=-7"
+   "title": "US Naval Observatory – sun and moon data for October 24, 2026 at Mecca Hills",
+   "url": "https://aa.usno.navy.mil/api/rstt/oneday?date=2026-10-24&coords=33.6190,-116.0000&tz=-7"
   },
   {
    "title": "USGS 3DEP – point elevation query service",

@@ -138,3 +138,29 @@ Level: **note**. Seasons: fall, winter.
 - **No air-quality figure for the Salton Sea.** The dust and odor are widely reported; I found no
   citable official advisory for our dates, so the guide keeps it qualitative.
 - **No claim that the pit toilet exists.** Two secondary sources report one; no official source does.
+
+## Addendum (2026-09-19): dates moved to Oct 24–25, 2026
+
+Host moved the trip from Oct 17–18 to **Oct 24–25, 2026** (same Sat/Sun pattern). Re-fetched daylight
+and moon data for the new date:
+
+US Naval Observatory, coordinates 33.6190, -116.0000, time zone -7 (PDT), queried 2026-09-19:
+https://aa.usno.navy.mil/api/rstt/oneday?date=2026-10-24&coords=33.6190,-116.0000&tz=-7
+
+- Begin civil twilight **06:31**
+- Sunrise **06:56**
+- Solar noon 12:28
+- **Sunset 18:00** (6:00 p.m. PDT)
+- End civil twilight **18:25**
+- Moon: waxing gibbous, **97% illuminated**; moonrise **16:58** (before sunset), moonset 05:19.
+  Full Moon is the next night, Oct 25 at 21:12.
+
+Notes: sunset moved 8 minutes earlier than the Oct 17 figure (negligible for planning — the "start
+about 3 hours before sunset, ~3:30 p.m." guidance is unchanged). The moon phase changed materially:
+Oct 17 was a 42% crescent that stayed out of the way until 11:15 p.m.; Oct 24 is a 97% gibbous that
+rises at 4:58 p.m., before the hike even starts. Camp will be much brighter at night (helpful for
+general camp life) but the Milky Way / dark-sky pitch is weaker on this date — flagged in the guide's
+"also consider" note on the night sky, and worth knowing if photography is a priority.
+Climate normals for Oct 24/25 (same NOAA station, 1991–2020 daily normals) are ~89.5°F / ~55°F,
+about 1°F cooler than the Oct 17/18 figures already used — within the "about 90°F / about 56°F"
+rounding already in the guide, so the weather text was not changed.
