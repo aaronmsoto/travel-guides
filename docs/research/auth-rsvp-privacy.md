@@ -2,395 +2,274 @@
 
 Research memo for juntar.net's move from static guides (v0.1) to a multi-user platform (v0.2)
 with OTP login, RSVPs, and simple messaging. Audience: a few hosts, tens to low hundreds of
-friends and school families in California. All sources fetched 2026-09-23 unless noted.
-Items without a strong current source are marked UNVERIFIED.
+friends and school families in California. All sources fetched 2026-09-23. Items without a
+strong current source are marked UNVERIFIED.
 
 ## Top 10 recommendations
 
-1. **Default to email OTP codes, not magic links**, and not SMS, as the v0.2 login factor.
-   Codes avoid the "security scanner pre-clicks the link and burns it" failure mode that
-   plagues magic links in exactly the audience this site has (parents on school-district and
-   corporate email with Defender/Proofpoint/Mimecast link-scanning) — see §1.
-2. **Do not offer SMS/phone OTP at launch.** At this scale the deliverability, A2P 10DLC
-   registration, per-message cost, and toll-fraud exposure are disproportionate to the benefit;
-   collect phone only as a contact field. Revisit if hosts specifically ask for it — see §1.
-3. **6-digit numeric email codes, 10–15 minute expiry, single use, rate-limited** — this matches
-   NIST SP 800-63B-4 and OWASP guidance and is what most CIAM guidance converges on — see §1.
-4. **Skip passkeys for v0.2.** They're mature in 2026 but add real implementation cost for a
-   site whose whole login problem is "occasional, low-stakes, from many different devices."
-   Revisit only if repeat-login friction becomes a real complaint — see §1.
-5. **RSVP states should be Going / Maybe / Can't go**, not a longer taxonomy; add a waitlist
-   only for camping/lodging-capacity trips. This matches Partiful, Luma, and Meetup's default
-   shapes — see §2.
-6. **Support host-entered "proxy" RSVPs with later claim-by-login**, keyed by email/phone —
-   this is standard on Punchbowl, Paperless Post, and Partiful and matches how a real trip
-   host already operates (tracking replies from a group chat) — see §2.
-7. **Make every event invite-only-by-link with an explicit guest list, not a public/searchable
-   event**, and let the host toggle whether guests see each other's names — mirrors Facebook
-   Events' "Only Invitees" + hide-guest-list pattern and Luma's default — see §2.
-8. **Do not build DMs or threaded comments in v0.2.** Ship an ICS-based reminder and a single
-   host broadcast/announcement channel; point real conversation at the group's existing chat
-   (iMessage/WhatsApp/Signal group). Small RSVP platforms overwhelmingly ship broadcast +
-   light reactions, not full messaging — see §2 and §4.
-9. **Treat this as CCPA/CPRA-exempt by size but still minimize data and put a one-paragraph
-   privacy notice up**: no sale/share of data, no third-party ad trackers, no dark patterns.
-   The revenue/record thresholds put a hobby site far outside CCPA/CPRA's "business" definition
-   — see §3.
-10. **Enforce all guest-list, roster, and PII visibility rules server-side**, never by hiding
-    fields in the client, and require login (adult accounts only, no child profiles — kids as
-    counts) before any name, email, or phone is served to a browser — see §3 and §4.
-
----
+1. **Default to email OTP codes, not magic links, and not SMS.** Codes avoid the "security
+   scanner pre-clicks the link and burns it" failure that hits exactly this audience (parents on
+   school/corporate email with Defender/Proofpoint/Mimecast link-scanning) — §1.
+2. **Do not offer SMS/phone OTP at launch.** A2P 10DLC registration cost/timeline, per-message
+   fees, and toll-fraud exposure are disproportionate at this scale; keep phone as a contact
+   field only — §1.
+3. **6-digit numeric email codes, 10–15 min expiry, single use, rate-limited** — matches NIST
+   SP 800-63B-4 and OWASP guidance — §1.
+4. **Skip passkeys for v0.2.** Mature in 2026, but adds enrollment/recovery cost this low-stakes,
+   many-shared-devices use case doesn't need yet — §1.
+5. **RSVP states: Going / Maybe / Can't go**, plus a waitlist only where capacity is real
+   (camping/lodging) — matches Partiful, Luma, Meetup defaults — §2.
+6. **Support host-entered "proxy" RSVPs, claimable by email match on later login** — standard on
+   Punchbowl, Paperless Post, Partiful, and matches how hosts already track a group chat — §2.
+7. **Make every event invite-only-by-link with a guest list hideable by the host** — mirrors
+   Facebook Events' "Only Invitees" + hide-guest-list pattern and Luma's default — §2.
+8. **Don't build DMs or threads in v0.2.** Ship ICS reminders and a single host broadcast
+   channel; point real conversation at the group's existing chat — §2, §4.
+9. **Treat juntar as outside CCPA/CPRA by size, but still post a short plain-language privacy
+   note** — no sale/share of data, no ad trackers — §3.
+10. **Enforce all PII/roster visibility server-side, never by hiding fields client-side**;
+    accounts are adults only, kids are counts, not profiles — §3, §4.
 
 ## 1. Passwordless authentication
 
-### Email OTP vs. magic links
-- OWASP's Forgot Password / Authentication cheat sheets treat OTP codes and magic links as
-  roughly equivalent in security, with the real difference being UX and operational risk, not
-  cryptographic strength — tokens should be short-lived (~15 min), CSPRNG-generated with
-  ≥128 bits entropy, stored server-side as a hash, and invalidated on first successful use.
-  [OWASP Forgot Password Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html)
-- The practical failure mode that tips the scale toward codes: corporate/school email security
-  gateways (Microsoft Defender for Office 365 Safe Links, Mimecast, Proofpoint) and some email
-  client previews **pre-fetch every link in an email before the human ever opens it**, which
-  silently consumes a single-use magic link and produces a confusing "invalid/expired link"
-  error for the real user. This is a documented, recurring issue across multiple auth libraries
-  in 2025–2026 discussions (better-auth, Supabase, others).
-  [Magic Link token consumed by scanners – better-auth discussion](https://github.com/better-auth/better-auth/discussions/6985) ·
-  [Magic links/reset tokens consumed by scanners in institutional environments – Supabase](https://github.com/orgs/supabase/discussions/41618)
-  Given the audience is school families — exactly the population behind district/corporate
-  email security — this failure mode is not theoretical. Mitigations exist (allow N attempts
-  within the expiry window instead of true single-use; or make the emailed GET a non-mutating
-  confirmation page and require an explicit POST to actually consume the link), but they add
-  complexity that a typed-in 6-digit code sidesteps entirely.
-  [GitHub discussion on mitigations](https://github.com/better-auth/better-auth/discussions/6985)
-- Codes also work better cross-device (type a code seen on your phone into a laptop tab you
-  already had open) — magic links tie the click to the device/browser that opened the email,
-  which is a common complaint pattern in the same threads above.
-- **Recommendation:** default to a 6-digit numeric email code, single use, 10–15 minute expiry,
-  rate-limited resend. This lines up with NIST's stated 6-digit/short-window norm even though
-  NIST's own restricted-channel rules are written for SMS/PSTN, not email (see below).
+**Email OTP vs. magic links.** OWASP treats OTP codes and magic links as roughly equivalent in
+security; both need short-lived (~15 min), CSPRNG tokens (≥128 bits), hashed server-side,
+invalidated on first use.
+[OWASP Forgot Password Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html)
+The deciding factor is operational: corporate/school email security gateways (Microsoft Defender
+Safe Links, Mimecast, Proofpoint) and some client previews **pre-fetch links before the user
+opens them**, silently burning single-use magic links and producing a confusing "expired link"
+error — a recurring 2025–2026 issue across auth libraries, and exactly the population (school
+district / corporate email) juntar targets.
+[better-auth discussion #6985](https://github.com/better-auth/better-auth/discussions/6985) ·
+[Supabase discussion #41618](https://github.com/orgs/supabase/discussions/41618)
+Codes also work cross-device (read on phone, type on laptop) where links tie the click to the
+device that opened the email. **Default to a 6-digit email code**, single use, 10–15 min expiry,
+rate-limited resend.
 
-### SMS OTP: cost, registration, fraud, and NIST's stance
-- **Pricing (US, 2026, headline rates):** Twilio ≈ $0.0079 outbound / $0.0075 inbound per SMS
-  before surcharges; AWS SNS ≈ $0.0065–0.007 per outbound SMS with a 100-message/month free
-  tier; Vonage ≈ $0.00846 per outbound SMS. All three still layer on carrier surcharges and (in
-  the US) A2P 10DLC fees.
-  [Twilio SMS pricing US](https://www.twilio.com/en-us/sms/pricing/us) ·
-  [AWS SNS SMS pricing](https://aws.amazon.com/sns/sms-pricing/) ·
-  [Amazon SNS vs Vonage benchmark](https://knock.app/sms-api-benchmarks/compare/amazon-sns-vs-vonage)
-- **A2P 10DLC registration is mandatory** for US application-to-person SMS on a standard
-  10-digit number: brand registration (~$4 for a sole proprietor, $48+ for a standard/vetted
-  brand) plus campaign registration (~$15–17, sometimes $15 per additional campaign) plus
-  monthly per-campaign fees (~$1.50–10) plus per-message carrier surcharges (~$0.003–0.005).
-  Since February 2025 major US carriers block unregistered A2P traffic outright. End-to-end
-  approval commonly takes 1–4 weeks.
-  [A2P 10DLC fees explainer](https://www.ghlscaleup.com/blog/a2p-10dlc-fees-explained) ·
-  [10DLC registration guide 2026](https://textbolt.com/blog/10dlc-compliance/)
-- **Toll-free SMS is a real alternative** that skips 10DLC brand/campaign registration in favor
-  of a simpler toll-free verification step, but per-message toll-free rates run *higher* than
-  10DLC, and providers note **Twilio Verify specifically can be used for OTP without full 10DLC
-  registration** if that's the only SMS use case.
-  [Toll-free vs 10DLC](https://www.telgorithm.com/news/toll-free-vs-10dlc) ·
-  [10DLC to toll-free onboarding – Twilio](https://www.twilio.com/en-us/blog/swap-10dlc-numbers-toll-free)
-- **SMS pumping / toll fraud** is a live risk for any public phone-number input tied to OTP
-  delivery: fraudsters harvest revenue share from a mobile network operator by triggering mass
-  OTP sends to numbers they control. Twilio's Verify Fraud Guard (automatic, included in Verify
-  pricing) claims to have saved customers $62.7M between June 2022 and October 2024, and offers
-  tunable aggressiveness (Basic/Standard/Max) trading block rate against false positives.
-  [What is SMS pumping fraud – Twilio](https://www.twilio.com/docs/glossary/what-is-sms-pumping-fraud) ·
-  [Verify Fraud Guard](https://www.twilio.com/en-us/blog/twilio-verify-fraud-guard-a-powerful-defense-against-sms-pumping-fraud)
-- **NIST SP 800-63B-4 now formally classifies SMS/PSTN OTP as a "restricted authenticator"** —
-  the first time NIST has created that category. It's still permitted, but only with a
-  documented risk assessment, a migration plan away from it, and user notification of the risk
-  (SIM swap, number porting, MITM/relay). NIST does **not** permit email as an out-of-band
-  authentication channel either, so neither channel is a "blessed" NIST authenticator in the
-  strict sense — both are best understood as convenience factors, not NIST-compliant MFA.
-  [NIST SP 800-63B-4 SMS restricted authenticator](https://blog.typingdna.com/nist-sp-800-63b-rev-4-sms-otp-is-now-a-restricted-authenticator-but-we-have-the-fix/) ·
-  [SP 800-63B authenticators (NIST pages)](https://pages.nist.gov/800-63-4/sp800-63b/authenticators/)
-- **Recommendation:** phone should be a **contact field only** at v0.2, not a login factor.
-  The combination of $15–50+ upfront registration, weeks-long approval, ongoing per-message and
-  monthly fees, toll-fraud exposure, and NIST's now-explicit "restricted" framing is a lot of
-  surface area for a "tens to low hundreds of friends and family" app where email already
-  reaches everyone. Revisit only if hosts report meaningful numbers of guests without reliable
-  email (uncommon in this demographic) — this judgment is UNVERIFIED against juntar's actual
-  user base and should be confirmed with the host before ruling it out permanently.
+**SMS OTP.** US 2026 headline pricing: Twilio ≈$0.0079/outbound SMS, AWS SNS ≈$0.0065–0.007
+(100 free/month), Vonage ≈$0.00846 — before carrier surcharges.
+[Twilio US pricing](https://www.twilio.com/en-us/sms/pricing/us) ·
+[AWS SNS pricing](https://aws.amazon.com/sns/sms-pricing/) ·
+[SNS vs Vonage benchmark](https://knock.app/sms-api-benchmarks/compare/amazon-sns-vs-vonage)
+**A2P 10DLC registration is mandatory** for standard US 10-digit numbers: brand fee (~$4 sole
+proprietor, $48+ vetted brand) + campaign fee (~$15–17) + monthly per-campaign fee (~$1.50–10) +
+per-message carrier surcharge (~$0.003–0.005); carriers have blocked unregistered A2P traffic
+since February 2025; approval takes 1–4 weeks end-to-end.
+[A2P 10DLC fees](https://www.ghlscaleup.com/blog/a2p-10dlc-fees-explained) ·
+[10DLC guide 2026](https://textbolt.com/blog/10dlc-compliance/)
+**Toll-free numbers** skip 10DLC brand/campaign registration for a simpler verification step, but
+per-message rates run higher; Twilio Verify can be used for OTP without full 10DLC if SMS OTP is
+the only use case.
+[Toll-free vs 10DLC](https://www.telgorithm.com/news/toll-free-vs-10dlc) ·
+[10DLC-to-toll-free](https://www.twilio.com/en-us/blog/swap-10dlc-numbers-toll-free)
+**SMS pumping/toll fraud** is a real risk on any public phone-number input tied to OTP; Twilio's
+Verify Fraud Guard (automatic, included with Verify) reports $62.7M saved June 2022–Oct 2024,
+with tunable aggressiveness.
+[SMS pumping fraud](https://www.twilio.com/docs/glossary/what-is-sms-pumping-fraud) ·
+[Verify Fraud Guard](https://www.twilio.com/en-us/blog/twilio-verify-fraud-guard-a-powerful-defense-against-sms-pumping-fraud)
+**NIST SP 800-63B-4 now classifies SMS/PSTN OTP as a "restricted authenticator"** — permitted,
+but only with a documented risk assessment, migration plan, and user risk notification (SIM
+swap, porting, MITM). NIST also does not permit email as an out-of-band channel, so neither
+option is a NIST-blessed authenticator — both are convenience factors, not compliant MFA.
+[SMS restricted authenticator](https://blog.typingdna.com/nist-sp-800-63b-rev-4-sms-otp-is-now-a-restricted-authenticator-but-we-have-the-fix/) ·
+[SP 800-63B authenticators](https://pages.nist.gov/800-63-4/sp800-63b/authenticators/)
+**Recommendation:** phone as contact field only for v0.2. The $15–50+ setup cost, weeks-long
+approval, ongoing fees, fraud exposure, and NIST's "restricted" framing outweigh the benefit when
+email already reaches this audience (UNVERIFIED against juntar's actual user base — confirm with
+host before ruling out permanently).
 
-### Passkeys / WebAuthn
-- 2026 sources describe passkeys as mainstream: FIDO Alliance reports 15B+ accounts can use
-  passkeys and 1B+ activations; Microsoft made passkeys the default for new consumer accounts
-  in May 2025; sign-in success/latency numbers are cited as meaningfully better than passwords.
-  `SimpleWebAuthn` is called out as the practical open-source library for both server and
-  browser sides, with a full flow achievable in a few hundred lines.
-  [Passkeys/WebAuthn 2026 guide](https://kanopylabs.com/blog/passkeys-webauthn-passwordless-auth-guide) ·
-  [SimpleWebAuthn usage note](https://www.hirenodejs.com/blog/nodejs-passkeys-webauthn-2026)
-- **Recommendation:** don't build passkeys into v0.2. The library maturity is real, but the
-  juntar use case (occasional login, many shared/family devices, low security stakes) doesn't
-  need it, and it adds an enrollment UX and recovery-path burden disproportionate to the value
-  for this size of app. Treat as an "optional upgrade later" item as the CLAUDE.md style guide
-  already implies for other renderer-only-change features.
+**Passkeys/WebAuthn.** 2026 sources describe passkeys as mainstream (FIDO Alliance: 15B+ eligible
+accounts, 1B+ activations; Microsoft default for new consumer accounts since May 2025);
+`SimpleWebAuthn` is the practical open-source library, workable in a few hundred lines.
+[Passkeys 2026 guide](https://kanopylabs.com/blog/passkeys-webauthn-passwordless-auth-guide) ·
+[SimpleWebAuthn note](https://www.hirenodejs.com/blog/nodejs-passkeys-webauthn-2026)
+**Recommendation:** skip for v0.2 — occasional, low-stakes, many-shared-device logins don't need
+it; revisit only if login friction becomes a real complaint.
 
-### Session handling
-- Community guidance converges on: short-lived access tokens (minutes) with no sensitive data
-  embedded; refresh tokens in `HttpOnly`, `Secure` cookies; a **separate, revocable, rotating**
-  "remember me" token rather than just extending the primary session cookie's lifetime, because
-  a long-lived primary session token is a bigger blast radius if leaked; and tracking idle
-  timeout separately from absolute session lifetime.
-  [Session cookies vs JWT / refresh strategy](https://appmaster.io/blog/session-management-cookies-jwt-refresh) ·
-  [Remember-me token design](https://medium.com/@sonishubham65/remember-me-in-web-applications-how-it-works-and-why-it-matters-77f0335f2ccd)
-- **Recommendation:** plain server-side session cookies (`HttpOnly`, `Secure`, `SameSite=Lax`)
-  are simpler and sufficient at this scale — JWTs mainly earn their complexity when multiple
-  independent services need to verify a token without a shared session store, which does not
-  describe a single small Node/Python app. A "remember me" cookie can reasonably run 30–90 days
-  for this low-risk, invite-only use case (UNVERIFIED exact figure — no source gives a single
-  authoritative number for "community app" specifically; treat 30–90 days as a judgment call,
-  not a cited norm). Provide a "log out everywhere" action that revokes all sessions/refresh
-  tokens for the account, which is a natural complement to OTP-only login (no password to reset
-  as a recovery path).
+**Session handling.** Guidance converges on short-lived access tokens with no sensitive payload,
+refresh tokens in `HttpOnly`/`Secure` cookies, a separate revocable/rotating "remember me" token
+rather than extending the primary session, and tracking idle timeout separately from absolute
+lifetime.
+[Cookies vs JWT vs refresh](https://appmaster.io/blog/session-management-cookies-jwt-refresh) ·
+[Remember-me token design](https://medium.com/@sonishubham65/remember-me-in-web-applications-how-it-works-and-why-it-matters-77f0335f2ccd)
+**Recommendation:** plain server-side session cookies (`HttpOnly`, `Secure`, `SameSite=Lax`) —
+JWT's cross-service benefit doesn't apply to a single small app. A 30–90 day "remember me" cookie
+is a reasonable judgment call for this low-risk case (UNVERIFIED — no source gives a single
+authoritative figure for "community app"). Provide "log out everywhere" (revoke all
+sessions/refresh tokens) as the natural recovery path given there's no password to reset.
 
-### Rate limiting and abuse controls
-- Best-practice OTP-endpoint rate limiting layers **per-identifier** limits (e.g., 3–5 codes per
-  email/phone per hour) with **per-IP** limits (e.g., 10–20 requests/hour, burst cap ~3/60s),
-  because per-IP alone is defeated by botnets rotating across many IPs, and per-identifier alone
-  doesn't stop an attacker enumerating many identifiers from one IP.
-  [Ratelimiting OTP endpoints – Unkey](https://www.unkey.com/blog/ratelimiting-otp) ·
-  [OTP endpoint abuse protection](https://securityboulevard.com/2026/03/protecting-otp-magic-link-endpoints-from-abuse-ip-reputation-rate-limiting-and-suspicious-ip-throttling/)
-- NIST requires verifiers to cap consecutive failed attempts against a single authenticator at
-  no more than 100 before disabling it, and mandates rate limiting whenever the authenticator
-  output is under 64 bits of entropy — which a 6-digit numeric code always is (~20 bits), so
-  rate limiting is not optional for this design.
-  [NIST OTP rate-limiting guide](https://identitychallengecard.avatier.com/en/blog/otp-nist-800-63b-defense-2026)
-- Return identical responses/timing for "account exists" vs. "account doesn't exist" on the
-  send-code step to avoid user enumeration, per OWASP's forgot-password guidance cited above.
-- **Recommendation:** cap at roughly 5 code requests/hour per email and 10 failed verification
-  attempts per code/session before forcing a fresh code; add a simple per-IP ceiling; log and
-  alert (not block) on unusual patterns given the tiny expected traffic volume.
+**Rate limiting.** Best practice layers **per-identifier** limits (~3–5 codes/email/hour) with
+**per-IP** limits (~10–20/hour, burst ~3/60s), since per-IP alone is defeated by botnets
+rotating IPs and per-identifier alone doesn't stop enumeration from one IP.
+[Ratelimiting OTP endpoints](https://www.unkey.com/blog/ratelimiting-otp) ·
+[OTP endpoint abuse protection](https://securityboulevard.com/2026/03/protecting-otp-magic-link-endpoints-from-abuse-ip-reputation-rate-limiting-and-suspicious-ip-throttling/)
+NIST caps consecutive failed attempts at 100 and *mandates* rate limiting whenever authenticator
+output is under 64 bits — true of any 6-digit code (~20 bits), so this isn't optional.
+[NIST rate-limiting guide](https://identitychallengecard.avatier.com/en/blog/otp-nist-800-63b-defense-2026)
+Return identical timing/response for existent vs. non-existent accounts to prevent enumeration
+(OWASP, above). **Recommendation:** ~5 code requests/hour per email, ~10 failed attempts per code
+before forcing a new one, plus a per-IP ceiling; log/alert rather than hard-block given juntar's
+tiny expected volume.
 
 ## 2. RSVP product patterns
 
-### RSVP states, party size, capacity, waitlists
-- Meetup, Luma, and Partiful all use a small state set — commonly **Going / Maybe / Can't
-  go / Waitlist** — rather than a long taxonomy. Waitlists activate automatically once a
-  numeric capacity is reached and promote people automatically as spots free up, with a
-  notification on promotion.
-  [Luma waitlist](https://help.luma.com/p/waitlist) ·
-  [Meetup waitlist](https://help.meetup.com/hc/en-us/articles/360003883411-Enable-a-Waitlist-for-your-Meetup-event)
-- Party-size / "+N guests" handling is standard: Paperless Post lets a host toggle "allow
-  guests to bring additional guests" and cap group size per invite, with the RSVP-ing guest
-  optionally naming their additional guests; Punchbowl similarly lets guests "RSVP for people
-  they plan to bring." This is the right model for "kids counts" too — collect a number, not a
-  child's name/profile.
-  [Paperless Post +1 settings](https://paperlesspost.zendesk.com/hc/en-us/articles/360022154372-Allow-guests-to-RSVP-for-1s) ·
-  [Punchbowl guest additions](https://help.punchbowl.com/article/129-how-do-my-guests-add-additional-guests)
+**States, party size, capacity, waitlists.** Meetup, Luma, and Partiful all use a small state
+set — **Going / Maybe / Can't go / Waitlist** — not a long taxonomy; waitlists auto-activate at
+capacity and auto-promote with a notification.
+[Luma waitlist](https://help.luma.com/p/waitlist) ·
+[Meetup waitlist](https://help.meetup.com/hc/en-us/articles/360003883411-Enable-a-Waitlist-for-your-Meetup-event)
+Paperless Post and Punchbowl both support "+N guests" — a toggle for additional-guest count per
+invite, with the RSVP-ing guest naming their own additions. This is the right model for kids too:
+collect a count, not a child profile.
+[Paperless Post +1s](https://paperlesspost.zendesk.com/hc/en-us/articles/360022154372-Allow-guests-to-RSVP-for-1s) ·
+[Punchbowl guest additions](https://help.punchbowl.com/article/129-how-do-my-guests-add-additional-guests)
 
-### Proxy / "ghost" RSVPs entered by the host
-- This is an established pattern, not a novelty: Punchbowl's "Connect" feature and Partiful's
-  manual-add flow both let a host add a guest who replied off-platform, and the guest shows up
-  as "Invited"/pending until they engage; RSVPify markets a "Quick-Add RSVP" tool for the same
-  purpose.
-  [Partiful manual guest add](https://help.partiful.com/hc/en-us/articles/26502966982427-How-can-I-manually-add-guests-to-my-party) ·
-  [RSVPify guest list app](https://rsvpify.com/guest-list-app/)
-- None of the sources found describe a polished "claim this proxy RSVP by logging in" merge
-  flow in detail — this is a design gap across the category, not just for juntar
-  (UNVERIFIED beyond the general existence of manual-add features). **Recommendation:** key
-  proxy RSVPs by email (and optionally phone) so that when that person later logs in with a
-  matching email, the app auto-attaches their existing proxy RSVP rather than creating a
-  duplicate guest record — this is a reasonable, low-risk design inference rather than an
-  observed industry pattern.
+**Proxy/"ghost" RSVPs.** Established pattern: Punchbowl's "Connect" feature, Partiful's manual-add,
+and RSVPify's "Quick-Add RSVP" all let a host add someone who replied off-platform.
+[Partiful manual add](https://help.partiful.com/hc/en-us/articles/26502966982427-How-can-I-manually-add-guests-to-my-party) ·
+[RSVPify guest list app](https://rsvpify.com/guest-list-app/)
+None of the sources found document a polished claim/merge flow when that person later logs in —
+a gap across the category, not unique to juntar (UNVERIFIED beyond the existence of manual-add
+features generally). **Recommendation:** key proxy RSVPs by email so a matching login
+auto-attaches the record instead of duplicating it — a design inference, not an observed
+industry pattern.
 
-### Guest list visibility
-- Facebook Events: a "Private"/"Only Invitees" event doesn't appear in search and is visible
-  only to invitees; within that, hosts can separately toggle showing the guest list on/off
-  (defaults to visible to invitees, hideable via an "Only me" style control); organizers always
-  see the full list regardless.
-  [Facebook private event guest list controls](https://www.itgeared.com/who-can-see-a-private-event-on-facebook/) ·
-  [Control who sees/joins a Facebook event](https://www.messenger.com/help/208747122499067)
-- Partiful gives finer-grained controls: hide guest count, anonymize the guest list, hide
-  Activity Feed timestamps, and a separate "Guest Approval" (request-to-join) gate.
-  [Partiful guest-list management](https://help.partiful.com/hc/en-us/sections/30470926071195--Managing-Guest-List)
-- Luma defaults to showing the guest list (for social proof) but lets hosts hide it per event.
-  [Luma guest list privacy](https://help.luma.com/p/managing-your-guest-list)
-- **Recommendation for juntar:** invite-only-by-link event, guest list visible to other invited
-  guests by first name only (not full name, not contact info) by default, with a host toggle to
-  hide it entirely; contact info (email/phone) visible to hosts/co-hosts only, never to other
-  guests — matches the pattern across all three commercial products above and the "roster lists
-  only what the host states" / no-contact-fields rule already in this repo's CLAUDE.md.
+**Guest list visibility.** Facebook's "Only Invitees" event is invisible outside the guest list;
+within it, a separate toggle hides the guest list itself (organizers always see the full list).
+[Facebook private event controls](https://www.itgeared.com/who-can-see-a-private-event-on-facebook/) ·
+[Messenger event controls](https://www.messenger.com/help/208747122499067)
+Partiful adds finer controls (hide count, anonymize list, hide activity timestamps, request-to-
+join gate);
+[Partiful guest-list management](https://help.partiful.com/hc/en-us/sections/30470926071195--Managing-Guest-List)
+Luma defaults to showing the list for social proof but lets hosts hide it.
+[Luma guest list](https://help.luma.com/p/managing-your-guest-list)
+**Recommendation:** invite-only-by-link, guest list visible to *other invited guests* by first
+name only (not contact info), host toggle to hide entirely; contact info visible to hosts/
+co-hosts only — matches all three products above and this repo's existing "no contact fields"
+rule.
 
-### Invitation mechanics for a private, invite-only group
-- Facebook's "Only Invitees" option and Gathio's link-only, no-account, no-search model are the
-  two cleanest fits for "small friends/family group, no public discovery wanted." Gathio in
-  particular is explicit that its events are accessible only by direct link and are never
-  listed or searchable, with no account required to RSVP; email is optional and used only to
-  send the host an edit password. Mobilizon similarly supports anonymous/no-registration RSVP.
-  [Gathio overview](https://docs.gath.io/) ·
-  [Mobilizon RSVP/privacy](https://wbcomdesigns.com/mobilizon-review/)
-- **Recommendation:** unlisted, invite-only-by-link events; no public event directory; no
-  approval-required gate needed at this trust level (the group is small and pre-vetted by the
-  host), though a lightweight join-code or host-approval step is a reasonable v0.3 addition if
-  links get forwarded beyond the intended group. This matches the existing CLAUDE.md rule that
-  joining is coordinated with the host, with no RSVP forms.
+**Invitation mechanics.** Facebook's "Only Invitees" and Gathio's link-only/no-account model both
+fit "small pre-vetted group, no discovery wanted"; Gathio events are accessible only by direct
+link, never listed, no account required, email optional (used only for the edit password).
+Mobilizon similarly supports anonymous RSVP.
+[Gathio docs](https://docs.gath.io/) ·
+[Mobilizon review](https://wbcomdesigns.com/mobilizon-review/)
+**Recommendation:** unlisted, invite-only-by-link events; no directory; no approval gate needed
+at this trust level, though a join code or host-approval step is a reasonable v0.3 addition if
+links get forwarded beyond the intended group.
 
-### Messaging: what small platforms actually ship
-- Partiful ships host-to-guest "text blasts" plus lightweight reactions ("boops") — a broadcast
-  and reaction model, not peer-to-peer threaded messaging.
-  [Partiful features](https://party.pro/partiful/)
-- Meetup gates a group chat to confirmed ("Going") attendees, opening automatically when a
-  waitlisted member is promoted, and separately sends structured notifications (onsite/email/
-  push) for event updates to Yes/Maybe/Waitlist members and hosts.
-  [Meetup event chats](https://help.meetup.com/hc/en-us/articles/48377254200589-Joining-event-chats-and-third-party-messaging-on-Meetup) ·
-  [Meetup notifications](https://help.meetup.com/hc/en-us/articles/40708711774221-What-notifications-Meetup-can-send)
-- Gathio and Mobilizon lean on comments/updates rather than DMs; none of the platforms surveyed
-  ship full private messaging as a core RSVP-app feature — the pattern is **broadcast +
-  comments/reactions**, with real back-and-forth pushed to existing chat apps or platform-
-  native group chat features.
-- **Recommendation:** build a single host → all-guests announcement/broadcast (email, maybe
-  with an in-app feed) plus optional guest reactions/RSVP notes. Do not build direct messaging
-  or threaded comments in v0.2 — link out to the group's existing chat thread instead. This is
-  both what the evidence shows small platforms actually ship and the cheaper build.
+**Messaging.** Partiful ships host→guest broadcast "text blasts" plus lightweight reactions, not
+threaded messaging.
+[Partiful review](https://party.pro/partiful/)
+Meetup gates group chat to confirmed attendees and separately sends structured update
+notifications to Yes/Maybe/Waitlist.
+[Meetup event chats](https://help.meetup.com/hc/en-us/articles/48377254200589-Joining-event-chats-and-third-party-messaging-on-Meetup) ·
+[Meetup notifications](https://help.meetup.com/hc/en-us/articles/40708711774221-What-notifications-Meetup-can-send)
+Gathio and Mobilizon lean on comments/updates, not DMs. **No platform surveyed ships full private
+messaging as a core feature** — the pattern is broadcast + comments/reactions, with real
+conversation pushed to existing chat apps. **Recommendation:** one host→all-guests broadcast
+(email, maybe an in-app feed) plus optional reactions/RSVP notes; no DMs or threads in v0.2 —
+link to the group's existing chat instead.
 
-### Calendar integration
-- Practice is to offer **both** a static `.ics` attachment and "Add to calendar" links (Google/
-  Outlook/Apple/Yahoo), because ICS files render slightly differently across calendar clients
-  and link-based flows reduce support friction; `VALARM`/`TRIGGER` fields set a reminder offset
-  (e.g., 15 minutes before) inside the ICS itself.
-  [ICS vs Add-to-Calendar links](https://www.addevent.com/blog/ics-files-vs-add-to-calendar-links-which-is-better)
-- **Recommendation:** this matches juntar's existing `trip.ics` output — keep generating ICS,
-  and consider adding host-configurable reminder lead time via `VALARM` if not already present
-  (implementation detail to confirm against `tools/build.py`, not verified in this research
-  pass since it's outside web-search scope).
+**Calendar.** Practice is to offer both a static `.ics` and "Add to calendar" links, since ICS
+renders slightly differently per client and links reduce support friction; `VALARM`/`TRIGGER`
+sets an in-file reminder offset.
+[ICS vs Add-to-Calendar links](https://www.addevent.com/blog/ics-files-vs-add-to-calendar-links-which-is-better)
+**Recommendation:** matches juntar's existing `trip.ics` output; consider a host-configurable
+`VALARM` reminder lead time if not already present (unverified against current `tools/build.py`
+— outside this research pass's scope).
 
 ## 3. Privacy and legal (US / California)
 
-### CCPA/CPRA applicability
-- CCPA/CPRA applies to a "business" only if it crosses at least one threshold: **annual gross
-  revenue over $26,625,000** (2026 inflation-adjusted figure), **or** buys/sells/shares personal
-  information of 100,000+ CA consumers/households per year, **or** derives 50%+ of revenue from
-  selling/sharing personal information. A hobby site with a handful of hosts and low hundreds of
-  users falls under none of these and is squarely outside the statute's "business" definition.
-  [CCPA applicability guide 2026](https://www.clym.io/blog/ccpa-applicability-guide) ·
-  [CCPA for small business 2026](https://getuptocode.com/guides/ccpa-state-privacy-small-business)
-- Caveat: 2026 CPRA regulations added narrower **activity-based** triggers that can pull in
-  smaller companies engaged in specific high-risk processing (e.g., automated decision-making,
-  large-scale profiling) regardless of size — UNVERIFIED whether any of juntar's planned
-  features (OTP login, RSVP, broadcast messages) would plausibly qualify; on the facts
-  described, they almost certainly would not, but this is a legal judgment, not a research
-  finding, and isn't a substitute for counsel if the site ever monetizes or scales up sharply.
-  [CCPA audit rule effect on SMBs 2026](https://www.swktech.com/how-ccpa-audit-rule-affects-smb-2026/)
-- **Recommendation:** juntar is not legally required to post a CCPA notice, but a short, plain
-  privacy note (what's collected, why, who sees it, that it's never sold, how to request
-  deletion) is good practice regardless and cheap to write.
+**CCPA/CPRA.** Applies only if a business crosses one of three thresholds: **annual gross
+revenue over $26,625,000** (2026 figure), **or** buys/sells/shares PI of 100,000+ CA
+consumers/households/year, **or** derives 50%+ of revenue from selling/sharing PI. A hobby site
+with a few hosts and low hundreds of users meets none of these.
+[CCPA applicability 2026](https://www.clym.io/blog/ccpa-applicability-guide) ·
+[CCPA for small business](https://getuptocode.com/guides/ccpa-state-privacy-small-business)
+Caveat: 2026 regulations added narrower activity-based triggers for high-risk processing
+regardless of size (UNVERIFIED whether OTP/RSVP/broadcast messaging would plausibly qualify — on
+the facts given, almost certainly not, but this is a legal judgment, not a research finding).
+[CCPA audit rule / SMBs](https://www.swktech.com/how-ccpa-audit-rule-affects-smb-2026/)
+**Recommendation:** no legal requirement to post a CCPA notice, but a short plain-language notice
+(what's collected, why, who sees it, never sold, how to request deletion) is cheap and good
+practice regardless.
 
-### COPPA
-- COPPA applies to operators that are either directed at children under 13 or have actual
-  knowledge they're collecting personal information from a child under 13; the compliance
-  burden (verifiable parental consent, specific notices) is heavy enough that most general
-  sites simply exclude under-13 users from having accounts at all rather than complying.
-  [FTC COPPA overview](https://www.ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule-coppa) ·
-  [COPPA compliance requirements 2026](https://usercentrics.com/us/knowledge-hub/coppa-compliance/)
-- **Confirmed for juntar's plan:** accounts should be adults only (parents/hosts), kids
-  represented only as attendance counts (no child names, no child profiles, no child login) —
-  this sidesteps COPPA entirely rather than trying to comply with it, and matches the existing
-  CLAUDE.md rule about never inferring/attaching names to people in photos.
+**COPPA.** Applies to operators directed at children under 13 or with actual knowledge they're
+collecting a under-13's personal information; most general sites simply exclude under-13
+accounts rather than build compliance (verifiable parental consent, specific notices).
+[FTC COPPA overview](https://www.ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule-coppa) ·
+[COPPA 2026 requirements](https://usercentrics.com/us/knowledge-hub/coppa-compliance/)
+**Confirmed for juntar's plan:** accounts are adults only, kids are attendance counts, never
+profiles or logins — this avoids COPPA rather than complying with it, consistent with this
+repo's "never infer/attach names to people in photos" rule.
 
-### TCPA / CAN-SPAM for OTP and notifications
-- TCPA: transactional messages (including authentication OTP) need only **prior express
-  consent** (lower bar — can be established just by the user supplying their number for that
-  purpose), not the **written** consent required for marketing texts. The instant any
-  promotional content is added to that message it becomes a marketing message needing the
-  higher consent bar — so OTP/transactional SMS templates must stay strictly functional (code
-  only, no "check out our new trip!" line). As of April 2025, opt-outs must be honored via *any*
-  reasonable method (not just "STOP"), processed within 10 business days.
-  [TCPA SMS guide 2026](https://www.idtexpress.com/blog/tcpa-compliance-for-sms-in-2026-the-complete-guide-for-us-businesses/) ·
-  [TCPA consent revocation update](https://activeprospect.com/blog/tcpa-text-messages/)
-- CAN-SPAM: transactional/relationship emails (which includes OTP codes and account
-  notifications) are **exempt from the unsubscribe-link requirement**; only genuinely
-  commercial/marketing email needs the opt-out mechanism, functional for 30+ days, honored
-  within 10 business days, no fee or extra info required to opt out.
-  [FTC CAN-SPAM compliance guide](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business) ·
-  [CAN-SPAM 2025 guide](https://securiti.ai/what-is-can-spam-act/)
-- **Recommendation:** OTP emails/SMS need no unsubscribe link (they're transactional), but
-  event-broadcast emails ("new trip posted," "reminder") are closer to relationship/informational
-  content sent to an opted-in list — include a simple unsubscribe/notification-preferences link
-  on those anyway as good practice, even though CAN-SPAM's strict unsubscribe mandate applies
-  to *commercial* email specifically. Since phone OTP isn't recommended for v0.2, TCPA SMS
-  consent mechanics are moot for now; if phone is ever added, keep OTP texts template-only
-  (code + expiry, nothing else) to stay on the low-consent-bar side of TCPA.
+**TCPA/CAN-SPAM.** TCPA: transactional messages (including OTP) need only **prior express**
+consent (lower bar) vs. the **written** consent marketing texts require; adding any promotional
+content to an OTP message pushes it into the higher bar, so templates must stay code-only. As of
+April 2025, opt-outs must be honored via *any* reasonable method within 10 business days, not
+just "STOP".
+[TCPA SMS 2026 guide](https://www.idtexpress.com/blog/tcpa-compliance-for-sms-in-2026-the-complete-guide-for-us-businesses/) ·
+[TCPA consent revocation](https://activeprospect.com/blog/tcpa-text-messages/)
+CAN-SPAM: transactional/relationship email (OTP codes, account notices) is **exempt** from the
+unsubscribe-link mandate; only commercial/marketing email needs it (functional 30+ days, honored
+within 10 business days).
+[FTC CAN-SPAM guide](https://www.ftc.gov/business-guidance/resources/can-spam-act-compliance-guide-business) ·
+[CAN-SPAM 2025 guide](https://securiti.ai/what-is-can-spam-act/)
+**Recommendation:** OTP emails/SMS need no unsubscribe link; event-broadcast emails are closer to
+relationship content but including a simple preferences/unsubscribe link is good practice anyway.
+Since phone OTP isn't recommended for v0.2, TCPA SMS mechanics are moot for now; if added later,
+keep OTP texts template-only (code + expiry, nothing else).
 
-### Data minimization, retention, deletion, export
-- No single source above gives a "community app" specific retention norm; general PII-handling
-  guidance is simply: collect only what's needed, minimize what's stored, and never let the
-  client filter what the server would otherwise expose.
-  [PII handling in web apps](https://blog.logrocket.com/how-to-handle-pii-websites-web-apps/)
-- **Recommendation (design inference, not a cited external norm):** let any user delete their
-  own account and data on request; let hosts export a roster (CSV) since they already do this
-  informally; don't set an automatic retention/deletion timer for past trips given the site's
-  archival/memory-keeping purpose, but do offer manual deletion.
+**Data minimization, retention, server-side authorization.** General PII guidance: collect only
+what's needed, and never let the client filter what the server would otherwise expose —
+authorize/filter server-side before the response is built.
+[PII handling in web apps](https://blog.logrocket.com/how-to-handle-pii-websites-web-apps/) ·
+[Secure PII system design](https://medium.com/@legedith/a-practical-guide-to-designing-a-secure-pii-system-b5611cd2cc15)
+**Recommendation (design inference, no external retention norm found):** allow self-service
+account/data deletion; let hosts export a roster (CSV); no automatic retention timer for past
+trips given the site's archival purpose, but support manual deletion on request. Every route that
+can return email/phone/roster data must check the caller's session and role server-side, not just
+hide fields in the UI — a hard requirement given minors' attendance data is involved.
 
-### Server-side authorization ("never show PII to unauthenticated users")
-- The consistent security guidance: don't return full objects and hide fields client-side;
-  filter/authorize on the server before the response is built; treat any server-only token or
-  PII-bearing field as something that must never reach client-side code or storage.
-  [API security / PII best practices](https://medium.com/@legedith/a-practical-guide-to-designing-a-secure-pii-system-b5611cd2cc15) ·
-  [Client-side security considerations](https://dev.to/armstrong2035/5-considerations-for-client-side-security-5fk6)
-- **Recommendation:** every API/route that can return a guest's email, phone, or full roster
-  must check the caller's session and role server-side before querying/serializing that data —
-  not just omit it in the UI. This is a hard requirement, not a nice-to-have, given the
-  audience includes minors' attendance data.
-
-### Photo consent
-- No single, authoritative consent-form-by-default norm exists for informal/community sites;
-  practice ranges widely, and most parents in surveyed US samples post photos of their own kids
-  without formal consent, while community/organizational contexts (schools, sports orgs)
-  increasingly expect an explicit opt-in, and privacy advocates recommend asking the child too
-  as they get older.
-  [FOSI guide to sharing kids' photos](https://fosi.org/picture-perfect-privacy-a-guide-to-responsible-sharing-of-your-kids-photos/) ·
-  [Parent photo-sharing survey / APA](https://www.apa.org/monitor/2026/06/parents-children-sharing-online)
-- **Recommendation:** juntar's existing "uploading is opting in, public by default, `private:
-  true` to opt out later" model (per CLAUDE.md host decisions) is reasonable for a small,
-  closed, pre-vetted group of families who know each other — this is consistent with observed
-  parental norms, though it is looser than what schools/orgs increasingly expect; the memo
-  flags this as a judgment call for the host, not a compliance requirement, since the group
-  isn't a school or organization subject to those stricter conventions. UNVERIFIED: no source
-  directly validates an "opt-out by default" model as best practice; the evidence shows only
-  that it's common informal parent behavior, not that it's recommended.
+**Photo consent.** No single authoritative norm for informal community sites exists; most US
+parents surveyed post their own kids' photos without formal consent, while school/organizational
+contexts increasingly expect explicit opt-in.
+[FOSI kids'-photos guide](https://fosi.org/picture-perfect-privacy-a-guide-to-responsible-sharing-of-your-kids-photos/) ·
+[APA Monitor survey](https://www.apa.org/monitor/2026/06/parents-children-sharing-online)
+**Recommendation:** juntar's existing "uploading is opting in, public by default, `private: true`
+to opt out" model is reasonable for this small, closed, pre-vetted group, though looser than
+school/org conventions — a host judgment call, not a compliance requirement (UNVERIFIED as a
+recommended best practice; evidence shows only that it matches common informal parent behavior).
 
 ## 4. Where the client's plan may be wrong — candid notes
 
-- **Phone OTP at launch is likely not worth it.** The evidence (10DLC cost/timeline, toll-fraud
-  risk, NIST's new "restricted" framing for SMS) all points toward skipping it, and nothing in
-  the brief suggests juntar's users lack email. If the plan currently assumes phone OTP is a
-  launch feature, reconsider — start email-only, keep phone as a contact field.
-- **Showing first names publicly (to anyone, not just invited guests) would be out of step**
-  with every commercial pattern surveyed (Facebook, Partiful, Luma all gate guest-list
-  visibility behind "invited" status at minimum). If any part of the plan exposes names to
-  unauthenticated visitors, that's worth revisiting — visibility should be invited-guests-only
-  by default, with host controls to loosen or tighten further.
-- **Building messaging (DMs/threads) in v0.2 is probably premature.** Every small-scale
-  platform surveyed (Partiful, Meetup, Gathio) ships broadcast + light reactions, not full
-  messaging, and directs real conversation to existing chat apps. For a friend group that
-  almost certainly already has a group chat, building DMs is meaningful extra surface area
-  (spam/abuse handling, notification design, moderation) for a feature the audience likely
-  won't use over their existing thread. Recommend linking to the group chat instead and
-  shipping only host broadcasts + RSVP-note fields in v0.2.
-- **The proxy-RSVP "claim on login" flow needs explicit design attention** — it's a known
-  pattern in the category (Punchbowl/Partiful/RSVPify all support host-entered guests) but none
-  of the surveyed products document a clean claim/merge UX, so juntar can't just copy an
-  existing flow; budget real design time for "what happens when Aaron adds Jane by email, and
-  Jane later logs in with that email" rather than treating it as a trivial lookup.
-- **If CCPA/CPRA compliance work is currently planned as a big v0.2 line item, it's likely
+- **Phone OTP at launch is likely not worth it.** 10DLC cost/timeline, toll-fraud risk, and
+  NIST's "restricted" framing all point toward email-only at launch, with phone kept as a
+  contact field.
+- **Publicly showing first names (to anyone, not just invited guests) would be out of step**
+  with every product surveyed — Facebook, Partiful, and Luma all gate guest-list visibility
+  behind invited status at minimum. Visibility should default to invited-guests-only.
+- **Building DMs/threads in v0.2 is probably premature.** Partiful, Meetup, and Gathio all ship
+  broadcast + light reactions, not full messaging, and route real conversation to existing chat
+  apps — which this friend group almost certainly already has. Recommend host broadcasts + RSVP
+  notes only, linking to the existing group chat for everything else.
+- **The proxy-RSVP claim/merge flow needs real design attention**, not a copy-paste — it's a
+  known pattern (Punchbowl/Partiful/RSVPify all support host-entered guests) but no surveyed
+  product documents a clean claim UX, so budget time for "what happens when Aaron adds Jane by
+  email, and Jane later logs in with that email."
+- **If CCPA/CPRA compliance is currently planned as a major v0.2 line item, it's likely
   overbuilt** for the site's actual size — the thresholds put it well outside the statute. A
-  short plain-language privacy note is proportionate; a full CCPA compliance program is not.
-
----
+  short plain-language notice is proportionate; a full compliance program is not.
 
 ## Sources
 
 All fetched 2026-09-23.
 
 - [OWASP Forgot Password Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html)
-- [OWASP Authentication Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html)
-- [Magic Link token consumed by scanners — better-auth discussion #6985](https://github.com/better-auth/better-auth/discussions/6985)
-- [Magic links/reset tokens consumed by scanners in institutional environments — Supabase discussion #41618](https://github.com/orgs/supabase/discussions/41618)
+- [Magic Link token consumed by scanners — better-auth #6985](https://github.com/better-auth/better-auth/discussions/6985)
+- [Magic links/reset tokens consumed by scanners — Supabase #41618](https://github.com/orgs/supabase/discussions/41618)
 - [OTP Security & NIST 800-63B: 2026 Rate-Limiting Guide](https://identitychallengecard.avatier.com/en/blog/otp-nist-800-63b-defense-2026)
 - [NIST SP 800-63B-4 Authenticators (official)](https://pages.nist.gov/800-63-4/sp800-63b/authenticators/)
 - [NIST SP 800-63B-4: SMS OTP is now a Restricted Authenticator — TypingDNA](https://blog.typingdna.com/nist-sp-800-63b-rev-4-sms-otp-is-now-a-restricted-authenticator-but-we-have-the-fix/)
@@ -422,7 +301,6 @@ All fetched 2026-09-23.
 - [RSVPify — Guest List App](https://rsvpify.com/guest-list-app/)
 - [Facebook/Messenger — Control who sees or joins your event](https://www.messenger.com/help/208747122499067)
 - [Who Can See a Private Event on Facebook — ITGeared](https://www.itgeared.com/who-can-see-a-private-event-on-facebook/)
-- [Rallly — self-hosted meeting scheduler](https://www.blackvoid.club/rallly-self-hosted-meeting-schedule-platform/)
 - [Gathio documentation](https://docs.gath.io/)
 - [Mobilizon review — Wbcom Designs](https://wbcomdesigns.com/mobilizon-review/)
 - [ICS files vs Add to Calendar links — AddEvent](https://www.addevent.com/blog/ics-files-vs-add-to-calendar-links-which-is-better)
