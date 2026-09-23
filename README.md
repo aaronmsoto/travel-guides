@@ -31,6 +31,7 @@ guides/<slug>/index.html        GENERATED (also trip.ics)
 shared/theme.css, engine.js     one design system + one client engine for every guide
 tools/                          build.py · validate.py · fetch_images.py · import_photos.py · new_guide.py · schema.md
 _reviews/                       adversarial critique reports (not published)
+docs/                           specifications and research memos (v0.2 plan; not published)
 .claude/skills, .claude/agents  the reusable workflows and subagents (see below)
 .github/workflows/pages.yml     validate → build → stale-HTML check → deploy on every push to main
 ```

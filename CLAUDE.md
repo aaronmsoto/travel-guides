@@ -58,7 +58,9 @@ Live: https://juntar.net/ · three guides: mecca-hills, zion, death-valley.
 - Commit on the working branch; fast-forward `main` and push only when every guide validates
   (a half-written guide fails the deploy or goes live). `.github/workflows/pages.yml` validates,
   builds, fails on stale HTML, deploys. The `github-pages` environment must allow `main`.
-- `_reviews/`, `tools/`, `shared/`, `src/`, `site.json` are excluded from the published site.
+- `_reviews/`, `docs/`, `tools/`, `shared/`, `src/`, `site.json` are excluded from the published site.
+- The v0.2 collaboration-platform plan is `docs/v0.2-spec.md` (research in `docs/research/`); it is a
+  proposal until the host answers its §14 decisions.
 
 ## Adding a guide (short form — the `new-trip` skill has the full version)
 1. `tools/new_guide.py` scaffold → 2. `trip-researcher` + `image-sourcer` in parallel →
