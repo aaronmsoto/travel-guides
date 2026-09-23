@@ -35,7 +35,7 @@ jobs:
         run: |
           mkdir -p _site
           rsync -a ./ _site/ \
-            --exclude '.git' --exclude '.github' --exclude '_site' --exclude '_reviews' \
+            --exclude '.git' --exclude '.github' --exclude '_site' --exclude '_reviews' --exclude 'docs' \
             --exclude 'tools' --exclude 'shared' --exclude 'src' --exclude 'site.json' \
             --exclude 'README.md' --exclude 'CLAUDE.md' --exclude '.gitignore'
           touch _site/.nojekyll
